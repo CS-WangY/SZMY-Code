@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B3C7CA7E-594B-46CE-9AEF-A846CB89838E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Kingdee.Mymooo.App.Core</RootNamespace>
+    <AssemblyName>Kingdee.Mymooo.App.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <ReferencePath>..\..\WebSite\BIN</ReferencePath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\WebSite\BIN</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\WebSite\bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Kingdee.BOS, Version=8.0.144.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\WebSite\BIN\Kingdee.BOS.dll</HintPath>
+    </Reference>
+    <Reference Include="Kingdee.BOS.App, Version=8.0.144.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\WebSite\BIN\Kingdee.BOS.App.dll</HintPath>
+    </Reference>
+    <Reference Include="Kingdee.BOS.App.Core, Version=8.0.144.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\WebSite\BIN\Kingdee.BOS.App.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Kingdee.BOS.BusinessEntity, Version=8.0.361.9, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\WebSite\BIN\Kingdee.BOS.BusinessEntity.dll</HintPath>
+    </Reference>
+    <Reference Include="Kingdee.BOS.Contracts, Version=8.0.361.9, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\WebSite\bin\Kingdee.BOS.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="Kingdee.BOS.Core, Version=8.0.144.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\WebSite\BIN\Kingdee.BOS.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Kingdee.BOS.DataEntity, Version=8.0.144.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\WebSite\BIN\Kingdee.BOS.DataEntity.dll</HintPath>
+    </Reference>
+    <Reference Include="Kingdee.BOS.OrmEngine, Version=8.0.144.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\WebSite\BIN\Kingdee.BOS.OrmEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="Kingdee.BOS.ServiceHelper, Version=8.0.361.9, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\WebSite\BIN\Kingdee.BOS.ServiceHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="Kingdee.K3.BD.BaseDataController, Version=8.0.361.9, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\WebSite\bin\Kingdee.K3.BD.BaseDataController.dll</HintPath>
+    </Reference>
+    <Reference Include="Kingdee.K3.Core, Version=8.0.361.9, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\WebSite\bin\Kingdee.K3.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Kingdee.K3.MFG.App, Version=8.0.361.9, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\WebSite\BIN\Kingdee.K3.MFG.App.dll</HintPath>
+    </Reference>
+    <Reference Include="Kingdee.K3.MFG.BusinessCommon, Version=8.0.361.9, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\WebSite\bin\Kingdee.K3.MFG.BusinessCommon.dll</HintPath>
+    </Reference>
+    <Reference Include="Kingdee.K3.MFG.Contracts, Version=8.0.361.9, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\WebSite\BIN\Kingdee.K3.MFG.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="Kingdee.K3.SCM.App.Core, Version=8.0.361.9, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\WebSite\bin\Kingdee.K3.SCM.App.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Kingdee.K3.SCM.Contracts, Version=8.0.361.9, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\WebSite\BIN\Kingdee.K3.SCM.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="Kingdee.Mymooo.Contracts, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\WebSite\BIN\Kingdee.Mymooo.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\WebSite\BIN\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseManagement\BasicDataSyncService.cs" />
+    <Compile Include="BaseManagement\ENGBomService.cs" />
+    <Compile Include="BaseManagement\SupplyOrgService.cs" />
+    <Compile Include="BaseManagement\MaterialService.cs" />
+    <Compile Include="BaseManagement\UserService.cs" />
+    <Compile Include="DemoTestService.cs" />
+    <Compile Include="DirectSaleManagement\DirectSaleService.cs" />
+    <Compile Include="KafkaProducer\KafkaProducerService.cs" />
+    <Compile Include="MymoooBusinessDataService.cs" />
+    <Compile Include="PayableManagement\PayableOrderService.cs" />
+    <Compile Include="PrdMoManagement\MoOrderBillService.cs" />
+    <Compile Include="ProductionManagement\ProductionMoService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PurchaseManagement\POHistoricalPriceListService.cs" />
+    <Compile Include="PurchaseManagement\PrBillToPoBillService.cs" />
+    <Compile Include="PurchaseManagement\PurchaseOrderService.cs" />
+    <Compile Include="PurchaseManagement\PurchaseProductQuantity.cs" />
+    <Compile Include="PurchaseManagement\Pur_RequisitionOrderService.cs" />
+    <Compile Include="SalesManagement\DeliveryNoticeList.cs" />
+    <Compile Include="SalesManagement\SaleReserveCalClass.cs" />
+    <Compile Include="SalesManagement\SalesOrderService.cs" />
+    <Compile Include="StockManagement\MymoooUpdateStockService.cs" />
+    <Compile Include="StockManagement\StockLockUnLockService.cs" />
+    <Compile Include="StockManagement\StockOrderService.cs" />
+    <Compile Include="StockManagement\StockQuantityService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Kingdee.Mymooo.Core\Kingdee.Mymooo.Core.csproj">
+      <Project>{3580DBE7-F790-470B-91C0-EF6F7C2CC8CE}</Project>
+      <Name>Kingdee.Mymooo.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Kingdee.Mymooo.ServiceHelper\Kingdee.Mymooo.ServiceHelper.csproj">
+      <Project>{AA099D6E-2722-47F0-A401-DCE1F8C4BBBB}</Project>
+      <Name>Kingdee.Mymooo.ServiceHelper</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

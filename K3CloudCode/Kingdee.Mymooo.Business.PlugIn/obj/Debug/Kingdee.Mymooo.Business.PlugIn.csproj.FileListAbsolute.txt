@@ -1,0 +1,7 @@
+D:\K3Cloud\WebSite\BIN\Kingdee.Mymooo.Business.PlugIn.dll
+D:\K3Cloud\WebSite\BIN\Kingdee.Mymooo.Business.PlugIn.pdb
+D:\K3Cloud\Code\Kingdee.Mymooo.Business.PlugIn\obj\Debug\Kingdee.Mymooo.Business.PlugIn.csproj.AssemblyReference.cache
+D:\K3Cloud\Code\Kingdee.Mymooo.Business.PlugIn\obj\Debug\Kingdee.Mymooo.Business.PlugIn.csproj.CoreCompileInputs.cache
+D:\K3Cloud\Code\Kingdee.Mymooo.Business.PlugIn\obj\Debug\Kingdee..A216169B.Up2Date
+D:\K3Cloud\Code\Kingdee.Mymooo.Business.PlugIn\obj\Debug\Kingdee.Mymooo.Business.PlugIn.dll
+D:\K3Cloud\Code\Kingdee.Mymooo.Business.PlugIn\obj\Debug\Kingdee.Mymooo.Business.PlugIn.pdb

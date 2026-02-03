@@ -1,0 +1,209 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>mymooo.k3cloud.SDK</name>
+    </assembly>
+    <members>
+        <member name="T:mymooo.k3cloud.SDK.Inventory.InventoryServiceClient">
+            <summary>
+            库存缓存服务
+            </summary>
+            <param name="redisCache"></param>
+        </member>
+        <member name="M:mymooo.k3cloud.SDK.Inventory.InventoryServiceClient.#ctor(mymooo.core.Cache.RedisCache)">
+            <summary>
+            库存缓存服务
+            </summary>
+            <param name="redisCache"></param>
+        </member>
+        <member name="M:mymooo.k3cloud.SDK.Inventory.InventoryServiceClient.GetInventory(System.String)">
+            <summary>
+            获取物料编码的库存信息  库存数量以及锁库数量
+            </summary>
+            <param name="materialNumber">物料编码</param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.k3cloud.SDK.Inventory.InventoryServiceClient.GetInventoryTotal(System.String)">
+            <summary>
+            获取物料编码的库存信息  库存数量以及锁库数量  汇总
+            </summary>
+            <param name="materialNumber">物料编码</param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.k3cloud.SDK.Inventory.InventoryServiceClient.GetInventory(System.String,System.String)">
+            <summary>
+            获取组织下物料编码的库存信息  库存数量以及锁库数量
+            </summary>
+            <param name="materialNumber">物料编码</param>
+            <param name="orgNumber">组织编码</param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.k3cloud.SDK.Inventory.InventoryServiceClient.GetInventoryTotal(System.String,System.String)">
+            <summary>
+            获取组织下物料编码的库存信息  库存数量以及锁库数量  汇总
+            </summary>
+            <param name="materialNumber">物料编码</param>
+            <param name="orgNumber">组织编码</param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.k3cloud.SDK.Inventory.InventoryServiceClient.GetInventory(mymooo.k3cloud.core.Stock.InventoryInfo)">
+            <summary>
+            获取库存 库存以及锁库数量
+            </summary>
+            <param name="inventory">库存信息 必须传 materialNumber orgNumber StockNumber</param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.k3cloud.SDK.Inventory.InventoryServiceClient.GetInventoryTotal(mymooo.k3cloud.core.Stock.InventoryInfo)">
+            <summary>
+             获取库存  缓存全部信息包含 总待出数量,在途数 以及 品检数
+            </summary>
+            <param name="inventory">库存信息 必须传 materialNumber orgNumber StockNumber</param>
+            <returns></returns>
+        </member>
+        <member name="T:mymooo.k3cloud.SDK.Report.ReportServiceClient`2">
+            <summary>
+            报表服务获取金蝶统计数据
+            </summary>
+            <typeparam name="C"></typeparam>
+            <typeparam name="U"></typeparam>
+            <param name="httpService"></param>
+        </member>
+        <member name="M:mymooo.k3cloud.SDK.Report.ReportServiceClient`2.#ctor(mymooo.core.Utils.Service.HttpService)">
+            <summary>
+            报表服务获取金蝶统计数据
+            </summary>
+            <typeparam name="C"></typeparam>
+            <typeparam name="U"></typeparam>
+            <param name="httpService"></param>
+        </member>
+        <member name="M:mymooo.k3cloud.SDK.Report.ReportServiceClient`2.GetNotCheckAccountTotals(`0,mymooo.k3cloud.core.ReportModel.CrmReportRequestModel)">
+            <summary>
+            获取未对账合计
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.k3cloud.SDK.Report.ReportServiceClient`2.GetNotCheckAccountList(`0,mymooo.core.PageRequest{mymooo.k3cloud.core.ReportModel.CrmReportRequestModel})">
+            <summary>
+            获取未对账明细
+            </summary>
+            <param name="mymoooContext"></param>
+            <param name="request"></param>
+            <returns></returns>
+            <exception cref="T:System.ArgumentException"></exception>
+        </member>
+        <member name="M:mymooo.k3cloud.SDK.Report.ReportServiceClient`2.GetCustNotCheckAccountList(`0,mymooo.core.PageRequest{mymooo.k3cloud.core.ReportModel.CrmReportRequestModel})">
+            <summary>
+            获取客户未对账明细
+            </summary>
+            <param name="mymoooContext"></param>
+            <param name="request"></param>
+            <returns></returns>
+            <exception cref="T:System.ArgumentException"></exception>
+        </member>
+        <member name="M:mymooo.k3cloud.SDK.Report.ReportServiceClient`2.GetNotDeliverTotals(`0,mymooo.k3cloud.core.ReportModel.CrmReportRequestModel)">
+            <summary>
+            获取未出货汇总
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.k3cloud.SDK.Report.ReportServiceClient`2.GetNotDeliverList(`0,mymooo.core.PageRequest{mymooo.k3cloud.core.ReportModel.CrmReportRequestModel})">
+            <summary>
+            获取未出货记录
+            </summary>
+            <param name="mymoooContext"></param>
+            <param name="request"></param>
+            <returns></returns>
+            <exception cref="T:System.ArgumentException"></exception>
+        </member>
+        <member name="M:mymooo.k3cloud.SDK.Report.ReportServiceClient`2.GetCustNotDeliverList(`0,mymooo.core.PageRequest{mymooo.k3cloud.core.ReportModel.CrmReportRequestModel})">
+            <summary>
+            获取客户未出货记录
+            </summary>
+            <param name="mymoooContext"></param>
+            <param name="request"></param>
+            <returns></returns>
+            <exception cref="T:System.ArgumentException"></exception>
+        </member>
+        <member name="M:mymooo.k3cloud.SDK.Report.ReportServiceClient`2.GetNotOpenAccountTotals(`0,mymooo.k3cloud.core.ReportModel.CrmReportRequestModel)">
+            <summary>
+            获取未开票合计
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.k3cloud.SDK.Report.ReportServiceClient`2.GetNotOpenAccountList(`0,mymooo.core.PageRequest{mymooo.k3cloud.core.ReportModel.CrmReportRequestModel})">
+            <summary>
+            获取未开票明细
+            </summary>
+            <param name="mymoooContext"></param>
+            <param name="request"></param>
+            <returns></returns>
+            <exception cref="T:System.ArgumentException"></exception>
+        </member>
+        <member name="M:mymooo.k3cloud.SDK.Report.ReportServiceClient`2.GetCustNotOpenAccountList(`0,mymooo.core.PageRequest{mymooo.k3cloud.core.ReportModel.CrmReportRequestModel})">
+            <summary>
+            获取客户未开票明细
+            </summary>
+            <param name="mymoooContext"></param>
+            <param name="request"></param>
+            <returns></returns>
+            <exception cref="T:System.ArgumentException"></exception>
+        </member>
+        <member name="M:mymooo.k3cloud.SDK.Report.ReportServiceClient`2.GetNotReceiveTotals(`0,mymooo.k3cloud.core.ReportModel.CrmReportRequestModel)">
+            <summary>
+            获取未收款核销合计
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.k3cloud.SDK.Report.ReportServiceClient`2.GetNotReceiveList(`0,mymooo.core.PageRequest{mymooo.k3cloud.core.ReportModel.CrmReportRequestModel})">
+            <summary>
+            获取未收款核销明细
+            </summary>
+            <param name="mymoooContext"></param>
+            <param name="request"></param>
+            <returns></returns>
+            <exception cref="T:System.ArgumentException"></exception>
+        </member>
+        <member name="M:mymooo.k3cloud.SDK.Report.ReportServiceClient`2.GetCustNotReceiveList(`0,mymooo.core.PageRequest{mymooo.k3cloud.core.ReportModel.CrmReportRequestModel})">
+            <summary>
+            获取客户未收款核销明细
+            </summary>
+            <param name="mymoooContext"></param>
+            <param name="request"></param>
+            <returns></returns>
+            <exception cref="T:System.ArgumentException"></exception>
+        </member>
+        <member name="T:mymooo.k3cloud.SDK.Sales.OutStockServiceClient`2">
+            <summary>
+            销售出库单http服务客户端
+            </summary>
+        </member>
+        <member name="M:mymooo.k3cloud.SDK.Sales.OutStockServiceClient`2.#ctor(mymooo.core.Utils.Service.HttpService)">
+            <summary>
+            销售出库单http服务客户端
+            </summary>
+        </member>
+        <member name="M:mymooo.k3cloud.SDK.Sales.OutStockServiceClient`2.GetDeliveryList(`0,System.String)">
+            <summary>
+            获取发货数据
+            </summary>
+        </member>
+        <member name="M:mymooo.k3cloud.SDK.Sales.OutStockServiceClient`2.ChangingOrRefunding(`0,mymooo.k3cloud.core.Sales.AfterSalesRequest)">
+            <summary>
+            售后, 退货或者换货
+            </summary>
+        </member>
+        <member name="M:mymooo.k3cloud.SDK.Sales.OutStockServiceClient`2.AfsDetailResult(`0,mymooo.k3cloud.core.Sales.AfsDetailResultRequest)">
+            <summary>
+            查询售后单据状态
+            </summary>
+        </member>
+        <member name="M:mymooo.k3cloud.SDK.Sales.OutStockServiceClient`2.QuerySalOrderOutStock(`0,mymooo.k3cloud.core.Sales.SalOutStockRequest)">
+            <summary>
+            查询单据出库数据
+            </summary>
+            <param name="mymoooContext"></param>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

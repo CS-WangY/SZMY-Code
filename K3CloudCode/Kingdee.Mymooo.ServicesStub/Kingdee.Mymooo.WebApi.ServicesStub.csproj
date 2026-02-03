@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BC876B4E-6508-48FC-84A8-61F4294568C6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Kingdee.Mymooo.WebApi.ServicesStub</RootNamespace>
+    <AssemblyName>Kingdee.Mymooo.WebApi.ServicesStub</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <ReferencePath>..\..\WebSite\BIN</ReferencePath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\WebSite\BIN</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\WebSite\bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Kingdee.BOS, Version=8.0.144.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\WebSite\BIN\Kingdee.BOS.dll</HintPath>
+    </Reference>
+    <Reference Include="Kingdee.BOS.Core, Version=8.0.144.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\WebSite\BIN\Kingdee.BOS.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Kingdee.BOS.DataEntity, Version=8.0.144.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\WebSite\BIN\Kingdee.BOS.DataEntity.dll</HintPath>
+    </Reference>
+    <Reference Include="Kingdee.BOS.OrmEngine, Version=8.0.144.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\WebSite\BIN\Kingdee.BOS.OrmEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="Kingdee.BOS.Performance, Version=8.0.144.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\WebSite\bin\Kingdee.BOS.Performance.dll</HintPath>
+    </Reference>
+    <Reference Include="Kingdee.BOS.ServiceFacade.KDServiceFx, Version=8.0.144.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\WebSite\BIN\Kingdee.BOS.ServiceFacade.KDServiceFx.dll</HintPath>
+    </Reference>
+    <Reference Include="Kingdee.BOS.ServiceHelper, Version=8.0.144.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\WebSite\BIN\Kingdee.BOS.ServiceHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="Kingdee.K3.SCM.Core, Version=8.0.361.9, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\WebSite\BIN\Kingdee.K3.SCM.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\WebSite\bin\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseManagementService.cs" />
+    <Compile Include="CashierManagementService.cs" />
+    <Compile Include="CustomerManagermentService.cs" />
+    <Compile Include="DemoApiService.cs" />
+    <Compile Include="DirectSaleManagementService.cs" />
+    <Compile Include="PayableManagementService.cs" />
+    <Compile Include="PlanManagementService.cs" />
+    <Compile Include="PLNManagementService.cs" />
+    <Compile Include="ProductionManagementService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PurchaseManagementService.cs" />
+    <Compile Include="Pur_RequisitionManagementService.cs" />
+    <Compile Include="SalesManagementService.cs" />
+    <Compile Include="StockManagementService.cs" />
+    <Compile Include="SupplierManagermentService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Kingdee.Mymooo.App.Core\Kingdee.Mymooo.App.Core.csproj">
+      <Project>{b3c7ca7e-594b-46ce-9aef-a846cb89838e}</Project>
+      <Name>Kingdee.Mymooo.App.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Kingdee.Mymooo.Business.PlugIn\Kingdee.Mymooo.Business.PlugIn.csproj">
+      <Project>{03dfef29-598b-4115-bdc9-23e8565bd19f}</Project>
+      <Name>Kingdee.Mymooo.Business.PlugIn</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Kingdee.Mymooo.Core\Kingdee.Mymooo.Core.csproj">
+      <Project>{3580DBE7-F790-470B-91C0-EF6F7C2CC8CE}</Project>
+      <Name>Kingdee.Mymooo.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Kingdee.Mymooo.ServiceHelper\Kingdee.Mymooo.ServiceHelper.csproj">
+      <Project>{aa099d6e-2722-47f0-a401-dce1f8c4bbbb}</Project>
+      <Name>Kingdee.Mymooo.ServiceHelper</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

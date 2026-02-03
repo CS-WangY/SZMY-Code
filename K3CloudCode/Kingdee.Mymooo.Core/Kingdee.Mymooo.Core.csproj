@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3580DBE7-F790-470B-91C0-EF6F7C2CC8CE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Kingdee.Mymooo.Core</RootNamespace>
+    <AssemblyName>Kingdee.Mymooo.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <ReferencePath>..\..\WebSite\BIN</ReferencePath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\WebSite\BIN</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\WebSite\bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Kingdee.BOS, Version=8.0.144.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\WebSite\BIN\Kingdee.BOS.dll</HintPath>
+    </Reference>
+    <Reference Include="Kingdee.BOS.Contracts, Version=8.0.361.9, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\WebSite\bin\Kingdee.BOS.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="Kingdee.BOS.Core, Version=8.0.144.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\WebSite\BIN\Kingdee.BOS.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Kingdee.BOS.DataEntity, Version=8.0.144.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\WebSite\BIN\Kingdee.BOS.DataEntity.dll</HintPath>
+    </Reference>
+    <Reference Include="Kingdee.BOS.OrmEngine, Version=8.0.144.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\WebSite\BIN\Kingdee.BOS.OrmEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="Kingdee.BOS.Performance, Version=8.0.361.9, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\WebSite\BIN\Kingdee.BOS.Performance.dll</HintPath>
+    </Reference>
+    <Reference Include="Kingdee.BOS.ServiceHelper, Version=8.0.144.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\WebSite\BIN\Kingdee.BOS.ServiceHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\WebSite\bin\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApigatewayConfiguration\ApigatewayConfig.cs" />
+    <Compile Include="ApigatewayConfiguration\ApigatewayServiceConfiguration.cs" />
+    <Compile Include="ApigatewayConfiguration\ApigatewayTaskInfo.cs" />
+    <Compile Include="ApigatewayConfiguration\ApigatewayUtils.cs" />
+    <Compile Include="ApigatewayConfiguration\EnterpriseWeChat\AddressBook.cs" />
+    <Compile Include="ApigatewayConfiguration\EnterpriseWeChat\SendTextMessageRequest.cs" />
+    <Compile Include="ApigatewayConfiguration\K3CloudRabbitMQMessage.cs" />
+    <Compile Include="ApigatewayConfiguration\RabbitMQMessage.cs" />
+    <Compile Include="BaseManagement\AddressRequest.cs" />
+    <Compile Include="BaseManagement\ApprovalMessageRequest.cs" />
+    <Compile Include="BaseManagement\BaseDataEntity.cs" />
+    <Compile Include="BaseManagement\CompanyComplaintRequest.cs" />
+    <Compile Include="BaseManagement\EnableCustomer.cs" />
+    <Compile Include="BaseManagement\EnableSupplier.cs" />
+    <Compile Include="BaseManagement\ENGBomInfo.cs" />
+    <Compile Include="BaseManagement\MesSupplyInfoEntity.cs" />
+    <Compile Include="BaseManagement\InvoicingRequest.cs" />
+    <Compile Include="BaseManagement\BaseInfo.cs" />
+    <Compile Include="BaseManagement\CustomerInfo.cs" />
+    <Compile Include="BaseManagement\CustomerRequest.cs" />
+    <Compile Include="BaseManagement\ItemGrpEntity.cs" />
+    <Compile Include="BaseManagement\LinkManRequest.cs" />
+    <Compile Include="BaseManagement\MaterialInfo.cs" />
+    <Compile Include="BaseManagement\NonStandardInfo.cs" />
+    <Compile Include="BaseManagement\OrganizationsInfo.cs" />
+    <Compile Include="BaseManagement\PayMethodRequest.cs" />
+    <Compile Include="BaseManagement\PayWayRequest.cs" />
+    <Compile Include="BaseManagement\PayTermInfo.cs" />
+    <Compile Include="BaseManagement\SyncSalesCustRequest.cs" />
+    <Compile Include="PayableManagement\MesCostPurGenerateCostPayableRequest.cs" />
+    <Compile Include="PlanOrderManagement\ForecastOrder.cs" />
+    <Compile Include="PlanOrderManagement\PlanOrder.cs" />
+    <Compile Include="ProductionManagement\Dispatch\SendMakeDispatchRequest.cs" />
+    <Compile Include="ProductionManagement\Dispatch\SendMesMakeResponse.cs" />
+    <Compile Include="ProductionManagement\MakeDispatchRequest.cs" />
+    <Compile Include="ProductionManagement\MesPrdMoChangeRequest.cs" />
+    <Compile Include="ProductionManagement\MesPrd_PPBOM.cs" />
+    <Compile Include="ProductionManagement\MesProductionCloseRequest.cs" />
+    <Compile Include="ProductionManagement\MesProductionReturnMtrl.cs" />
+    <Compile Include="ProductionManagement\MesProductionInStock.cs" />
+    <Compile Include="ProductionManagement\MesProductionFeedMtrl.cs" />
+    <Compile Include="ProductionManagement\MesProductionPicking.cs" />
+    <Compile Include="ProductionManagement\MesOneClickReturnMaterialRequest.cs" />
+    <Compile Include="ProductionManagement\PrdMoRequest.cs" />
+    <Compile Include="PurchaseManagement\ChangeCostPurchaseOrderRequest.cs" />
+    <Compile Include="PurchaseManagement\CostPurchaseOrderRequest.cs" />
+    <Compile Include="PurchaseManagement\MesPurchaseOrderCloseEntity.cs" />
+    <Compile Include="PurchaseManagement\MesMrAppToMrbRequest.cs" />
+    <Compile Include="PurchaseManagement\MesReceiveInStockRequest.cs" />
+    <Compile Include="PurchaseManagement\PurchaseOrderBillEntity.cs" />
+    <Compile Include="PurchaseManagement\PurchaseStockEntity.cs" />
+    <Compile Include="PurchaseManagement\PurchaseStockRequest.cs" />
+    <Compile Include="BaseManagement\SupplierRequest.cs" />
+    <Compile Include="BaseManagement\SupplierSmallRequest.cs" />
+    <Compile Include="BaseManagement\UserInfo.cs" />
+    <Compile Include="BaseManagement\WarehouseEntity.cs" />
+    <Compile Include="BomManagement\BomImportEntity.cs" />
+    <Compile Include="BomManagement\BomRequest.cs" />
+    <Compile Include="BaseManagement\WXUserRequest.cs" />
+    <Compile Include="Common\MaterialSmallBusinessDivision.cs" />
+    <Compile Include="Common\MessageHelp.cs" />
+    <Compile Include="Common\SendTextMessageRequest.cs" />
+    <Compile Include="Common\WarehouseApiSignature.cs" />
+    <Compile Include="Common\CommonApiRequest.cs" />
+    <Compile Include="Common\WebApiServiceEntity.cs" />
+    <Compile Include="Common\WebApiSignature.cs" />
+    <Compile Include="Common\WebUIConfigHelper.cs" />
+    <Compile Include="DemoBill\DemoCreateRequest.cs" />
+    <Compile Include="DirectSaleManagement\DirectSaleInfo.cs" />
+    <Compile Include="K3CloudConfiguration\K3CloudConfig.cs" />
+    <Compile Include="K3CloudConfiguration\K3CloudServiceConfiguration.cs" />
+    <Compile Include="NewtonsoftJsonConverter\BigintConverter.cs" />
+    <Compile Include="NewtonsoftJsonConverter\BoolConverter.cs" />
+    <Compile Include="NewtonsoftJsonConverter\DateTimeConverter.cs" />
+    <Compile Include="ProductionManagement\DepartmentRequest.cs" />
+    <Compile Include="ProductionManagement\DispatchEntity.cs" />
+    <Compile Include="ProductionManagement\Dispatch\DispatchBom.cs" />
+    <Compile Include="ProductionManagement\Dispatch\DispatchFixture.cs" />
+    <Compile Include="ProductionManagement\Dispatch\DispatchInfo.cs" />
+    <Compile Include="ProductionManagement\Dispatch\DispatchPart.cs" />
+    <Compile Include="ProductionManagement\Dispatch\DispatchProcess.cs" />
+    <Compile Include="ProductionManagement\Dispatch\DispatchProcessLine.cs" />
+    <Compile Include="ProductionManagement\Dispatch\DispatchProgramming.cs" />
+    <Compile Include="ProductionManagement\Dispatch\DispatchTool.cs" />
+    <Compile Include="ProductionManagement\Dispatch\DispatchToolItem.cs" />
+    <Compile Include="ProductionManagement\UserSyncToMesEntity.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PurchaseManagement\PrBillToPoBillEntity.cs" />
+    <Compile Include="PurchaseManagement\PurchaseOrderPushEntity.cs" />
+    <Compile Include="PurchaseManagement\PurchaseOrderSimpleEntity.cs" />
+    <Compile Include="PurchaseManagement\PurInStockToMesEntity.cs" />
+    <Compile Include="PurchaseManagement\PUR_RequisitionEntity.cs" />
+    <Compile Include="PurchaseManagement\PurchaseToMesEntity.cs" />
+    <Compile Include="PurchaseManagement\PurMrAppToMesEntity.cs" />
+    <Compile Include="PurchaseManagement\ReceiveDeliveryToMesEntity.cs" />
+    <Compile Include="PurchaseManagement\ReceiveExemptionInStockEntity.cs" />
+    <Compile Include="PurchaseManagement\Report\T_PUR_UrgentDeliveryLog.cs" />
+    <Compile Include="RabbitMQ\IMessageExecute.cs" />
+    <Compile Include="RabbitMQ\RabbitMQDataMessage.cs" />
+    <Compile Include="ReserveLinkManagement\ReserveLink.cs" />
+    <Compile Include="ResponseMessage.cs" />
+    <Compile Include="SalesManagement\AfterSalesRequest.cs" />
+    <Compile Include="SalesManagement\AfterSalesResponse.cs" />
+    <Compile Include="SalesManagement\ChangeSalesOrderRequest.cs" />
+    <Compile Include="BaseManagement\SalesCustRequest.cs" />
+    <Compile Include="SalesManagement\CustomerExpiry.cs" />
+    <Compile Include="SalesManagement\ReturnBillToMesEntity.cs" />
+    <Compile Include="SalesManagement\SalerCustList.cs" />
+    <Compile Include="SalesManagement\SalOutStockToMesEntity.cs" />
+    <Compile Include="SalesManagement\DeliveryToMesEntity.cs" />
+    <Compile Include="SalesManagement\MatchMoneyEntity.cs" />
+    <Compile Include="SalesManagement\MesGenerateReturnStockRequest.cs" />
+    <Compile Include="SalesManagement\ReturnDeliveryToMesEntity.cs" />
+    <Compile Include="SalesManagement\MesGenerateOutStockRequest.cs" />
+    <Compile Include="SalesManagement\MessageHelpForCredit.cs" />
+    <Compile Include="SalesManagement\QueryExpiryResponse.cs" />
+    <Compile Include="SalesManagement\RequirementOrderDetailRequest.cs" />
+    <Compile Include="SalesManagement\RequirementOrderRequest.cs" />
+    <Compile Include="SalesManagement\SaleOrderRequest.cs" />
+    <Compile Include="SalesManagement\SalesOrderBillRequest.cs" />
+    <Compile Include="SalesManagement\SalesOrderPushEntity.cs" />
+    <Compile Include="SalesManagement\SalesOrderScheduled\ChangeOrderTaskRequest.cs" />
+    <Compile Include="SalesManagement\SalesOrderScheduled\ReceiveOrderRequest.cs" />
+    <Compile Include="StockManagement\CloudWarehouseDnNoticeEntity.cs" />
+    <Compile Include="StockManagement\DeleteTempDeliveryAreaRequest.cs" />
+    <Compile Include="StockManagement\FuzzyQueryStockBaseQtyRequest.cs" />
+    <Compile Include="StockManagement\MesGenerateStkCountGainAndLossRequest.cs" />
+    <Compile Include="StockManagement\Mes_STK_MiscellaneousRequest.cs" />
+    <Compile Include="StockManagement\PutToTempDeliveryAreaRequest.cs" />
+    <Compile Include="StockManagement\PutToTempStockAreaRequest.cs" />
+    <Compile Include="StockManagement\StockBillRequest.cs" />
+    <Compile Include="NewtonsoftJsonConverter\DecimalConverter.cs" />
+    <Compile Include="StockManagement\StockLockUnLockEntity.cs" />
+    <Compile Include="StockManagement\UpdateStockConfig.cs" />
+    <Compile Include="StockManagement\WarehousesInventoryQueryEntity.cs" />
+    <Compile Include="SubReqOrderManagement\SubReqOrder.cs" />
+    <Compile Include="Utils\AddRabbitMessageUtils.cs" />
+    <Compile Include="Utils\ElectricActuatorServiceUtils.cs" />
+    <Compile Include="Utils\FormMetadataUtils.cs" />
+    <Compile Include="Utils\HttpClientDownloader.cs" />
+    <Compile Include="Utils\JsonConvertUtils.cs" />
+    <Compile Include="Utils\LoginServiceUtils.cs" />
+    <Compile Include="Utils\ResponseCode.cs" />
+    <Compile Include="Utils\SendTextMessageUtils.cs" />
+    <Compile Include="Utils\WarehouseApiRequest.cs" />
+    <Compile Include="Utils\WebApiServiceUtils.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

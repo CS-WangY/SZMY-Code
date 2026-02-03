@@ -1,0 +1,509 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>mymooo.k3cloud</name>
+    </assembly>
+    <members>
+        <member name="T:mymooo.k3cloud.Controllers.AddressBookController">
+            <summary>
+            企业微信SDK调用
+            </summary>
+        </member>
+        <member name="M:mymooo.k3cloud.Controllers.AddressBookController.#ctor(mymooo.weixinWork.SDK.AddressBook.AddressBookServiceClient)">
+            <summary>
+            企业微信SDK调用
+            </summary>
+        </member>
+        <member name="M:mymooo.k3cloud.Controllers.AddressBookController.GetLeveParent(System.String,System.Int32)">
+            <summary>
+            获取第几级父级用户信息
+            </summary>
+            <param name="usercode"></param>
+            <param name="level"></param>
+            <returns></returns>
+        </member>
+        <member name="T:mymooo.k3cloud.Controllers.ApplicationController">
+            <summary>
+            企业微信应用
+            </summary>
+            <param name="applicationServiceClient"></param>
+            <param name="kingdeeContent"></param>
+        </member>
+        <member name="M:mymooo.k3cloud.Controllers.ApplicationController.#ctor(mymooo.weixinWork.SDK.Application.ApplicationServiceClient,mymooo.k3cloud.core.Account.KingdeeContent)">
+            <summary>
+            企业微信应用
+            </summary>
+            <param name="applicationServiceClient"></param>
+            <param name="kingdeeContent"></param>
+        </member>
+        <member name="M:mymooo.k3cloud.Controllers.ApplicationController.SendTextMessage(mymooo.weixinWork.SDK.WeixinWorkMessage.Model.SendTextMessageRequest)">
+            <summary>
+            发送文本消息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.k3cloud.Controllers.ApplicationController.SendMarkdownMessage(mymooo.weixinWork.SDK.WeixinWorkMessage.Model.SendMarkdownMessageRequest)">
+            <summary>
+            发送 Markdown 消息
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.k3cloud.Controllers.ApplicationController.SendtextcardMessage(mymooo.weixinWork.SDK.WeixinWorkMessage.Model.SendTextCardMessageRequest)">
+            <summary>
+            发送 卡片 消息
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.k3cloud.Controllers.ApplicationController.CreateChat(mymooo.weixinWork.SDK.Application.Model.CreateChatRequest)">
+            <summary>
+            创建群组
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.k3cloud.Controllers.ApplicationController.GetChat(System.String)">
+            <summary>
+            获取群组信息
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.k3cloud.Controllers.ApplicationController.SendChatMarkDownMessage(mymooo.weixinWork.SDK.WeixinWorkMessage.Model.SendMarkdownMessageRequest)">
+            <summary>
+            发送群组 Markdown 消息
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="T:mymooo.k3cloud.Controllers.ApprovalController">
+            <summary>
+            审批应用
+            </summary>
+        </member>
+        <member name="M:mymooo.k3cloud.Controllers.ApprovalController.#ctor(mymooo.weixinWork.SDK.Approval.ApprovalServiceClient,mymooo.k3cloud.core.Account.KingdeeContent,mymooo.k3cloud.business.Services.Sales.SaleOrderService)">
+            <summary>
+            审批应用
+            </summary>
+        </member>
+        <member name="M:mymooo.k3cloud.Controllers.ApprovalController.GetApprovalDetail(mymooo.weixinWork.SDK.Approval.Model.GetApprovalDetailRequest)">
+            <summary>
+            获取审批详情
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.k3cloud.Controllers.ApprovalController.SendTextMessage(mymooo.weixinWork.SDK.WeixinWorkMessage.Model.SendTextMessageRequest)">
+            <summary>
+            发送文本消息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.k3cloud.Controllers.ApprovalController.SendMarkdownMessage(mymooo.weixinWork.SDK.WeixinWorkMessage.Model.SendMarkdownMessageRequest)">
+            <summary>
+            发送 Markdown 消息
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.k3cloud.Controllers.ApprovalController.SendtextcardMessage(mymooo.weixinWork.SDK.WeixinWorkMessage.Model.SendTextCardMessageRequest)">
+            <summary>
+            发送 卡片 消息
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.k3cloud.Controllers.ApprovalController.K3cloudDnLogisticsChangesApproval(mymooo.k3cloud.core.Approver.K3cloudDnLogisticsChangesRequest)">
+            <summary>
+            物流方式变更申请
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.k3cloud.Controllers.ApprovalController.K3cloudDnUrgentShipmentApproval(mymooo.k3cloud.core.Approver.K3cloudDnUrgentShipmentRequest)">
+            <summary>
+            加急发货申请
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.k3cloud.Controllers.ApprovalController.K3CloudGetApproval(System.String)">
+            <summary>
+            获取审批流信息
+            </summary>
+            <param name="applyeventno"></param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.k3cloud.Controllers.ApprovalController.K3CloudGetForecastApproval(System.String)">
+            <summary>
+            获取关闭预测单审批信息
+            </summary>
+            <param name="applyeventno"></param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.k3cloud.Controllers.ApprovalController.K3CloudClosedSalBillApproval(mymooo.k3cloud.core.Approver.K3CloudClosedSalOrderRequest)">
+            <summary>
+            金蝶审批关闭销售订单
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.k3cloud.Controllers.ApprovalController.K3CloudClosedForecastBillApproval(mymooo.k3cloud.core.Approver.K3CloudClosedForecastOrderRequest)">
+            <summary>
+            金蝶审批关闭预测单
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="T:mymooo.k3cloud.Controllers.FB3DViewController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:mymooo.k3cloud.Controllers.FB3DViewController.Index">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.k3cloud.Controllers.FB3DViewController.Get3DViewUrl">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.k3cloud.Controllers.FB3DViewController.Get3DView(mymooo.k3cloud.core.FB3DView.Request3DView)">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:mymooo.k3cloud.Controllers.FinanceController">
+            <summary>
+            财务
+            </summary>
+        </member>
+        <member name="M:mymooo.k3cloud.Controllers.FinanceController.#ctor(mymooo.k3cloud.business.Services.FinanceService)">
+            <summary>
+            财务
+            </summary>
+        </member>
+        <member name="M:mymooo.k3cloud.Controllers.FinanceController.MatchRecord(mymooo.core.Model.BussinessModel.K3Cloud.K3CloudRabbitMQMessage{mymooo.core.Model.BussinessModel.K3Cloud.Finance.MatchRecord,mymooo.core.Model.BussinessModel.K3Cloud.Finance.MatchRecord},System.Threading.CancellationToken)">
+            <summary>
+            核销记录
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:mymooo.k3cloud.Controllers.HomeController">
+            <summary>
+            home
+            </summary>
+        </member>
+        <member name="M:mymooo.k3cloud.Controllers.HomeController.#ctor(mymooo.k3cloud.core.Account.KingdeeContent)">
+            <summary>
+            home
+            </summary>
+        </member>
+        <member name="M:mymooo.k3cloud.Controllers.HomeController.Index">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.k3cloud.Controllers.HomeController.Test">
+            <summary>
+            测试
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.k3cloud.Controllers.HomeController.Privacy">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.k3cloud.Controllers.HomeController.CreateEntity">
+            <summary>
+            创建orm实体
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:mymooo.k3cloud.Controllers.InventoryController">
+            <summary>
+            库存服务
+            </summary>
+        </member>
+        <member name="M:mymooo.k3cloud.Controllers.InventoryController.#ctor(mymooo.k3cloud.business.Services.InventoryService)">
+            <summary>
+            库存服务
+            </summary>
+        </member>
+        <member name="M:mymooo.k3cloud.Controllers.InventoryController.UpdateInventory(mymooo.k3cloud.core.Inventory.InventoryBillInfo)">
+            <summary>
+            更新库存缓存
+            </summary>
+            <param name="inventory"></param>
+            <returns></returns>
+        </member>
+        <member name="T:mymooo.k3cloud.Controllers.OutStockController">
+            <summary>
+            销售出库单
+            </summary>
+        </member>
+        <member name="M:mymooo.k3cloud.Controllers.OutStockController.#ctor(mymooo.k3cloud.business.Services.Sales.OutStockService)">
+            <summary>
+            销售出库单
+            </summary>
+        </member>
+        <member name="M:mymooo.k3cloud.Controllers.OutStockController.GetDeliveryList(System.String)">
+            <summary>
+            获取发货数据
+            </summary>
+        </member>
+        <member name="M:mymooo.k3cloud.Controllers.OutStockController.AfsDetailResult(mymooo.k3cloud.core.Sales.AfsDetailResultRequest)">
+            <summary>
+            查询售后单据状态
+            </summary>
+        </member>
+        <member name="M:mymooo.k3cloud.Controllers.OutStockController.GetOutStockList(mymooo.k3cloud.core.Sales.SalOutStockRequest)">
+            <summary>
+            销售出库数据
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="T:mymooo.k3cloud.Controllers.PDMController">
+            <summary>
+            PDMController
+            </summary>
+        </member>
+        <member name="M:mymooo.k3cloud.Controllers.PDMController.#ctor(mymooo.pdm.SDK.PdmClient)">
+            <summary>
+            PDMController
+            </summary>
+        </member>
+        <member name="M:mymooo.k3cloud.Controllers.PDMController.GetPDMImageinfo(System.Collections.Generic.List{mymooo.pdm.SDK.Dto.QueryCappCacheRequest})">
+            <summary>
+            获取图库信息
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="T:mymooo.k3cloud.Controllers.ProductionController">
+            <summary>
+            生产管理 控制器
+            </summary>
+        </member>
+        <member name="M:mymooo.k3cloud.Controllers.ProductionController.#ctor(mymooo.k3cloud.business.Services.Production.ProductionService)">
+            <summary>
+            生产管理 控制器
+            </summary>
+        </member>
+        <member name="M:mymooo.k3cloud.Controllers.ProductionController.SendMakeDispatch(mymooo.k3cloud.core.ProductionModel.MakeDispatchRequest)">
+            <summary>
+            同步轮项目 发送mes
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.k3cloud.Controllers.ProductionController.MesRawMaterialsPrice(System.Collections.Generic.List{mymooo.k3cloud.core.ProductionModel.MesRawMaterialsRequest})">
+            <summary>
+            mes获取原材料单价
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="T:mymooo.k3cloud.Controllers.PurchaseOrderController">
+            <summary>
+            采购订单应用
+            </summary>
+        </member>
+        <member name="M:mymooo.k3cloud.Controllers.PurchaseOrderController.#ctor(mymooo.k3cloud.business.Services.Purchase.PurchaseOrderService)">
+            <summary>
+            采购订单应用
+            </summary>
+        </member>
+        <member name="M:mymooo.k3cloud.Controllers.PurchaseOrderController.LoadRedisCache(mymooo.core.Model.BussinessModel.K3Cloud.K3CloudRabbitMQMessage{mymooo.k3cloud.core.PurchaseModel.POOrder,mymooo.k3cloud.core.PurchaseModel.POOrderEntryItem})">
+            <summary>
+            插入缓存
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.k3cloud.Controllers.PurchaseOrderController.FullPurchaseRedisCache">
+            <summary>
+            批量更新历史采购价缓存
+            </summary>
+        </member>
+        <member name="T:mymooo.k3cloud.Controllers.RabbitMQController">
+            <summary>
+            MQ相关
+            </summary>
+            <param name="kingdeeContent">上下文</param>
+        </member>
+        <member name="M:mymooo.k3cloud.Controllers.RabbitMQController.#ctor(mymooo.k3cloud.core.Account.KingdeeContent)">
+            <summary>
+            MQ相关
+            </summary>
+            <param name="kingdeeContent">上下文</param>
+        </member>
+        <member name="M:mymooo.k3cloud.Controllers.RabbitMQController.GetMessageId(System.Int32)">
+            <summary>
+            获取MessageId
+            </summary>
+            <param name="count"></param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.k3cloud.Controllers.RabbitMQController.SendMqMessage(System.Threading.CancellationToken)">
+            <summary>
+            发送mq消息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:mymooo.k3cloud.Controllers.ReportController">
+            <summary>
+            客户关系查询未出货数接口
+            </summary>
+        </member>
+        <member name="M:mymooo.k3cloud.Controllers.ReportController.#ctor(mymooo.k3cloud.business.Services.Report.ReportNotDeliverService,mymooo.k3cloud.business.Services.Report.ReportNotCheckAccountService,mymooo.k3cloud.business.Services.Report.ReportNotOpenAmountService,mymooo.k3cloud.business.Services.Report.ReportNotReceiveService)">
+            <summary>
+            客户关系查询未出货数接口
+            </summary>
+        </member>
+        <member name="M:mymooo.k3cloud.Controllers.ReportController.GetNotDeliverTotals(mymooo.k3cloud.core.ReportModel.CrmReportRequestModel)">
+            <summary>
+            获取未出货汇总
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.k3cloud.Controllers.ReportController.GetNotDeliverList(mymooo.core.PageRequest{mymooo.k3cloud.core.ReportModel.CrmReportRequestModel})">
+            <summary>
+            获取未出货记录
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.k3cloud.Controllers.ReportController.GetCustNotDeliverList(mymooo.core.PageRequest{mymooo.k3cloud.core.ReportModel.CrmReportRequestModel})">
+            <summary>
+            获取客户未出货记录
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.k3cloud.Controllers.ReportController.GetNotCheckAccountTotals(mymooo.k3cloud.core.ReportModel.CrmReportRequestModel)">
+            <summary>
+            获取未对账合计
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.k3cloud.Controllers.ReportController.GetNotCheckAccountList(mymooo.core.PageRequest{mymooo.k3cloud.core.ReportModel.CrmReportRequestModel})">
+            <summary>
+            获取未对账明细
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.k3cloud.Controllers.ReportController.GetCustNotCheckAccountList(mymooo.core.PageRequest{mymooo.k3cloud.core.ReportModel.CrmReportRequestModel})">
+            <summary>
+            获取客户未对账明细
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.k3cloud.Controllers.ReportController.GetNotOpenAccountTotals(mymooo.k3cloud.core.ReportModel.CrmReportRequestModel)">
+            <summary>
+            获取未对账合计
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.k3cloud.Controllers.ReportController.GetNotOpenAccountList(mymooo.core.PageRequest{mymooo.k3cloud.core.ReportModel.CrmReportRequestModel})">
+            <summary>
+            获取未对账明细
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.k3cloud.Controllers.ReportController.GetCustNotOpenAccountList(mymooo.core.PageRequest{mymooo.k3cloud.core.ReportModel.CrmReportRequestModel})">
+            <summary>
+            获取客户未对账明细
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.k3cloud.Controllers.ReportController.GetNotReceiveTotals(mymooo.k3cloud.core.ReportModel.CrmReportRequestModel)">
+            <summary>
+            获取未收款核销合计
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.k3cloud.Controllers.ReportController.GetNotReceiveList(mymooo.core.PageRequest{mymooo.k3cloud.core.ReportModel.CrmReportRequestModel})">
+            <summary>
+            获取未收款核销明细
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.k3cloud.Controllers.ReportController.GetCustNotReceiveList(mymooo.core.PageRequest{mymooo.k3cloud.core.ReportModel.CrmReportRequestModel})">
+            <summary>
+            获取客户未收款核销明细
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="T:mymooo.k3cloud.Controllers.SalesOrderController">
+            <summary>
+            销售订单应用
+            </summary>
+        </member>
+        <member name="M:mymooo.k3cloud.Controllers.SalesOrderController.#ctor(mymooo.k3cloud.business.Services.Sales.SaleOrderService)">
+            <summary>
+            销售订单应用
+            </summary>
+        </member>
+        <member name="M:mymooo.k3cloud.Controllers.SalesOrderController.SalesOrderCostPriceRedisCache">
+            <summary>
+            批量更新销售成本价缓存
+            </summary>
+        </member>
+        <member name="T:mymooo.k3cloud.Controllers.StockController">
+            <summary>
+            仓库应用
+            </summary>
+        </member>
+        <member name="M:mymooo.k3cloud.Controllers.StockController.#ctor(mymooo.k3cloud.business.Services.Stock.StockService)">
+            <summary>
+            仓库应用
+            </summary>
+        </member>
+        <member name="M:mymooo.k3cloud.Controllers.StockController.MesFuzzyQueryStockBaseQty(mymooo.k3cloud.core.StockModel.FuzzyQueryStockBaseQtyRequest)">
+            <summary>
+            MES根据型材，材质，长宽高模糊查询总库存
+            </summary>
+        </member>
+        <member name="M:mymooo.k3cloud.Controllers.StockController.MesStockQuantity(System.Collections.Generic.List{System.String})">
+            <summary>
+            获取即时库存(MES专用)
+            </summary>
+        </member>
+        <member name="T:mymooo.k3cloud.Controllers.Sub_SubreqController">
+            <summary>
+            委外管理 控制器
+            </summary>
+        </member>
+        <member name="M:mymooo.k3cloud.Controllers.Sub_SubreqController.#ctor(mymooo.k3cloud.business.Services.Sub_SubreqOrder.Sub_SubreqService)">
+            <summary>
+            委外管理 控制器
+            </summary>
+        </member>
+        <member name="M:mymooo.k3cloud.Controllers.Sub_SubreqController.SendMakeDispatch(mymooo.k3cloud.core.SubReqModel.SubReqOrderRequests)">
+            <summary>
+            轴承座项目 发送mes
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Mymooo.Threed.WebService.SDK</name>
+    </assembly>
+    <members>
+        <member name="T:Mymooo.Threed.WebService.SDK.ThreedServiceClient`2">
+            <summary>
+            3d服务
+            </summary>
+            <param name="httpService"></param>
+        </member>
+        <member name="M:Mymooo.Threed.WebService.SDK.ThreedServiceClient`2.#ctor(mymooo.core.Utils.Service.HttpService)">
+            <summary>
+            3d服务
+            </summary>
+            <param name="httpService"></param>
+        </member>
+        <member name="M:Mymooo.Threed.WebService.SDK.ThreedServiceClient`2.GenerateThreedFile(`0,mymooo.product.selection.Elasticsearch.ProductResponse,Mymooo.Threed.WebService.Core.ThreedModel.ThreedFileType)">
+            <summary>
+            获取3d文件
+            </summary>
+            <param name="context">上下文</param>
+            <param name="request">请求参数</param>
+            <param name="fileType">文件类型</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

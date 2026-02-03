@@ -1,0 +1,486 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>mymooo.pdm.SDK</name>
+    </assembly>
+    <members>
+        <member name="P:mymooo.pdm.SDK.Dto.MaterialDto.id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:mymooo.pdm.SDK.Dto.MaterialDto.name">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:mymooo.pdm.SDK.Dto.MaterialDto.price">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:mymooo.pdm.SDK.Dto.MaterialDto.density">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:mymooo.pdm.SDK.Dto.MaterialDto.cuttingHourFactor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:mymooo.pdm.SDK.Dto.MaterialDto.category">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:mymooo.pdm.SDK.Dto.MaterialDto.createTime">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:mymooo.pdm.SDK.Dto.MaterialDto.updateTime">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:mymooo.pdm.SDK.Dto.PdmResponse`1.success">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:mymooo.pdm.SDK.Dto.PdmResponse`1.code">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:mymooo.pdm.SDK.Dto.PdmResponse`1.msg">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:mymooo.pdm.SDK.Dto.PdmResponse`1.data">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:mymooo.pdm.SDK.Dto.QueryCappCacheRequest.InquiryOrder">
+            <summary>
+            报价单号
+            </summary>
+        </member>
+        <member name="P:mymooo.pdm.SDK.Dto.QueryCappCacheRequest.DrawingNumber">
+            <summary>
+            图号
+            </summary>
+        </member>
+        <member name="T:mymooo.pdm.SDK.Dto.QuoteRequestDtocs">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:mymooo.pdm.SDK.Dto.QuoteRequestDtocs.SalesOrderNo">
+            <summary>
+            销售单号
+            </summary>
+        </member>
+        <member name="P:mymooo.pdm.SDK.Dto.QuoteRequestDtocs.SalesOrderLineNo">
+            <summary>
+            销售订单行号
+            </summary>
+        </member>
+        <member name="P:mymooo.pdm.SDK.Dto.QuoteRequestDtocs.DrawingRecordId">
+            <summary>
+            图纸ID
+            </summary>
+        </member>
+        <member name="P:mymooo.pdm.SDK.Dto.QuoteRequestDtocs.DrawingNumber">
+            <summary>
+            图号
+            </summary>
+        </member>
+        <member name="P:mymooo.pdm.SDK.Dto.QuoteRequestDtocs.Qty">
+            <summary>
+            数量
+            </summary>
+        </member>
+        <member name="P:mymooo.pdm.SDK.Dto.QuoteRequestDtocs.PartType">
+            <summary>
+            零件类型
+            </summary>
+        </member>
+        <member name="P:mymooo.pdm.SDK.Dto.QuoteRequestDtocs.Dimension1">
+            <summary>
+            长
+            </summary>
+        </member>
+        <member name="P:mymooo.pdm.SDK.Dto.QuoteRequestDtocs.Dimension2">
+            <summary>
+            宽
+            </summary>
+        </member>
+        <member name="P:mymooo.pdm.SDK.Dto.QuoteRequestDtocs.Dimension3">
+            <summary>
+            高
+            </summary>
+        </member>
+        <member name="P:mymooo.pdm.SDK.Dto.QuoteRequestDtocs.Long">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:mymooo.pdm.SDK.Dto.QuoteRequestDtocs.Width">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:mymooo.pdm.SDK.Dto.QuoteRequestDtocs.Height">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="P:mymooo.pdm.SDK.Dto.QuoteRequestDtocs.MaterialId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:mymooo.pdm.SDK.Dto.QuoteRequestDtocs.MaterialName">
+            <summary>
+            材料名称
+            </summary>
+        </member>
+        <member name="P:mymooo.pdm.SDK.Dto.QuoteRequestDtocs.MaterialPrice">
+            <summary>
+            材料价格
+            </summary>
+        </member>
+        <member name="P:mymooo.pdm.SDK.Dto.QuoteRequestDtocs.MaterialDensity">
+            <summary>
+            材料密度
+            </summary>
+        </member>
+        <member name="P:mymooo.pdm.SDK.Dto.QuoteRequestDtocs.MaterialCuttingHourFactor">
+            <summary>
+            材料切削系数
+            </summary>
+        </member>
+        <member name="P:mymooo.pdm.SDK.Dto.QuoteRequestDtocs.Volume">
+            <summary>
+            零件体积
+            </summary>
+        </member>
+        <member name="P:mymooo.pdm.SDK.Dto.QuoteRequestDtocs.Weight">
+            <summary>
+            零件重量
+            </summary>
+        </member>
+        <member name="P:mymooo.pdm.SDK.Dto.QuoteRequestDtocs.SurfaceArea">
+            <summary>
+            表面积
+            </summary>
+        </member>
+        <member name="P:mymooo.pdm.SDK.Dto.QuoteRequestDtocs.BlankWeight">
+            <summary>
+            坯料重量
+            </summary>
+        </member>
+        <member name="P:mymooo.pdm.SDK.Dto.QuoteRequestDtocs.BlankSingleBaseCost">
+            <summary>
+            坯料单件成本
+            </summary>
+        </member>
+        <member name="P:mymooo.pdm.SDK.Dto.QuoteRequestDtocs.BlankCostRatio">
+            <summary>
+            坯料费用占比
+            </summary>
+        </member>
+        <member name="P:mymooo.pdm.SDK.Dto.QuoteRequestDtocs.MachineId">
+            <summary>
+            设备Id
+            </summary>
+        </member>
+        <member name="P:mymooo.pdm.SDK.Dto.QuoteRequestDtocs.MachineName">
+            <summary>
+            设备名称
+            </summary>
+        </member>
+        <member name="P:mymooo.pdm.SDK.Dto.QuoteRequestDtocs.MachinePrice">
+            <summary>
+            设备单价
+            </summary>
+        </member>
+        <member name="P:mymooo.pdm.SDK.Dto.QuoteRequestDtocs.OriginCuttingHours">
+            <summary>
+            原始加工工时(未乘以材质系数)
+            </summary>
+        </member>
+        <member name="P:mymooo.pdm.SDK.Dto.QuoteRequestDtocs.CuttingHours">
+            <summary>
+            加工工时
+            </summary>
+        </member>
+        <member name="P:mymooo.pdm.SDK.Dto.QuoteRequestDtocs.ProcessCost">
+            <summary>
+            加工费
+            </summary>
+        </member>
+        <member name="P:mymooo.pdm.SDK.Dto.QuoteRequestDtocs.ProcessCostRatio">
+            <summary>
+            加工费用占比
+            </summary>
+        </member>
+        <member name="P:mymooo.pdm.SDK.Dto.QuoteRequestDtocs.ReplaceCost">
+            <summary>
+            换产成本
+            </summary>
+        </member>
+        <member name="P:mymooo.pdm.SDK.Dto.QuoteRequestDtocs.ClampingCount">
+            <summary>
+            夹数
+            </summary>
+        </member>
+        <member name="P:mymooo.pdm.SDK.Dto.QuoteRequestDtocs.FixtureCost">
+            <summary>
+            装夹成本
+            </summary>
+        </member>
+        <member name="P:mymooo.pdm.SDK.Dto.QuoteRequestDtocs.ManualCost">
+            <summary>
+            人工成本
+            </summary>
+        </member>
+        <member name="P:mymooo.pdm.SDK.Dto.QuoteRequestDtocs.ManualCostRatio">
+            <summary>
+            人工费用占比
+            </summary>
+        </member>
+        <member name="P:mymooo.pdm.SDK.Dto.QuoteRequestDtocs.AfterProcessSinglePrice">
+            <summary>
+            后处理单价
+            </summary>
+        </member>
+        <member name="P:mymooo.pdm.SDK.Dto.QuoteRequestDtocs.AfterSingleBaseCost">
+            <summary>
+            后处理单件成本
+            </summary>
+        </member>
+        <member name="P:mymooo.pdm.SDK.Dto.QuoteRequestDtocs.OtherTechCost">
+            <summary>
+            其它工序成本
+            </summary>
+        </member>
+        <member name="P:mymooo.pdm.SDK.Dto.QuoteRequestDtocs.OtherLossCost">
+            <summary>
+            其它损耗成本
+            </summary>
+        </member>
+        <member name="P:mymooo.pdm.SDK.Dto.QuoteRequestDtocs.AfterProcessCostRatio">
+            <summary>
+            后处理费用占比
+            </summary>
+        </member>
+        <member name="P:mymooo.pdm.SDK.Dto.QuoteRequestDtocs.ManagementFee">
+            <summary>
+            管理费
+            </summary>
+        </member>
+        <member name="P:mymooo.pdm.SDK.Dto.QuoteRequestDtocs.Profit">
+            <summary>
+            利润
+            </summary>
+        </member>
+        <member name="P:mymooo.pdm.SDK.Dto.QuoteRequestDtocs.ProfitRatio">
+            <summary>
+            利润率
+            </summary>
+        </member>
+        <member name="P:mymooo.pdm.SDK.Dto.QuoteRequestDtocs.TaxFee">
+            <summary>
+            税费
+            </summary>
+        </member>
+        <member name="P:mymooo.pdm.SDK.Dto.QuoteRequestDtocs.SingleCost">
+            <summary>
+            单价
+            </summary>
+        </member>
+        <member name="P:mymooo.pdm.SDK.Dto.QuoteRequestDtocs.TotalCost">
+            <summary>
+            总价
+            </summary>
+        </member>
+        <member name="P:mymooo.pdm.SDK.Dto.QuoteRequestDtocs.SurfaceTreatment">
+            <summary>
+            表处类型
+            </summary>
+        </member>
+        <member name="P:mymooo.pdm.SDK.Dto.QuoteRequestDtocs.SurfacePrice">
+            <summary>
+            表处单价
+            </summary>
+        </member>
+        <member name="P:mymooo.pdm.SDK.Dto.QuoteRequestDtocs.SurfaceCost">
+            <summary>
+            表处单价成本
+            </summary>
+        </member>
+        <member name="P:mymooo.pdm.SDK.Dto.QuoteRequestDtocs.SurfaceRatio">
+            <summary>
+            表处费用占比(%)
+            </summary>
+        </member>
+        <member name="P:mymooo.pdm.SDK.Dto.QuoteRequestDtocs.DrawingFileUrl">
+            <summary>
+            文件地址
+            </summary>
+        </member>
+        <member name="P:mymooo.pdm.SDK.Dto.QuoteRequestDtocs.PartTypeName">
+            <summary>
+            零件类别名称
+            </summary>
+        </member>
+        <member name="P:mymooo.pdm.SDK.Dto.QuoteRequestDtocs.BlankType">
+            <summary>
+            类型，值为棒料或柱料
+            </summary>
+        </member>
+        <member name="P:mymooo.pdm.SDK.Dto.QuoteRequestDtocs.HeatTreatment">
+            <summary>
+            热处理，例如淬火
+            </summary>
+        </member>
+        <member name="P:mymooo.pdm.SDK.Dto.QuoteRequestDtocs.FinalCost">
+            <summary>
+            最终成本
+            </summary>
+        </member>
+        <member name="P:mymooo.pdm.SDK.Dto.QuoteRequestDtocs.StlFileUrl">
+            <summary>
+            STL文件URL
+            </summary>
+        </member>
+        <member name="P:mymooo.pdm.SDK.Dto.QuoteRequestDtocs.ThumbnailFileUrl">
+            <summary>
+            缩略图文件URL
+            </summary>
+        </member>
+        <member name="P:mymooo.pdm.SDK.Dto.SurfacetreatmentDto.id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:mymooo.pdm.SDK.Dto.SurfacetreatmentDto.name">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:mymooo.pdm.SDK.Dto.SurfacetreatmentDto.pricePerSquare">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:mymooo.pdm.SDK.Dto.SurfacetreatmentDto.factor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:mymooo.pdm.SDK.Dto.SurfacetreatmentDto.createTime">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:mymooo.pdm.SDK.Dto.SurfacetreatmentDto.updateTime">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:mymooo.pdm.SDK.Dto.UploadProductRequestDto.WeChatUserCode">
+            <summary>
+            微信用户编码 用于记录上传图纸的用户
+            </summary>
+        </member>
+        <member name="P:mymooo.pdm.SDK.Dto.UploadProductRequestDto.Files">
+            <summary>
+            单个零件对应的图纸文件（2D+3D）
+            </summary>
+        </member>
+        <member name="P:mymooo.pdm.SDK.Dto.UploadProductRequestDto.DrawingNumber">
+            <summary>
+            图号/客户型号/蚂蚁型号
+            </summary>
+        </member>
+        <member name="P:mymooo.pdm.SDK.Dto.UploadProductRequestDto.CustomerCode">
+            <summary>
+            客户编码
+            </summary>
+        </member>
+        <member name="P:mymooo.pdm.SDK.Dto.UploadProductRequestDto.SalesOrderNo">
+            <summary>
+            销售单号
+            </summary>
+        </member>
+        <member name="T:mymooo.pdm.SDK.PdmClient">
+            <summary>
+            Pdm相关接口
+            </summary>
+        </member>
+        <member name="M:mymooo.pdm.SDK.PdmClient.#ctor(mymooo.core.Cache.RedisCache,mymooo.core.Utils.Service.HttpService,mymooo.core.Config.ApigatewayConfig)">
+            <summary>
+            Pdm相关接口
+            </summary>
+        </member>
+        <member name="M:mymooo.pdm.SDK.PdmClient.SurfacetreatmentQuery">
+            <summary>
+            获取所有表面处理
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.pdm.SDK.PdmClient.PartTypeQuery">
+            <summary>
+            获取零件类型数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.pdm.SDK.PdmClient.MaterialQuery">
+            <summary>
+            获取所有材料数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.pdm.SDK.PdmClient.UploadProduct(mymooo.pdm.SDK.Dto.UploadProductRequestDto)">
+            <summary>
+            上传产品图纸
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.pdm.SDK.PdmClient.CheckProductExist(System.Collections.Generic.List{System.String})">
+            <summary>
+            检查图档是否全部存在
+            </summary>
+            <param name="customerNumbers"></param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.pdm.SDK.PdmClient.AddQuote(mymooo.pdm.SDK.Dto.QuoteRequestDtocs)">
+            <summary>
+            新增或更新销售订单报价信息
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.pdm.SDK.PdmClient.SetQuotationByCAPP(mymooo.pdm.SDK.Dto.QuoteRequestDtocs)">
+            <summary>
+            写入Redis
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.pdm.SDK.PdmClient.GetQuotationByCapp(System.Collections.Generic.List{mymooo.pdm.SDK.Dto.QueryCappCacheRequest})">
+            <summary>
+            读取Redis
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

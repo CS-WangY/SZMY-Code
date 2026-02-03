@@ -1,0 +1,153 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\mymooo.weixinWork\\src\\mymooo.weixinWork\\mymooo.weixinWork\\mymooo.weixinWork.csproj": {}
+  },
+  "projects": {
+    "D:\\mymooo.weixinWork\\src\\mymooo.weixinWork\\mymooo.weixinWork.SDK\\mymooo.weixinWork.SDK.csproj": {
+      "version": "1.0.2.2",
+      "restore": {
+        "projectUniqueName": "D:\\mymooo.weixinWork\\src\\mymooo.weixinWork\\mymooo.weixinWork.SDK\\mymooo.weixinWork.SDK.csproj",
+        "projectName": "mymooo.weixinWork.SDK",
+        "projectPath": "D:\\mymooo.weixinWork\\src\\mymooo.weixinWork\\mymooo.weixinWork.SDK\\mymooo.weixinWork.SDK.csproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+        "outputPath": "D:\\mymooo.weixinWork\\src\\mymooo.weixinWork\\mymooo.weixinWork.SDK\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://inedo.mymooo.com/nuget/mymooo/v3/index.json": {},
+          "https://inedo.mymooo.com/nuget/nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "allWarningsAsErrors": true,
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "mymooo.core": {
+              "target": "Package",
+              "version": "[1.4.1.92, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\mymooo.weixinWork\\src\\mymooo.weixinWork\\mymooo.weixinWork\\mymooo.weixinWork.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\mymooo.weixinWork\\src\\mymooo.weixinWork\\mymooo.weixinWork\\mymooo.weixinWork.csproj",
+        "projectName": "mymooo.weixinWork",
+        "projectPath": "D:\\mymooo.weixinWork\\src\\mymooo.weixinWork\\mymooo.weixinWork\\mymooo.weixinWork.csproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+        "outputPath": "D:\\mymooo.weixinWork\\src\\mymooo.weixinWork\\mymooo.weixinWork\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://inedo.mymooo.com/nuget/mymooo/v3/index.json": {},
+          "https://inedo.mymooo.com/nuget/nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\mymooo.weixinWork\\src\\mymooo.weixinWork\\mymooo.weixinWork.SDK\\mymooo.weixinWork.SDK.csproj": {
+                "projectPath": "D:\\mymooo.weixinWork\\src\\mymooo.weixinWork\\mymooo.weixinWork.SDK\\mymooo.weixinWork.SDK.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "allWarningsAsErrors": true,
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "mymooo.core": {
+              "target": "Package",
+              "version": "[1.4.1.92, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

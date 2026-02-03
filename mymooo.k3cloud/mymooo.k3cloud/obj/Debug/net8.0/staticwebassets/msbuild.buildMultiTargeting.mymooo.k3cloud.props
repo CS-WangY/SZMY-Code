@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\mymooo.k3cloud.props" />
+</Project>

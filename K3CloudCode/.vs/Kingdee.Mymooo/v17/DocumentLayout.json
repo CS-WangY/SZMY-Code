@@ -1,0 +1,133 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\K3Cloud\\Code\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{03DFEF29-598B-4115-BDC9-23E8565BD19F}|Kingdee.Mymooo.Business.PlugIn\\Kingdee.Mymooo.Business.PlugIn.csproj|d:\\k3cloud\\code\\kingdee.mymooo.business.plugin\\engmanagement\\importexcelbom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03DFEF29-598B-4115-BDC9-23E8565BD19F}|Kingdee.Mymooo.Business.PlugIn\\Kingdee.Mymooo.Business.PlugIn.csproj|solutionrelative:kingdee.mymooo.business.plugin\\engmanagement\\importexcelbom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03DFEF29-598B-4115-BDC9-23E8565BD19F}|Kingdee.Mymooo.Business.PlugIn\\Kingdee.Mymooo.Business.PlugIn.csproj|d:\\k3cloud\\code\\kingdee.mymooo.business.plugin\\salesmanagement\\orgrequirementorderbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03DFEF29-598B-4115-BDC9-23E8565BD19F}|Kingdee.Mymooo.Business.PlugIn\\Kingdee.Mymooo.Business.PlugIn.csproj|solutionrelative:kingdee.mymooo.business.plugin\\salesmanagement\\orgrequirementorderbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA099D6E-2722-47F0-A401-DCE1F8C4BBBB}|Kingdee.Mymooo.ServiceHelper\\Kingdee.Mymooo.ServiceHelper.csproj|d:\\k3cloud\\code\\kingdee.mymooo.servicehelper\\basemanagement\\engbomservicehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA099D6E-2722-47F0-A401-DCE1F8C4BBBB}|Kingdee.Mymooo.ServiceHelper\\Kingdee.Mymooo.ServiceHelper.csproj|solutionrelative:kingdee.mymooo.servicehelper\\basemanagement\\engbomservicehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC6FE149-7F1A-40A4-A785-A86D7F3F07FA}|Kingdee.Mymooo.Contracts\\Kingdee.Mymooo.Contracts.csproj|d:\\k3cloud\\code\\kingdee.mymooo.contracts\\basemanagement\\iengbomservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC6FE149-7F1A-40A4-A785-A86D7F3F07FA}|Kingdee.Mymooo.Contracts\\Kingdee.Mymooo.Contracts.csproj|solutionrelative:kingdee.mymooo.contracts\\basemanagement\\iengbomservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC8B3050-B8CA-4483-BECA-05CC9B9FCE3F}|Kingdee.Mymooo.ServicePlugIn\\Kingdee.Mymooo.ServicePlugIn.csproj|d:\\k3cloud\\code\\kingdee.mymooo.serviceplugin\\saloutstock\\convertoutstock_receivable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC8B3050-B8CA-4483-BECA-05CC9B9FCE3F}|Kingdee.Mymooo.ServicePlugIn\\Kingdee.Mymooo.ServicePlugIn.csproj|solutionrelative:kingdee.mymooo.serviceplugin\\saloutstock\\convertoutstock_receivable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 10,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IENGBomService.cs",
+              "DocumentMoniker": "D:\\K3Cloud\\Code\\Kingdee.Mymooo.Contracts\\BaseManagement\\IENGBomService.cs",
+              "RelativeDocumentMoniker": "Kingdee.Mymooo.Contracts\\BaseManagement\\IENGBomService.cs",
+              "ToolTip": "D:\\K3Cloud\\Code\\Kingdee.Mymooo.Contracts\\BaseManagement\\IENGBomService.cs",
+              "RelativeToolTip": "Kingdee.Mymooo.Contracts\\BaseManagement\\IENGBomService.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAswBgAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-30T09:47:00.368Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ENGBomServiceHelper.cs",
+              "DocumentMoniker": "D:\\K3Cloud\\Code\\Kingdee.Mymooo.ServiceHelper\\BaseManagement\\ENGBomServiceHelper.cs",
+              "RelativeDocumentMoniker": "Kingdee.Mymooo.ServiceHelper\\BaseManagement\\ENGBomServiceHelper.cs",
+              "ToolTip": "D:\\K3Cloud\\Code\\Kingdee.Mymooo.ServiceHelper\\BaseManagement\\ENGBomServiceHelper.cs",
+              "RelativeToolTip": "Kingdee.Mymooo.ServiceHelper\\BaseManagement\\ENGBomServiceHelper.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAuwCgAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-30T09:46:52.827Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:135:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:136:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ConvertOutStock_Receivable.cs",
+              "DocumentMoniker": "D:\\K3Cloud\\Code\\Kingdee.Mymooo.ServicePlugIn\\SalOutstock\\ConvertOutStock_Receivable.cs",
+              "RelativeDocumentMoniker": "Kingdee.Mymooo.ServicePlugIn\\SalOutstock\\ConvertOutStock_Receivable.cs",
+              "ToolTip": "D:\\K3Cloud\\Code\\Kingdee.Mymooo.ServicePlugIn\\SalOutstock\\ConvertOutStock_Receivable.cs",
+              "RelativeToolTip": "Kingdee.Mymooo.ServicePlugIn\\SalOutstock\\ConvertOutStock_Receivable.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAADwvy8AAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T07:59:06.312Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ImportExcelBom.cs",
+              "DocumentMoniker": "D:\\K3Cloud\\Code\\Kingdee.Mymooo.Business.PlugIn\\ENGManagement\\ImportExcelBom.cs",
+              "RelativeDocumentMoniker": "Kingdee.Mymooo.Business.PlugIn\\ENGManagement\\ImportExcelBom.cs",
+              "ToolTip": "D:\\K3Cloud\\Code\\Kingdee.Mymooo.Business.PlugIn\\ENGManagement\\ImportExcelBom.cs",
+              "RelativeToolTip": "Kingdee.Mymooo.Business.PlugIn\\ENGManagement\\ImportExcelBom.cs",
+              "ViewState": "AgIAADkBAAAAAAAAAAAmwEUBAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T01:48:55.363Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "OrgRequirementOrderBusiness.cs",
+              "DocumentMoniker": "D:\\K3Cloud\\Code\\Kingdee.Mymooo.Business.PlugIn\\SalesManagement\\OrgRequirementOrderBusiness.cs",
+              "RelativeDocumentMoniker": "Kingdee.Mymooo.Business.PlugIn\\SalesManagement\\OrgRequirementOrderBusiness.cs",
+              "ToolTip": "D:\\K3Cloud\\Code\\Kingdee.Mymooo.Business.PlugIn\\SalesManagement\\OrgRequirementOrderBusiness.cs",
+              "RelativeToolTip": "Kingdee.Mymooo.Business.PlugIn\\SalesManagement\\OrgRequirementOrderBusiness.cs",
+              "ViewState": "AgIAAEsAAAAAAAAAAADwv0oAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T01:48:55.868Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

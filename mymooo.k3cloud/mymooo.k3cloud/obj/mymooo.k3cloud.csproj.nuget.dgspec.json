@@ -1,0 +1,354 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\k3cloudApi\\src\\mymooo.k3cloud\\mymooo.k3cloud\\mymooo.k3cloud.csproj": {}
+  },
+  "projects": {
+    "D:\\k3cloudApi\\src\\mymooo.k3cloud\\mymooo.k3cloud.business\\mymooo.k3cloud.business.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\k3cloudApi\\src\\mymooo.k3cloud\\mymooo.k3cloud.business\\mymooo.k3cloud.business.csproj",
+        "projectName": "mymooo.k3cloud.business",
+        "projectPath": "D:\\k3cloudApi\\src\\mymooo.k3cloud\\mymooo.k3cloud.business\\mymooo.k3cloud.business.csproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+        "outputPath": "D:\\k3cloudApi\\src\\mymooo.k3cloud\\mymooo.k3cloud.business\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://inedo.mymooo.com/nuget/mymooo/v3/index.json": {},
+          "https://inedo.mymooo.com/nuget/nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\k3cloudApi\\src\\mymooo.k3cloud\\mymooo.k3cloud.core\\mymooo.k3cloud.core.csproj": {
+                "projectPath": "D:\\k3cloudApi\\src\\mymooo.k3cloud\\mymooo.k3cloud.core\\mymooo.k3cloud.core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "allWarningsAsErrors": true,
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Mymooo.Threed.WebService.SDK": {
+              "target": "Package",
+              "version": "[1.2.1.9, )"
+            },
+            "com.mymooo.credit.SDK": {
+              "target": "Package",
+              "version": "[1.2.1.10, )"
+            },
+            "mymooo.core": {
+              "target": "Package",
+              "version": "[1.4.1.124, )"
+            },
+            "mymooo.pdm.SDK": {
+              "target": "Package",
+              "version": "[1.2.1.7, )"
+            },
+            "mymooo.product.selection": {
+              "target": "Package",
+              "version": "[1.2.1.96, )"
+            },
+            "mymooo.weixinWork.SDK": {
+              "target": "Package",
+              "version": "[1.4.1.29, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.23, 8.0.23]"
+            },
+            {
+              "name": "Microsoft.Net.Sdk.Compilers.Toolset",
+              "version": "[9.0.309, 9.0.309]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.23, 8.0.23]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.23, 8.0.23]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.309/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\k3cloudApi\\src\\mymooo.k3cloud\\mymooo.k3cloud.core\\mymooo.k3cloud.core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\k3cloudApi\\src\\mymooo.k3cloud\\mymooo.k3cloud.core\\mymooo.k3cloud.core.csproj",
+        "projectName": "mymooo.k3cloud.core",
+        "projectPath": "D:\\k3cloudApi\\src\\mymooo.k3cloud\\mymooo.k3cloud.core\\mymooo.k3cloud.core.csproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+        "outputPath": "D:\\k3cloudApi\\src\\mymooo.k3cloud\\mymooo.k3cloud.core\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://inedo.mymooo.com/nuget/mymooo/v3/index.json": {},
+          "https://inedo.mymooo.com/nuget/nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "allWarningsAsErrors": true,
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "mymooo.core": {
+              "target": "Package",
+              "version": "[1.4.1.124, )"
+            },
+            "mymooo.product.selection": {
+              "target": "Package",
+              "version": "[1.2.1.96, )"
+            },
+            "mymooo.weixinWork.SDK": {
+              "target": "Package",
+              "version": "[1.4.1.29, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.23, 8.0.23]"
+            },
+            {
+              "name": "Microsoft.Net.Sdk.Compilers.Toolset",
+              "version": "[9.0.309, 9.0.309]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.23, 8.0.23]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.23, 8.0.23]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.309/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\k3cloudApi\\src\\mymooo.k3cloud\\mymooo.k3cloud\\mymooo.k3cloud.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\k3cloudApi\\src\\mymooo.k3cloud\\mymooo.k3cloud\\mymooo.k3cloud.csproj",
+        "projectName": "mymooo.k3cloud",
+        "projectPath": "D:\\k3cloudApi\\src\\mymooo.k3cloud\\mymooo.k3cloud\\mymooo.k3cloud.csproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+        "outputPath": "D:\\k3cloudApi\\src\\mymooo.k3cloud\\mymooo.k3cloud\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://inedo.mymooo.com/nuget/mymooo/v3/index.json": {},
+          "https://inedo.mymooo.com/nuget/nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\k3cloudApi\\src\\mymooo.k3cloud\\mymooo.k3cloud.business\\mymooo.k3cloud.business.csproj": {
+                "projectPath": "D:\\k3cloudApi\\src\\mymooo.k3cloud\\mymooo.k3cloud.business\\mymooo.k3cloud.business.csproj"
+              },
+              "D:\\k3cloudApi\\src\\mymooo.k3cloud\\mymooo.k3cloud.core\\mymooo.k3cloud.core.csproj": {
+                "projectPath": "D:\\k3cloudApi\\src\\mymooo.k3cloud\\mymooo.k3cloud.core\\mymooo.k3cloud.core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "allWarningsAsErrors": true,
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.Extensions.Hosting.WindowsServices": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Mymooo.Threed.WebService.SDK": {
+              "target": "Package",
+              "version": "[1.2.1.9, )"
+            },
+            "com.mymooo.credit.SDK": {
+              "target": "Package",
+              "version": "[1.2.1.10, )"
+            },
+            "mymooo.core": {
+              "target": "Package",
+              "version": "[1.4.1.124, )"
+            },
+            "mymooo.pdm.SDK": {
+              "target": "Package",
+              "version": "[1.2.1.7, )"
+            },
+            "mymooo.product.selection": {
+              "target": "Package",
+              "version": "[1.2.1.96, )"
+            },
+            "mymooo.weixinWork.SDK": {
+              "target": "Package",
+              "version": "[1.4.1.29, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.23, 8.0.23]"
+            },
+            {
+              "name": "Microsoft.Net.Sdk.Compilers.Toolset",
+              "version": "[9.0.309, 9.0.309]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[8.0.23, 8.0.23]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.23, 8.0.23]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.23, 8.0.23]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.309/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

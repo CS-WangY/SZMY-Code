@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AssemblyModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Id>64cdf7d7-e2ff-42cc-8129-cc1372804eb1</Id>
+  <MasterId>K3Cloud</MasterId>
+  <Name>程序集包</Name>
+  <Developer>
+    <Id>PENY</Id>
+    <DevCode>PENY</DevCode>
+    <Level>1</Level>
+    <Name>PENY</Name>
+  </Developer>
+  <RequiredPackages />
+  <ExclusivePackages />
+  <IsSuperPkg>false</IsSuperPkg>
+  <IncludedExtended>false</IncludedExtended>
+  <DevPhase>Unknown</DevPhase>
+  <CanBeStopped>false</CanBeStopped>
+  <DeployEdition>ALL</DeployEdition>
+  <PatchType>ALL</PatchType>
+  <Deploy>Business</Deploy>
+  <PackageCategory>FuncPackage</PackageCategory>
+  <IsReplace>true</IsReplace>
+  <LocaleId>0</LocaleId>
+  <Issues />
+  <Links />
+  <PreInstallMsg />
+  <AfterInstallMsg />
+  <PlugIns />
+  <KDServices>
+    <DataEntities />
+    <Contracts />
+    <ServiceHelpers />
+    <AppServices />
+    <Resources />
+  </KDServices>
+  <OtherComponents />
+  <TestPlugIns />
+  <Resources>
+    <KDComponent xsi:type="ConentComponent">
+      <Target>CompileAndPackage</Target>
+      <Name>Kingdee.Mymooo.ServicePlugIn.dll</Name>
+      <ComponentPath>..\WebSite\bin\Kingdee.Mymooo.ServicePlugIn.dll</ComponentPath>
+      <Type>ContentFile</Type>
+      <OpeType>AddOrUpdate</OpeType>
+      <IsSign>false</IsSign>
+      <IsIgnoreError>false</IsIgnoreError>
+      <OutputPath>Bin</OutputPath>
+      <CopyToPaths />
+      <Condition />
+    </KDComponent>
+    <KDComponent xsi:type="ConentComponent">
+      <Target>CompileAndPackage</Target>
+      <Name>Kingdee.Mymooo.WebApi.ServicesStub.dll</Name>
+      <ComponentPath>..\WebSite\bin\Kingdee.Mymooo.WebApi.ServicesStub.dll</ComponentPath>
+      <Type>ContentFile</Type>
+      <OpeType>AddOrUpdate</OpeType>
+      <IsSign>false</IsSign>
+      <IsIgnoreError>false</IsIgnoreError>
+      <OutputPath>Bin</OutputPath>
+      <CopyToPaths />
+      <Condition />
+    </KDComponent>
+    <KDComponent xsi:type="ConentComponent">
+      <Target>CompileAndPackage</Target>
+      <Name>Kingdee.Mymooo.App.Core.dll</Name>
+      <ComponentPath>..\WebSite\bin\Kingdee.Mymooo.App.Core.dll</ComponentPath>
+      <Type>ContentFile</Type>
+      <OpeType>AddOrUpdate</OpeType>
+      <IsSign>false</IsSign>
+      <IsIgnoreError>false</IsIgnoreError>
+      <OutputPath>Bin</OutputPath>
+      <CopyToPaths />
+      <Condition />
+    </KDComponent>
+    <KDComponent xsi:type="ConentComponent">
+      <Target>CompileAndPackage</Target>
+      <Name>Kingdee.Mymooo.Business.PlugIn.dll</Name>
+      <ComponentPath>..\WebSite\bin\Kingdee.Mymooo.Business.PlugIn.dll</ComponentPath>
+      <Type>ContentFile</Type>
+      <OpeType>AddOrUpdate</OpeType>
+      <IsSign>false</IsSign>
+      <IsIgnoreError>false</IsIgnoreError>
+      <OutputPath>Bin</OutputPath>
+      <CopyToPaths />
+      <Condition />
+    </KDComponent>
+    <KDComponent xsi:type="ConentComponent">
+      <Target>CompileAndPackage</Target>
+      <Name>Kingdee.Mymooo.Report.Plugin.dll</Name>
+      <ComponentPath>..\WebSite\bin\Kingdee.Mymooo.Report.Plugin.dll</ComponentPath>
+      <Type>ContentFile</Type>
+      <OpeType>AddOrUpdate</OpeType>
+      <IsSign>false</IsSign>
+      <IsIgnoreError>false</IsIgnoreError>
+      <OutputPath>Bin</OutputPath>
+      <CopyToPaths />
+      <Condition />
+    </KDComponent>
+    <KDComponent xsi:type="ConentComponent">
+      <Target>CompileAndPackage</Target>
+      <Name>Kingdee.Mymooo.Contracts.dll</Name>
+      <ComponentPath>..\WebSite\bin\Kingdee.Mymooo.Contracts.dll</ComponentPath>
+      <Type>ContentFile</Type>
+      <OpeType>AddOrUpdate</OpeType>
+      <IsSign>false</IsSign>
+      <IsIgnoreError>false</IsIgnoreError>
+      <OutputPath>Bin</OutputPath>
+      <CopyToPaths />
+      <Condition />
+    </KDComponent>
+    <KDComponent xsi:type="ConentComponent">
+      <Target>CompileAndPackage</Target>
+      <Name>Kingdee.Mymooo.Core.dll</Name>
+      <ComponentPath>..\WebSite\bin\Kingdee.Mymooo.Core.dll</ComponentPath>
+      <Type>ContentFile</Type>
+      <OpeType>AddOrUpdate</OpeType>
+      <IsSign>false</IsSign>
+      <IsIgnoreError>false</IsIgnoreError>
+      <OutputPath>Bin</OutputPath>
+      <CopyToPaths />
+      <Condition />
+    </KDComponent>
+    <KDComponent xsi:type="ConentComponent">
+      <Target>CompileAndPackage</Target>
+      <Name>Kingdee.Mymooo.ServiceHelper.dll</Name>
+      <ComponentPath>..\WebSite\bin\Kingdee.Mymooo.ServiceHelper.dll</ComponentPath>
+      <Type>ContentFile</Type>
+      <OpeType>AddOrUpdate</OpeType>
+      <IsSign>false</IsSign>
+      <IsIgnoreError>false</IsIgnoreError>
+      <OutputPath>Bin</OutputPath>
+      <CopyToPaths />
+      <Condition />
+    </KDComponent>
+    <KDComponent xsi:type="ConentComponent">
+      <Target>CompileAndPackage</Target>
+      <Name>web.config</Name>
+      <ComponentPath>Config\bug\web.config</ComponentPath>
+      <Type>ContentFile</Type>
+      <OpeType>Merge</OpeType>
+      <IsSign>false</IsSign>
+      <IsIgnoreError>false</IsIgnoreError>
+      <OutputPath />
+      <Condition />
+    </KDComponent>
+    <KDComponent xsi:type="ConentComponent">
+      <Target>CompileAndPackage</Target>
+      <Name>Kingdee.BOS.ScheduleService.exe.config</Name>
+      <ComponentPath>Config\bug\Kingdee.BOS.ScheduleService.exe.config</ComponentPath>
+      <Type>ContentFile</Type>
+      <OpeType>Merge</OpeType>
+      <IsSign>false</IsSign>
+      <IsIgnoreError>false</IsIgnoreError>
+      <OutputPath>bin</OutputPath>
+      <Condition />
+    </KDComponent>
+  </Resources>
+  <BusinessPlugIns />
+</AssemblyModel>

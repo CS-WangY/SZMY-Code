@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34622.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "mymooo.weixinWork.SDK", "mymooo.weixinWork.SDK\mymooo.weixinWork.SDK.csproj", "{B252AF2E-5773-40F4-B2DB-1C31675FAD71}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "mymooo.weixinWork", "mymooo.weixinWork\mymooo.weixinWork.csproj", "{ECC8206D-76D6-4B31-B765-902144376F46}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B252AF2E-5773-40F4-B2DB-1C31675FAD71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B252AF2E-5773-40F4-B2DB-1C31675FAD71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B252AF2E-5773-40F4-B2DB-1C31675FAD71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B252AF2E-5773-40F4-B2DB-1C31675FAD71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECC8206D-76D6-4B31-B765-902144376F46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECC8206D-76D6-4B31-B765-902144376F46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECC8206D-76D6-4B31-B765-902144376F46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECC8206D-76D6-4B31-B765-902144376F46}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C3655F77-02FB-4228-821F-BDBB27A707D4}
+	EndGlobalSection
+EndGlobal

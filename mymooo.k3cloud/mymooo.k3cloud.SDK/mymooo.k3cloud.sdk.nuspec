@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>mymooo.k3cloud.SDK</id>
+    <version>1.3.1.2</version>
+    <title>金蝶服务SDK</title>
+    <authors>莫毅锋</authors>
+    <readme>readme.md</readme>
+    <description>深圳蚂蚁工场科技有限公司,金蝶对外服务SDK</description>
+    <releaseNotes>深圳蚂蚁工场科技有限公司,金蝶对外服务SDK</releaseNotes>
+    <copyright>版本归深圳蚂蚁工场科技有限公司所有</copyright>
+    <repository type="git" url="http://gitlab.kyy6.com/mymooo/k3cloudapi.git" commit="e2d6e02db8a798bf6a5d66104fbbfd3e6850329d" />
+	<description>金API对外提供服务SDK</description>
+    <dependencies>
+      <group targetFramework="net8.0">
+      </group>
+    </dependencies>
+  </metadata>
+	<files>
+		<file src="bin\Release\net8.0\mymooo.k3cloud.core.dll" target="lib\net8.0"></file>
+		<file src="bin\Release\net8.0\mymooo.k3cloud.SDK.dll" target="lib\net8.0"></file>
+		<file src="bin\Release\net8.0\mymooo.k3cloud.core.xml" target="lib\net8.0"></file>
+		<file src="bin\Release\net8.0\mymooo.k3cloud.SDK.xml" target="lib\net8.0"></file>
+		<file src="docs\readme.md" target=""></file>
+	</files>
+</package>

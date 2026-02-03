@@ -1,0 +1,7 @@
+D:\K3Cloud\WebSite\BIN\Kingdee.Mymooo.ServicesStub.dll
+D:\K3Cloud\WebSite\BIN\Kingdee.Mymooo.ServicesStub.pdb
+D:\K3Cloud\Code\Kingdee.Mymooo.ServicesStub\obj\Debug\Kingdee.Mymooo.ServicesStub.csproj.AssemblyReference.cache
+D:\K3Cloud\Code\Kingdee.Mymooo.ServicesStub\obj\Debug\Kingdee.Mymooo.ServicesStub.csproj.CoreCompileInputs.cache
+D:\K3Cloud\Code\Kingdee.Mymooo.ServicesStub\obj\Debug\Kingdee.Mymooo.ServicesStub.csproj.CopyComplete
+D:\K3Cloud\Code\Kingdee.Mymooo.ServicesStub\obj\Debug\Kingdee.Mymooo.ServicesStub.dll
+D:\K3Cloud\Code\Kingdee.Mymooo.ServicesStub\obj\Debug\Kingdee.Mymooo.ServicesStub.pdb

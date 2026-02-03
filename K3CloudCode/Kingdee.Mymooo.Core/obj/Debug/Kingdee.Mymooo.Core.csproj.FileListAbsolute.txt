@@ -1,0 +1,7 @@
+D:\K3Cloud\WebSite\BIN\Kingdee.Mymooo.Core.dll
+D:\K3Cloud\WebSite\BIN\Kingdee.Mymooo.Core.pdb
+D:\K3Cloud\Code\Kingdee.Mymooo.Core\obj\Debug\Kingdee.Mymooo.Core.csproj.AssemblyReference.cache
+D:\K3Cloud\Code\Kingdee.Mymooo.Core\obj\Debug\Kingdee.Mymooo.Core.csproj.CoreCompileInputs.cache
+D:\K3Cloud\Code\Kingdee.Mymooo.Core\obj\Debug\Kingdee..C284DE7C.Up2Date
+D:\K3Cloud\Code\Kingdee.Mymooo.Core\obj\Debug\Kingdee.Mymooo.Core.dll
+D:\K3Cloud\Code\Kingdee.Mymooo.Core\obj\Debug\Kingdee.Mymooo.Core.pdb

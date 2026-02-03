@@ -1,0 +1,137 @@
+﻿@{
+	Layout = null; // 不使用布局页
+}
+
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<head>
+	<title>@Model.FMATERIALID</title>
+	<style>
+		html,
+		body {
+			width: 100%;
+			height: 100%;
+			margin: 0;
+			padding: 0;
+		}
+
+		dl {
+			margin: 0;
+			padding: 0;
+			display: flex;
+			margin-bottom: 12px;
+		}
+
+			dl * {
+				margin: 0;
+				padding: 0;
+			}
+
+			dl dt {
+				width: 100px;
+				text-align: right;
+			}
+
+			dl dd {
+				padding-left: 15px;
+				flex: 1;
+			}
+	</style>
+</head>
+
+<body>
+	<button id="myButton">切换图纸</button>
+	@{
+		string fileName2d = "";
+		if (Model.FFileInfos != null)
+		{
+			@foreach (var tag in Model.FFileInfos)
+			{
+				// 方法1: 使用 LastIndexOf 和 Substring
+				int lastSlashIndex = tag.LastIndexOf('/');
+				if (lastSlashIndex >= 0 && lastSlashIndex < tag.Length - 1)
+				{
+					fileName2d = tag.Substring(lastSlashIndex + 1);
+				}
+
+				// 移除可能的查询参数
+				int questionMarkIndex = fileName2d.IndexOf('?');
+				if (questionMarkIndex >= 0)
+				{
+					fileName2d = fileName2d.Substring(0, questionMarkIndex);
+				}
+				<a href="@tag">@fileName2d</a>
+			}
+		}
+
+	}
+	<div style="display:flex;width:100%;height:100%;">
+		<div style="border:solid 1px #CCC;flex:1;display:flex;">
+			<iframe id="iPreview" border="0" style="flex:1;" data-type="1" src="@Html.Raw(Model.FPreviewUrl2D)"></iframe>
+		</div>
+		<div style="width:300px;display:flex;">
+			<div style="flex:1;padding:10px 0;">
+				<dl>
+					<dt>供货组织</dt>
+					<dd>@Model.FDemandOrgId</dd>
+				</dl>
+				<dl>
+					<dt>客户名称</dt>
+					<dd>@Model.FCustomerID</dd>
+				</dl>
+				<dl>
+					<dt>计划单号</dt>
+					<dd>@Model.FPlanBillNo</dd>
+				</dl>
+				<dl>
+					<dt>客户型号</dt>
+					<dd>@Model.FMATERIALID</dd>
+				</dl>
+				<dl>
+					<dt>客户产品名称</dt>
+					<dd>@Model.FMATERIALName</dd>
+				</dl>
+				<dl>
+					<dt>成本价</dt>
+					<dd>@Model.FCostPrice.ToString("N2")</dd>
+				</dl>
+				<dl>
+					<dt>销售价</dt>
+					<dd>@Model.FSalPrice.ToString("N2")</dd>
+				</dl>
+				<dl>
+					<dt>数量</dt>
+					<dd>@Model.FSalQty.ToString("F0")</dd>
+				</dl>
+				<dl>
+					<dt>金额小计</dt>
+					<dd>@Model.FSalAmount.ToString("N2")</dd>
+				</dl>
+				<dl>
+					<dt>毛利率%</dt>
+					<dd>@Model.FGrossProfit.ToString("F2")</dd>
+				</dl>
+			</div>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			$("#myButton").click(function () {
+				const o = document.getElementById("iPreview")
+				let datatype = o.getAttribute("data-type")
+
+				let src1 = '@Html.Raw(Model.FPreviewUrl3D)';
+				let src2 = '@Html.Raw(Model.FPreviewUrl2D)';
+
+				o.setAttribute("data-type", datatype == 1 ? 2 : 1);
+				o.src = datatype == 1 ? src1 : src2;
+
+				console.log(o.src)
+			});
+		});
+	</script>
+</body>
+
+</html>

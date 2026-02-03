@@ -1,0 +1,4204 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>mymooo.product.selection</name>
+    </assembly>
+    <members>
+        <member name="T:mymooo.product.selection.Common.UrlConfig">
+            <summary>
+            地址相关配置
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.Common.UrlConfig.ImageUrl">
+            <summary>
+            域名
+            </summary>
+        </member>
+        <member name="T:mymooo.product.selection.Elasticsearch.IntervalParamRange">
+            <summary>
+            区间型参数值范围
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.IntervalParamRange.ParamCode">
+            <summary>
+            参数编码
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.IntervalParamRange.StartValue">
+            <summary>
+            区间参数  开始值
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.IntervalParamRange.EndValue">
+            <summary>
+            区间参数 结束值
+            </summary>
+        </member>
+        <member name="T:mymooo.product.selection.Elasticsearch.ProductClassIndex">
+            <summary>
+            产品分类索引
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.ProductClassIndex.Id">
+            <summary>
+            产品分类Id
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.ProductClassIndex.ClassName">
+            <summary>
+            产品分类名称
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.ProductClassIndex.ParentClassId">
+            <summary>
+            父级分类
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.ProductClassIndex.Seq">
+            <summary>
+            序号
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.ProductClassIndex.ImageUrl">
+            <summary>
+            分类节点图片路径
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.ProductClassIndex.HomePageImageUrl">
+            <summary>
+            分类首页图片路径
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.ProductClassIndex.Leaf">
+            <summary>
+            叶子分类标记	   1:是	   0:否
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.ProductClassIndex.HomePage">
+            <summary>
+            是否首页展示
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.ProductClassIndex.Logo">
+            <summary>
+            小图标
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.ProductClassIndex.ParentClass">
+            <summary>
+            父级分类集合
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.ProductClassIndex.SonClass">
+            <summary>
+            子级分类集合
+            </summary>
+        </member>
+        <member name="T:mymooo.product.selection.Elasticsearch.ProductClassIndex.ProductClass">
+            <summary>
+            父级或者子集分类
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.ProductClassIndex.ProductClass.ClassId">
+            <summary>
+            产品分类Id
+            </summary>
+        </member>
+        <member name="T:mymooo.product.selection.Elasticsearch.ProductClassParamFilter">
+            <summary>
+            产品分类参数过滤
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.ProductClassParamFilter.ClassIds">
+            <summary>
+            产品分类Id集合
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.ProductClassParamFilter.ClassParamCodes">
+            <summary>
+            参与过滤的参数编码集合
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.ProductClassParamFilter.Filters">
+            <summary>
+            明细
+            </summary>
+        </member>
+        <member name="T:mymooo.product.selection.Elasticsearch.ProductClassParamFilter.ProductClassParamDetails">
+            <summary>
+            分类参数明细
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.ProductClassParamFilter.ProductClassParamDetails.ParamCode">
+            <summary>
+            参数编码
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.ProductClassParamFilter.ProductClassParamDetails.IntervalValue">
+            <summary>
+            区间型参数过滤
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.ProductClassParamFilter.ProductClassParamDetails.SearchValue">
+            <summary>
+            搜索值
+            </summary>
+        </member>
+        <member name="T:mymooo.product.selection.Elasticsearch.ProductClassParamFilterResponse">
+            <summary>
+            产品分类参数过滤响应
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.ProductClassParamFilterResponse.Query">
+            <summary>
+            产品筛选参数
+            </summary>
+        </member>
+        <member name="T:mymooo.product.selection.Elasticsearch.ProductIndex">
+            <summary>
+            产品索引
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.ProductIndex.ProductId">
+            <summary>
+            产品Id
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.ProductIndex.ProductName">
+            <summary>
+            产品名称
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.ProductIndex.Description">
+            <summary>
+            描述
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.ProductIndex.ClassId">
+            <summary>
+            分类内码
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.ProductIndex.ClassName">
+            <summary>
+            产品分类名称
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.ProductIndex.SmallId">
+            <summary>
+            产品小类
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.ProductIndex.SmallCode">
+            <summary>
+            产品小类编码
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.ProductIndex.SeoTitle">
+            <summary>
+            Desc:
+            Default:
+            Nullable:True
+            </summary>           
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.ProductIndex.SeoKeywords">
+            <summary>
+            Desc:
+            Default:
+            Nullable:True
+            </summary>           
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.ProductIndex.SeoDescription">
+            <summary>
+            Desc:
+            Default:
+            Nullable:True
+            </summary>           
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.ProductIndex.SmallName">
+            <summary>
+            产品小类名称
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.ProductIndex.PriceType">
+            <summary>
+            采购价格形式 1 矩阵 2 全型号 3 简易型号 4 简易型号+矩阵
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.ProductIndex.FactoryId">
+            <summary>
+            厂商内码
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.ProductIndex.BrandId">
+            <summary>
+            品牌key
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.ProductIndex.Seq">
+            <summary>
+            排序
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.ProductIndex.RecomClassId">
+            <summary>
+            新产品，热销产品类别
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.ProductIndex.BrandEnName">
+            <summary>
+            品牌英文名
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.ProductIndex.BrandName">
+            <summary>
+            Desc:商品品牌
+            Default:
+            Nullable:True
+            </summary>           
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.ProductIndex.ThreedModelFolder">
+            <summary>
+            Desc:3d模型文件夹名称
+            Default:
+            Nullable:True
+            </summary>           
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.ProductIndex.CatalogUrl">
+            <summary>
+            Desc:商品目录图片路径
+            Default:
+            Nullable:True
+            </summary>           
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.ProductIndex.ProductDetailPicUrl">
+            <summary>
+            Desc:商品详情图片路径
+            Default:
+            Nullable:True
+            </summary>           
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.ProductIndex.LinkUrl">
+            <summary>
+            Desc:官网地址
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.ProductIndex.IsShow3D">
+            <summary>
+            是否显示3D
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.ProductIndex.IsRelease">
+            <summary>
+            是否发布
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.ProductIndex.IsRoHS">
+            <summary>
+            是否RoHS产品
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.ProductIndex.AuditStatus">
+            <summary>
+            审核状态
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.ProductIndex.FullNumber">
+            <summary>
+            是否已经全部生成型号
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.ProductIndex.PdfUrl">
+            <summary>
+            Desc:官网PDF地址
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.ProductIndex.OfficialThreedUrl">
+            <summary>
+            Desc:官网3d文件地址
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.ProductIndex.ProductSizeUrl">
+            <summary>
+            尺寸图-页签
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.ProductIndex.ProductSpecUrl">
+            <summary>
+            规格表-页签
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.ProductIndex.ProductDelPageUrl">
+            <summary>
+            交货期-页签
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.ProductIndex.ProductSumPageUrl">
+            <summary>
+            概述-页签
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.ProductIndex.TypeImage">
+            <summary>
+            类型图片
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.ProductIndex.Official2DUrl">
+            <summary>
+            Desc:官网2d文件地址
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.ProductIndex.Deliverys">
+            <summary>
+            一般发货日
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.ProductIndex.MinPrice">
+            <summary>
+            Desc:
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.ProductIndex.ThreedParamSeq">
+            <summary>
+            展示3d的参数顺序
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.ProductIndex.ProductTypes">
+            <summary>
+            产品类型
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.ProductIndex.ProductParams">
+            <summary>
+            产品参数名
+            </summary>
+        </member>
+        <member name="T:mymooo.product.selection.Elasticsearch.ProductIndex.ProductParamIndex">
+            <summary>
+            产品参数索引
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.ProductIndex.ProductParamIndex.ParamId">
+            <summary>
+            产品参数Id
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.ProductIndex.ProductParamIndex.ParamCode">
+            <summary>
+            参数编码
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.ProductIndex.ProductParamIndex.ParamName">
+            <summary>
+            参数名称
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.ProductIndex.ProductParamIndex.ParamValueType">
+            <summary>
+            参数值类型 S:枚举字符型	   N:枚举数值型	   R:枚举区间型	   F:公式型 FB  纯公式型
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.ProductIndex.ProductParamIndex.ParamType">
+            <summary>
+            参数类型 T:类型参数	   S:型式参数	   P:规格参数	   M:编码参数	   N:普通参数	   A:追加工类型参数	   W:追加工方法参数	   C:成本参数	
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.ProductIndex.ProductParamIndex.ProductParamValues">
+            <summary>
+            产品参数值
+            </summary>
+        </member>
+        <member name="T:mymooo.product.selection.Elasticsearch.ProductIndex.ProductTypeDetailIndex">
+            <summary>
+            产品索引中的类型
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.ProductIndex.ProductTypeDetailIndex.TypeId">
+            <summary>
+            类型Id
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.ProductIndex.ProductTypeDetailIndex.TypeCode">
+            <summary>
+            类型编码
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.ProductIndex.ProductTypeDetailIndex.TypeDesc">
+            <summary>
+            类型描述
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.ProductIndex.ProductTypeDetailIndex.ReplaceTypeCode">
+            <summary>
+            替换类型
+            </summary>
+        </member>
+        <member name="T:mymooo.product.selection.Elasticsearch.ProductIndex.ProductParamValueIndex">
+            <summary>
+            产品参数值索引
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.ProductIndex.ProductParamValueIndex.ParamValueId">
+            <summary>
+            产品参数Id
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.ProductIndex.ProductParamValueIndex.ParamCode">
+            <summary>
+            参数编码
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.ProductIndex.ProductParamValueIndex.ParamValue">
+            <summary>
+            参数值
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.ProductIndex.ProductParamValueIndex.StartValue">
+            <summary>
+            区间参数  开始值
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.ProductIndex.ProductParamValueIndex.ParamValueText">
+            <summary>
+            参数值名称
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.ProductIndex.ProductParamValueIndex.EndParamValue">
+            <summary>
+            结束参数值
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.ProductIndex.ProductParamValueIndex.EndValue">
+            <summary>
+            区间参数 结束值
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.ProductIndex.ProductParamValueIndex.EndParamValueText">
+            <summary>
+            结束参数值名称
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.ProductIndex.ProductParamValueIndex.SearchParamValue">
+            <summary>
+            搜索的参数值
+            </summary>
+        </member>
+        <member name="T:mymooo.product.selection.Elasticsearch.ProductIndex.DimensionalDrawing">
+            <summary>
+            尺寸图
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.ProductIndex.DimensionalDrawing.ParameterId">
+            <summary>
+            产品参数Id
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.ProductIndex.DimensionalDrawing.ParameterValueId">
+            <summary>
+            产品参数值Id
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.ProductIndex.DimensionalDrawing.AnchorName">
+            <summary>
+            显示名称
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.ProductIndex.DimensionalDrawing.Html">
+            <summary>
+            html
+            </summary>
+        </member>
+        <member name="T:mymooo.product.selection.Elasticsearch.ProductNumberIndex">
+            <summary>
+            产品型号索引
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.ProductNumberIndex.Id">
+            <summary>
+            Id
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.ProductNumberIndex.ProductId">
+            <summary>
+            产品内码
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.ProductNumberIndex.ProductName">
+            <summary>
+            产品名称
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.ProductNumberIndex.TypeId">
+            <summary>
+            类型Id
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.ProductNumberIndex.TypeCode">
+            <summary>
+            类型编码
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.ProductNumberIndex.SmallId">
+            <summary>
+            产品小类
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.ProductNumberIndex.SmallCode">
+            <summary>
+            产品小类编码
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.ProductNumberIndex.SmallName">
+            <summary>
+            产品小类名称
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.ProductNumberIndex.ClassId">
+            <summary>
+            产品分类Id
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.ProductNumberIndex.ClassName">
+            <summary>
+            产品分类名称
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.ProductNumberIndex.AuditStatus">
+            <summary>
+            审核状态
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.ProductNumberIndex.IsRelease">
+            <summary>
+            是否发布
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.ProductNumberIndex.SearchNumbers">
+            <summary>
+            搜索的产品型号集合
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.ProductNumberIndex.NumberId">
+            <summary>
+            完整的编码
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.ProductNumberIndex.Number">
+            <summary>
+            完整的编码
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.ProductNumberIndex.ShortNumberId">
+            <summary>
+            简易型号Id
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.ProductNumberIndex.ShortNumber">
+            <summary>
+            简易型号
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.ProductNumberIndex.SelectValues">
+            <summary>
+            产品参数选择值
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.ProductNumberIndex.BrandNumbers">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.ProductNumberIndex.Version">
+            <summary>
+            版本
+            </summary>
+        </member>
+        <member name="T:mymooo.product.selection.Elasticsearch.ProductResponse">
+            <summary>
+            产品响应参数
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.ProductResponse.Number">
+            <summary>
+            型号
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.ProductResponse.ShortNumber">
+            <summary>
+            简易型号
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.ProductResponse.TypeId">
+            <summary>
+            类型ID
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.ProductResponse.ParameterValues">
+            <summary>
+            参数选择值集合
+            </summary>
+        </member>
+        <member name="T:mymooo.product.selection.Elasticsearch.ProductTypeIndex">
+            <summary>
+            类型索引
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.ProductTypeIndex.TypeId">
+            <summary>
+             类型KEY
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.ProductTypeIndex.TypeCode">
+            <summary>
+            类型编码
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.ProductTypeIndex.ReplaceTypeCode">
+            <summary>
+            类型编码
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.ProductTypeIndex.ProductId">
+            <summary>
+            产品KEY
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.ProductTypeIndex.ProductName">
+            <summary>
+            产品名称
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.ProductTypeIndex.ClassId">
+            <summary>
+            产品分类KEY
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.ProductTypeIndex.FactoryId">
+            <summary>
+             厂商KEY
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.ProductTypeIndex.FactoryShortName">
+            <summary>
+             厂商简称
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.ProductTypeIndex.BrandName">
+            <summary>
+             品牌名称
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.ProductTypeIndex.BrandNameEn">
+            <summary>
+             品牌英文名称
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.ProductTypeIndex.BrandId">
+            <summary>
+            品牌Id
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.ProductTypeIndex.IsRelease">
+            <summary>
+            是否发布
+            </summary>
+        </member>
+        <member name="M:mymooo.product.selection.Elasticsearch.ProductTypeIndex.Clone">
+            <summary>
+            克隆
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:mymooo.product.selection.Elasticsearch.SearchPorductNumber">
+            <summary>
+            搜索的型号
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.SearchPorductNumber.NumberId">
+            <summary>
+            完整的编码
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.Elasticsearch.SearchPorductNumber.Number">
+            <summary>
+            完整的编码
+            </summary>
+        </member>
+        <member name="T:mymooo.product.selection.ProductCache`2">
+            <summary>
+            产品缓存服务
+            </summary>
+            <typeparam name="C"></typeparam>
+            <typeparam name="U"></typeparam>
+        </member>
+        <member name="M:mymooo.product.selection.ProductCache`2.#ctor(mymooo.core.Utils.Service.ElasticsearchIndexService{`0,`1},mymooo.product.selection.ProductNumberCache{`0,`1})">
+            <summary>
+            产品缓存服务
+            </summary>
+            <typeparam name="C"></typeparam>
+            <typeparam name="U"></typeparam>
+        </member>
+        <member name="M:mymooo.product.selection.ProductCache`2.SearchAsync``1(System.String,System.Int32,System.Int32,System.Collections.Generic.List{System.Int64},Elastic.Clients.Elasticsearch.Core.Search.SourceConfig)">
+            <summary>
+            搜索
+            </summary>
+            <param name="keyword">关键字</param>
+            <param name="from"></param>
+            <param name="size"></param>
+            <param name="excludeProductIds">排除的产品</param>
+            <param name="sourceConfig"></param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.product.selection.ProductCache`2.SearchAsync``1(System.Int64,Elastic.Clients.Elasticsearch.Core.Search.SourceConfig)">
+            <summary>
+            按产品Id搜索
+            </summary>
+            <param name="productId">产品Id</param>
+            <param name="sourceConfig">返回文档哪些属性 默认排除 产品参数 和 产品类型</param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.product.selection.ProductCache`2.SearchAsync``1(System.Collections.Generic.List{System.Int64},Elastic.Clients.Elasticsearch.Core.Search.SourceConfig)">
+            <summary>
+            按产品Id集合搜索
+            </summary>
+            <param name="productIds">产品Id集合</param>
+            <param name="sourceConfig">返回文档哪些属性 默认排除 产品参数 和 产品类型</param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.product.selection.ProductCache`2.GetProductParameterValue(`0,mymooo.product.selection.SelectionModel.ProductParameterValueRequest,Elastic.Clients.Elasticsearch.Core.Search.SourceConfig)">
+            <summary>
+            根据全型号获取到简易型号以及计算参数  
+            </summary>
+            <param name="mymoooContext"></param>
+            <param name="request">请求参数</param>
+            <param name="sourceConfig"></param>
+            <returns>返回包括参数数据以及产品信息</returns>
+        </member>
+        <member name="M:mymooo.product.selection.ProductCache`2.DeleteAsync(`0,System.Int64)">
+            <summary>
+            根据产品id 删除 
+            </summary>
+            <param name="mymoooContext">上下文</param>
+            <param name="productId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.product.selection.ProductCache`2.DeleteAsync(`0,System.Collections.Generic.List{Elastic.Clients.Elasticsearch.FieldValue})">
+            <summary>
+            根据产品id 删除 
+            </summary>
+            <param name="mymoooContext">上下文</param>
+            <param name="productIds"></param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.product.selection.ProductCache`2.ClassParamFilter(mymooo.product.selection.Elasticsearch.ProductClassParamFilter)">
+            <summary>
+            返回满足条件的参数值集合
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.product.selection.ProductCache`2.ClassParamFilter(mymooo.product.selection.Elasticsearch.ProductClassParamFilter,System.Int32,System.Int32)">
+            <summary>
+            返回满足条件的产品
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.product.selection.ProductCache`2.QueryClassRange(System.Collections.Generic.List{System.Int64},System.String)">
+            <summary>
+            查询参数的最大值和最小值
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.product.selection.ProductCache`2.DeleteTypeForProductId(`0,System.Int64)">
+            <summary>
+            根据产品id 删除 类型
+            </summary>
+            <param name="mymoooContext">上下文</param>
+            <param name="productId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.product.selection.ProductCache`2.DeleteTypeForProductIds(`0,System.Collections.Generic.List{Elastic.Clients.Elasticsearch.FieldValue})">
+            <summary>
+            根据产品id 删除 类型
+            </summary>
+            <param name="mymoooContext">上下文</param>
+            <param name="productIds"></param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.product.selection.ProductCache`2.SearchTypeAsync(System.String,System.Nullable{System.Boolean},System.Int32,System.Int32)">
+            <summary>
+            搜索产品类型
+            </summary>
+            <param name="keyword">关键字</param>
+            <param name="isPublish">是否发布</param>
+            <param name="from"></param>
+            <param name="size"></param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.product.selection.ProductCache`2.ProductTypeSearchAsync(System.String,System.Boolean)">
+            <summary>
+            搜索类型
+            </summary>
+            <param name="keyword">typecode</param>
+            <param name="isPublish">是否上架 发布</param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.product.selection.ProductCache`2.ReplaceTypeSearchAsync(System.String,System.Boolean)">
+            <summary>
+            搜索替换类型
+            </summary>
+            <param name="keyword">typecode</param>
+            <param name="isPublish">是否上架 发布</param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.product.selection.ProductCache`2.SearchTypeAsync(System.Collections.Generic.List{System.String},System.Nullable{System.Boolean},System.Int64)">
+            <summary>
+            多个产品类型code搜索
+            </summary>
+            <param name="keywords"></param>
+            <param name="isPublish"></param>
+            <param name="productId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.product.selection.ProductCache`2.SearchProductClassAsync(System.String)">
+            <summary>
+            搜索 产品分类
+            </summary>
+            <param name="keyword"></param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.product.selection.ProductCache`2.SearchParentClassAsync(System.Int64)">
+            <summary>
+            按父级产品分类Id搜索
+            </summary>
+            <param name="parnetClassId">父级产品分类Id</param>
+            <returns></returns>
+        </member>
+        <member name="T:mymooo.product.selection.ProductModelCache`2">
+            <summary>
+            产品模型缓存
+            </summary>
+        </member>
+        <member name="M:mymooo.product.selection.ProductModelCache`2.#ctor(mymooo.core.Utils.Script.PythonNetCoreEngineService)">
+            <summary>
+            产品模型缓存
+            </summary>
+        </member>
+        <member name="M:mymooo.product.selection.ProductModelCache`2.ReloadAllCahce(`0)">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.product.selection.ProductModelCache`2.ReloadCache(`0,System.Int64,System.Nullable{System.TimeSpan})">
+            <summary>
+            加载产品模型缓存
+            </summary>
+            <param name="mymoooContext"></param>
+            <param name="productId"></param>
+            <param name="expiry"></param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.product.selection.ProductModelCache`2.ReloadModelCahce(`0,System.Collections.Generic.List{mymooo.product.selection.Elasticsearch.ProductIndex})">
+            <summary>
+            加载模型缓存
+            </summary>
+            <param name="mymoooContext"></param>
+            <param name="products"></param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.product.selection.ProductModelCache`2.DeleteModelCahce(`0,System.Collections.Generic.List{mymooo.product.selection.Elasticsearch.ProductIndex})">
+            <summary>
+            删除模型缓存
+            </summary>
+            <param name="mymoooContext"></param>
+            <param name="products"></param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.product.selection.ProductModelCache`2.ReloadParameterConstrint(`0,mymooo.product.selection.SelectionModel.ProductModel)">
+            <summary>
+            加载产品参数约束
+            </summary>
+            <param name="mymoooContext"></param>
+            <param name="model"></param>
+        </member>
+        <member name="M:mymooo.product.selection.ProductModelCache`2.ErgodicFormula(mymooo.product.selection.SelectionModel.ProductModel)">
+            <summary>
+            遍历公式
+            </summary>
+            <param name="model"></param>
+        </member>
+        <member name="M:mymooo.product.selection.ProductModelCache`2.FormulaParameterCal(mymooo.product.selection.SelectionModel.ProductModel)">
+            <summary>
+            对于纯公式参数，需要计算公式的最大和最小值
+            </summary>
+            <param name="model"></param>
+        </member>
+        <member name="M:mymooo.product.selection.ProductModelCache`2.FormulaParaInitialise(mymooo.product.selection.SelectionModel.ProductModel,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{mymooo.product.selection.SelectionModel.FormulaPatameter}},System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.Dictionary{System.String,System.Object}})">
+            <summary>
+            已经计算过的参数编码
+            </summary>
+            <param name="model"></param>
+            <param name="analyzeResult"></param>
+            <param name="key"></param>
+            <param name="formluaResuls"></param>
+        </member>
+        <member name="M:mymooo.product.selection.ProductModelCache`2.FormulaParaInitialise(mymooo.product.selection.SelectionModel.ProductModel,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{mymooo.product.selection.SelectionModel.FormulaPatameter}},mymooo.product.selection.SelectionModel.FormulaPatameter,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.Dictionary{System.String,System.Object}})">
+            <summary>
+            
+            </summary>
+            <param name="model"></param>
+            <param name="analyzeResult"></param>
+            <param name="formula"></param>
+            <param name="formluaResuls"></param>
+        </member>
+        <member name="M:mymooo.product.selection.ProductModelCache`2.CalCegree(System.Collections.Generic.Dictionary{System.String,System.Object},mymooo.product.selection.SelectionModel.FormulaPatameter,System.Collections.Generic.Dictionary{System.String,System.Object},mymooo.product.selection.SelectionModel.ProductParameter)">
+            <summary>
+            计算大小
+            </summary>
+            <param name="values"></param>
+            <param name="formula"></param>
+            <param name="paraValues"></param>
+            <param name="calpara"></param>
+        </member>
+        <member name="M:mymooo.product.selection.ProductModelCache`2.SupplementParameterConstraint(mymooo.product.selection.SelectionModel.ProductModel)">
+            <summary>
+            补充参数公式影响，加入参数约束
+            </summary>
+            <param name="model"></param>
+        </member>
+        <member name="M:mymooo.product.selection.ProductModelCache`2.AdjustFormula(System.String,System.String)">
+            <summary>
+            调整公式
+            </summary>
+            <param name="formula"></param>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.product.selection.ProductModelCache`2.SymbolAdjust(System.String,System.String,System.String,System.String@)">
+            <summary>
+            符号调整
+            </summary>
+            <param name="key"></param>
+            <param name="adjFormula"></param>
+            <param name="notAdjFormula"></param>
+            <param name="comparison"></param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.product.selection.ProductModelCache`2.CalParamMinValue(System.Collections.Generic.List{System.String},System.String,System.String,System.String)">
+            <summary>
+            计算参数最小值的公式调整
+            </summary>
+            <param name="formulaParas"></param>
+            <param name="notAdjFormula"></param>
+            <param name="key"></param>
+            <param name="comparison"></param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.product.selection.ProductModelCache`2.CalParamMaxValue(System.Collections.Generic.List{System.String},System.String,System.String,System.String)">
+            <summary>
+            计算参数最大值的公式调整
+            </summary>
+            <param name="formulaParas"></param>
+            <param name="notAdjFormula"></param>
+            <param name="key"></param>
+            <param name="comparison"></param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.product.selection.ProductModelCache`2.TransComparison(System.String)">
+            <summary>
+            转换比较符
+            </summary>
+            <param name="comparison"></param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.product.selection.ProductModelCache`2.InputFormule(System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{mymooo.product.selection.SelectionModel.FormulaPatameter}},System.Collections.Generic.List{mymooo.product.selection.SelectionModel.FormulaPatameter})">
+            <summary>
+            
+            </summary>
+            <param name="rowFormulas"></param>
+            <param name="result"></param>
+        </member>
+        <member name="M:mymooo.product.selection.ProductModelCache`2.SplitFormula(System.String,System.Char[],System.String)">
+            <summary>
+            
+            </summary>
+            <param name="adjFormula"></param>
+            <param name="symbols"></param>
+            <param name="comparison"></param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.product.selection.ProductModelCache`2.ReloadMethodGroup(`0,mymooo.product.selection.SelectionModel.ProductModel)">
+            <summary>
+            加载追加工参数
+            </summary>
+            <param name="mymoooContext"></param>
+            <param name="model"></param>
+        </member>
+        <member name="T:mymooo.product.selection.ProductNumberCache`2">
+            <summary>
+            产品型号缓存
+            </summary>
+        </member>
+        <member name="M:mymooo.product.selection.ProductNumberCache`2.#ctor(mymooo.core.Utils.Service.ElasticsearchIndexService{`0,`1})">
+            <summary>
+            产品型号缓存
+            </summary>
+        </member>
+        <member name="M:mymooo.product.selection.ProductNumberCache`2.GetProductBrandNumber(System.Int64,System.Int32,System.Int32)">
+            <summary>
+            返回型号和品牌型号
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.product.selection.ProductNumberCache`2.GetProductNumber(System.Int64,System.Int32,System.Int32)">
+            <summary>
+            获取产品全型号
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.product.selection.ProductNumberCache`2.GetProductShortNumber(System.Int64,System.Int32,System.Int32)">
+            <summary>
+            获取产品简易型号
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.product.selection.ProductNumberCache`2.GetProductShortNumber(System.String,System.Nullable{System.Boolean})">
+            <summary>
+            通过简易型号获取文档
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.product.selection.ProductNumberCache`2.GetProductShortNumber(System.Collections.Generic.List{System.String},System.Nullable{System.Boolean})">
+            <summary>
+            批量通过简易型号获取文档  最大10000个
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.product.selection.ProductNumberCache`2.GetProductNumber(System.String,System.Nullable{System.Boolean})">
+            <summary>
+            通过型号获取文档
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.product.selection.ProductNumberCache`2.GetProductParameterValue(`0,mymooo.product.selection.SelectionModel.ProductParameterValueRequest)">
+            <summary>
+            根据全型号获取到简易型号以及计算参数
+            </summary>
+            <param name="mymoooContext"></param>
+            <param name="request">请求参数</param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.product.selection.ProductNumberCache`2.GetProductNumber(System.Collections.Generic.List{System.String},System.Nullable{System.Boolean})">
+            <summary>
+            批量通过型号获取文档  最大10000个
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:mymooo.product.selection.SelectionModel.BrandTypeReplace">
+            <summary>
+             品牌替换
+            </summary>
+        </member>
+        <member name="M:mymooo.product.selection.SelectionModel.BrandTypeReplace.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.BrandTypeReplace.Id">
+            <summary>
+            Desc:
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.BrandTypeReplace.ProductId">
+            <summary>
+            Desc:
+            Default:0
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.BrandTypeReplace.TypeId">
+            <summary>
+            Desc:
+            Default:0
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.BrandTypeReplace.BrandId">
+            <summary>
+            Desc:
+            Default:0
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.BrandTypeReplace.TypeCode">
+            <summary>
+            Desc:
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="T:mymooo.product.selection.SelectionModel.CodingRule">
+            <summary>
+            品牌型号替换
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.CodingRule.CodingId">
+            <summary>
+            :编码格式KEY
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.CodingRule.BrandId">
+            <summary>
+            品牌
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.CodingRule.ProductId">
+            <summary>
+            :商品KEY
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.CodingRule.TypeId">
+            <summary>
+            类型
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.CodingRule.RepaceTypeCode">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.CodingRule.CodeFormat">
+            <summary>
+            编码格式
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.CodingRule.CodeRules">
+            <summary>
+            编码规则
+            </summary>
+        </member>
+        <member name="T:mymooo.product.selection.SelectionModel.ConstraintHeadParameter">
+            <summary>
+            产品参数约束  头部 参数信息
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ConstraintHeadParameter.ParameterId">
+            <summary>
+            参数或参数值内码
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ConstraintHeadParameter.Number">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ConstraintHeadParameter.Text">
+            <summary>
+            显示值
+            </summary>
+        </member>
+        <member name="T:mymooo.product.selection.SelectionModel.DisplayParamModelData">
+            <summary>
+            参数选择显示数据
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.DisplayParamModelData.ProductParamList">
+            <summary>
+            普通参数列数
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.DisplayParamModelData.ProductTypes">
+            <summary>
+            类型参数列表
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.DisplayParamModelData.TypeSelectData">
+            <summary>
+            类型选择数据
+            </summary>
+        </member>
+        <member name="T:mymooo.product.selection.SelectionModel.DisplayProductModelData">
+            <summary>
+            展示产品模型数据
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.DisplayProductModelData.DisplayParamData">
+            <summary>
+            返回的参数列表
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.DisplayProductModelData.ProductNumbers">
+            <summary>
+            返回的产品型式（参数）列表
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.DisplayProductModelData.TypeIsSelect">
+            <summary>
+            类型是否参与选型
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.DisplayProductModelData.TypeShow">
+            <summary>
+            类型显示模式
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.DisplayProductModelData.IsDisplayPrice">
+            <summary>
+            是否显示单价
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.DisplayProductModelData.IsMethodComplete">
+            <summary>
+            追加工是否完整选择
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.DisplayProductModelData.Number">
+            <summary>
+            返回的编码
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.DisplayProductModelData.IsEndEach">
+            <summary>
+            结束编码
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.DisplayProductModelData.ErrorMessage">
+            <summary>
+            错误信息
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.DisplayProductModelData.DispatchDays">
+            <summary>
+            发货天数
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.DisplayProductModelData.UnitPriceWithTax">
+            <summary>
+            带税单价
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.DisplayProductModelData.MaxQty">
+            <summary>
+            最大数量
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.DisplayProductModelData.Codes">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.DisplayProductModelData.ReplaceNumber">
+            <summary>
+            替换的型号
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.DisplayProductModelData.TypeImage">
+            <summary>
+            类型图片
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.DisplayProductModelData.SupplyUnitPrice">
+            <summary>
+            结算单价
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.DisplayProductModelData.PriceType">
+            <summary>
+            采购价格形式 1 矩阵 2 全型号 3 简易型号 4 简易型号+矩阵
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.DisplayProductModelData.SmallId">
+            <summary>
+            产品小类
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.DisplayProductModelData.SpecTitleList">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:mymooo.product.selection.SelectionModel.FormulaPatameter">
+            <summary>
+            公式参数
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.FormulaPatameter.IsMerge">
+            <summary>
+            是否合并还是并且
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.FormulaPatameter.ParamCode">
+            <summary>
+            影响的参数
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.FormulaPatameter.Comparison">
+            <summary>
+            比较符
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.FormulaPatameter.Premise">
+            <summary>
+            前提
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.FormulaPatameter.PremiseParam">
+            <summary>
+            前提条件传递的参数
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.FormulaPatameter.Formula">
+            <summary>
+            公式
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.FormulaPatameter.FormulaParam">
+            <summary>
+            公式传递的参数
+            </summary>
+        </member>
+        <member name="T:mymooo.product.selection.SelectionModel.FormulaResultCalPatameter">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.FormulaResultCalPatameter.Formula">
+            <summary>
+            公式
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.FormulaResultCalPatameter.IsPremise">
+            <summary>
+            前提条件是否成立
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.FormulaResultCalPatameter.Results">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.FormulaResultCalPatameter.IsError">
+            <summary>
+            是否有错误
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.FormulaResultCalPatameter.ErrorMessage">
+            <summary>
+            错误消息
+            </summary>
+        </member>
+        <member name="T:mymooo.product.selection.SelectionModel.GenerateShortNumberParameter">
+            <summary>
+            生成简易型号参数
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.GenerateShortNumberParameter.ShortNumberVerisons">
+            <summary>
+            生成的简易型号
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.GenerateShortNumberParameter.ShortParamIds">
+            <summary>
+            影响简易型号的参数
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.GenerateShortNumberParameter.ProductIndex">
+            <summary>
+            产品信息
+            </summary>
+        </member>
+        <member name="T:mymooo.product.selection.SelectionModel.Matrix">
+            <summary>
+            矩阵图
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.Matrix.RowParams">
+            <summary>
+            定义矩阵行参数
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.Matrix.ColumnParams">
+            <summary>
+            定义矩阵列参数
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.Matrix.RowParamValues">
+            <summary>
+            行参数集合（先行再列后单元格）。
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.Matrix.ColumnParamValues">
+            <summary>
+            列参数集合（先行再列后单元格）。
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.Matrix.MatrixValues">
+            <summary>
+            矩阵
+            </summary>
+        </member>
+        <member name="T:mymooo.product.selection.SelectionModel.MatrixValue">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.MatrixValue.Values">
+            <summary>
+            矩阵的值
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.MatrixValue.IsFormula">
+            <summary>
+            是否为公式
+            </summary>
+        </member>
+        <member name="T:mymooo.product.selection.SelectionModel.MethodParamGroup">
+            <summary>
+            追加工参数组
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.MethodParamGroup.GroupId">
+            <summary>
+            组内码
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.MethodParamGroup.ProductId">
+            <summary>
+            产品内码
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.MethodParamGroup.GroupCode">
+            <summary>
+            组编码
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.MethodParamGroup.GroupName">
+            <summary>
+            组名称
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.MethodParamGroup.MethodRule">
+            <summary>
+            追加工组编码规则
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.MethodParamGroup.Codes">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.MethodParamGroup.Select">
+            <summary>
+            0 未有任何选择 1选择，2不选择
+            </summary>
+        </member>
+        <member name="T:mymooo.product.selection.SelectionModel.ProductParameterType">
+            <summary>
+            产品参数类型
+            </summary>
+        </member>
+        <member name="F:mymooo.product.selection.SelectionModel.ProductParameterType.T">
+            <summary>
+            类型参数
+            </summary>
+        </member>
+        <member name="F:mymooo.product.selection.SelectionModel.ProductParameterType.S">
+            <summary>
+            型式参数
+            </summary>           
+        </member>
+        <member name="F:mymooo.product.selection.SelectionModel.ProductParameterType.M">
+            <summary>
+            编码参数
+            </summary>      
+        </member>
+        <member name="F:mymooo.product.selection.SelectionModel.ProductParameterType.N">
+            <summary>
+            普通参数
+            </summary>      
+        </member>
+        <member name="F:mymooo.product.selection.SelectionModel.ProductParameterType.A">
+            <summary>
+            追加工方法
+            </summary>      
+        </member>
+        <member name="F:mymooo.product.selection.SelectionModel.ProductParameterType.W">
+            <summary>
+            追加工参数
+            </summary>      
+        </member>
+        <member name="F:mymooo.product.selection.SelectionModel.ProductParameterType.C">
+            <summary>
+            成本参数
+            </summary>      
+        </member>
+        <member name="F:mymooo.product.selection.SelectionModel.ProductParameterType.G">
+            <summary>
+            成本参数
+            </summary>      
+        </member>
+        <member name="F:mymooo.product.selection.SelectionModel.ProductParameterType.P">
+            <summary>
+            追加工普通参数
+            </summary>
+        </member>
+        <member name="T:mymooo.product.selection.SelectionModel.ProductParameterValueType">
+            <summary>
+            产品参数值类型
+            </summary>
+        </member>
+        <member name="F:mymooo.product.selection.SelectionModel.ProductParameterValueType.S">
+            <summary>
+            枚举字符型
+            </summary>
+        </member>
+        <member name="F:mymooo.product.selection.SelectionModel.ProductParameterValueType.N">
+            <summary>
+            枚举数值型
+            </summary>           
+        </member>
+        <member name="F:mymooo.product.selection.SelectionModel.ProductParameterValueType.R">
+            <summary>
+            枚举区间型
+            </summary>      
+        </member>
+        <member name="F:mymooo.product.selection.SelectionModel.ProductParameterValueType.F">
+            <summary>
+            公式型
+            </summary>      
+        </member>
+        <member name="F:mymooo.product.selection.SelectionModel.ProductParameterValueType.K">
+            <summary>
+            构成件型
+            </summary>      
+        </member>
+        <member name="F:mymooo.product.selection.SelectionModel.ProductParameterValueType.FP">
+            <summary>
+            纯公式型
+            </summary>
+        </member>
+        <member name="T:mymooo.product.selection.SelectionModel.ProductParameterShowType">
+            <summary>
+            参数展示类型
+            </summary>
+        </member>
+        <member name="F:mymooo.product.selection.SelectionModel.ProductParameterShowType.H">
+            <summary>
+            横向单行字符列表
+            </summary>
+        </member>
+        <member name="F:mymooo.product.selection.SelectionModel.ProductParameterShowType.M">
+            <summary>
+            横向混合字符列表
+            </summary>           
+        </member>
+        <member name="F:mymooo.product.selection.SelectionModel.ProductParameterShowType.N">
+            <summary>
+            横向单行数值列表
+            </summary>      
+        </member>
+        <member name="F:mymooo.product.selection.SelectionModel.ProductParameterShowType.R">
+            <summary>
+            横向单行数值区间
+            </summary>      
+        </member>
+        <member name="F:mymooo.product.selection.SelectionModel.ProductParameterShowType.X">
+            <summary>
+            无显示
+            </summary>      
+        </member>
+        <member name="F:mymooo.product.selection.SelectionModel.ProductParameterShowType.A">
+            <summary>
+            选型和详情都不显示
+            </summary>
+        </member>
+        <member name="T:mymooo.product.selection.SelectionModel.ProductFileUrlType">
+            <summary>
+            文件url类型
+            </summary>
+        </member>
+        <member name="F:mymooo.product.selection.SelectionModel.ProductFileUrlType.File">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:mymooo.product.selection.SelectionModel.ProductFileUrlType.Url">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:mymooo.product.selection.SelectionModel.ProductModelFileType">
+            <summary>
+            文件类型
+            </summary>
+        </member>
+        <member name="F:mymooo.product.selection.SelectionModel.ProductModelFileType.TwoD">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:mymooo.product.selection.SelectionModel.ProductModelFileType.ThreeD">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:mymooo.product.selection.SelectionModel.ProductPriceType">
+            <summary>
+            产品价格类型
+            </summary>
+        </member>
+        <member name="F:mymooo.product.selection.SelectionModel.ProductPriceType.matrix">
+            <summary>
+            矩阵
+            </summary>
+        </member>
+        <member name="F:mymooo.product.selection.SelectionModel.ProductPriceType.number">
+            <summary>
+            全型号
+            </summary>
+        </member>
+        <member name="F:mymooo.product.selection.SelectionModel.ProductPriceType.shortNumber">
+            <summary>
+            简易型号
+            </summary>
+        </member>
+        <member name="F:mymooo.product.selection.SelectionModel.ProductPriceType.shortMatrix">
+            <summary>
+            简易型号+矩阵
+            </summary>
+        </member>
+        <member name="T:mymooo.product.selection.SelectionModel.MethodParamSelect">
+            <summary>
+            追加工
+            </summary>
+        </member>
+        <member name="F:mymooo.product.selection.SelectionModel.MethodParamSelect.none">
+            <summary>
+            未有任何选择
+            </summary>
+        </member>
+        <member name="F:mymooo.product.selection.SelectionModel.MethodParamSelect.select">
+            <summary>
+            选择
+            </summary>
+        </member>
+        <member name="F:mymooo.product.selection.SelectionModel.MethodParamSelect.notselect">
+            <summary>
+            不选择
+            </summary>
+        </member>
+        <member name="T:mymooo.product.selection.SelectionModel.PriceMatrixType">
+            <summary>
+            产品价格矩阵类型
+            </summary>
+        </member>
+        <member name="F:mymooo.product.selection.SelectionModel.PriceMatrixType.Sale_Price">
+            <summary>
+            销售价格
+            </summary>
+        </member>
+        <member name="F:mymooo.product.selection.SelectionModel.PriceMatrixType.Sale_Delivery">
+            <summary>
+            销售交期
+            </summary>
+        </member>
+        <member name="F:mymooo.product.selection.SelectionModel.PriceMatrixType.Purchase_Prcie">
+            <summary>
+            采购价格
+            </summary>
+        </member>
+        <member name="F:mymooo.product.selection.SelectionModel.PriceMatrixType.Purchase_Delivery">
+            <summary>
+            采购交期
+            </summary>
+        </member>
+        <member name="T:mymooo.product.selection.SelectionModel.ProductAuditStatus">
+            <summary>
+            产品审核状态
+            </summary>
+        </member>
+        <member name="F:mymooo.product.selection.SelectionModel.ProductAuditStatus.none">
+            <summary>
+            草稿状态
+            </summary>
+        </member>
+        <member name="F:mymooo.product.selection.SelectionModel.ProductAuditStatus.submit">
+            <summary>
+            提交状态
+            </summary>
+        </member>
+        <member name="F:mymooo.product.selection.SelectionModel.ProductAuditStatus.audit">
+            <summary>
+            审核状态
+            </summary>
+        </member>
+        <member name="T:mymooo.product.selection.SelectionModel.ParameterConstraintValue">
+            <summary>
+            产品参数约束  值
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ParameterConstraintValue.ParameterId">
+            <summary>
+            参数或参数值内码
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ParameterConstraintValue.Number">
+            <summary>
+            公式或开区间
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ParameterConstraintValue.Text">
+            <summary>
+            显示值
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ParameterConstraintValue.IsSpecValue">
+            <summary>
+            是否特殊选项值
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ParameterConstraintValue.IsFormula">
+            <summary>
+            是否公式
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ParameterConstraintValue.EndNumber">
+            <summary>
+            闭区间
+            </summary>
+        </member>
+        <member name="T:mymooo.product.selection.SelectionModel.ProductBrandTypeMapping">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductBrandTypeMapping.MappingId">
+            <summary>
+            Desc:
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductBrandTypeMapping.ProductId">
+            <summary>
+            Desc:
+            Default:0
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductBrandTypeMapping.TypeId">
+            <summary>
+            Desc:
+            Default:0
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductBrandTypeMapping.Parameter">
+            <summary>
+            Desc:参数
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductBrandTypeMapping.Prefix">
+            <summary>
+            Desc: 前缀
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductBrandTypeMapping.ParamValue">
+            <summary>
+            Desc:参数值
+            Default:
+            Nullable:True
+            </summary>           
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductBrandTypeMapping.MapPrefix">
+            <summary>
+            Desc:匹配的前缀
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductBrandTypeMapping.MapParamValue">
+            <summary>
+            Desc:匹配的参数值
+            Default:
+            Nullable:True
+            </summary>           
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductBrandTypeMapping.BrandId">
+            <summary>
+            Desc:品牌
+            Default:0
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductBrandTypeMapping.IsFormula">
+            <summary>
+            Desc:是否为公式
+            Default:0
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="T:mymooo.product.selection.SelectionModel.ProductCodeRule">
+            <summary>
+            编码规则
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductCodeRule.ParameterId">
+            <summary>
+            参数内码
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductCodeRule.MethodId">
+            <summary>
+            追加工组内码
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductCodeRule.Code">
+            <summary>
+            编码
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductCodeRule.Spid">
+            <summary>
+            分隔符
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductCodeRule.Prefix">
+            <summary>
+            前缀
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductCodeRule.IsLastPatamter">
+            <summary>
+            是否最后一个参数
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductCodeRule.Value">
+            <summary>
+            选择的值
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductCodeRule.FilterValue">
+            <summary>
+            过滤条件的值
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductCodeRule.Seq">
+            <summary>
+            顺序
+            </summary>
+        </member>
+        <member name="T:mymooo.product.selection.SelectionModel.ProductFile">
+            <summary>
+            产品对应的文件
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductFile.GuId">
+            <summary>
+            guid
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductFile.PrdId">
+            <summary>
+            产品
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductFile.FielType">
+            <summary>
+            文件类型 2d3d
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductFile.UrlType">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductFile.ParaNames">
+            <summary>
+            参数名集合
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductFile.FileDetails">
+            <summary>
+            文件集合
+            </summary>
+        </member>
+        <member name="T:mymooo.product.selection.SelectionModel.ProductFileDetail">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductFileDetail.UrlType">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductFileDetail.DetailId">
+            <summary>
+            明细内码
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductFileDetail.Guid">
+            <summary>
+            guid
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductFileDetail.Name">
+            <summary>
+            文件名称
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductFileDetail.Path">
+            <summary>
+            文件路径
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductFileDetail.ParaValues">
+            <summary>
+            参数值集合
+            </summary>
+        </member>
+        <member name="T:mymooo.product.selection.SelectionModel.ProductModel">
+            <summary>
+            产品模型数据
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductModel.ProductId">
+            <summary>
+            产品内码
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductModel.TypeIsSelection">
+            <summary>
+            类型是否参与选型
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductModel.TypeShow">
+            <summary>
+            类型选型显示模式
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductModel.Version">
+            <summary>
+            版本
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductModel.MainFiled">
+            <summary>
+            存入redis 的字段标识
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductModel.ProductName">
+            <summary>
+            产品名称
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductModel.IsAudit">
+            <summary>
+            Desc:审核标记 0 否 1提交 2 审核
+            Default:0
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductModel.ProductParameters">
+            <summary>
+            产品参数集合
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductModel.ProductTypes">
+            <summary>
+            类型参数列表
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductModel.Files">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductModel.MethodGroups">
+            <summary>
+            参数组
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductModel.CodingRules">
+            <summary>
+            编码规则
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductModel.BrandCodingRules">
+            <summary>
+            品牌编码规则
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductModel.Constraints">
+            <summary>
+            约束
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductModel.BrandConstraints">
+            <summary>
+            品牌的参数约束
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductModel.FormulaParams">
+            <summary>
+            存在公式参数的集合
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductModel.FormulaList">
+            <summary>
+            公式集合
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductModel.ShowSeq">
+            <summary>
+            展示顺序
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductModel.Deliverys">
+            <summary>
+            一般发货日
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductModel.TypeImage">
+            <summary>
+            类型图片
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductModel.PriceType">
+            <summary>
+            采购价格形式 1 矩阵 2 全型号 3 简易型号 4 简易型号+矩阵
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductModel.SmallId">
+            <summary>
+            产品小类
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductModel.IsGenerate">
+            <summary>
+            是否生成简易型号
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductModel.Count">
+            <summary>
+            简易型号 数量
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductModel.SalesPriceDiscounts">
+            <summary>
+            销售数量折扣
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductModel.Precisions">
+            <summary>
+            参评参数精度
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductModel.BrandTypeMappings">
+            <summary>
+            品牌替换
+            </summary>
+        </member>
+        <member name="T:mymooo.product.selection.SelectionModel.ProductModelSelectionParameter">
+            <summary>
+            产品模型选型参数
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductModelSelectionParameter.Count">
+            <summary>
+            参与编码的个数
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductModelSelectionParameter.Model">
+            <summary>
+            产品模型值
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductModelSelectionParameter.CurrCodes">
+            <summary>
+            当前的编码规则
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductModelSelectionParameter.IsShowNumber">
+            <summary>
+            是否显示编码
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductModelSelectionParameter.QueryRequest">
+            <summary>
+            选择值
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductModelSelectionParameter.LastQueryRequest">
+            <summary>
+            最后选择的值选择值
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductModelSelectionParameter.ParameterCount">
+            <summary>
+            产品编码的个数
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductModelSelectionParameter.IsEndEach">
+            <summary>
+            结束编码
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductModelSelectionParameter.Number">
+            <summary>
+            pn值
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductModelSelectionParameter.IsSkip">
+            <summary>
+            是否跳跃
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductModelSelectionParameter.ForceQuit">
+            <summary>
+            是否强制退出
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductModelSelectionParameter.IsReplace">
+            <summary>
+            是否替换型号解析
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductModelSelectionParameter.Jump">
+            <summary>
+            是否直接跳出
+            </summary>
+        </member>
+        <member name="T:mymooo.product.selection.SelectionModel.ProductParameter">
+            <summary>
+            产品参数
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductParameter.ParamId">
+            <summary>
+            参数ID
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductParameter.ProductId">
+            <summary>
+            :商品KEY
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductParameter.ParamCode">
+            <summary>
+            参数名称
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductParameter.ParamDesc">
+            <summary>
+            参数描述
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductParameter.ParamType">
+            <summary>
+            参数类型 T:类型参数	   S:型式参数	   P:规格参数	   M:编码参数	   N:普通参数	   A:追加工类型参数	   W:追加工方法参数	   C:成本参数	
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductParameter.ParamValueType">
+            <summary>
+            参数值类型 S:枚举字符型	   N:枚举数值型	   R:枚举区间型	   F:公式型 FB  纯公式型
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductParameter.ParamPrecision">
+            <summary>
+            参数精度 步进
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductParameter.Precision">
+            <summary>
+            参数精度位数
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductParameter.ParamUnit">
+            <summary>
+            参数单位
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductParameter.ParamShowType">
+            <summary>
+            参数展示类型	   H:横向单行字符列表	   M:横向混合字符列表	   N:横向单行数值列表	   R:横向单行数值区间	   X:不显示
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductParameter.Conver">
+            <summary>
+            补位符
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductParameter.MaxLenght">
+            <summary>
+            参数值最长的长度
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductParameter.Prefix">
+            <summary>
+            前缀
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductParameter.ParamValues">
+            <summary>
+            参数可选项列表或区间数据
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductParameter.ParamSequence">
+            <summary>
+            参数顺序
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductParameter.SelectData">
+            <summary>
+            当前选择的值
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductParameter.IsSpecOption">
+            <summary>
+            选中值是否特殊选项 默认false 不是; true 是 
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductParameter.SpecialValues">
+            <summary>
+            特殊选项值集合，包含计算值，比较值
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductParameter.Title">
+            <summary>
+            提示信息
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductParameter.NotShow">
+            <summary>
+            不显示
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductParameter.IsConstraints">
+            <summary>
+            在约束当中
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductParameter.IsShortNumber">
+            <summary>
+            是否参与简易型号
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductParameter.Interval">
+            <summary>
+            简易型号参数间隔
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductParameter.ShowSeq">
+            <summary>
+            展示顺序
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductParameter.ParamImage">
+            <summary>
+            参数图片
+            </summary>
+        </member>
+        <member name="T:mymooo.product.selection.SelectionModel.ProductParameterConstraint">
+            <summary>
+            产品参数约束
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductParameterConstraint.ParaConstraints">
+            <summary>
+            产品约束 头部 参数
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductParameterConstraint.Constraints">
+            <summary>
+            参数值约束
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductParameterConstraint.LoseEfficacy">
+            <summary>
+            是否失效
+            </summary>
+        </member>
+        <member name="T:mymooo.product.selection.SelectionModel.ProductParameterValueRequest">
+            <summary>
+            获取产品参数值请求
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductParameterValueRequest.Number">
+            <summary>
+            型号
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductParameterValueRequest.ProductId">
+            <summary>
+            产品Id  
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductParameterValueRequest.IsPublish">
+            <summary>
+            是否发布
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductParameterValueRequest.SpecialConfigs">
+            <summary>
+            简易型号参数设置
+            </summary>
+        </member>
+        <member name="T:mymooo.product.selection.SelectionModel.ProductParameterValueRequest.SpecialShortNumberConfig">
+            <summary>
+            特殊的简易型号配置
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductParameterValueRequest.SpecialShortNumberConfig.Code">
+            <summary>
+            客户 或者 供应商编码
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductParameterValueRequest.SpecialShortNumberConfig.Name">
+            <summary>
+            客户 或者 供应商名称
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductParameterValueRequest.SpecialShortNumberConfig.PriceType">
+            <summary>
+            价格类型
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductParameterValueRequest.SpecialShortNumberConfig.ParameterConfigs">
+            <summary>
+            简易型号参数设置
+            </summary>
+        </member>
+        <member name="T:mymooo.product.selection.SelectionModel.ProductParameterValueRequest.ProductParameterConfig">
+            <summary>
+            产品参数配置
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductParameterValueRequest.ProductParameterConfig.Interval">
+            <summary>
+            区间参数间隔值
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductParameterValueRequest.ProductParameterConfig.IsShortNumber">
+            <summary>
+            参与简易型号
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductParameterValueRequest.ProductParameterConfig.ParameterCode">
+            <summary>
+            参数编码
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductParameterValueRequest.ProductParameterConfig.ParameterName">
+            <summary>
+            参数名称
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductParameterValueRequest.ProductParameterConfig.ParameterValueType">
+            <summary>
+            参数类型
+            </summary>
+        </member>
+        <member name="T:mymooo.product.selection.SelectionModel.ProductParameterValueResponse">
+            <summary>
+            获取产品参数值响应类
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductParameterValueResponse.ProductId">
+            <summary>
+            产品id
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductParameterValueResponse.NumberId">
+            <summary>
+            编码ID
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductParameterValueResponse.Number">
+            <summary>
+            产品型号
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductParameterValueResponse.ShortNumberId">
+            <summary>
+            简易型号Id
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductParameterValueResponse.ShortNumber">
+            <summary>
+            简易型号
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductParameterValueResponse.ParameterValues">
+            <summary>
+            参数选择值集合
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductParameterValueResponse.TypeId">
+            <summary>
+            类型Id
+            </summary>
+        </member>
+        <member name="T:mymooo.product.selection.SelectionModel.ProductParameterValueResponse.ProductParameterValue">
+            <summary>
+            产品参数值
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductParameterValueResponse.ProductParameterValue.ParamId">
+            <summary>
+            参数Id
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductParameterValueResponse.ProductParameterValue.Code">
+            <summary>
+            参数编码
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductParameterValueResponse.ProductParameterValue.Name">
+            <summary>
+            参数名称
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductParameterValueResponse.ProductParameterValue.Value">
+            <summary>
+            参数选择值
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductParameterValueResponse.ProductParameterValue.CalValue">
+            <summary>
+            计算值
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductParameterValueResponse.ProductParameterValue.ComparativeValue">
+            <summary>
+            比较值
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductParameterValueResponse.ProductParameterValue.IsSelect">
+            <summary>
+            参数是否选择
+            </summary>
+        </member>
+        <member name="T:mymooo.product.selection.SelectionModel.ProductParamPrecision">
+            <summary>
+            产品参数精度
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductParamPrecision.ParameterPrecisionId">
+            <summary>
+             参数精度KEY
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductParamPrecision.ProductId">
+            <summary>
+            :商品KEY
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductParamPrecision.ParameterId">
+            <summary>
+            关联参数KEY
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductParamPrecision.MethodParameterId">
+            <summary>
+            追加工参数KEY
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductParamPrecision.Precision">
+            <summary>
+            关联参数精度
+            </summary>
+        </member>
+        <member name="T:mymooo.product.selection.SelectionModel.ProductParamSpecialValue">
+            <summary>
+            产品参数特殊选项值
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductParamSpecialValue.SpecialId">
+            <summary>
+            Desc:特殊选项KEY
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductParamSpecialValue.ProductId">
+            <summary>
+            :商品KEY
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductParamSpecialValue.ParameterId">
+            <summary>
+            :参数KEY
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductParamSpecialValue.OptionValue">
+            <summary>
+            特殊选项值
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductParamSpecialValue.CompareValue">
+            <summary>
+            对应与产品选型的比较值
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductParamSpecialValue.CalValue">
+            <summary>
+            公式计算值
+            </summary>
+        </member>
+        <member name="T:mymooo.product.selection.SelectionModel.ProductParamValue">
+            <summary>
+            产品参数值选项
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductParamValue.OptionId">
+            <summary>
+            参数值ID
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductParamValue.ProductId">
+            <summary>
+            :商品KEY
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductParamValue.ParamId">
+            <summary>
+            :参数Id
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductParamValue.OptionValue">
+            <summary>
+            参数值编码
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductParamValue.OptionText">
+            <summary>
+            参数值名称
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductParamValue.ToValue">
+            <summary>
+            结束值
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductParamValue.CompareValue">
+            <summary>
+            对应与产品选型的比较值
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductParamValue.CalValue">
+            <summary>
+            公式计算值
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductParamValue.ReplaceValue">
+            <summary>
+            替换值
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductParamValue.Seq">
+            <summary>
+            Desc:参数选项顺序
+            Default:
+            Nullable:True
+            </summary>           
+        </member>
+        <member name="M:mymooo.product.selection.SelectionModel.ProductParamValue.Clone">
+            <summary>
+            克隆
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:mymooo.product.selection.SelectionModel.ProductQueryParam">
+            <summary>
+            产品查询参数
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductQueryParam.ParamId">
+            <summary>
+            参数ID
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductQueryParam.ParamCode">
+            <summary>
+            参数名称
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductQueryParam.IsInclude">
+            <summary>
+            是否包含（参数值包含选择的值）
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductQueryParam.SelectData">
+            <summary>
+            参数值  兼容旧选型,有些存储的是ID,有些存储的是value
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductQueryParam.IsSpecOption">
+            <summary>
+            是否特殊选项 默认false 不是; true 是 
+            </summary>
+        </member>
+        <member name="T:mymooo.product.selection.SelectionModel.ProductSalesPriceDiscount">
+            <summary>
+            产品价格折扣
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductSalesPriceDiscount.DiscountId">
+            <summary>
+            Desc:商品销售折扣KEY
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductSalesPriceDiscount.ProductId">
+            <summary>
+            商品KEY
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductSalesPriceDiscount.TypeId">
+            <summary>
+            商品类型KEY
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductSalesPriceDiscount.QtyLimit">
+            <summary>
+            销售数量上限
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductSalesPriceDiscount.DiscountRate">
+            <summary>
+            销售折扣比率
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductSalesPriceDiscount.AppendDays">
+            <summary>
+            追加交付天数
+            </summary>
+        </member>
+        <member name="T:mymooo.product.selection.SelectionModel.ProductSelectionNumber">
+            <summary>
+            产品选型型号
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductSelectionNumber.ProductId">
+            <summary>
+            产品内码
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductSelectionNumber.TypeId">
+            <summary>
+            类型ID
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductSelectionNumber.NumberId">
+            <summary>
+            编码ID
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductSelectionNumber.Number">
+            <summary>
+            完整的编码
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductSelectionNumber.ShortNumberId">
+            <summary>
+            简易型号Id
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductSelectionNumber.ShortNumber">
+            <summary>
+            简易型号
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductSelectionNumber.Price">
+            <summary>
+            单价
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductSelectionNumber.IsDiscount">
+            <summary>
+            是否已经为折扣单价
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductSelectionNumber.OriginalPrcie">
+            <summary>
+            原始价格
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductSelectionNumber.Delivery">
+            <summary>
+            货期
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductSelectionNumber.OriginalDelivery">
+            <summary>
+            原始发货天数
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductSelectionNumber.Querys">
+            <summary>
+            选择的参数值
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductSelectionNumber.Spid">
+            <summary>
+            连接符
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductSelectionNumber.SupplyUnitPrice">
+            <summary>
+            成本价
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductSelectionNumber.BrandNumbers">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductSelectionNumber.QueryTexts">
+            <summary>
+            前端显示值
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductSelectionNumber.QtyDiscount">
+            <summary>
+            数量折扣
+            </summary>
+        </member>
+        <member name="T:mymooo.product.selection.SelectionModel.ProductSelectionNumber.BrandNumber">
+            <summary>
+            品牌型号
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductSelectionNumber.BrandNumber.NumberId">
+            <summary>
+            完整的编码
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductSelectionNumber.BrandNumber.Number">
+            <summary>
+            完整的编码
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductSelectionNumber.BrandNumber.BrandId">
+            <summary>
+            品牌Id
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductSelectionNumber.BrandNumber.BrandEn">
+            <summary>
+            品牌英文名
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductSelectionNumber.BrandNumber.BrandName">
+            <summary>
+            品牌中文名
+            </summary>
+        </member>
+        <member name="T:mymooo.product.selection.SelectionModel.ProductSelectionRequest">
+            <summary>
+            产品选型请求
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductSelectionRequest.ProductId">
+            <summary>
+            产品ID
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductSelectionRequest.TypeId">
+            <summary>
+            类型
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductSelectionRequest.TypeCode">
+            <summary>
+            产品类型
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductSelectionRequest.IsScreening">
+            <summary>
+            参数筛选过来的参数
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductSelectionRequest.IsAllRemove">
+            <summary>
+            选择的值是否全部移除
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductSelectionRequest.CurvesIndex">
+            <summary>
+            曲线图所在索引位置
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductSelectionRequest.ProductQueryParamList">
+            <summary>
+            选择多个参数
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductSelectionRequest.Qty">
+            <summary>
+            数量
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductSelectionRequest.BrandId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductSelectionRequest.ReplaceTypeCode">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductSelectionRequest.IsNotFuzzy">
+            <summary>
+            是否模糊搜索型号
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductSelectionRequest.IsCalProductPrice">
+            <summary>
+            计算产品单价
+            </summary>
+        </member>
+        <member name="T:mymooo.product.selection.SelectionModel.ProductSizeChart">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductSizeChart.Id">
+            <summary>
+            Desc:
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductSizeChart.ProductId">
+            <summary>
+            Desc:
+            Default:0
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductSizeChart.Parameter">
+            <summary>
+            Desc:
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductSizeChart.ParaValue">
+            <summary>
+            Desc:
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductSizeChart.PrdSizeUrl">
+            <summary>
+            Desc:
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductSizeChart.Seq">
+            <summary>
+            Desc:
+            Default:0
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductSizeChart.CreateDate">
+            <summary>
+            Desc:
+            Default:
+            Nullable:True
+            </summary>           
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductSizeChart.ShowName">
+            <summary>
+            Desc:
+            Default:
+            Nullable:True
+            </summary>           
+        </member>
+        <member name="T:mymooo.product.selection.SelectionModel.ProductSizeChartParameter">
+            <summary>
+            产品尺寸图参数
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductSizeChartParameter.Key">
+            <summary>
+            产品参数或参数值Id
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductSizeChartParameter.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductSizeChartParameter.Value">
+            <summary>
+            产品参数编码 或者产品参数值编码
+            </summary>
+        </member>
+        <member name="T:mymooo.product.selection.SelectionModel.ProductType">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductType.TypeId">
+            <summary>
+            类型ID
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductType.ProductId">
+            <summary>
+            :商品KEY
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductType.TypeCode">
+            <summary>
+            类型代码
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductType.TypeDesc">
+            <summary>
+            类型描述
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductType.RuleCode">
+            <summary>
+            类型规则组合式
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductType.RuleValue">
+            <summary>
+            类型规则组合值
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductType.TypeValues">
+            <summary>
+            类型参数值
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductType.RefTypeCode">
+            <summary>
+            引用类型
+            </summary>
+        </member>
+        <member name="T:mymooo.product.selection.SelectionModel.ProductTypeSearchResponse">
+            <summary>
+            产品类型搜索响应
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductTypeSearchResponse.TypeId">
+            <summary>
+             类型KEY
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductTypeSearchResponse.FactoryId">
+            <summary>
+             厂商KEY
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductTypeSearchResponse.FactoryShortName">
+            <summary>
+             厂商简称
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductTypeSearchResponse.BrandName">
+            <summary>
+             品牌名称
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductTypeSearchResponse.BrandNameEn">
+            <summary>
+             品牌英文名称
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductTypeSearchResponse.ProductId">
+            <summary>
+            产品KEY
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductTypeSearchResponse.ProductName">
+            <summary>
+            产品名称
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductTypeSearchResponse.ClassId">
+            <summary>
+            产品分类KEY
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductTypeSearchResponse.TypeCode">
+            <summary>
+            类型编码
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductTypeSearchResponse.RefTypeCode">
+            <summary>
+            参考类型编码
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductTypeSearchResponse.QueryParameters">
+            <summary>
+            选择的参数
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ProductTypeSearchResponse.BrandId">
+            <summary>
+            品牌Id
+            </summary>
+        </member>
+        <member name="T:mymooo.product.selection.SelectionModel.RowConstraint">
+            <summary>
+            行参数
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.RowConstraint.RowConstraints">
+            <summary>
+            行约束
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.RowConstraint.Formulas">
+            <summary>
+            公式约束
+            </summary>
+        </member>
+        <member name="T:mymooo.product.selection.SelectionModel.SelectionRegex">
+            <summary>
+            产品选型 正则表达式  验证 https://regex101.com/
+            </summary>
+        </member>
+        <member name="M:mymooo.product.selection.SelectionModel.SelectionRegex.ProductNumber">
+            <remarks>
+            Pattern:<br/>
+            <code>[0-9a-zA-Z_.*\\\\/-]+</code><br/>
+            Explanation:<br/>
+            <code>
+            ○ Match a character in the set [*--9A-Z\\_a-z] atomically at least once.<br/>
+            </code>
+            </remarks>
+        </member>
+        <member name="M:mymooo.product.selection.SelectionModel.SelectionRegex.RuleConnector">
+            <remarks>
+            Pattern:<br/>
+            <code>[- _*\\/+]+</code><br/>
+            Explanation:<br/>
+            <code>
+            ○ Match a character in the set [ *+-/_] atomically at least once.<br/>
+            </code>
+            </remarks>
+        </member>
+        <member name="M:mymooo.product.selection.SelectionModel.SelectionRegex.RuleParameter">
+            <remarks>
+            Pattern:<br/>
+            <code>[0-9a-zA-Z&lt;&gt;|]+</code><br/>
+            Explanation:<br/>
+            <code>
+            ○ Match a character in the set [0-9&lt;&gt;A-Za-z|] atomically at least once.<br/>
+            </code>
+            </remarks>
+        </member>
+        <member name="M:mymooo.product.selection.SelectionModel.SelectionRegex.FixedParameter">
+            <remarks>
+            Pattern:<br/>
+            <code>&lt;[0-9a-zA-Z]+&gt;</code><br/>
+            Explanation:<br/>
+            <code>
+            ○ Match '&lt;'.<br/>
+            ○ Match a character in the set [0-9A-Za-z] atomically at least once.<br/>
+            ○ Match '&gt;'.<br/>
+            </code>
+            </remarks>
+        </member>
+        <member name="M:mymooo.product.selection.SelectionModel.SelectionRegex.JoinParameter">
+            <remarks>
+            Pattern:<br/>
+            <code>\\[.*?\\]</code><br/>
+            Explanation:<br/>
+            <code>
+            ○ Match '['.<br/>
+            ○ Match a character other than '\n' lazily any number of times.<br/>
+            ○ Match ']'.<br/>
+            </code>
+            </remarks>
+        </member>
+        <member name="T:mymooo.product.selection.SelectionModel.ShortNumberVerison">
+            <summary>
+            简易型号版本
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ShortNumberVerison.Id">
+            <summary>
+            Id
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ShortNumberVerison.ProductId">
+            <summary>
+            产品内码
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ShortNumberVerison.SearchNumbers">
+            <summary>
+            搜索的产品型号集合
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ShortNumberVerison.ShortNumberId">
+            <summary>
+            简易型号Id
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ShortNumberVerison.ShortNumber">
+            <summary>
+            简易型号
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ShortNumberVerison.AuditStatus">
+            <summary>
+            审核状态
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ShortNumberVerison.IsRelease">
+            <summary>
+            是否发布
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.ShortNumberVerison.Version">
+            <summary>
+            版本
+            </summary>
+        </member>
+        <member name="T:mymooo.product.selection.SelectionModel.SpecTitle">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.SpecTitle.Name">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:mymooo.product.selection.SelectionModel.SpecTitle.Description">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:mymooo.product.selection.SelectionModel.UpperLimitException">
+            <summary>
+            数量上限
+            </summary>
+        </member>
+        <member name="M:mymooo.product.selection.SelectionModel.UpperLimitException.#ctor(System.String)">
+            <summary>
+            数量上限
+            </summary>
+        </member>
+        <member name="T:mymooo.product.selection.Service.AbstractProductSelection">
+            <summary>
+            产品选型
+            </summary>
+        </member>
+        <member name="M:mymooo.product.selection.Service.AbstractProductSelection.#ctor(mymooo.core.Utils.Script.PythonNetCoreEngineService,mymooo.core.Cache.RedisCache)">
+            <summary>
+            产品选型
+            </summary>
+        </member>
+        <member name="F:mymooo.product.selection.Service.AbstractProductSelection._pythonEngine">
+            <summary>
+            python解释器
+            </summary>
+        </member>
+        <member name="F:mymooo.product.selection.Service.AbstractProductSelection._redisCache">
+            <summary>
+            redis缓存
+            </summary>
+        </member>
+        <member name="M:mymooo.product.selection.Service.AbstractProductSelection.CalculateModelMaster(mymooo.product.selection.SelectionModel.ProductModelSelectionParameter)">
+            <summary>
+            解析
+            </summary>
+            <param name="para"></param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.product.selection.Service.AbstractProductSelection.IsInterval(mymooo.product.selection.SelectionModel.ProductParameter)">
+            <summary>
+            判断是否区间，公式参数最终也是要计算出区间。这里也当区间，
+            </summary>
+            <param name="para"></param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.product.selection.Service.AbstractProductSelection.ParameterOptionalFilter(mymooo.product.selection.SelectionModel.ProductModel,System.Collections.Generic.List{System.Int64},System.Boolean,System.Int32)">
+            <summary>
+            参数可选范围过滤
+            </summary>
+            <param name="model"></param>
+            <param name="changeParas">变化的参数</param>
+            <param name="forceQuit"></param>
+            <param name="loopCount">循环次数</param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.product.selection.Service.AbstractProductSelection.ConfirmParaValues(mymooo.product.selection.SelectionModel.ProductModel,mymooo.product.selection.SelectionModel.ProductParameterConstraint,System.Int32,System.Collections.Generic.List{System.Int64},mymooo.product.selection.SelectionModel.ConstraintHeadParameter)">
+            <summary>
+            
+            </summary>
+            <param name="model"></param>
+            <param name="constraints"></param>
+            <param name="columnIdex"></param>
+            <param name="changeConstraintParas"></param>
+            <param name="paraConstraints"></param>
+        </member>
+        <member name="M:mymooo.product.selection.Service.AbstractProductSelection.FormulaCal(mymooo.product.selection.SelectionModel.DisplayProductModelData,mymooo.product.selection.SelectionModel.ProductModelSelectionParameter)">
+            <summary>
+            计算公式
+            </summary>
+            <param name="data"></param>
+            <param name="calpara"></param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.product.selection.Service.AbstractProductSelection.FormulaCal(mymooo.product.selection.SelectionModel.DisplayProductModelData,mymooo.product.selection.SelectionModel.ProductModel,System.String,System.Collections.Generic.List{System.String})">
+            <summary>
+            公式计算
+            </summary>
+            <param name="data"></param>
+            <param name="model"></param>
+            <param name="item">计算的参数编码</param>
+            <param name="FormulaParaStrCals">已经计算过的参数编码集合</param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.product.selection.Service.AbstractProductSelection.MergeParamValue(mymooo.product.selection.SelectionModel.ProductModel,System.String,System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            合并参数值
+            </summary>
+            <param name="model"></param>
+            <param name="item"></param>
+            <param name="num"></param>
+        </member>
+        <member name="M:mymooo.product.selection.Service.AbstractProductSelection.MathCalAfterDecimalParater(mymooo.product.selection.SelectionModel.ProductParameter,System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            
+            </summary>
+            <param name="productModelParam"></param>
+            <param name="nums"></param>
+        </member>
+        <member name="M:mymooo.product.selection.Service.AbstractProductSelection.MathCalAfterIntervalParater(mymooo.product.selection.SelectionModel.ProductParameter,System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            
+            </summary>
+            <param name="productModelParam"></param>
+            <param name="num"></param>
+        </member>
+        <member name="M:mymooo.product.selection.Service.AbstractProductSelection.FormulaParameterCal(mymooo.product.selection.SelectionModel.ProductModel,System.String,System.Collections.Generic.List{mymooo.product.selection.SelectionModel.FormulaPatameter},mymooo.product.selection.SelectionModel.ProductParameterConstraint,mymooo.product.selection.SelectionModel.RowConstraint)">
+            <summary>
+            公式参数计算
+            </summary>
+            <param name="model"></param>
+            <param name="item"></param>
+            <param name="formulas"></param>
+            <param name="constraints"></param>
+            <param name="rowConstrint"></param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.product.selection.Service.AbstractProductSelection.AfterAnalyzeComplete(mymooo.product.selection.SelectionModel.DisplayProductModelData,mymooo.product.selection.SelectionModel.ProductModelSelectionParameter)">
+            <summary>
+            
+            </summary>
+            <param name="data"></param>
+            <param name="para"></param>
+        </member>
+        <member name="M:mymooo.product.selection.Service.AbstractProductSelection.PerfectMethod(mymooo.product.selection.SelectionModel.DisplayProductModelData,mymooo.product.selection.SelectionModel.ProductModelSelectionParameter)">
+            <summary>
+            
+            </summary>
+            <param name="data"></param>
+            <param name="calpara"></param>
+        </member>
+        <member name="M:mymooo.product.selection.Service.AbstractProductSelection.IsMethonComplete(mymooo.product.selection.SelectionModel.ProductModelSelectionParameter,System.Collections.Generic.KeyValuePair{System.String,mymooo.product.selection.SelectionModel.MethodParamGroup},mymooo.product.selection.SelectionModel.ProductCodeRule)">
+            <summary>
+            
+            </summary>
+            <param name="calpara"></param>
+            <param name="group"></param>
+            <param name="methodpara"></param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.product.selection.Service.AbstractProductSelection.MethodTitle(mymooo.product.selection.SelectionModel.ProductModelSelectionParameter)">
+            <summary>
+            
+            </summary>
+            <param name="calpara"></param>
+        </member>
+        <member name="M:mymooo.product.selection.Service.AbstractProductSelection.Calculatecode(mymooo.product.selection.SelectionModel.DisplayProductModelData,mymooo.product.selection.SelectionModel.ProductModelSelectionParameter)">
+            <summary>
+            
+            </summary>
+            <param name="data"></param>
+            <param name="para"></param>
+        </member>
+        <member name="M:mymooo.product.selection.Service.AbstractProductSelection.ErgodicCodes(mymooo.product.selection.SelectionModel.DisplayProductModelData,mymooo.product.selection.SelectionModel.ProductModelSelectionParameter,mymooo.product.selection.SelectionModel.ProductSelectionNumber,System.Int32,mymooo.product.selection.SelectionModel.ProductModel)">
+            <summary>
+            
+            </summary>
+            <param name="data"></param>
+            <param name="calpara"></param>
+            <param name="productCode"></param>
+            <param name="codeIndex"></param>
+            <param name="model"></param>
+        </member>
+        <member name="M:mymooo.product.selection.Service.AbstractProductSelection.NotSelectParameter(mymooo.product.selection.SelectionModel.DisplayProductModelData,mymooo.product.selection.SelectionModel.ProductModelSelectionParameter,mymooo.product.selection.SelectionModel.ProductSelectionNumber,System.Int32,mymooo.product.selection.SelectionModel.ProductModel)">
+            <summary>
+            
+            </summary>
+            <param name="data"></param>
+            <param name="calpara"></param>
+            <param name="productCode"></param>
+            <param name="codeIndex"></param>
+            <param name="model"></param>
+        </member>
+        <member name="M:mymooo.product.selection.Service.AbstractProductSelection.ErgodicParameter(mymooo.product.selection.SelectionModel.DisplayProductModelData,mymooo.product.selection.SelectionModel.ProductModelSelectionParameter,mymooo.product.selection.SelectionModel.ProductSelectionNumber,System.Int32,mymooo.product.selection.SelectionModel.ProductParameter,mymooo.product.selection.SelectionModel.ProductModel)">
+            <summary>
+            
+            </summary>
+            <param name="data"></param>
+            <param name="calpara"></param>
+            <param name="productCode"></param>
+            <param name="codeIndex"></param>
+            <param name="productPara"></param>
+            <param name="model"></param>
+        </member>
+        <member name="M:mymooo.product.selection.Service.AbstractProductSelection.ErgodicIntervalParameter(mymooo.product.selection.SelectionModel.DisplayProductModelData,mymooo.product.selection.SelectionModel.ProductModelSelectionParameter,mymooo.product.selection.SelectionModel.ProductSelectionNumber,System.Int32,mymooo.product.selection.SelectionModel.ProductParameter,mymooo.product.selection.SelectionModel.ProductQueryParam,mymooo.product.selection.SelectionModel.ProductQueryParam,mymooo.product.selection.SelectionModel.ProductModel)">
+            <summary>
+            区间型参数遍历
+            </summary>
+            <param name="data">返回前端的数据</param>
+            <param name="calpara">产品模型计算参数</param>
+            <param name="productCode">记录在这个参数之前所有参数选择的值集合</param>
+            <param name="codeIndex">编码集合中遍历的编码索引</param>
+            <param name="productPara"></param>
+            <param name="lastSelectData">最后一个选择的参数集合</param>
+            <param name="include"></param>
+            <param name="model"></param>
+        </member>
+        <member name="M:mymooo.product.selection.Service.AbstractProductSelection.JoinPatameterValues(mymooo.product.selection.SelectionModel.ProductModel,mymooo.product.selection.SelectionModel.ProductSelectionNumber,mymooo.product.selection.SelectionModel.ProductCodeRule,mymooo.product.selection.SelectionModel.ProductParamValue)">
+            <summary>
+            
+            </summary>
+            <param name="copyModel"></param>
+            <param name="productCode"></param>
+            <param name="code"></param>
+            <param name="paramData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.product.selection.Service.AbstractProductSelection.JoinPatameterValues(mymooo.product.selection.SelectionModel.ProductModel,mymooo.product.selection.SelectionModel.ProductSelectionNumber,mymooo.product.selection.SelectionModel.ProductCodeRule,System.String,System.String)">
+            <summary>
+            拼接参数值
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.product.selection.Service.AbstractProductSelection.Recurrence(mymooo.product.selection.SelectionModel.DisplayProductModelData,mymooo.product.selection.SelectionModel.ProductModelSelectionParameter,mymooo.product.selection.SelectionModel.ProductSelectionNumber,System.Int32,mymooo.product.selection.SelectionModel.ProductModel)">
+            <summary>
+            
+            </summary>
+            <param name="data"></param>
+            <param name="calpara"></param>
+            <param name="productCode"></param>
+            <param name="codeIndex"></param>
+            <param name="model"></param>
+        </member>
+        <member name="M:mymooo.product.selection.Service.AbstractProductSelection.AfterAddPrameter(mymooo.product.selection.SelectionModel.ProductSelectionNumber,mymooo.product.selection.SelectionModel.ProductModel)">
+            <summary>
+            
+            </summary>
+            <param name="productCode"></param>
+            <param name="model"></param>
+        </member>
+        <member name="M:mymooo.product.selection.Service.AbstractProductSelection.CompleteVerify(mymooo.product.selection.SelectionModel.DisplayProductModelData,mymooo.product.selection.SelectionModel.ProductModelSelectionParameter,mymooo.product.selection.SelectionModel.ProductSelectionNumber)">
+            <summary>
+            完成校验
+            </summary>
+        </member>
+        <member name="M:mymooo.product.selection.Service.AbstractProductSelection.ShowNumber(mymooo.product.selection.SelectionModel.DisplayProductModelData,mymooo.product.selection.SelectionModel.ProductModelSelectionParameter)">
+            <summary>
+            
+            </summary>
+            <param name="data"></param>
+            <param name="para"></param>
+        </member>
+        <member name="M:mymooo.product.selection.Service.AbstractProductSelection.ShowDataNumber(mymooo.product.selection.SelectionModel.DisplayProductModelData,mymooo.product.selection.SelectionModel.ProductModelSelectionParameter,mymooo.product.selection.SelectionModel.ProductCodeRule,System.Collections.Generic.List{mymooo.product.selection.SelectionModel.ProductCodeRule},System.String@)">
+            <summary>
+            
+            </summary>
+            <param name="data"></param>
+            <param name="para"></param>
+            <param name="code"></param>
+            <param name="removeCodes"></param>
+            <param name="spid">前缀</param>
+        </member>
+        <member name="M:mymooo.product.selection.Service.AbstractProductSelection.ShowCodeForSpid(mymooo.product.selection.SelectionModel.DisplayProductModelData,mymooo.product.selection.SelectionModel.ProductParameter,System.String@)">
+            <summary>
+            
+            </summary>
+            <param name="data"></param>
+            <param name="productPara"></param>
+            <param name="spid"></param>
+        </member>
+        <member name="M:mymooo.product.selection.Service.AbstractProductSelection.GetParameterCode(mymooo.product.selection.SelectionModel.ProductParameter)">
+            <summary>
+            
+            </summary>
+            <param name="productParameters"></param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.product.selection.Service.AbstractProductSelection.JoinCode(mymooo.product.selection.SelectionModel.DisplayProductModelData,mymooo.product.selection.SelectionModel.ProductParameter,System.String,mymooo.product.selection.SelectionModel.ProductCodeRule,System.String@)">
+            <summary>
+            
+            </summary>
+            <param name="data"></param>
+            <param name="productPara"></param>
+            <param name="value"></param>
+            <param name="code"></param>
+            <param name="spid"></param>
+        </member>
+        <member name="M:mymooo.product.selection.Service.AbstractProductSelection.PremiseFormulaCal(mymooo.product.selection.SelectionModel.FormulaPatameter,System.Collections.Generic.Dictionary{System.Int64,mymooo.product.selection.SelectionModel.ProductParameter})">
+            <summary>
+            前置条件计算
+            </summary>
+            <param name="formula"></param>
+            <param name="dictionary"></param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.product.selection.Service.AbstractProductSelection.SelectParamValueCal(System.Collections.Generic.Dictionary{System.String,System.Object},System.String,mymooo.product.selection.SelectionModel.ProductParameter)">
+            <summary>
+            已选择了参数值的计算
+            </summary>
+            <param name="paraValues"></param>
+            <param name="paraKey"></param>
+            <param name="productPara"></param>
+        </member>
+        <member name="M:mymooo.product.selection.Service.AbstractProductSelection.CalFormula(mymooo.product.selection.SelectionModel.FormulaPatameter,mymooo.product.selection.SelectionModel.ProductModel,mymooo.product.selection.SelectionModel.ProductParameterConstraint,mymooo.product.selection.SelectionModel.RowConstraint)">
+            <summary>
+            计算参数
+            </summary>
+            <param name="formula"></param>
+            <param name="model"></param>
+            <param name="constraints"></param>
+            <param name="rowConstrint"></param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.product.selection.Service.AbstractProductSelection.NotSelectValus(System.Collections.Generic.Dictionary{System.String,System.Object},System.Collections.Generic.KeyValuePair{System.String,System.String},mymooo.product.selection.SelectionModel.ProductParameter,mymooo.product.selection.SelectionModel.ProductParameterConstraint,mymooo.product.selection.SelectionModel.RowConstraint)">
+            <summary>
+            没有选值的参数传递
+            </summary>
+            <param name="paraValues"></param>
+            <param name="item"></param>
+            <param name="query"></param>
+            <param name="constraints"></param>
+            <param name="rowConstrint"></param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.product.selection.Service.AbstractProductSelection.OptionalFilter(mymooo.product.selection.SelectionModel.RowConstraint,mymooo.product.selection.SelectionModel.ProductParameterConstraint,mymooo.product.selection.SelectionModel.ProductModel)">
+            <summary>
+            参数值过滤
+            </summary>
+            <param name="constraint"></param>
+            <param name="constraints"></param>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.product.selection.Service.AbstractProductSelection.OptionalFilterFormulas(mymooo.product.selection.SelectionModel.RowConstraint,mymooo.product.selection.SelectionModel.ProductParameterConstraint,mymooo.product.selection.SelectionModel.ProductModel)">
+            <summary>
+            
+            </summary>
+            <param name="constraint"></param>
+            <param name="constraints"></param>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.product.selection.Service.AbstractProductSelection.RowExistsSelectValue(System.Collections.Generic.List{mymooo.product.selection.SelectionModel.ParameterConstraintValue},mymooo.product.selection.SelectionModel.ProductParameter)">
+            <summary>
+            
+            </summary>
+            <param name="rows"></param>
+            <param name="productPara"></param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.product.selection.Service.AbstractProductSelection.RowExistsNoSelectValue(System.Collections.Generic.List{mymooo.product.selection.SelectionModel.ParameterConstraintValue},mymooo.product.selection.SelectionModel.ProductParameter)">
+            <summary>
+            
+            </summary>
+            <param name="rows"></param>
+            <param name="productPara"></param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.product.selection.Service.AbstractProductSelection.RowExistsType(System.Collections.Generic.List{mymooo.product.selection.SelectionModel.ParameterConstraintValue},System.Collections.Generic.Dictionary{System.Int64,mymooo.product.selection.SelectionModel.ProductType})">
+            <summary>
+            
+            </summary>
+            <param name="rows"></param>
+            <param name="types"></param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.product.selection.Service.AbstractProductSelection.PrescribeRange(System.Object,System.Collections.Generic.Dictionary{System.String,System.String},mymooo.product.selection.SelectionModel.ProductParameter,mymooo.product.selection.SelectionModel.FormulaPatameter)">
+            <summary>
+            根据计算的结果，框定参数值的选定范围
+            </summary>
+            <param name="formulaResult"></param>
+            <param name="results"></param>
+            <param name="productModelParam"></param>
+            <param name="formula"></param>
+        </member>
+        <member name="M:mymooo.product.selection.Service.AbstractProductSelection.CalMinParaValue(System.Object,System.Collections.Generic.Dictionary{System.String,System.String},mymooo.product.selection.SelectionModel.ProductParameter,mymooo.product.selection.SelectionModel.FormulaPatameter)">
+            <summary>
+            计算参数最小值
+            </summary>
+            <param name="formulaResult"></param>
+            <param name="results"></param>
+            <param name="productModelParam"></param>
+            <param name="formula"></param>
+        </member>
+        <member name="M:mymooo.product.selection.Service.AbstractProductSelection.CalMaxParaValue(System.Object,System.Collections.Generic.Dictionary{System.String,System.String},mymooo.product.selection.SelectionModel.ProductParameter,mymooo.product.selection.SelectionModel.FormulaPatameter)">
+            <summary>
+            计算参数最大值
+            </summary>
+            <param name="formulaResult"></param>
+            <param name="results"></param>
+            <param name="productModelParam"></param>
+            <param name="formula"></param>
+        </member>
+        <member name="M:mymooo.product.selection.Service.AbstractProductSelection.MathCalAfterStringParater(mymooo.product.selection.SelectionModel.ProductParameter,System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            
+            </summary>
+            <param name="productModelParam"></param>
+            <param name="result"></param>
+        </member>
+        <member name="M:mymooo.product.selection.Service.AbstractProductSelection.FilterTypeParameter(mymooo.product.selection.SelectionModel.ProductModel)">
+            <summary>
+            
+            </summary>
+            <param name="model"></param>
+        </member>
+        <member name="T:mymooo.product.selection.Service.NumberProductSelection">
+            <summary>
+            型号反解析
+            </summary>
+        </member>
+        <member name="M:mymooo.product.selection.Service.NumberProductSelection.#ctor(mymooo.core.Utils.Script.PythonNetCoreEngineService,mymooo.core.Cache.RedisCache)">
+            <summary>
+            型号反解析
+            </summary>
+        </member>
+        <member name="M:mymooo.product.selection.Service.NumberProductSelection.CalculateModelMaster(mymooo.product.selection.SelectionModel.ProductModelSelectionParameter)">
+            <summary>
+            
+            </summary>
+            <param name="para"></param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.product.selection.Service.NumberProductSelection.CodeUnAnalyzePn(mymooo.product.selection.SelectionModel.ProductModelSelectionParameter,mymooo.product.selection.SelectionModel.DisplayProductModelData,mymooo.product.selection.SelectionModel.ProductCodeRule,System.Collections.Generic.List{mymooo.product.selection.SelectionModel.ProductCodeRule},System.Collections.Generic.Dictionary{System.Int32,mymooo.product.selection.SelectionModel.ProductModelSelectionParameter})">
+            <summary>
+            
+            </summary>
+            <param name="para"></param>
+            <param name="data"></param>
+            <param name="code"></param>
+            <param name="codes"></param>
+            <param name="returnPara"></param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.product.selection.Service.NumberProductSelection.CodeUnAnalyze(mymooo.product.selection.SelectionModel.ProductModelSelectionParameter,mymooo.product.selection.SelectionModel.ProductCodeRule)">
+            <summary>
+            
+            </summary>
+            <param name="para"></param>
+            <param name="code"></param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.product.selection.Service.NumberProductSelection.CodeUnAnalyze(mymooo.product.selection.SelectionModel.ProductModelSelectionParameter,mymooo.product.selection.SelectionModel.ProductParameter)">
+            <summary>
+            
+            </summary>
+            <param name="calpara"></param>
+            <param name="para"></param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.product.selection.Service.NumberProductSelection.CodeUnAnalyzeEnum(mymooo.product.selection.SelectionModel.ProductModelSelectionParameter,mymooo.product.selection.SelectionModel.ProductParameter)">
+            <summary>
+            非区间的参数解析
+            </summary>
+            <param name="calpara"></param>
+            <param name="para"></param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.product.selection.Service.NumberProductSelection.CodeUnAnalyzeInterval(mymooo.product.selection.SelectionModel.ProductModelSelectionParameter,mymooo.product.selection.SelectionModel.ProductParameter)">
+            <summary>
+            
+            </summary>
+            <param name="calpara"></param>
+            <param name="para"></param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.product.selection.Service.NumberProductSelection.CodeUnAnalyzeIntervalCompare(mymooo.product.selection.SelectionModel.ProductModelSelectionParameter,mymooo.product.selection.SelectionModel.ProductParameter,System.Boolean,System.Collections.Generic.List{System.String})">
+            <summary>
+            是否有追加工
+            </summary>
+            <param name="calpara"></param>
+            <param name="para"></param>
+            <param name="isMethon"></param>
+            <param name="ntervalSpec"></param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.product.selection.Service.NumberProductSelection.AnalyzeType(mymooo.product.selection.SelectionModel.ProductModelSelectionParameter)">
+            <summary>
+            解析类型
+            </summary>
+            <param name="para"></param>
+        </member>
+        <member name="T:mymooo.product.selection.Service.ProductFileService">
+            <summary>
+            产品文件相关服务
+            </summary>
+        </member>
+        <member name="M:mymooo.product.selection.Service.ProductFileService.#ctor(mymooo.product.selection.Common.UrlConfig)">
+            <summary>
+            
+            </summary>
+            <param name="urlConfig"></param>
+        </member>
+        <member name="M:mymooo.product.selection.Service.ProductFileService.ReadFileContent(System.String)">
+            <summary>
+            读取远程文件的内容
+            </summary>
+            <param name="path"></param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.product.selection.Service.ProductFileService.FileExists(System.String)">
+            <summary>
+            判断文件是否存在
+            </summary>
+            <param name="path"></param>
+            <returns></returns>
+            <exception cref="T:System.Exception"></exception>
+        </member>
+        <member name="T:mymooo.product.selection.Service.ProductSelectionService`2">
+            <summary>
+            产品服务
+            </summary>
+        </member>
+        <member name="M:mymooo.product.selection.Service.ProductSelectionService`2.#ctor(`0,mymooo.product.selection.ProductCache{`0,`1})">
+            <summary>
+            产品服务
+            </summary>
+        </member>
+        <member name="M:mymooo.product.selection.Service.ProductSelectionService`2.StandardSelection(mymooo.product.selection.SelectionModel.ProductSelectionRequest,System.Int32,mymooo.product.selection.SelectionModel.ProductSelectionRequest)">
+            <summary>
+            选型
+            </summary>
+            <param name="request">产品选型请求参数</param>
+            <param name="count">需要多少个型号</param>
+            <param name="lastQuery">最后一个产品的选型数据</param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.product.selection.Service.ProductSelectionService`2.CalProductPrice(System.Int64,System.String,System.Decimal,System.Nullable{System.Boolean})">
+            <summary>
+            计算产品型号单价货期信息
+            </summary>
+            <param name="productId">产品id</param>
+            <param name="number">型号</param>
+            <param name="qty">数量</param>
+            <param name="isPublish">是否发布</param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.product.selection.Service.ProductSelectionService`2.GenerateShortNumber(mymooo.product.selection.Service.StandardProductSelection,mymooo.product.selection.Elasticsearch.ProductIndex,mymooo.product.selection.SelectionModel.ProductModel)">
+            <summary>
+            生成简易型号
+            </summary>
+        </member>
+        <member name="M:mymooo.product.selection.Service.ProductSelectionService`2.GenerateBrandNumber(System.Collections.Generic.List{mymooo.product.selection.SelectionModel.ProductSelectionNumber},mymooo.product.selection.SelectionModel.ProductModel,System.Boolean)">
+            <summary>
+            生成对应的品牌型号
+            </summary>
+            <param name="productNumbers">型号集合</param>
+            <param name="model">产品模型数据</param>
+            <param name="isShortNumber">是否生成对应的品牌简易型号</param>
+        </member>
+        <member name="M:mymooo.product.selection.Service.ProductSelectionService`2.ProductNumberAnalyze(System.String,System.Nullable{System.Boolean})">
+            <summary>
+            产品型号解析 
+            </summary>
+            <param name="number">型号</param>
+            <param name="isPublish">是否发布</param>
+            <returns>返回成功解析到的产品相信信息,包括简易型号 数量折扣等</returns>
+        </member>
+        <member name="M:mymooo.product.selection.Service.ProductSelectionService`2.NumberAnalyze``1(System.String,System.Boolean,Elastic.Clients.Elasticsearch.Core.Search.SourceConfig)">
+            <summary>
+            型号校验
+            </summary>
+            <param name="keyword">型号</param>
+            <param name="isPublish">是否发布</param>
+            <param name="sourceConfig"></param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.product.selection.Service.ProductSelectionService`2.SearchNumberAnalyze(System.String,System.Boolean)">
+            <summary>
+            型号解析
+            </summary>
+            <param name="keyword">型号关键字</param>
+            <param name="isPublish">是否发布</param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.product.selection.Service.ProductSelectionService`2.SearchNumberFirstAnalyze(System.String,System.Boolean)">
+            <summary>
+            型号解析 解析到一个就返回
+            </summary>
+            <param name="keyword">型号关键字</param>
+            <param name="isPublish">是否发布</param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.product.selection.Service.ProductSelectionService`2.SearchNumberAnalyzeQuery(System.String,System.Nullable{System.Boolean},System.Int64,System.Int32,System.Boolean)">
+            <summary>
+            型号解析 解析到一个就返回
+            </summary>
+            <param name="keyword">型号关键字</param>
+            <param name="isPublish">是否发布</param>
+            <param name="productId"></param>
+            <param name="count"></param>
+            <param name="isNotFuzzy"></param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.product.selection.Service.ProductSelectionService`2.SearchNumberAnalyze(System.String,System.Boolean,System.Int32)">
+            <summary>
+            型号解析
+            </summary>
+            <param name="keyword">型号关键字</param>
+            <param name="isPublish">是否发布</param>
+            <param name="count"></param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.product.selection.Service.ProductSelectionService`2.SearchNumberAnalyze(System.Collections.Generic.List{mymooo.product.selection.Elasticsearch.ProductTypeIndex},mymooo.product.selection.Service.AbstractProductSelection,System.String)">
+            <summary>
+            前端搜索 如果可以解析到按型号返回,如果不能解析到按类型编码返回
+            </summary>
+            <param name="productTypes">类型集合</param>
+            <param name="numberSelection">选型</param>
+            <param name="keyword">型号</param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.product.selection.Service.ProductSelectionService`2.NumberFirstAnalyze(System.Collections.Generic.List{mymooo.product.selection.Elasticsearch.ProductTypeIndex},mymooo.product.selection.Service.AbstractProductSelection,System.String)">
+            <summary>
+            解析到一个,就返回
+            </summary>
+            <param name="productTypes">类型集合</param>
+            <param name="numberSelection">选型</param>
+            <param name="keyword">型号</param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.product.selection.Service.ProductSelectionService`2.NumberAnalyzeQuery(System.Collections.Generic.List{mymooo.product.selection.Elasticsearch.ProductTypeIndex},mymooo.product.selection.Service.AbstractProductSelection,System.String,System.Int32,System.Boolean)">
+            <summary>
+            解析到一个,就返回
+            </summary>
+            <param name="productTypes">类型集合</param>
+            <param name="numberSelection">选型</param>
+            <param name="keyword">型号</param>
+            <param name="count"></param>
+            <param name="isNotFuzzy"></param>
+            <returns></returns>
+        </member>
+        <member name="T:mymooo.product.selection.Service.ReplaceProductSelection">
+            <summary>
+            替换型号解析
+            </summary>
+        </member>
+        <member name="M:mymooo.product.selection.Service.ReplaceProductSelection.#ctor(mymooo.core.Utils.Script.PythonNetCoreEngineService,mymooo.core.Cache.RedisCache)">
+            <summary>
+            替换型号解析
+            </summary>
+        </member>
+        <member name="M:mymooo.product.selection.Service.ReplaceProductSelection.CalculateModelMaster(mymooo.product.selection.SelectionModel.ProductModelSelectionParameter)">
+            <summary>
+            
+            </summary>
+            <param name="para"></param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.product.selection.Service.ReplaceProductSelection.CodeUnAnalyzePn(mymooo.product.selection.SelectionModel.ProductModelSelectionParameter,mymooo.product.selection.SelectionModel.DisplayProductModelData,mymooo.product.selection.SelectionModel.ProductCodeRule,System.Collections.Generic.List{mymooo.product.selection.SelectionModel.ProductCodeRule},System.Collections.Generic.Dictionary{System.Int32,mymooo.product.selection.SelectionModel.ProductModelSelectionParameter})">
+            <summary>
+            
+            </summary>
+            <param name="para"></param>
+            <param name="data"></param>
+            <param name="code"></param>
+            <param name="codes"></param>
+            <param name="returnPara"></param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.product.selection.Service.ReplaceProductSelection.CodeUnAnalyze(mymooo.product.selection.SelectionModel.ProductModelSelectionParameter,mymooo.product.selection.SelectionModel.ProductCodeRule)">
+            <summary>
+            
+            </summary>
+            <param name="para"></param>
+            <param name="code"></param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.product.selection.Service.ReplaceProductSelection.CodeUnAnalyze(mymooo.product.selection.SelectionModel.ProductModelSelectionParameter,mymooo.product.selection.SelectionModel.ProductParameter)">
+            <summary>
+            
+            </summary>
+            <param name="calpara"></param>
+            <param name="para"></param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.product.selection.Service.ReplaceProductSelection.GetMapParamterPrefix(mymooo.product.selection.SelectionModel.ProductModelSelectionParameter,mymooo.product.selection.SelectionModel.ProductParameter)">
+            <summary>
+            匹配参数前缀
+            </summary>
+            <param name="calpara"></param>
+            <param name="para"></param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.product.selection.Service.ReplaceProductSelection.GetMapParamter(mymooo.product.selection.SelectionModel.ProductModelSelectionParameter,mymooo.product.selection.SelectionModel.ProductParameter)">
+            <summary>
+            
+            </summary>
+            <param name="calpara"></param>
+            <param name="para"></param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.product.selection.Service.ReplaceProductSelection.CodeUnAnalyzeEnum(mymooo.product.selection.SelectionModel.ProductModelSelectionParameter,mymooo.product.selection.SelectionModel.ProductParameter)">
+            <summary>
+            非区间的参数解析
+            </summary>
+            <param name="calpara"></param>
+            <param name="para"></param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.product.selection.Service.ReplaceProductSelection.CodeUnAnalyzeInterval(mymooo.product.selection.SelectionModel.ProductModelSelectionParameter,mymooo.product.selection.SelectionModel.ProductParameter)">
+            <summary>
+            
+            </summary>
+            <param name="calpara"></param>
+            <param name="para"></param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.product.selection.Service.ReplaceProductSelection.CodeUnAnalyzeIntervalCompare(mymooo.product.selection.SelectionModel.ProductModelSelectionParameter,mymooo.product.selection.SelectionModel.ProductParameter,System.Boolean,System.Collections.Generic.List{System.String})">
+            <summary>
+            是否有追加工
+            </summary>
+            <param name="calpara"></param>
+            <param name="para"></param>
+            <param name="isMethon"></param>
+            <param name="ntervalSpec"></param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.product.selection.Service.ReplaceProductSelection.AnalyzeType(mymooo.product.selection.SelectionModel.ProductModelSelectionParameter)">
+            <summary>
+            解析类型
+            </summary>
+            <param name="para"></param>
+        </member>
+        <member name="T:mymooo.product.selection.Service.StandardProductSelection">
+            <summary>
+            标准型号解析
+            </summary>
+        </member>
+        <member name="M:mymooo.product.selection.Service.StandardProductSelection.#ctor(mymooo.core.Utils.Script.PythonNetCoreEngineService,mymooo.core.Cache.RedisCache)">
+            <summary>
+            标准型号解析
+            </summary>
+        </member>
+        <member name="M:mymooo.product.selection.Service.StandardProductSelection.CalculateModelMaster(mymooo.product.selection.SelectionModel.ProductModelSelectionParameter)">
+            <summary>
+            
+            </summary>
+            <param name="para"></param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.product.selection.Service.StandardProductSelection.CalculateType(mymooo.product.selection.SelectionModel.ProductModelSelectionParameter)">
+            <summary>
+            
+            </summary>
+            <param name="para"></param>
+        </member>
+        <member name="M:mymooo.product.selection.Service.StandardProductSelection.ValueInParaRange(mymooo.product.selection.SelectionModel.ProductQueryParam,mymooo.product.selection.SelectionModel.ProductParameter)">
+            <summary>
+            判断参数是否在范围之内
+            </summary>
+            <param name="item"></param>
+            <param name="productPara"></param>
+            <returns></returns>
+        </member>
+        <member name="T:mymooo.product.core.SqlSugarCore.ProductDatabae.ProductPriceMatrix">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:mymooo.product.core.SqlSugarCore.ProductDatabae.ProductPriceMatrix.Id">
+            <summary>
+            Desc:
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:mymooo.product.core.SqlSugarCore.ProductDatabae.ProductPriceMatrix.ProductId">
+            <summary>
+            Desc:
+            Default:0
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:mymooo.product.core.SqlSugarCore.ProductDatabae.ProductPriceMatrix.Type">
+            <summary>
+            Desc:
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:mymooo.product.core.SqlSugarCore.ProductDatabae.ProductPriceMatrix.PriceMatrix">
+            <summary>
+            Desc:
+            Default:
+            Nullable:True
+            </summary>           
+        </member>
+        <member name="P:mymooo.product.core.SqlSugarCore.ProductDatabae.ProductPriceMatrix.SupplierNumber">
+            <summary>
+            Desc:
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="T:mymooo.mymooo.product.selection.SelectionModel.ProductConstraint">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:mymooo.mymooo.product.selection.SelectionModel.ProductConstraint.ProductConstraintId">
+            <summary>
+            Desc:
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:mymooo.mymooo.product.selection.SelectionModel.ProductConstraint.ProductId">
+            <summary>
+            Desc:商品KEY
+            Default:0
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:mymooo.mymooo.product.selection.SelectionModel.ProductConstraint.Constraint">
+            <summary>
+            Desc:
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:mymooo.mymooo.product.selection.SelectionModel.ProductConstraint.BrandId">
+            <summary>
+            Desc:
+            Default:0
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="T:System.Text.RegularExpressions.Generated.ProductNumber_0">
+            <summary>Custom <see cref="T:System.Text.RegularExpressions.Regex"/>-derived type for the ProductNumber method.</summary>
+        </member>
+        <member name="F:System.Text.RegularExpressions.Generated.ProductNumber_0.Instance">
+            <summary>Cached, thread-safe singleton instance.</summary>
+        </member>
+        <member name="M:System.Text.RegularExpressions.Generated.ProductNumber_0.#ctor">
+            <summary>Initializes the instance.</summary>
+        </member>
+        <member name="T:System.Text.RegularExpressions.Generated.ProductNumber_0.RunnerFactory">
+            <summary>Provides a factory for creating <see cref="T:System.Text.RegularExpressions.RegexRunner"/> instances to be used by methods on <see cref="T:System.Text.RegularExpressions.Regex"/>.</summary>
+        </member>
+        <member name="M:System.Text.RegularExpressions.Generated.ProductNumber_0.RunnerFactory.CreateInstance">
+            <summary>Creates an instance of a <see cref="T:System.Text.RegularExpressions.RegexRunner"/> used by methods on <see cref="T:System.Text.RegularExpressions.Regex"/>.</summary>
+        </member>
+        <member name="T:System.Text.RegularExpressions.Generated.ProductNumber_0.RunnerFactory.Runner">
+            <summary>Provides the runner that contains the custom logic implementing the specified regular expression.</summary>
+        </member>
+        <member name="M:System.Text.RegularExpressions.Generated.ProductNumber_0.RunnerFactory.Runner.Scan(System.ReadOnlySpan{System.Char})">
+            <summary>Scan the <paramref name="inputSpan"/> starting from base.runtextstart for the next match.</summary>
+            <param name="inputSpan">The text being scanned by the regular expression.</param>
+        </member>
+        <member name="M:System.Text.RegularExpressions.Generated.ProductNumber_0.RunnerFactory.Runner.TryFindNextPossibleStartingPosition(System.ReadOnlySpan{System.Char})">
+            <summary>Search <paramref name="inputSpan"/> starting from base.runtextpos for the next location a match could possibly start.</summary>
+            <param name="inputSpan">The text being scanned by the regular expression.</param>
+            <returns>true if a possible match was found; false if no more matches are possible.</returns>
+        </member>
+        <member name="M:System.Text.RegularExpressions.Generated.ProductNumber_0.RunnerFactory.Runner.TryMatchAtCurrentPosition(System.ReadOnlySpan{System.Char})">
+            <summary>Determine whether <paramref name="inputSpan"/> at base.runtextpos is a match for the regular expression.</summary>
+            <param name="inputSpan">The text being scanned by the regular expression.</param>
+            <returns>true if the regular expression matches at the current position; otherwise, false.</returns>
+        </member>
+        <member name="T:System.Text.RegularExpressions.Generated.RuleConnector_1">
+            <summary>Custom <see cref="T:System.Text.RegularExpressions.Regex"/>-derived type for the RuleConnector method.</summary>
+        </member>
+        <member name="F:System.Text.RegularExpressions.Generated.RuleConnector_1.Instance">
+            <summary>Cached, thread-safe singleton instance.</summary>
+        </member>
+        <member name="M:System.Text.RegularExpressions.Generated.RuleConnector_1.#ctor">
+            <summary>Initializes the instance.</summary>
+        </member>
+        <member name="T:System.Text.RegularExpressions.Generated.RuleConnector_1.RunnerFactory">
+            <summary>Provides a factory for creating <see cref="T:System.Text.RegularExpressions.RegexRunner"/> instances to be used by methods on <see cref="T:System.Text.RegularExpressions.Regex"/>.</summary>
+        </member>
+        <member name="M:System.Text.RegularExpressions.Generated.RuleConnector_1.RunnerFactory.CreateInstance">
+            <summary>Creates an instance of a <see cref="T:System.Text.RegularExpressions.RegexRunner"/> used by methods on <see cref="T:System.Text.RegularExpressions.Regex"/>.</summary>
+        </member>
+        <member name="T:System.Text.RegularExpressions.Generated.RuleConnector_1.RunnerFactory.Runner">
+            <summary>Provides the runner that contains the custom logic implementing the specified regular expression.</summary>
+        </member>
+        <member name="M:System.Text.RegularExpressions.Generated.RuleConnector_1.RunnerFactory.Runner.Scan(System.ReadOnlySpan{System.Char})">
+            <summary>Scan the <paramref name="inputSpan"/> starting from base.runtextstart for the next match.</summary>
+            <param name="inputSpan">The text being scanned by the regular expression.</param>
+        </member>
+        <member name="M:System.Text.RegularExpressions.Generated.RuleConnector_1.RunnerFactory.Runner.TryFindNextPossibleStartingPosition(System.ReadOnlySpan{System.Char})">
+            <summary>Search <paramref name="inputSpan"/> starting from base.runtextpos for the next location a match could possibly start.</summary>
+            <param name="inputSpan">The text being scanned by the regular expression.</param>
+            <returns>true if a possible match was found; false if no more matches are possible.</returns>
+        </member>
+        <member name="M:System.Text.RegularExpressions.Generated.RuleConnector_1.RunnerFactory.Runner.TryMatchAtCurrentPosition(System.ReadOnlySpan{System.Char})">
+            <summary>Determine whether <paramref name="inputSpan"/> at base.runtextpos is a match for the regular expression.</summary>
+            <param name="inputSpan">The text being scanned by the regular expression.</param>
+            <returns>true if the regular expression matches at the current position; otherwise, false.</returns>
+        </member>
+        <member name="T:System.Text.RegularExpressions.Generated.RuleParameter_2">
+            <summary>Custom <see cref="T:System.Text.RegularExpressions.Regex"/>-derived type for the RuleParameter method.</summary>
+        </member>
+        <member name="F:System.Text.RegularExpressions.Generated.RuleParameter_2.Instance">
+            <summary>Cached, thread-safe singleton instance.</summary>
+        </member>
+        <member name="M:System.Text.RegularExpressions.Generated.RuleParameter_2.#ctor">
+            <summary>Initializes the instance.</summary>
+        </member>
+        <member name="T:System.Text.RegularExpressions.Generated.RuleParameter_2.RunnerFactory">
+            <summary>Provides a factory for creating <see cref="T:System.Text.RegularExpressions.RegexRunner"/> instances to be used by methods on <see cref="T:System.Text.RegularExpressions.Regex"/>.</summary>
+        </member>
+        <member name="M:System.Text.RegularExpressions.Generated.RuleParameter_2.RunnerFactory.CreateInstance">
+            <summary>Creates an instance of a <see cref="T:System.Text.RegularExpressions.RegexRunner"/> used by methods on <see cref="T:System.Text.RegularExpressions.Regex"/>.</summary>
+        </member>
+        <member name="T:System.Text.RegularExpressions.Generated.RuleParameter_2.RunnerFactory.Runner">
+            <summary>Provides the runner that contains the custom logic implementing the specified regular expression.</summary>
+        </member>
+        <member name="M:System.Text.RegularExpressions.Generated.RuleParameter_2.RunnerFactory.Runner.Scan(System.ReadOnlySpan{System.Char})">
+            <summary>Scan the <paramref name="inputSpan"/> starting from base.runtextstart for the next match.</summary>
+            <param name="inputSpan">The text being scanned by the regular expression.</param>
+        </member>
+        <member name="M:System.Text.RegularExpressions.Generated.RuleParameter_2.RunnerFactory.Runner.TryFindNextPossibleStartingPosition(System.ReadOnlySpan{System.Char})">
+            <summary>Search <paramref name="inputSpan"/> starting from base.runtextpos for the next location a match could possibly start.</summary>
+            <param name="inputSpan">The text being scanned by the regular expression.</param>
+            <returns>true if a possible match was found; false if no more matches are possible.</returns>
+        </member>
+        <member name="M:System.Text.RegularExpressions.Generated.RuleParameter_2.RunnerFactory.Runner.TryMatchAtCurrentPosition(System.ReadOnlySpan{System.Char})">
+            <summary>Determine whether <paramref name="inputSpan"/> at base.runtextpos is a match for the regular expression.</summary>
+            <param name="inputSpan">The text being scanned by the regular expression.</param>
+            <returns>true if the regular expression matches at the current position; otherwise, false.</returns>
+        </member>
+        <member name="T:System.Text.RegularExpressions.Generated.FixedParameter_3">
+            <summary>Custom <see cref="T:System.Text.RegularExpressions.Regex"/>-derived type for the FixedParameter method.</summary>
+        </member>
+        <member name="F:System.Text.RegularExpressions.Generated.FixedParameter_3.Instance">
+            <summary>Cached, thread-safe singleton instance.</summary>
+        </member>
+        <member name="M:System.Text.RegularExpressions.Generated.FixedParameter_3.#ctor">
+            <summary>Initializes the instance.</summary>
+        </member>
+        <member name="T:System.Text.RegularExpressions.Generated.FixedParameter_3.RunnerFactory">
+            <summary>Provides a factory for creating <see cref="T:System.Text.RegularExpressions.RegexRunner"/> instances to be used by methods on <see cref="T:System.Text.RegularExpressions.Regex"/>.</summary>
+        </member>
+        <member name="M:System.Text.RegularExpressions.Generated.FixedParameter_3.RunnerFactory.CreateInstance">
+            <summary>Creates an instance of a <see cref="T:System.Text.RegularExpressions.RegexRunner"/> used by methods on <see cref="T:System.Text.RegularExpressions.Regex"/>.</summary>
+        </member>
+        <member name="T:System.Text.RegularExpressions.Generated.FixedParameter_3.RunnerFactory.Runner">
+            <summary>Provides the runner that contains the custom logic implementing the specified regular expression.</summary>
+        </member>
+        <member name="M:System.Text.RegularExpressions.Generated.FixedParameter_3.RunnerFactory.Runner.Scan(System.ReadOnlySpan{System.Char})">
+            <summary>Scan the <paramref name="inputSpan"/> starting from base.runtextstart for the next match.</summary>
+            <param name="inputSpan">The text being scanned by the regular expression.</param>
+        </member>
+        <member name="M:System.Text.RegularExpressions.Generated.FixedParameter_3.RunnerFactory.Runner.TryFindNextPossibleStartingPosition(System.ReadOnlySpan{System.Char})">
+            <summary>Search <paramref name="inputSpan"/> starting from base.runtextpos for the next location a match could possibly start.</summary>
+            <param name="inputSpan">The text being scanned by the regular expression.</param>
+            <returns>true if a possible match was found; false if no more matches are possible.</returns>
+        </member>
+        <member name="M:System.Text.RegularExpressions.Generated.FixedParameter_3.RunnerFactory.Runner.TryMatchAtCurrentPosition(System.ReadOnlySpan{System.Char})">
+            <summary>Determine whether <paramref name="inputSpan"/> at base.runtextpos is a match for the regular expression.</summary>
+            <param name="inputSpan">The text being scanned by the regular expression.</param>
+            <returns>true if the regular expression matches at the current position; otherwise, false.</returns>
+        </member>
+        <member name="T:System.Text.RegularExpressions.Generated.JoinParameter_4">
+            <summary>Custom <see cref="T:System.Text.RegularExpressions.Regex"/>-derived type for the JoinParameter method.</summary>
+        </member>
+        <member name="F:System.Text.RegularExpressions.Generated.JoinParameter_4.Instance">
+            <summary>Cached, thread-safe singleton instance.</summary>
+        </member>
+        <member name="M:System.Text.RegularExpressions.Generated.JoinParameter_4.#ctor">
+            <summary>Initializes the instance.</summary>
+        </member>
+        <member name="T:System.Text.RegularExpressions.Generated.JoinParameter_4.RunnerFactory">
+            <summary>Provides a factory for creating <see cref="T:System.Text.RegularExpressions.RegexRunner"/> instances to be used by methods on <see cref="T:System.Text.RegularExpressions.Regex"/>.</summary>
+        </member>
+        <member name="M:System.Text.RegularExpressions.Generated.JoinParameter_4.RunnerFactory.CreateInstance">
+            <summary>Creates an instance of a <see cref="T:System.Text.RegularExpressions.RegexRunner"/> used by methods on <see cref="T:System.Text.RegularExpressions.Regex"/>.</summary>
+        </member>
+        <member name="T:System.Text.RegularExpressions.Generated.JoinParameter_4.RunnerFactory.Runner">
+            <summary>Provides the runner that contains the custom logic implementing the specified regular expression.</summary>
+        </member>
+        <member name="M:System.Text.RegularExpressions.Generated.JoinParameter_4.RunnerFactory.Runner.Scan(System.ReadOnlySpan{System.Char})">
+            <summary>Scan the <paramref name="inputSpan"/> starting from base.runtextstart for the next match.</summary>
+            <param name="inputSpan">The text being scanned by the regular expression.</param>
+        </member>
+        <member name="M:System.Text.RegularExpressions.Generated.JoinParameter_4.RunnerFactory.Runner.TryFindNextPossibleStartingPosition(System.ReadOnlySpan{System.Char})">
+            <summary>Search <paramref name="inputSpan"/> starting from base.runtextpos for the next location a match could possibly start.</summary>
+            <param name="inputSpan">The text being scanned by the regular expression.</param>
+            <returns>true if a possible match was found; false if no more matches are possible.</returns>
+        </member>
+        <member name="M:System.Text.RegularExpressions.Generated.JoinParameter_4.RunnerFactory.Runner.TryMatchAtCurrentPosition(System.ReadOnlySpan{System.Char})">
+            <summary>Determine whether <paramref name="inputSpan"/> at base.runtextpos is a match for the regular expression.</summary>
+            <param name="inputSpan">The text being scanned by the regular expression.</param>
+            <returns>true if the regular expression matches at the current position; otherwise, false.</returns>
+        </member>
+        <member name="T:System.Text.RegularExpressions.Generated.Utilities">
+            <summary>Helper methods used by generated <see cref="T:System.Text.RegularExpressions.Regex"/>-derived implementations.</summary>
+        </member>
+        <member name="F:System.Text.RegularExpressions.Generated.Utilities.s_defaultTimeout">
+            <summary>Default timeout value set in <see cref="T:System.AppContext"/>, or <see cref="F:System.Text.RegularExpressions.Regex.InfiniteMatchTimeout"/> if none was set.</summary>
+        </member>
+        <member name="F:System.Text.RegularExpressions.Generated.Utilities.s_hasTimeout">
+            <summary>Whether <see cref="F:System.Text.RegularExpressions.Generated.Utilities.s_defaultTimeout"/> is non-infinite.</summary>
+        </member>
+        <member name="F:System.Text.RegularExpressions.Generated.Utilities.s_asciiLettersAndDigits">
+            <summary>Supports searching for characters in or not in "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz".</summary>
+        </member>
+        <member name="F:System.Text.RegularExpressions.Generated.Utilities.s_ascii_1AC00000000008000000000">
+            <summary>Supports searching for characters in or not in " *+-/_".</summary>
+        </member>
+        <member name="F:System.Text.RegularExpressions.Generated.Utilities.s_ascii_E4FF03FEFFFF97FEFFFF07">
+            <summary>Supports searching for characters in or not in "*-./0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ\\_abcdefghijklmnopqrstuvwxyz".</summary>
+        </member>
+        <member name="F:System.Text.RegularExpressions.Generated.Utilities.s_ascii_FF53FEFFFF07FEFFFF17">
+            <summary>Supports searching for characters in or not in "0123456789&lt;&gt;ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz|".</summary>
+        </member>
+    </members>
+</doc>

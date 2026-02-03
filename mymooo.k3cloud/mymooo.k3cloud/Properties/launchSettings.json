@@ -1,0 +1,70 @@
+﻿{
+  "profiles": {
+    "http.debug": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": true,
+      "applicationUrl": "http://*:5081",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development.Debug",
+        "TOKEN": "OQMKPQBRw4hK37TTaWePMc0nhyVkCClKU1Q75fAhJNvESdSJzIjaePgDbM4idd+OPJ7sdbHGHyonAdHToCLnoYPBFk+205QCtglMNuruEF7HhUmlF6opguXHxbByW4jLwWD/oaCL6Hw40DQ+5Q429KjQRVdKHwwtXirWZ/RMIDHZxMnv1XSNzb2V3uXyT2f9y/a8MD/R0nz7XV5Zggg7qzRP3XOJqYGZUmDSwry/BTSk7B5s3+QMC/bB+ENpLtx/yOiHN/24+8LmS7tosuqjdMIQ1MT/5e7RZVGvo4cErwDbrocsuVhOw7ie+TabQAUgD6qse18gqdWacy1NR6gk53TO0I6oOY3GWMXaYqwBPPM7o15bOZv5TAQtTpUw8Hhc2Rg7vOJ41TwqAdoWpqxB5ejVTvHwzhNkBEAKDlJ4VkPAeADCYL6Xtf418JD/FJ7n1SuLueGyXtzK/ywtuWO/ZH6bwSjzT/c+DD2MRmW6GqOfDiEqW3Mc+9RPiVEgyEugvmi483opziKdWBejvyPUOKy2FiK5mX9DGdIu3W6PxEAwKMYhl0P2+jmDBrIdaLXAMA/MkRPfHbs8HUlQsl6PJUz/LqhF3f0aVAB1wDbxKOcAbbFyeJcHCRVSD/wqMB7l4zovrmQY65jWoDkr/z4A2l9TSJhs5Lh8q2FL4KRjM8Q=",
+        "PYTHONNET_PYDLL": "C:\\python\\3.13.2\\tools\\python313.dll"
+      }
+    },
+    "http": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": true,
+      "applicationUrl": "http://*:5081",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "TOKEN": "OQMKPQBRw4hK37TTaWePMc0nhyVkCClKU1Q75fAhJNvESdSJzIjaePgDbM4idd+OPJ7sdbHGHyonAdHToCLnoYPBFk+205QCtglMNuruEF7HhUmlF6opguXHxbByW4jLwWD/oaCL6Hw40DQ+5Q429KjQRVdKHwwtXirWZ/RMIDHZxMnv1XSNzb2V3uXyT2f9y/a8MD/R0nz7XV5Zggg7qzRP3XOJqYGZUmDSwry/BTSk7B5s3+QMC/bB+ENpLtx/yOiHN/24+8LmS7tosuqjdMIQ1MT/5e7RZVGvo4cErwDbrocsuVhOw7ie+TabQAUgD6qse18gqdWacy1NR6gk53TO0I6oOY3GWMXaYqwBPPM7o15bOZv5TAQtTpUw8Hhc2Rg7vOJ41TwqAdoWpqxB5ejVTvHwzhNkBEAKDlJ4VkPAeADCYL6Xtf418JD/FJ7n1SuLueGyXtzK/ywtuWO/ZH6bwSjzT/c+DD2MRmW6GqOfDiEqW3Mc+9RPiVEgyEugvmi483opziKdWBejvyPUOKy2FiK5mX9DGdIu3W6PxEAwKMYhl0P2+jmDBrIdaLXAMA/MkRPfHbs8HUlQsl6PJUz/LqhF3f0aVAB1wDbxKOcAbbFyeJcHCRVSD/wqMB7l4zovrmQY65jWoDkr/z4A2l9TSJhs5Lh8q2FL4KRjM8Q=",
+        "PYTHONNET_PYDLL": "C:\\python\\3.13.2\\tools\\python313.dll"
+      }
+    },
+    "http.test": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": true,
+      "applicationUrl": "http://*:5081",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Test",
+        "TOKEN": "OQMKPQBRw4hK37TTaWePMc0nhyVkCClKU1Q75fAhJNvESdSJzIjaePgDbM4idd+OPJ7sdbHGHyonAdHToCLnoYPBFk+205QCtglMNuruEF7HhUmlF6opguXHxbByW4jLwWD/oaCL6Hw40DQ+5Q429KjQRVdKHwwtXirWZ/RMIDHZxMnv1XSNzb2V3uXyT2f9y/a8MD/R0nz7XV5Zggg7qzRP3XOJqYGZUmDSwry/BTSk7B5s3+QMC/bB+ENpLtx/yOiHN/24+8LmS7tosuqjdMIQ1MT/5e7RZVGvo4cErwDbrocsuVhOw7ie+TabQAUgD6qse18gqdWacy1NR6gk53TO0I6oOY3GWMXaYqwBPPM7o15bOZv5TAQtTpUw8Hhc2Rg7vOJ41TwqAdoWpqxB5ejVTvHwzhNkBEAKDlJ4VkPAeADCYL6Xtf418JD/FJ7n1SuLueGyXtzK/ywtuWO/ZH6bwSjzT/c+DD2MRmW6GqOfDiEqW3Mc+9RPiVEgyEugvmi483opziKdWBejvyPUOKy2FiK5mX9DGdIu3W6PxEAwKMYhl0P2+jmDBrIdaLXAMA/MkRPfHbs8HUlQsl6PJUz/LqhF3f0aVAB1wDbxKOcAbbFyeJcHCRVSD/wqMB7l4zovrmQY65jWoDkr/z4A2l9TSJhs5Lh8q2FL4KRjM8Q=",
+        "PYTHONNET_PYDLL": "C:\\python\\3.13.2\\tools\\python313.dll"
+      }
+    },
+    "http.bug": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": true,
+      "applicationUrl": "http://*:5081",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Bug",
+        "TOKEN": "OQMKPQBRw4hK37TTaWePMc0nhyVkCClKU1Q75fAhJNvESdSJzIjaePgDbM4idd+OPJ7sdbHGHyonAdHToCLnoYPBFk+205QCtglMNuruEF7HhUmlF6opguXHxbByW4jLwWD/oaCL6Hw40DQ+5Q429KjQRVdKHwwtXirWZ/RMIDHZxMnv1XSNzb2V3uXyT2f9y/a8MD/R0nz7XV5Zggg7qzRP3XOJqYGZUmDSwry/BTSk7B5s3+QMC/bB+ENpLtx/yOiHN/24+8LmS7tosuqjdMIQ1MT/5e7RZVGvo4cErwDbrocsuVhOw7ie+TabQAUgD6qse18gqdWacy1NR6gk53TO0I6oOY3GWMXaYqwBPPM7o15bOZv5TAQtTpUw8Hhc2Rg7vOJ41TwqAdoWpqxB5ejVTvHwzhNkBEAKDlJ4VkPAeADCYL6Xtf418JD/FJ7n1SuLueGyXtzK/ywtuWO/ZH6bwSjzT/c+DD2MRmW6GqOfDiEqW3Mc+9RPiVEgyEugvmi483opziKdWBejvyPUOKy2FiK5mX9DGdIu3W6PxEAwKMYhl0P2+jmDBrIdaLXAMA/MkRPfHbs8HUlQsl6PJUz/LqhF3f0aVAB1wDbxKOcAbbFyeJcHCRVSD/wqMB7l4zovrmQY65jWoDkr/z4A2l9TSJhs5Lh8q2FL4KRjM8Q=",
+        "PYTHONNET_PYDLL": "C:\\python\\3.13.2\\tools\\python313.dll"
+      }
+    },
+    "http.preview2": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": true,
+      "applicationUrl": "http://*:5081",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Preview2",
+        "TOKEN": "OQMKPQBRw4hK37TTaWePMc0nhyVkCClKU1Q75fAhJNvESdSJzIjaePgDbM4idd+OPJ7sdbHGHyonAdHToCLnoYPBFk+205QCtglMNuruEF7HhUmlF6opguXHxbByW4jLwWD/oaCL6Hw40DQ+5Q429KjQRVdKHwwtXirWZ/RMIDHZxMnv1XSNzb2V3uXyT2f9y/a8MD/R0nz7XV5Zggg7qzRP3XOJqYGZUmDSwry/BTSk7B5s3+QMC/bB+ENpLtx/yOiHN/24+8LmS7tosuqjdMIQ1MT/5e7RZVGvo4cErwDbrocsuVhOw7ie+TabQAUgD6qse18gqdWacy1NR6gk53TO0I6oOY3GWMXaYqwBPPM7o15bOZv5TAQtTpUw8Hhc2Rg7vOJ41TwqAdoWpqxB5ejVTvHwzhNkBEAKDlJ4VkPAeADCYL6Xtf418JD/FJ7n1SuLueGyXtzK/ywtuWO/ZH6bwSjzT/c+DD2MRmW6GqOfDiEqW3Mc+9RPiVEgyEugvmi483opziKdWBejvyPUOKy2FiK5mX9DGdIu3W6PxEAwKMYhl0P2+jmDBrIdaLXAMA/MkRPfHbs8HUlQsl6PJUz/LqhF3f0aVAB1wDbxKOcAbbFyeJcHCRVSD/wqMB7l4zovrmQY65jWoDkr/z4A2l9TSJhs5Lh8q2FL4KRjM8Q=",
+        "PYTHONNET_PYDLL": "C:\\python\\3.13.2\\tools\\python313.dll"
+      }
+    },
+    "http.production": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": true,
+      "applicationUrl": "http://*:5081",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Production",
+        "TOKEN": "OQMKPQBRw4hK37TTaWePMc0nhyVkCClKU1Q75fAhJNvESdSJzIjaePgDbM4idd+OPJ7sdbHGHyonAdHToCLnoYPBFk+205QCtglMNuruEF7HhUmlF6opguXHxbByW4jLwWD/oaCL6Hw40DQ+5Q429KjQRVdKHwwtXirWZ/RMIDHZxMnv1XSNzb2V3uXyT2f9y/a8MD/R0nz7XV5Zggg7qzRP3XOJqYGZUmDSwry/BTSk7B5s3+QMC/bB+ENpLtx/yOiHN/24+8LmS7tosuqjdMIQ1MT/5e7RZVGvo4cErwDbrocsuVhOw7ie+TabQAUgD6qse18gqdWacy1NR6gk53TO0I6oOY3GWMXaYqwBPPM7o15bOZv5TAQtTpUw8Hhc2Rg7vOJ41TwqAdoWpqxB5ejVTvHwzhNkBEAKDlJ4VkPAeADCYL6Xtf418JD/FJ7n1SuLueGyXtzK/ywtuWO/ZH6bwSjzT/c+DD2MRmW6GqOfDiEqW3Mc+9RPiVEgyEugvmi483opziKdWBejvyPUOKy2FiK5mX9DGdIu3W6PxEAwKMYhl0P2+jmDBrIdaLXAMA/MkRPfHbs8HUlQsl6PJUz/LqhF3f0aVAB1wDbxKOcAbbFyeJcHCRVSD/wqMB7l4zovrmQY65jWoDkr/z4A2l9TSJhs5Lh8q2FL4KRjM8Q=",
+        "PYTHONNET_PYDLL": "C:\\python\\3.13.2\\tools\\python313.dll"
+      }
+    }
+  }
+}

@@ -1,0 +1,7 @@
+D:\K3Cloud\WebSite\BIN\Kingdee.Mymooo.WebApi.ServicesStub.dll
+D:\K3Cloud\WebSite\BIN\Kingdee.Mymooo.WebApi.ServicesStub.pdb
+D:\K3Cloud\Code\Kingdee.Mymooo.ServicesStub\obj\Debug\Kingdee.Mymooo.WebApi.ServicesStub.csproj.AssemblyReference.cache
+D:\K3Cloud\Code\Kingdee.Mymooo.ServicesStub\obj\Debug\Kingdee.Mymooo.WebApi.ServicesStub.csproj.CoreCompileInputs.cache
+D:\K3Cloud\Code\Kingdee.Mymooo.ServicesStub\obj\Debug\Kingdee..12973C70.Up2Date
+D:\K3Cloud\Code\Kingdee.Mymooo.ServicesStub\obj\Debug\Kingdee.Mymooo.WebApi.ServicesStub.dll
+D:\K3Cloud\Code\Kingdee.Mymooo.ServicesStub\obj\Debug\Kingdee.Mymooo.WebApi.ServicesStub.pdb

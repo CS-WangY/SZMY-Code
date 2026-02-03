@@ -1,0 +1,98 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32630.192
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kingdee.Mymooo.Core", "Kingdee.Mymooo.Core\Kingdee.Mymooo.Core.csproj", "{3580DBE7-F790-470B-91C0-EF6F7C2CC8CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kingdee.Mymooo.Contracts", "Kingdee.Mymooo.Contracts\Kingdee.Mymooo.Contracts.csproj", "{BC6FE149-7F1A-40A4-A785-A86D7F3F07FA}"
+	ProjectSection(ProjectDependencies) = postProject
+		{3580DBE7-F790-470B-91C0-EF6F7C2CC8CE} = {3580DBE7-F790-470B-91C0-EF6F7C2CC8CE}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kingdee.Mymooo.App.Core", "Kingdee.Mymooo.App.Core\Kingdee.Mymooo.App.Core.csproj", "{B3C7CA7E-594B-46CE-9AEF-A846CB89838E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{3580DBE7-F790-470B-91C0-EF6F7C2CC8CE} = {3580DBE7-F790-470B-91C0-EF6F7C2CC8CE}
+		{BC6FE149-7F1A-40A4-A785-A86D7F3F07FA} = {BC6FE149-7F1A-40A4-A785-A86D7F3F07FA}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kingdee.Mymooo.ServicePlugIn", "Kingdee.Mymooo.ServicePlugIn\Kingdee.Mymooo.ServicePlugIn.csproj", "{CC8B3050-B8CA-4483-BECA-05CC9B9FCE3F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{3580DBE7-F790-470B-91C0-EF6F7C2CC8CE} = {3580DBE7-F790-470B-91C0-EF6F7C2CC8CE}
+		{B3C7CA7E-594B-46CE-9AEF-A846CB89838E} = {B3C7CA7E-594B-46CE-9AEF-A846CB89838E}
+		{BC6FE149-7F1A-40A4-A785-A86D7F3F07FA} = {BC6FE149-7F1A-40A4-A785-A86D7F3F07FA}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kingdee.Mymooo.ServiceHelper", "Kingdee.Mymooo.ServiceHelper\Kingdee.Mymooo.ServiceHelper.csproj", "{AA099D6E-2722-47F0-A401-DCE1F8C4BBBB}"
+	ProjectSection(ProjectDependencies) = postProject
+		{3580DBE7-F790-470B-91C0-EF6F7C2CC8CE} = {3580DBE7-F790-470B-91C0-EF6F7C2CC8CE}
+		{BC6FE149-7F1A-40A4-A785-A86D7F3F07FA} = {BC6FE149-7F1A-40A4-A785-A86D7F3F07FA}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kingdee.Mymooo.Business.PlugIn", "Kingdee.Mymooo.Business.PlugIn\Kingdee.Mymooo.Business.PlugIn.csproj", "{03DFEF29-598B-4115-BDC9-23E8565BD19F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{3580DBE7-F790-470B-91C0-EF6F7C2CC8CE} = {3580DBE7-F790-470B-91C0-EF6F7C2CC8CE}
+		{AA099D6E-2722-47F0-A401-DCE1F8C4BBBB} = {AA099D6E-2722-47F0-A401-DCE1F8C4BBBB}
+		{BC6FE149-7F1A-40A4-A785-A86D7F3F07FA} = {BC6FE149-7F1A-40A4-A785-A86D7F3F07FA}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kingdee.Mymooo.Report.Plugin", "Kingdee.Mymooo.Report.Plugin\Kingdee.Mymooo.Report.Plugin.csproj", "{382441DA-9306-46D5-8DC2-649680FDAF2E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{3580DBE7-F790-470B-91C0-EF6F7C2CC8CE} = {3580DBE7-F790-470B-91C0-EF6F7C2CC8CE}
+		{B3C7CA7E-594B-46CE-9AEF-A846CB89838E} = {B3C7CA7E-594B-46CE-9AEF-A846CB89838E}
+		{BC6FE149-7F1A-40A4-A785-A86D7F3F07FA} = {BC6FE149-7F1A-40A4-A785-A86D7F3F07FA}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kingdee.Mymooo.WebApi.ServicesStub", "Kingdee.Mymooo.ServicesStub\Kingdee.Mymooo.WebApi.ServicesStub.csproj", "{BC876B4E-6508-48FC-84A8-61F4294568C6}"
+	ProjectSection(ProjectDependencies) = postProject
+		{3580DBE7-F790-470B-91C0-EF6F7C2CC8CE} = {3580DBE7-F790-470B-91C0-EF6F7C2CC8CE}
+		{AA099D6E-2722-47F0-A401-DCE1F8C4BBBB} = {AA099D6E-2722-47F0-A401-DCE1F8C4BBBB}
+		{BC6FE149-7F1A-40A4-A785-A86D7F3F07FA} = {BC6FE149-7F1A-40A4-A785-A86D7F3F07FA}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3580DBE7-F790-470B-91C0-EF6F7C2CC8CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3580DBE7-F790-470B-91C0-EF6F7C2CC8CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3580DBE7-F790-470B-91C0-EF6F7C2CC8CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3580DBE7-F790-470B-91C0-EF6F7C2CC8CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC6FE149-7F1A-40A4-A785-A86D7F3F07FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC6FE149-7F1A-40A4-A785-A86D7F3F07FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC6FE149-7F1A-40A4-A785-A86D7F3F07FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC6FE149-7F1A-40A4-A785-A86D7F3F07FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3C7CA7E-594B-46CE-9AEF-A846CB89838E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3C7CA7E-594B-46CE-9AEF-A846CB89838E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3C7CA7E-594B-46CE-9AEF-A846CB89838E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3C7CA7E-594B-46CE-9AEF-A846CB89838E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC8B3050-B8CA-4483-BECA-05CC9B9FCE3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC8B3050-B8CA-4483-BECA-05CC9B9FCE3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC8B3050-B8CA-4483-BECA-05CC9B9FCE3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC8B3050-B8CA-4483-BECA-05CC9B9FCE3F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA099D6E-2722-47F0-A401-DCE1F8C4BBBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA099D6E-2722-47F0-A401-DCE1F8C4BBBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA099D6E-2722-47F0-A401-DCE1F8C4BBBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA099D6E-2722-47F0-A401-DCE1F8C4BBBB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03DFEF29-598B-4115-BDC9-23E8565BD19F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03DFEF29-598B-4115-BDC9-23E8565BD19F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03DFEF29-598B-4115-BDC9-23E8565BD19F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03DFEF29-598B-4115-BDC9-23E8565BD19F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{382441DA-9306-46D5-8DC2-649680FDAF2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{382441DA-9306-46D5-8DC2-649680FDAF2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{382441DA-9306-46D5-8DC2-649680FDAF2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{382441DA-9306-46D5-8DC2-649680FDAF2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC876B4E-6508-48FC-84A8-61F4294568C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC876B4E-6508-48FC-84A8-61F4294568C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC876B4E-6508-48FC-84A8-61F4294568C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC876B4E-6508-48FC-84A8-61F4294568C6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {848DF560-587C-4413-AFDB-2774FBD5F8C3}
+	EndGlobalSection
+EndGlobal

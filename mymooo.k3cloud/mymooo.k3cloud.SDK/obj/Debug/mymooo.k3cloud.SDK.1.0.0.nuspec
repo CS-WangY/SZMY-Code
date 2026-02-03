@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>mymooo.k3cloud.SDK</id>
+    <version>1.0.0</version>
+    <title>金蝶服务SDK</title>
+    <authors>莫毅锋</authors>
+    <readme>readme.md</readme>
+    <description>深圳蚂蚁工场科技有限公司,金蝶对外服务SDK</description>
+    <releaseNotes>深圳蚂蚁工场科技有限公司,金蝶对外服务SDK</releaseNotes>
+    <copyright>版本归深圳蚂蚁工场科技有限公司所有</copyright>
+    <repository type="git" url="http://gitlab.kyy6.com/mymooo/k3cloudapi.git" commit="0bc415ed93724167db59f1416bbc694531af7321" />
+    <dependencies>
+      <group targetFramework="net8.0">
+        <dependency id="mymooo.k3cloud.core" version="1.0.0" exclude="Build,Analyzers" />
+        <dependency id="mymooo.core" version="1.4.1.111" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="D:\k3cloudApi\src\mymooo.k3cloud\mymooo.k3cloud.SDK\bin\Debug\net8.0\mymooo.k3cloud.SDK.dll" target="lib\net8.0\mymooo.k3cloud.SDK.dll" />
+    <file src="D:\k3cloudApi\src\mymooo.k3cloud\mymooo.k3cloud.SDK\bin\Debug\net8.0\mymooo.k3cloud.SDK.xml" target="lib\net8.0\mymooo.k3cloud.SDK.xml" />
+    <file src="D:\k3cloudApi\src\mymooo.k3cloud\mymooo.k3cloud.SDK\docs\readme.md" target="\readme.md" />
+  </files>
+</package>

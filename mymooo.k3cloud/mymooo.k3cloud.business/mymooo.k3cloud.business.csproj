@@ -1,0 +1,40 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<DatabaseVersion>1.0.1.1</DatabaseVersion>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+		<TreatWarningsAsErrors>True</TreatWarningsAsErrors>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+		<TreatWarningsAsErrors>True</TreatWarningsAsErrors>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<AssemblyAttribute Include="System.Reflection.AssemblyMetadataAttribute">
+			<_Parameter1>DatabaseVersion</_Parameter1>
+			<_Parameter2>$(DatabaseVersion)</_Parameter2>
+		</AssemblyAttribute>
+	</ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="com.mymooo.credit.SDK" Version="1.2.1.10" />
+		<PackageReference Include="mymooo.core" Version="1.4.1.124" />
+		<PackageReference Include="mymooo.pdm.SDK" Version="1.2.1.7" />
+		<PackageReference Include="mymooo.product.selection" Version="1.2.1.96" />
+		<PackageReference Include="Mymooo.Threed.WebService.SDK" Version="1.2.1.9" />
+		<PackageReference Include="mymooo.weixinWork.SDK" Version="1.4.1.29" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\mymooo.k3cloud.core\mymooo.k3cloud.core.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<GlobalAnalyzerConfigFiles Include="..\product.globalconfig" />
+	</ItemGroup>
+</Project>

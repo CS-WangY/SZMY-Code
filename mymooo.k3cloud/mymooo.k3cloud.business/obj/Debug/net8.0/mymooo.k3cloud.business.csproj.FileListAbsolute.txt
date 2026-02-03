@@ -1,0 +1,16 @@
+D:\k3cloudApi\src\mymooo.k3cloud\mymooo.k3cloud.business\bin\Debug\net8.0\mymooo.k3cloud.business.deps.json
+D:\k3cloudApi\src\mymooo.k3cloud\mymooo.k3cloud.business\bin\Debug\net8.0\mymooo.k3cloud.business.dll
+D:\k3cloudApi\src\mymooo.k3cloud\mymooo.k3cloud.business\bin\Debug\net8.0\mymooo.k3cloud.business.pdb
+D:\k3cloudApi\src\mymooo.k3cloud\mymooo.k3cloud.business\bin\Debug\net8.0\mymooo.k3cloud.core.dll
+D:\k3cloudApi\src\mymooo.k3cloud\mymooo.k3cloud.business\bin\Debug\net8.0\mymooo.k3cloud.core.pdb
+D:\k3cloudApi\src\mymooo.k3cloud\mymooo.k3cloud.business\bin\Debug\net8.0\mymooo.k3cloud.core.xml
+D:\k3cloudApi\src\mymooo.k3cloud\mymooo.k3cloud.business\obj\Debug\net8.0\mymooo.k3cloud.business.csproj.AssemblyReference.cache
+D:\k3cloudApi\src\mymooo.k3cloud\mymooo.k3cloud.business\obj\Debug\net8.0\mymooo.k3cloud.business.GeneratedMSBuildEditorConfig.editorconfig
+D:\k3cloudApi\src\mymooo.k3cloud\mymooo.k3cloud.business\obj\Debug\net8.0\mymooo.k3cloud.business.AssemblyInfoInputs.cache
+D:\k3cloudApi\src\mymooo.k3cloud\mymooo.k3cloud.business\obj\Debug\net8.0\mymooo.k3cloud.business.AssemblyInfo.cs
+D:\k3cloudApi\src\mymooo.k3cloud\mymooo.k3cloud.business\obj\Debug\net8.0\mymooo.k3cloud.business.csproj.CoreCompileInputs.cache
+D:\k3cloudApi\src\mymooo.k3cloud\mymooo.k3cloud.business\obj\Debug\net8.0\mymooo.k.90515909.Up2Date
+D:\k3cloudApi\src\mymooo.k3cloud\mymooo.k3cloud.business\obj\Debug\net8.0\mymooo.k3cloud.business.dll
+D:\k3cloudApi\src\mymooo.k3cloud\mymooo.k3cloud.business\obj\Debug\net8.0\refint\mymooo.k3cloud.business.dll
+D:\k3cloudApi\src\mymooo.k3cloud\mymooo.k3cloud.business\obj\Debug\net8.0\mymooo.k3cloud.business.pdb
+D:\k3cloudApi\src\mymooo.k3cloud\mymooo.k3cloud.business\obj\Debug\net8.0\ref\mymooo.k3cloud.business.dll

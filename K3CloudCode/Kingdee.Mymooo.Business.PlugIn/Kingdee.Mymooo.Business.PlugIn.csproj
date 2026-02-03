@@ -1,0 +1,337 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{03DFEF29-598B-4115-BDC9-23E8565BD19F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Kingdee.Mymooo.Business.PlugIn</RootNamespace>
+    <AssemblyName>Kingdee.Mymooo.Business.PlugIn</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <ReferencePath>..\..\WebSite\BIN</ReferencePath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\WebSite\BIN</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\WebSite\bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.85.5.452, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\WebSite\BIN\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Kingdee.BOS, Version=8.0.144.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\WebSite\BIN\Kingdee.BOS.dll</HintPath>
+    </Reference>
+    <Reference Include="Kingdee.BOS.App, Version=8.0.361.9, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\WebSite\BIN\Kingdee.BOS.App.dll</HintPath>
+    </Reference>
+    <Reference Include="Kingdee.BOS.App.Core, Version=8.0.361.9, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\WebSite\BIN\Kingdee.BOS.App.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Kingdee.BOS.App.LogService, Version=8.0.361.9, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\WebSite\bin\Kingdee.BOS.App.LogService.dll</HintPath>
+    </Reference>
+    <Reference Include="Kingdee.BOS.Business.DynamicForm, Version=8.2.830.9, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\WebSite\BIN\Kingdee.BOS.Business.DynamicForm.dll</HintPath>
+    </Reference>
+    <Reference Include="Kingdee.BOS.BusinessEntity, Version=8.0.361.9, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\WebSite\bin\Kingdee.BOS.BusinessEntity.dll</HintPath>
+    </Reference>
+    <Reference Include="Kingdee.BOS.Contracts, Version=8.0.361.9, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\WebSite\BIN\Kingdee.BOS.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="Kingdee.BOS.Core, Version=8.0.144.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\WebSite\BIN\Kingdee.BOS.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Kingdee.BOS.DataEntity, Version=8.0.144.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\WebSite\BIN\Kingdee.BOS.DataEntity.dll</HintPath>
+    </Reference>
+    <Reference Include="Kingdee.BOS.FileServer.Core, Version=8.2.830.9, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\WebSite\BIN\Kingdee.BOS.FileServer.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Kingdee.BOS.FileServer.ProxyService, Version=8.2.830.9, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\WebSite\BIN\Kingdee.BOS.FileServer.ProxyService.dll</HintPath>
+    </Reference>
+    <Reference Include="Kingdee.BOS.Model, Version=8.0.361.9, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\WebSite\BIN\Kingdee.BOS.Model.dll</HintPath>
+    </Reference>
+    <Reference Include="Kingdee.BOS.OrmEngine, Version=8.0.144.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\WebSite\BIN\Kingdee.BOS.OrmEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="Kingdee.BOS.ServiceFacade.KDServiceFx, Version=8.0.361.9, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\WebSite\BIN\Kingdee.BOS.ServiceFacade.KDServiceFx.dll</HintPath>
+    </Reference>
+    <Reference Include="Kingdee.BOS.ServiceHelper, Version=8.0.144.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\WebSite\BIN\Kingdee.BOS.ServiceHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="Kingdee.BOS.VerificationHelper, Version=8.2.830.9, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\WebSite\BIN\Kingdee.BOS.VerificationHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="Kingdee.BOS.Web, Version=8.2.830.9, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\WebSite\BIN\Kingdee.BOS.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="Kingdee.BOS.WebApi.Client, Version=8.0.361.9, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\WebSite\BIN\Kingdee.BOS.WebApi.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Kingdee.BOS.WebApi.FormService, Version=8.0.361.9, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\WebSite\bin\Kingdee.BOS.WebApi.FormService.dll</HintPath>
+    </Reference>
+    <Reference Include="Kingdee.BOS.WebApi.ServicesStub, Version=8.0.361.9, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\WebSite\BIN\Kingdee.BOS.WebApi.ServicesStub.dll</HintPath>
+    </Reference>
+    <Reference Include="Kingdee.K3.Core, Version=8.0.361.9, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\WebSite\bin\Kingdee.K3.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Kingdee.K3.FIN.GL.App.ServicePlugIn, Version=8.2.830.9, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\WebSite\BIN\Kingdee.K3.FIN.GL.App.ServicePlugIn.dll</HintPath>
+    </Reference>
+    <Reference Include="Kingdee.K3.MFG.App, Version=8.2.830.9, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\WebSite\BIN\Kingdee.K3.MFG.App.dll</HintPath>
+    </Reference>
+    <Reference Include="Kingdee.K3.MFG.BusinessCommon, Version=8.2.830.9, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\WebSite\BIN\Kingdee.K3.MFG.BusinessCommon.dll</HintPath>
+    </Reference>
+    <Reference Include="Kingdee.K3.MFG.Contracts, Version=8.2.830.9, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\WebSite\BIN\Kingdee.K3.MFG.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="Kingdee.K3.MFG.PLN.App.Core, Version=8.0.361.9, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\WebSite\BIN\Kingdee.K3.MFG.PLN.App.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Kingdee.K3.MFG.PLN.Business.PlugIn, Version=8.0.361.9, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\WebSite\BIN\Kingdee.K3.MFG.PLN.Business.PlugIn.dll</HintPath>
+    </Reference>
+    <Reference Include="Kingdee.K3.MFG.ServiceHelper, Version=8.0.361.9, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\WebSite\bin\Kingdee.K3.MFG.ServiceHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="Kingdee.K3.SCM.App.IOS.Core, Version=8.0.361.9, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\WebSite\bin\Kingdee.K3.SCM.App.IOS.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Kingdee.K3.SCM.Contracts, Version=8.0.361.9, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\WebSite\bin\Kingdee.K3.SCM.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="Kingdee.K3.SCM.Core, Version=8.0.361.9, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\WebSite\bin\Kingdee.K3.SCM.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Kingdee.K3.SCM.ServiceHelper, Version=8.0.361.9, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\WebSite\BIN\Kingdee.K3.SCM.ServiceHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="Kingdee.K3.SCM.Stock.Business.PlugIn, Version=8.0.361.9, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\WebSite\bin\Kingdee.K3.SCM.Stock.Business.PlugIn.dll</HintPath>
+    </Reference>
+    <Reference Include="Kingdee.Mymooo.ServiceHelper, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\WebSite\bin\Kingdee.Mymooo.ServiceHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\WebSite\bin\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI, Version=2.4.1.1, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\WebSite\BIN\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OOXML, Version=2.4.1.1, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\WebSite\BIN\NPOI.OOXML.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXml4Net, Version=2.4.1.1, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\WebSite\BIN\NPOI.OpenXml4Net.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXmlFormats, Version=2.4.1.1, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\WebSite\BIN\NPOI.OpenXmlFormats.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AR_ReceivebillManagement\AR_ReceivebillPlugIn.cs" />
+    <Compile Include="BaseManagement\BaseDataBusiness.cs" />
+    <Compile Include="BaseManagement\CustomerListPlugIn.cs" />
+    <Compile Include="BaseManagement\CustomerServcie.cs" />
+    <Compile Include="BaseManagement\DeptUserBusiness.cs" />
+    <Compile Include="BaseManagement\ImportExcelBusiness.cs" />
+    <Compile Include="BaseManagement\InvSumQueryListEx.cs" />
+    <Compile Include="BaseManagement\MaterialCellValueList.cs" />
+    <Compile Include="BaseManagement\MaterialEdit.cs" />
+    <Compile Include="BaseManagement\MaterialParentSmallBusiness.cs" />
+    <Compile Include="BaseManagement\MaterialService.cs" />
+    <Compile Include="BaseManagement\PrintPlugin.cs" />
+    <Compile Include="BaseManagement\PurchaseBusiness.cs" />
+    <Compile Include="BaseManagement\SalesCustBusiness.cs" />
+    <Compile Include="BaseManagement\SupplierAllotOrgBusiness.cs" />
+    <Compile Include="BaseManagement\CustomerBusiness.cs" />
+    <Compile Include="BaseManagement\WeeklyPassRateStatisticsService.cs" />
+    <Compile Include="CN_BillReceivableManagement\SplitRecBillEditEx.cs" />
+    <Compile Include="CostAccountManagement\AllocStandardDataEdit.cs" />
+    <Compile Include="ENGManagement\ENGBOMListPlugIn.cs" />
+    <Compile Include="ENGManagement\ImportExcelBom.cs" />
+    <Compile Include="GLVoucher\RemoveValidator.cs" />
+    <Compile Include="MaterialManagement\MaterialSafeStockImport.cs" />
+    <Compile Include="MrpModelManagement\MrpRunLogScheduleService.cs" />
+    <Compile Include="MrpModelManagement\MymoooMrpComputeWizardPlugIn.cs" />
+    <Compile Include="PayableManagement\PayableOrderBusiness.cs" />
+    <Compile Include="PlanManagement\FBPlanOrderSplitBillPlugIn.cs" />
+    <Compile Include="PlanManagement\ImportExcelFBPlan.cs" />
+    <Compile Include="PlanManagement\PlanOrder3DViewBillPlugIn.cs" />
+    <Compile Include="PlanManagement\PlanOrderBillListPlugin.cs" />
+    <Compile Include="PlanManagement\PlanOrderBillService.cs" />
+    <Compile Include="IOSManagement\TransferSettlementPrice.cs" />
+    <Compile Include="PlanManagement\RequirementListEx.cs" />
+    <Compile Include="PlanManagement\RequirementOrderEdit.cs" />
+    <Compile Include="PLN_Forecast\PLN_ForecastBillPlugIn.cs" />
+    <Compile Include="PLN_Forecast\PLN_ForecastBusiness.cs" />
+    <Compile Include="PLN_Forecast\PLN_ForecastListPlugIn.cs" />
+    <Compile Include="ProductionManagement\MesProductionReturnMtrlBusiness.cs" />
+    <Compile Include="ProductionManagement\MesProductionInStockBusiness.cs" />
+    <Compile Include="ProductionManagement\MesProductionFeedMtrlBusiness.cs" />
+    <Compile Include="ProductionManagement\MesProductionPickingBusiness.cs" />
+    <Compile Include="ProductionManagement\MOBillEdit.cs" />
+    <Compile Include="ProductionManagement\PrdMOOrderBusiness.cs" />
+    <Compile Include="ProductionManagement\ProductionMoBussiness.cs" />
+    <Compile Include="PurchaseManagement\ChangeCostPurchaseOrderBusiness.cs" />
+    <Compile Include="PurchaseManagement\PurchaseScheduleService.cs" />
+    <Compile Include="PurchaseManagement\PoInEditDirTrackingNo.cs" />
+    <Compile Include="PurchaseManagement\PUR_ReceiveBillBusinessList.cs" />
+    <Compile Include="PurchaseManagement\Report\SuppClassInspScoreBusiness.cs" />
+    <Compile Include="PurchaseManagement\RequisitionOrderEdit.cs" />
+    <Compile Include="ReceivablesManagement\ReceivableEdit.cs" />
+    <Compile Include="ReceivablesManagement\ReceivableOrderBusiness.cs" />
+    <Compile Include="ReservedManagement\ReserveLinkQueryEx.cs" />
+    <Compile Include="ReservedManagement\ReservedEditBusiness.cs" />
+    <Compile Include="ReservedManagement\ReservedListPlugIn.cs" />
+    <Compile Include="SalDeliveryNotice\DNSelectCustInfoBulletFrame.cs" />
+    <Compile Include="SalDeliveryNotice\SalDeliveryNoticeEditBusiness.cs" />
+    <Compile Include="SalesManagement\ApigatewayTaskBusiness.cs" />
+    <Compile Include="SalesManagement\DnUrgentShipmentList.cs" />
+    <Compile Include="SalesManagement\DnNoticeLogisticsChangesList.cs" />
+    <Compile Include="SalesManagement\OrgRequirementOrderBusiness.cs" />
+    <Compile Include="SalesManagement\Report\SalesOrderTrackDeliveryBusiness.cs" />
+    <Compile Include="SalesManagement\SaleOrderChangeEdit.cs" />
+    <Compile Include="SalesManagement\SalesClosedApprovalBusiness.cs" />
+    <Compile Include="SalesManagement\SalOrderQueryListEx.cs" />
+    <Compile Include="BaseManagement\SupplierBusiness.cs" />
+    <Compile Include="BaseManagement\SupplierListPlugIn.cs" />
+    <Compile Include="DemoBillPlugIn.cs" />
+    <Compile Include="DemoListPlugIn.cs" />
+    <Compile Include="DirectSaleManagement\DirectSaleBusiness.cs" />
+    <Compile Include="PlanManagement\PlanOrderBulkEdit.cs" />
+    <Compile Include="ProductionManagement\DispatchFBBillPlugIn.cs" />
+    <Compile Include="ProductionManagement\DispatchFBListPlugIn.cs" />
+    <Compile Include="ProductionManagement\DispatchMesBillPlugIn.cs" />
+    <Compile Include="ProductionManagement\DispatchMesListPlugIn.cs" />
+    <Compile Include="ProductionManagement\GetCustomerListPlugIn.cs" />
+    <Compile Include="ProductionManagement\SyncUserBillPlugIn.cs" />
+    <Compile Include="ProductionManagement\SyncUserListPlugIn.cs" />
+    <Compile Include="PurchaseManagement\ReceivableScheduleService.cs" />
+    <Compile Include="SalesManagement\MatchMoneyBusiness.cs" />
+    <Compile Include="SalesManagement\ReceivableScheduleService.cs" />
+    <Compile Include="SalesManagement\Report\SalesOrderTrackQueryBusiness.cs" />
+    <Compile Include="SalesManagement\RequirementorderBusiness.cs" />
+    <Compile Include="ProductionManagement\DepartmentBusiness.cs" />
+    <Compile Include="ProductionManagement\DispatchBusiness.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PurchaseManagement\PrBillToPoBillBusiness.cs" />
+    <Compile Include="PurchaseManagement\ProfitQueryManager.cs" />
+    <Compile Include="PurchaseManagement\PurchaseOrderBusiness.cs" />
+    <Compile Include="PurchaseManagement\PurchaseSuppliersReplyList.cs" />
+    <Compile Include="RabbitMQExecuteService\DemoBillExecute.cs" />
+    <Compile Include="RabbitMQExecuteService\RabbitMQSyncService.cs" />
+    <Compile Include="SalesManagement\ChangeSalesOrderBusiness.cs" />
+    <Compile Include="SalesManagement\SalesBOMBusiness.cs" />
+    <Compile Include="SalesManagement\SalesOrderBusiness.cs" />
+    <Compile Include="SalesManagement\SalesOrderEdit.cs" />
+    <Compile Include="SalesManagement\SalesOrderListPlugIn.cs" />
+    <Compile Include="SalesManagement\SalesOrderStrackingQuery.cs" />
+    <Compile Include="SalesManagement\SalReturnNoticeEdit.cs" />
+    <Compile Include="SalesManagement\ScheduleService\HistoryReserveLinkKittingRateScheduleService.cs" />
+    <Compile Include="SalesManagement\ScheduleService\ReserveLinkKittingRateScheduleService.cs" />
+    <Compile Include="SalesManagement\SCSalerCustSingleEdit.cs" />
+    <Compile Include="StockManagement\AdjustClousStockInventory.cs" />
+    <Compile Include="StockManagement\CloudStockPackagedBusiness.cs" />
+    <Compile Include="StockManagement\CloudStockPackagedService.cs" />
+    <Compile Include="StockManagement\CloudStockRevocationStockInBusiness.cs" />
+    <Compile Include="StockManagement\CloudStockRevocationStockOutBusiness.cs" />
+    <Compile Include="StockManagement\DeleteTempDeliveryAreaBusiness.cs" />
+    <Compile Include="StockManagement\ExamineInboundBillBusiness.cs" />
+    <Compile Include="StockManagement\PutToTempDeliveryAreaBusiness.cs" />
+    <Compile Include="StockManagement\PutToTempStockAreaBusiness.cs" />
+    <Compile Include="StockManagement\QueryClousStockInventory.cs" />
+    <Compile Include="StockManagement\STK_InventoryListEx.cs" />
+    <Compile Include="StockManagement\StockBusiness.cs" />
+    <Compile Include="StockManagement\StockInDetailAdjEndPriceBusiness.cs" />
+    <Compile Include="TransferOutManagement\StkTransferList.cs" />
+    <Compile Include="TransferOutManagement\TransferOutList.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Kingdee.Mymooo.App.Core\Kingdee.Mymooo.App.Core.csproj">
+      <Project>{B3C7CA7E-594B-46CE-9AEF-A846CB89838E}</Project>
+      <Name>Kingdee.Mymooo.App.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Kingdee.Mymooo.Core\Kingdee.Mymooo.Core.csproj">
+      <Project>{3580DBE7-F790-470B-91C0-EF6F7C2CC8CE}</Project>
+      <Name>Kingdee.Mymooo.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

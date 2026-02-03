@@ -1,0 +1,14 @@
+D:\mymooo.weixinWork\src\mymooo.weixinWork\mymooo.weixinWork.SDK\bin\Debug\net8.0\mymooo.weixinWork.SDK.deps.json
+D:\mymooo.weixinWork\src\mymooo.weixinWork\mymooo.weixinWork.SDK\bin\Debug\net8.0\mymooo.weixinWork.SDK.dll
+D:\mymooo.weixinWork\src\mymooo.weixinWork\mymooo.weixinWork.SDK\bin\Debug\net8.0\mymooo.weixinWork.SDK.pdb
+D:\mymooo.weixinWork\src\mymooo.weixinWork\mymooo.weixinWork.SDK\bin\Debug\net8.0\mymooo.weixinWork.SDK.xml
+D:\mymooo.weixinWork\src\mymooo.weixinWork\mymooo.weixinWork.SDK\obj\Debug\net8.0\mymooo.weixinWork.SDK.csproj.AssemblyReference.cache
+D:\mymooo.weixinWork\src\mymooo.weixinWork\mymooo.weixinWork.SDK\obj\Debug\net8.0\mymooo.weixinWork.SDK.GeneratedMSBuildEditorConfig.editorconfig
+D:\mymooo.weixinWork\src\mymooo.weixinWork\mymooo.weixinWork.SDK\obj\Debug\net8.0\mymooo.weixinWork.SDK.AssemblyInfoInputs.cache
+D:\mymooo.weixinWork\src\mymooo.weixinWork\mymooo.weixinWork.SDK\obj\Debug\net8.0\mymooo.weixinWork.SDK.AssemblyInfo.cs
+D:\mymooo.weixinWork\src\mymooo.weixinWork\mymooo.weixinWork.SDK\obj\Debug\net8.0\mymooo.weixinWork.SDK.csproj.CoreCompileInputs.cache
+D:\mymooo.weixinWork\src\mymooo.weixinWork\mymooo.weixinWork.SDK\obj\Debug\net8.0\mymooo.weixinWork.SDK.dll
+D:\mymooo.weixinWork\src\mymooo.weixinWork\mymooo.weixinWork.SDK\obj\Debug\net8.0\refint\mymooo.weixinWork.SDK.dll
+D:\mymooo.weixinWork\src\mymooo.weixinWork\mymooo.weixinWork.SDK\obj\Debug\net8.0\mymooo.weixinWork.SDK.xml
+D:\mymooo.weixinWork\src\mymooo.weixinWork\mymooo.weixinWork.SDK\obj\Debug\net8.0\mymooo.weixinWork.SDK.pdb
+D:\mymooo.weixinWork\src\mymooo.weixinWork\mymooo.weixinWork.SDK\obj\Debug\net8.0\ref\mymooo.weixinWork.SDK.dll

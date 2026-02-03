@@ -1,0 +1,62 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<GenerateDocumentationFile>True</GenerateDocumentationFile>
+		<IncludeSymbols>False</IncludeSymbols>
+		<DatabaseVersion>1.0.1.1</DatabaseVersion>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+		<TreatWarningsAsErrors>True</TreatWarningsAsErrors>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+		<TreatWarningsAsErrors>True</TreatWarningsAsErrors>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<AssemblyAttribute Include="System.Reflection.AssemblyMetadataAttribute">
+			<_Parameter1>DatabaseVersion</_Parameter1>
+			<_Parameter2>$(DatabaseVersion)</_Parameter2>
+		</AssemblyAttribute>
+	</ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Extensions.Hosting.WindowsServices" Version="8.0.0" />
+		<PackageReference Include="com.mymooo.credit.SDK" Version="1.2.1.10" />
+		<PackageReference Include="mymooo.core" Version="1.4.1.124" />
+		<PackageReference Include="mymooo.pdm.SDK" Version="1.2.1.7" />
+		<PackageReference Include="mymooo.product.selection" Version="1.2.1.96" />
+		<PackageReference Include="Mymooo.Threed.WebService.SDK" Version="1.2.1.9" />
+		<PackageReference Include="mymooo.weixinWork.SDK" Version="1.4.1.29" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<GlobalAnalyzerConfigFiles Include="..\product.globalconfig" />
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\mymooo.k3cloud.business\mymooo.k3cloud.business.csproj" />
+		<ProjectReference Include="..\mymooo.k3cloud.core\mymooo.k3cloud.core.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Folder Include="wwwroot\attachment\Sales\" />
+	</ItemGroup>
+
+	<Target Name="BuildCopyXmlDocs" AfterTargets="AfterBuild">
+		<ItemGroup>
+			<XmlDocs Include="%(Reference.RelativeDir)*mymooo.*.xml" />
+		</ItemGroup>
+		<Message Text="Copying XML docs to $(OutDir)" Importance="High" />
+		<Copy SourceFiles="@(XmlDocs)" DestinationFolder="$(OutDir)" Condition="Exists(%(FullPath))" />
+	</Target>
+	<Target Name="PublishCopyXmlDocs" AfterTargets="Publish">
+		<ItemGroup>
+			<XmlDocs Include="%(Reference.RelativeDir)*mymooo.*.xml" />
+		</ItemGroup>
+		<Message Text="Copying XML docs to $(PublishDir)" Importance="High" />
+		<Copy SourceFiles="@(XmlDocs)" DestinationFolder="$(PublishDir)" Condition="Exists(%(FullPath))" />
+	</Target>
+</Project>

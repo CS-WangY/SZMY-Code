@@ -1,0 +1,7 @@
+D:\K3Cloud\WebSite\BIN\Kingdee.Mymooo.Contracts.dll
+D:\K3Cloud\WebSite\BIN\Kingdee.Mymooo.Contracts.pdb
+D:\K3Cloud\Code\Kingdee.Mymooo.Contracts\obj\Debug\Kingdee.Mymooo.Contracts.csproj.AssemblyReference.cache
+D:\K3Cloud\Code\Kingdee.Mymooo.Contracts\obj\Debug\Kingdee.Mymooo.Contracts.csproj.CoreCompileInputs.cache
+D:\K3Cloud\Code\Kingdee.Mymooo.Contracts\obj\Debug\Kingdee..7D87C643.Up2Date
+D:\K3Cloud\Code\Kingdee.Mymooo.Contracts\obj\Debug\Kingdee.Mymooo.Contracts.dll
+D:\K3Cloud\Code\Kingdee.Mymooo.Contracts\obj\Debug\Kingdee.Mymooo.Contracts.pdb

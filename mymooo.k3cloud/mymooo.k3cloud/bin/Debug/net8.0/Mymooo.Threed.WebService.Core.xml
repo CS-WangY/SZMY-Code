@@ -1,0 +1,1106 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Mymooo.Threed.WebService.Core</name>
+    </assembly>
+    <members>
+        <member name="T:Mymooo.Threed.WebService.Core.Account.ThreedContext">
+            <summary>
+            上下文
+            </summary>
+        </member>
+        <member name="M:Mymooo.Threed.WebService.Core.Account.ThreedContext.#ctor(System.IServiceProvider,mymooo.core.Config.RsaConfig,mymooo.core.Config.MymoooMainConfig,mymooo.core.Config.ApigatewayConfig,mymooo.core.Model.SqlSugarCore.MymoooSqlSugar,mymooo.core.Cache.GatewayRedisCache,mymooo.core.Cache.WorkbenchRedisCache,mymooo.core.Cache.RedisCache,mymooo.core.Cache.MemoryCacheClient)">
+            <summary>
+            上下文
+            </summary>
+        </member>
+        <member name="T:Mymooo.Threed.WebService.Core.SqlSugarCore.Orderlist">
+            <summary>
+            3d订单信息
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Orderlist.OrderId">
+            <summary>
+            Id
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Orderlist.UserId">
+            <summary>
+            用户Id
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Orderlist.CompanyId">
+            <summary>
+            企业Id
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Orderlist.SeriesId">
+            <summary>
+            产品类型
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Orderlist.Model">
+            <summary>
+            型号
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Orderlist.ModelParameter">
+            <summary>
+            model数据
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Orderlist.OrderTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Orderlist.ExpireTime">
+            <summary>
+            失效时间
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Orderlist.Downloadable">
+            <summary>
+            是否可以下载
+            </summary>
+        </member>
+        <member name="T:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dFileMapping">
+            <summary>
+            参数与文件匹配信息表
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dFileMapping.Id">
+            <summary>
+            主键
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dFileMapping.CompanyId">
+            <summary>
+            企业ID
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dFileMapping.SeriesId">
+            <summary>
+            产品类型
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dFileMapping.ModelFileFolder">
+            <summary>
+            模型文件路径
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dFileMapping.ModelFileName">
+            <summary>
+            模型文件名
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dFileMapping.VariableValues">
+            <summary>
+            产品参数
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dFileMapping.FileName">
+            <summary>
+            文件名
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dFileMapping.UpdateTime">
+            <summary>
+            更新时间
+            </summary>
+        </member>
+        <member name="T:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping">
+            <summary>
+            产品参数衍射
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.Id">
+            <summary>
+            Id 主键
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.CompanyId">
+            <summary>
+            企业ID
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.SeriesId">
+            <summary>
+            产品类型
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.SeriesPath">
+            <summary>
+            路径
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.GenerateType">
+            <summary>
+            生成类型
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.ModelFileName">
+            <summary>
+            模型文件名
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.ModelFileFolder">
+            <summary>
+            模型路径
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.PartName">
+            <summary>
+            模型的零件名
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.VariableValues">
+            <summary>
+            公式
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.ViewName">
+            <summary>
+            视图
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.CreateUserId">
+            <summary>
+            创建用户ID
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.UpdateTime">
+            <summary>
+            更新时间
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.UpdateUserId">
+            <summary>
+            更新用户ID
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.P1">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.P2">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.P3">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.P4">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.P5">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.P6">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.P7">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.P8">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.P9">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.P10">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.P11">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.P12">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.P13">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.P14">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.P15">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.P16">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.P17">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.P18">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.P19">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.P20">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.P21">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.P22">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.P23">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.P24">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.P25">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.P26">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.P27">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.P28">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.P29">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.P30">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.P31">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.P32">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.P33">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.P34">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.P35">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.P36">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.P37">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.P38">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.P39">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.P40">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.P41">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.P42">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.P43">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.P44">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.P45">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.P46">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.P47">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.P48">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.P49">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.P50">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.P51">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.P52">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.P53">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.P54">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.P55">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.P56">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.P57">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.P58">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.P59">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.P60">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.P61">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.P62">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.P63">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.P64">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.P65">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.P66">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.P67">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.P68">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.P69">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.P70">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.P71">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.P72">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.P73">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.P74">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.P75">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.P76">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.P77">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.P78">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.P79">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.P80">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.P81">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.P82">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.P83">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.P84">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.P85">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.P86">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.P87">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.P88">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.P89">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.P90">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.P91">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.P92">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.P93">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.P94">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.P95">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.P96">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.P97">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.P98">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.P99">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.P100">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.P101">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.P102">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.P103">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.P104">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.P105">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.P106">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.P107">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.P108">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.P109">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.SqlSugarCore.Params3dmapping.P110">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Mymooo.Threed.WebService.Core.ThreedModel.FileServiceConfig">
+            <summary>
+            文件服务器配置
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.ThreedModel.FileServiceConfig.Url">
+            <summary>
+            地址
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.ThreedModel.FileServiceConfig.SystemName">
+            <summary>
+            用户名
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.ThreedModel.FileServiceConfig.VerifyCode">
+            <summary>
+            校验码
+            </summary>
+        </member>
+        <member name="T:Mymooo.Threed.WebService.Core.ThreedModel.RabbitMQConfig">
+            <summary>
+            mq配置
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.ThreedModel.RabbitMQConfig.HostName">
+            <summary>
+            mq主机名
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.ThreedModel.RabbitMQConfig.UserName">
+            <summary>
+            用户名
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.ThreedModel.RabbitMQConfig.Password">
+            <summary>
+            密码
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.ThreedModel.RabbitMQConfig.VirtualHost">
+            <summary>
+            虚拟路径
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.ThreedModel.RabbitMQConfig.GenerateExchange">
+            <summary>
+            交换机
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.ThreedModel.RabbitMQConfig.ResponseRoutingKey">
+            <summary>
+            生成3d后相应路由
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.ThreedModel.RabbitMQConfig.LightweightRoutingKey">
+            <summary>
+            轻量化后响应路由
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.ThreedModel.RabbitMQConfig.Model">
+            <summary>
+            mq model
+            </summary>
+        </member>
+        <member name="T:Mymooo.Threed.WebService.Core.ThreedModel.ThreedFileType">
+            <summary>
+            3d文件类型
+            </summary>
+        </member>
+        <member name="F:Mymooo.Threed.WebService.Core.ThreedModel.ThreedFileType.empty">
+            <summary>
+            轻量化文件
+            </summary>
+        </member>
+        <member name="F:Mymooo.Threed.WebService.Core.ThreedModel.ThreedFileType.STP">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Mymooo.Threed.WebService.Core.ThreedModel.ThreedFileType.STEP">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Mymooo.Threed.WebService.Core.ThreedModel.ThreedFileType.IGES">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Mymooo.Threed.WebService.Core.ThreedModel.ThreedFileType.SAB">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Mymooo.Threed.WebService.Core.ThreedModel.ThreedFileType.SAT">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Mymooo.Threed.WebService.Core.ThreedModel.ThreedFileType.X_B">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Mymooo.Threed.WebService.Core.ThreedModel.ThreedFileType.X_T">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Mymooo.Threed.WebService.Core.ThreedModel.ThreedFileType.STL">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Mymooo.Threed.WebService.Core.ThreedModel.ThreedFileType.DWG">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Mymooo.Threed.WebService.Core.ThreedModel.ThreedOrderModelParameter">
+            <summary>
+            3d模型参数值
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.ThreedModel.ThreedOrderModelParameter.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.ThreedModel.ThreedOrderModelParameter.Value">
+            <summary>
+            值
+            </summary>
+        </member>
+        <member name="T:Mymooo.Threed.WebService.Core.ThreedModel.ThreedOrderParameter">
+            <summary>
+            3d参数
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.ThreedModel.ThreedOrderParameter.UserId">
+            <summary>
+            用户Id
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.ThreedModel.ThreedOrderParameter.Downloadable">
+            <summary>
+            是否可以下载文件
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.ThreedModel.ThreedOrderParameter.CompanyId">
+            <summary>
+            品牌
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.ThreedModel.ThreedOrderParameter.SeriesId">
+            <summary>
+            类型码
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.ThreedModel.ThreedOrderParameter.Model">
+            <summary>
+            PN
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.ThreedModel.ThreedOrderParameter.ModelParameter">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Mymooo.Threed.WebService.Core.ThreedModel.ViewThreedFileRequest">
+            <summary>
+            获取3d文件请求参数
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.ThreedModel.ViewThreedFileRequest.FileType">
+            <summary>
+            文件类型
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.ThreedModel.ViewThreedFileRequest.ModelId">
+            <summary>
+            orderId 
+            </summary>
+        </member>
+        <member name="T:Mymooo.Threed.WebService.Core.ThreedModel.ViewThreedFileResponse">
+            <summary>
+            获取3d文件响应
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.ThreedModel.ViewThreedFileResponse.MeshFile">
+            <summary>
+            下载路径
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.ThreedModel.ViewThreedFileResponse.DateTime">
+            <summary>
+            下载时间
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.ThreedModel.ViewThreedFileResponse.FileName">
+            <summary>
+            文件名
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.ThreedModel.ViewThreedFileResponse.CameraConfig">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.ThreedModel.ViewThreedFileResponse.Model">
+            <summary>
+            型号
+            </summary>
+        </member>
+        <member name="T:Mymooo.Threed.WebService.Core.ThreedModel.Zw3dExportVar">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Mymooo.Threed.WebService.Core.ThreedModel.Zw3dExportVar.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Mymooo.Threed.WebService.Core.ThreedModel.Zw3dExportVar.#ctor(Mymooo.Threed.WebService.Core.SqlSugarCore.Orderlist,System.Boolean,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="orderInfo"></param>
+            <param name="isWaitGenerate"></param>
+            <param name="fileType"></param>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.ThreedModel.Zw3dExportVar.GenerateType">
+            <summary>
+            生成类型 是中望还是SolidWorks 
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.ThreedModel.Zw3dExportVar.FilePath">
+            <summary>
+            模型文件位置
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.ThreedModel.Zw3dExportVar.ModelFile">
+            <summary>
+            模型文件
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.ThreedModel.Zw3dExportVar.ExportPath">
+            <summary>
+            输出文件路径
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.ThreedModel.Zw3dExportVar.SetFormat">
+            <summary>
+            输出格式
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.ThreedModel.Zw3dExportVar.SetParmPath">
+            <summary>
+            参数文件位置
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.ThreedModel.Zw3dExportVar.ParamString">
+            <summary>
+            参数字符串
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.ThreedModel.Zw3dExportVar.SetPartName">
+            <summary>
+            模型文件名
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.ThreedModel.Zw3dExportVar.SetExportName">
+            <summary>
+            输出的文件名
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.ThreedModel.Zw3dExportVar.SetVarInfo">
+            <summary>
+            生成过程的输出信息
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.ThreedModel.Zw3dExportVar.VuName">
+            <summary>
+            视图名称
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.ThreedModel.Zw3dExportVar.TaskId">
+            <summary>
+            任务Id
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.ThreedModel.Zw3dExportVar.Info">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.ThreedModel.Zw3dExportVar.ErrorInfo">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.ThreedModel.Zw3dExportVar.IsComplete">
+            <summary>
+            是否完成
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.ThreedModel.Zw3dExportVar.IsWaitGenerate">
+            <summary>
+            是否需要等待生成
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.ThreedModel.Zw3dExportVar.Zw3dTargetTicket">
+            <summary>
+            执行任务的目标中望服务
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.ThreedModel.Zw3dExportVar.ModelParas">
+            <summary>
+            模型参数
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.ThreedModel.Zw3dExportVar.NoParameterDrive">
+            <summary>
+            不需要参数驱动
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.ThreedModel.Zw3dExportVar.CompanyId">
+            <summary>
+            企业id
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.ThreedModel.Zw3dExportVar.SeriesId">
+            <summary>
+            产品类型
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.ThreedModel.Zw3dExportVar.SeriesPath">
+            <summary>
+            路径
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.ThreedModel.Zw3dExportVar.FileName">
+            <summary>
+            文件名称
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.ThreedModel.Zw3dExportVar.ModelFileName">
+            <summary>
+            模型文件名
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.ThreedModel.Zw3dExportVar.ModelFileFolder">
+            <summary>
+            模型文件路径
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.ThreedModel.Zw3dExportVar.StartDate">
+            <summary>
+            任务开始时间
+            </summary>
+        </member>
+        <member name="P:Mymooo.Threed.WebService.Core.ThreedModel.Zw3dExportVar.CancellationToken">
+            <summary>
+            可取消
+            </summary>
+        </member>
+    </members>
+</doc>

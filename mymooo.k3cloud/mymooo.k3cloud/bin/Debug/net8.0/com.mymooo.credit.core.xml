@@ -1,0 +1,1621 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>com.mymooo.credit.core</name>
+    </assembly>
+    <members>
+        <member name="T:com.mymooo.credit.core.Account.CreditContext">
+            <summary>
+            
+            </summary>
+            <param name="serviceProvider">注册器</param>
+            <param name="rsaConfig">加密解密密钥</param>
+            <param name="mainConfig">main配置</param>
+            <param name="apigatewayConfig">网关配置</param>
+            <param name="sqlSugar">数据库</param>
+            <param name="gatewayRedisCache">缓存配置</param>
+            <param name="workbenchRedisCache">缓存配置</param>
+            <param name="redisCache">缓存</param>
+            <param name="memoryCache"></param>
+        </member>
+        <member name="M:com.mymooo.credit.core.Account.CreditContext.#ctor(System.IServiceProvider,mymooo.core.Config.RsaConfig,mymooo.core.Config.MymoooMainConfig,mymooo.core.Config.ApigatewayConfig,mymooo.core.Model.SqlSugarCore.MymoooSqlSugar,mymooo.core.Cache.GatewayRedisCache,mymooo.core.Cache.WorkbenchRedisCache,mymooo.core.Cache.RedisCache,mymooo.core.Cache.MemoryCacheClient)">
+            <summary>
+            
+            </summary>
+            <param name="serviceProvider">注册器</param>
+            <param name="rsaConfig">加密解密密钥</param>
+            <param name="mainConfig">main配置</param>
+            <param name="apigatewayConfig">网关配置</param>
+            <param name="sqlSugar">数据库</param>
+            <param name="gatewayRedisCache">缓存配置</param>
+            <param name="workbenchRedisCache">缓存配置</param>
+            <param name="redisCache">缓存</param>
+            <param name="memoryCache"></param>
+        </member>
+        <member name="T:com.mymooo.credit.core.CompanyCredit.CreditApprovalRequest">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:com.mymooo.credit.core.CompanyCredit.CreditApprovalRequest.Date">
+            <summary>
+            发货日期
+            </summary>
+        </member>
+        <member name="P:com.mymooo.credit.core.CompanyCredit.CreditApprovalRequest.CustNumber">
+            <summary>
+            客户编码
+            </summary>
+        </member>
+        <member name="P:com.mymooo.credit.core.CompanyCredit.CreditApprovalRequest.CustName">
+            <summary>
+            客户名称
+            </summary>
+        </member>
+        <member name="P:com.mymooo.credit.core.CompanyCredit.CreditApprovalRequest.ApplicantCode">
+            <summary>
+            发起申请人
+            </summary>
+        </member>
+        <member name="P:com.mymooo.credit.core.CompanyCredit.CreditApprovalRequest.ApplicantName">
+            <summary>
+            发起人名称
+            </summary>
+        </member>
+        <member name="P:com.mymooo.credit.core.CompanyCredit.CreditApprovalRequest.SettleType">
+            <summary>
+            结算方式
+            </summary>
+        </member>
+        <member name="P:com.mymooo.credit.core.CompanyCredit.CreditApprovalRequest.ApprovalCredit">
+            <summary>
+            申请信用额度
+            </summary>
+        </member>
+        <member name="P:com.mymooo.credit.core.CompanyCredit.CreditApprovalRequest.ApprovalReason">
+            <summary>
+            申请理由
+            </summary>
+        </member>
+        <member name="P:com.mymooo.credit.core.CompanyCredit.CreditApprovalRequest.MediaInfos">
+            <summary>
+            文件
+            </summary>
+        </member>
+        <member name="P:com.mymooo.credit.core.CompanyCredit.CreditApprovalRequest.MymoooCompany">
+            <summary>
+            哪个蚂蚁工厂
+            </summary>
+        </member>
+        <member name="P:com.mymooo.credit.core.CompanyCredit.CreditApprovalRequest.SalesName">
+            <summary>
+            业务员名称
+            </summary>
+        </member>
+        <member name="P:com.mymooo.credit.core.CompanyCredit.CreditApprovalRequest.SalesId">
+            <summary>
+            业务员Id
+            </summary>
+        </member>
+        <member name="T:com.mymooo.credit.core.CompanyCredit.CreditLineCache">
+            <summary>
+            信用额度缓存
+            </summary>
+        </member>
+        <member name="P:com.mymooo.credit.core.CompanyCredit.CreditLineCache.CompanyCode">
+            <summary>
+            Desc:
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:com.mymooo.credit.core.CompanyCredit.CreditLineCache.Credit">
+            <summary>
+            信用额度写入缓存标识
+            </summary>
+        </member>
+        <member name="P:com.mymooo.credit.core.CompanyCredit.CreditLineCache.FixedCreditLine">
+            <summary>
+            固定额度
+            </summary>
+        </member>
+        <member name="P:com.mymooo.credit.core.CompanyCredit.CreditLineCache.TempCreditLine">
+            <summary>
+            临时信用额度
+            </summary>
+        </member>
+        <member name="P:com.mymooo.credit.core.CompanyCredit.CreditLineCache.CreditLine">
+            <summary>
+            信用额度
+            </summary>
+        </member>
+        <member name="P:com.mymooo.credit.core.CompanyCredit.CreditLineCache.ValidityDate">
+            <summary>
+            临时额度的有效期
+            </summary>
+        </member>
+        <member name="P:com.mymooo.credit.core.CompanyCredit.CreditLineCache.AvailableCredit">
+            <summary>
+            可用额度
+            </summary>
+        </member>
+        <member name="P:com.mymooo.credit.core.CompanyCredit.CreditLineCache.OccupyCredit">
+            <summary>
+            占用额度
+            </summary>
+        </member>
+        <member name="P:com.mymooo.credit.core.CompanyCredit.CreditLineCache.ExpiryDay">
+            <summary>
+            逾期天数，取最大天数
+            </summary>
+        </member>
+        <member name="P:com.mymooo.credit.core.CompanyCredit.CreditLineCache.ExpiryAmount">
+            <summary>
+            逾期金额，逾期金额合计
+            </summary>
+        </member>
+        <member name="P:com.mymooo.credit.core.CompanyCredit.CreditLineCache.IsFreeze">
+            <summary>
+            是否冻结
+            </summary>
+        </member>
+        <member name="T:com.mymooo.credit.core.CompanyCredit.CreditVerifyResponse">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:com.mymooo.credit.core.CompanyCredit.CreditVerifyResponse.CustId">
+            <summary>
+            客户Id
+            </summary>
+        </member>
+        <member name="P:com.mymooo.credit.core.CompanyCredit.CreditVerifyResponse.IsPass">
+            <summary>
+            是否通过
+            </summary>
+        </member>
+        <member name="P:com.mymooo.credit.core.CompanyCredit.CreditVerifyResponse.CreditLine">
+            <summary>
+            信用额度
+            </summary>
+        </member>
+        <member name="P:com.mymooo.credit.core.CompanyCredit.CreditVerifyResponse.AvailableCredit">
+            <summary>
+            可用额度
+            </summary>
+        </member>
+        <member name="P:com.mymooo.credit.core.CompanyCredit.CreditVerifyResponse.OccupyCredit">
+            <summary>
+            占用额度
+            </summary>
+        </member>
+        <member name="P:com.mymooo.credit.core.CompanyCredit.CreditVerifyResponse.ExpiryDay">
+            <summary>
+            逾期天数，取最大天数
+            </summary>
+        </member>
+        <member name="P:com.mymooo.credit.core.CompanyCredit.CreditVerifyResponse.ExpiryAmount">
+            <summary>
+            逾期金额，逾期金额合计
+            </summary>
+        </member>
+        <member name="P:com.mymooo.credit.core.CompanyCredit.CreditVerifyResponse.FixedCreditLine">
+            <summary>
+            固定额度
+            </summary>
+        </member>
+        <member name="P:com.mymooo.credit.core.CompanyCredit.CreditVerifyResponse.ValidityDate">
+            <summary>
+            临时额度的有效期
+            </summary>
+        </member>
+        <member name="T:com.mymooo.credit.core.CompanyCredit.CustCreditVerifyRequest">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:com.mymooo.credit.core.CompanyCredit.CustCreditVerifyRequest.CustId">
+            <summary>
+            客户Code.目前只接受企业客户code
+            </summary>
+        </member>
+        <member name="P:com.mymooo.credit.core.CompanyCredit.CustCreditVerifyRequest.SalesCode">
+            <summary>
+            申请人
+            </summary>
+        </member>
+        <member name="P:com.mymooo.credit.core.CompanyCredit.CustCreditVerifyRequest.SalesId">
+            <summary>
+            业务员
+            </summary>
+        </member>
+        <member name="P:com.mymooo.credit.core.CompanyCredit.CustCreditVerifyRequest.AuthorityUserList">
+            <summary>
+            该用户有权限的用户
+            </summary>
+        </member>
+        <member name="P:com.mymooo.credit.core.CompanyCredit.CustCreditVerifyRequest.Amount">
+            <summary>
+            客户需要请求的额度
+            </summary>
+        </member>
+        <member name="P:com.mymooo.credit.core.CompanyCredit.CustCreditVerifyRequest.StartDate">
+            <summary>
+            申请日期-开始日期
+            </summary>
+        </member>
+        <member name="P:com.mymooo.credit.core.CompanyCredit.CustCreditVerifyRequest.EndDate">
+            <summary>
+            申请日期-结束日期
+            </summary>
+        </member>
+        <member name="P:com.mymooo.credit.core.CompanyCredit.CustCreditVerifyRequest.IsVerify">
+            <summary>
+            是否校验额度
+            </summary>
+        </member>
+        <member name="T:com.mymooo.credit.core.CompanyCredit.DeleteAvailableCreditRequest">
+            <summary>
+            删除可用额度记录
+            </summary>
+        </member>
+        <member name="P:com.mymooo.credit.core.CompanyCredit.DeleteAvailableCreditRequest.ReceiveBillNo">
+            <summary>
+            收款单号
+            </summary>
+        </member>
+        <member name="P:com.mymooo.credit.core.CompanyCredit.DeleteAvailableCreditRequest.SalesOrderDate">
+            <summary>
+            销售日期
+            </summary>
+        </member>
+        <member name="P:com.mymooo.credit.core.CompanyCredit.DeleteAvailableCreditRequest.CustomerNumber">
+            <summary>
+            客户编码
+            </summary>
+        </member>
+        <member name="T:com.mymooo.credit.core.CompanyCredit.DeleteUseCreditRequest">
+            <summary>
+            删除客户占用额度
+            </summary>
+        </member>
+        <member name="P:com.mymooo.credit.core.CompanyCredit.DeleteUseCreditRequest.SalesOrderNo">
+            <summary>
+            销售单号
+            </summary>
+        </member>
+        <member name="P:com.mymooo.credit.core.CompanyCredit.DeleteUseCreditRequest.CustomerNumber">
+            <summary>
+            客户编码
+            </summary>
+        </member>
+        <member name="T:com.mymooo.credit.core.CompanyCredit.RecalculateCustCreditRequest">
+            <summary>
+            重新计算客户信用额度
+            </summary>
+        </member>
+        <member name="P:com.mymooo.credit.core.CompanyCredit.RecalculateCustCreditRequest.CompanyCode">
+            <summary>
+            公司编码
+            </summary>
+        </member>
+        <member name="P:com.mymooo.credit.core.CompanyCredit.RecalculateCustCreditRequest.SubCompanyCode">
+            <summary>
+            子公司集合
+            </summary>
+        </member>
+        <member name="P:com.mymooo.credit.core.CompanyCredit.RecalculateCustCreditRequest.SourceSubCompanyCode">
+            <summary>
+            源子公司
+            </summary>
+        </member>
+        <member name="T:com.mymooo.credit.core.CompanyCredit.UpdateAvailableCustCreditRequest">
+            <summary>
+            更新客户可用额度
+            </summary>
+        </member>
+        <member name="P:com.mymooo.credit.core.CompanyCredit.UpdateAvailableCustCreditRequest.ReceiveBillNo">
+            <summary>
+            收款单号
+            </summary>
+        </member>
+        <member name="P:com.mymooo.credit.core.CompanyCredit.UpdateAvailableCustCreditRequest.Operation">
+            <summary>
+            操作
+            </summary>
+        </member>
+        <member name="P:com.mymooo.credit.core.CompanyCredit.UpdateAvailableCustCreditRequest.SalesName">
+            <summary>
+            销售员名称
+            </summary>
+        </member>
+        <member name="P:com.mymooo.credit.core.CompanyCredit.UpdateAvailableCustCreditRequest.SalesNumber">
+            <summary>
+            销售员编码
+            </summary>
+        </member>
+        <member name="P:com.mymooo.credit.core.CompanyCredit.UpdateAvailableCustCreditRequest.ReceiveDate">
+            <summary>
+            收款日期
+            </summary>
+        </member>
+        <member name="P:com.mymooo.credit.core.CompanyCredit.UpdateAvailableCustCreditRequest.CustomerName">
+            <summary>
+            客户名称
+            </summary>
+        </member>
+        <member name="P:com.mymooo.credit.core.CompanyCredit.UpdateAvailableCustCreditRequest.CustomerNumber">
+            <summary>
+            客户编码
+            </summary>
+        </member>
+        <member name="P:com.mymooo.credit.core.CompanyCredit.UpdateAvailableCustCreditRequest.DepartmentName">
+            <summary>
+            销售部门名称
+            </summary>
+        </member>
+        <member name="P:com.mymooo.credit.core.CompanyCredit.UpdateAvailableCustCreditRequest.DepartmentNumber">
+            <summary>
+            销售部门编码
+            </summary>
+        </member>
+        <member name="P:com.mymooo.credit.core.CompanyCredit.UpdateAvailableCustCreditRequest.OrganizationName">
+            <summary>
+            销售组织名称
+            </summary>
+        </member>
+        <member name="P:com.mymooo.credit.core.CompanyCredit.UpdateAvailableCustCreditRequest.OrganizationNumber">
+            <summary>
+            销售组织编码
+            </summary>
+        </member>
+        <member name="P:com.mymooo.credit.core.CompanyCredit.UpdateAvailableCustCreditRequest.ReceiveAmount">
+            <summary>
+            收款金额
+            </summary>
+        </member>
+        <member name="T:com.mymooo.credit.core.CompanyCredit.UpdateCustCreditRequest">
+            <summary>
+            更新客户信用额度
+            </summary>
+        </member>
+        <member name="P:com.mymooo.credit.core.CompanyCredit.UpdateCustCreditRequest.SalesOrderNo">
+            <summary>
+            销售单号
+            </summary>
+        </member>
+        <member name="P:com.mymooo.credit.core.CompanyCredit.UpdateCustCreditRequest.SalesOrderDate">
+            <summary>
+            销售日期
+            </summary>
+        </member>
+        <member name="P:com.mymooo.credit.core.CompanyCredit.UpdateCustCreditRequest.CustomerNumber">
+            <summary>
+            客户编码
+            </summary>
+        </member>
+        <member name="P:com.mymooo.credit.core.CompanyCredit.UpdateCustCreditRequest.CustomerName">
+            <summary>
+            客户名称
+            </summary>
+        </member>
+        <member name="P:com.mymooo.credit.core.CompanyCredit.UpdateCustCreditRequest.OrganizationNumber">
+            <summary>
+            销售组织编码
+            </summary>
+        </member>
+        <member name="P:com.mymooo.credit.core.CompanyCredit.UpdateCustCreditRequest.OrganizationName">
+            <summary>
+            销售组织名称
+            </summary>
+        </member>
+        <member name="P:com.mymooo.credit.core.CompanyCredit.UpdateCustCreditRequest.CustPurchaseNo">
+            <summary>
+            客户采购单号
+            </summary>
+        </member>
+        <member name="P:com.mymooo.credit.core.CompanyCredit.UpdateCustCreditRequest.SettleTypeNumber">
+            <summary>
+            结算方式编码
+            </summary>
+        </member>
+        <member name="P:com.mymooo.credit.core.CompanyCredit.UpdateCustCreditRequest.SettleTypeName">
+            <summary>
+            结算方式名称
+            </summary>
+        </member>
+        <member name="P:com.mymooo.credit.core.CompanyCredit.UpdateCustCreditRequest.Discount">
+            <summary>
+            整单折扣额
+            </summary>
+        </member>
+        <member name="P:com.mymooo.credit.core.CompanyCredit.UpdateCustCreditRequest.DepartmentNumber">
+            <summary>
+            销售部门编码
+            </summary>
+        </member>
+        <member name="P:com.mymooo.credit.core.CompanyCredit.UpdateCustCreditRequest.DepartmentName">
+            <summary>
+            销售部门名称
+            </summary>
+        </member>
+        <member name="P:com.mymooo.credit.core.CompanyCredit.UpdateCustCreditRequest.SalesNumber">
+            <summary>
+            业务员编码
+            </summary>
+        </member>
+        <member name="P:com.mymooo.credit.core.CompanyCredit.UpdateCustCreditRequest.SalesName">
+            <summary>
+            业务员名称
+            </summary>
+        </member>
+        <member name="P:com.mymooo.credit.core.CompanyCredit.UpdateCustCreditRequest.CloseStatus">
+            <summary>
+            关闭状态
+            </summary>
+        </member>
+        <member name="P:com.mymooo.credit.core.CompanyCredit.UpdateCustCreditRequest.CancelStatus">
+            <summary>
+            取消状态
+            </summary>
+        </member>
+        <member name="P:com.mymooo.credit.core.CompanyCredit.UpdateCustCreditRequest.PlatCreatorType">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:com.mymooo.credit.core.CompanyCredit.UpdateCustCreditRequest.PlatCreatorName">
+            <summary>
+            创建人
+            </summary>
+        </member>
+        <member name="P:com.mymooo.credit.core.CompanyCredit.UpdateCustCreditRequest.BillType">
+            <summary>
+            单据类型
+            </summary>
+        </member>
+        <member name="P:com.mymooo.credit.core.CompanyCredit.UpdateCustCreditRequest.PaidAmount">
+            <summary>
+            订单金额
+            </summary>
+        </member>
+        <member name="P:com.mymooo.credit.core.CompanyCredit.UpdateCustCreditRequest.OriginalPaidAmount">
+            <summary>
+            原金额
+            </summary>
+        </member>
+        <member name="T:com.mymooo.credit.core.Enums.CreditApplyecentType">
+            <summary>
+            申请信用额度类型
+            </summary>
+        </member>
+        <member name="F:com.mymooo.credit.core.Enums.CreditApplyecentType.Fixed">
+            <summary>
+            固定额度申请
+            </summary>
+        </member>
+        <member name="F:com.mymooo.credit.core.Enums.CreditApplyecentType.Temporary">
+            <summary>
+            临时额度申请
+            </summary>
+        </member>
+        <member name="T:com.mymooo.credit.core.Enums.CreditapplyeventnodeflowStatus">
+            <summary>
+            审批流程状态
+            </summary>
+        </member>
+        <member name="F:com.mymooo.credit.core.Enums.CreditapplyeventnodeflowStatus.untreated">
+            <summary>
+            未处理
+            </summary>
+        </member>
+        <member name="F:com.mymooo.credit.core.Enums.CreditapplyeventnodeflowStatus.pass">
+            <summary>
+            通过
+            </summary>
+        </member>
+        <member name="F:com.mymooo.credit.core.Enums.CreditapplyeventnodeflowStatus.reject">
+            <summary>
+            拒绝
+            </summary>
+        </member>
+        <member name="T:com.mymooo.credit.core.Enums.CreditapplyeventnodeStatus">
+            <summary>
+            信用申请节点状态
+            </summary>
+        </member>
+        <member name="F:com.mymooo.credit.core.Enums.CreditapplyeventnodeStatus.untreated">
+            <summary>
+            未处理
+            </summary>
+        </member>
+        <member name="F:com.mymooo.credit.core.Enums.CreditapplyeventnodeStatus.pass">
+            <summary>
+            通过
+            </summary>
+        </member>
+        <member name="F:com.mymooo.credit.core.Enums.CreditapplyeventnodeStatus.reject">
+            <summary>
+            拒绝
+            </summary>
+        </member>
+        <member name="T:com.mymooo.credit.core.Enums.CreditApplyeventStatus">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:com.mymooo.credit.core.Enums.CreditApplyeventStatus.apply">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:com.mymooo.credit.core.Enums.CreditApplyeventStatus.pass">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:com.mymooo.credit.core.Enums.CreditApplyeventStatus.sign">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:com.mymooo.credit.core.Enums.CreditApplyeventStatus.enable">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:com.mymooo.credit.core.Enums.CreditApplyeventStatus.reject">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:com.mymooo.credit.core.Enums.SalesOrderBillType">
+            <summary>
+            销售订单单据类型
+            </summary>
+        </member>
+        <member name="F:com.mymooo.credit.core.Enums.SalesOrderBillType.FA">
+            <summary>
+            标准件订单
+            </summary>
+        </member>
+        <member name="F:com.mymooo.credit.core.Enums.SalesOrderBillType.FB">
+            <summary>
+            非标订单
+            </summary>
+        </member>
+        <member name="T:com.mymooo.credit.core.SqlSugarCore.Creditapplyevent">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:com.mymooo.credit.core.SqlSugarCore.Creditapplyevent.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.Creditapplyevent.Id">
+            <summary>
+            Desc:
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.Creditapplyevent.CompanyCode">
+            <summary>
+            Desc:
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.Creditapplyevent.PapersType">
+            <summary>
+            Desc:
+            Default:0
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.Creditapplyevent.BusinessImage">
+            <summary>
+            Desc:证件地址
+            Default:
+            Nullable:False
+            </summary>    
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.Creditapplyevent.BusinessLicenceCode">
+            <summary>
+            Desc:统一社会信用代码
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.Creditapplyevent.CompanyName">
+            <summary>
+            Desc:企业名称
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.Creditapplyevent.CorpnName">
+            <summary>
+            Desc:法人代表
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.Creditapplyevent.IdentityCard">
+            <summary>
+            Desc:法人代表身份证号
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.Creditapplyevent.CompanyProperty">
+            <summary>
+            Desc:企业性质
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.Creditapplyevent.CompanyIndustry">
+            <summary>
+            Desc:企业所属行业
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.Creditapplyevent.ProvinceId">
+            <summary>
+            Desc:
+            Default:0
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.Creditapplyevent.CityId">
+            <summary>
+            Desc:
+            Default:0
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.Creditapplyevent.DistrictId">
+            <summary>
+            Desc:
+            Default:0
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.Creditapplyevent.Address">
+            <summary>
+            Desc:企业办公地址
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.Creditapplyevent.FactoryAddress">
+            <summary>
+            Desc:
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.Creditapplyevent.Tel">
+            <summary>
+            Desc:电话
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.Creditapplyevent.Fax">
+            <summary>
+            Desc:
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.Creditapplyevent.SettlementCode">
+            <summary>
+            Desc:结算方式编码
+            Default:CYJ
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.Creditapplyevent.SettlementName">
+            <summary>
+            Desc:结算方式名称
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.Creditapplyevent.EstablishDate">
+            <summary>
+            Desc:
+            Default:
+            Nullable:True
+            </summary>           
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.Creditapplyevent.ApplyeventCreditLimit">
+            <summary>
+            Desc:
+            Default:0
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.Creditapplyevent.ApproveCreditLimit">
+            <summary>
+            Desc:
+            Default:0
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.Creditapplyevent.Status">
+            <summary>
+            Desc:
+            Default:apply
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.Creditapplyevent.IsCustomerApplyevent">
+            <summary>
+            Desc:
+            Default:0
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.Creditapplyevent.SalesCode">
+            <summary>
+            Desc:销售员
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.Creditapplyevent.CreateUser">
+            <summary>
+            Desc:
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.Creditapplyevent.CerateDate">
+            <summary>
+            Desc:
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.Creditapplyevent.RevocationDate">
+            <summary>
+            Desc:
+            Default:NULL
+            Nullable:True
+            </summary>           
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.Creditapplyevent.Creditapplyeventnodes">
+            <summary>
+            审批节点
+            </summary>
+        </member>
+        <member name="T:com.mymooo.credit.core.SqlSugarCore.Creditapplyeventnode">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:com.mymooo.credit.core.SqlSugarCore.Creditapplyeventnode.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.Creditapplyeventnode.Id">
+            <summary>
+            Desc:
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.Creditapplyeventnode.CreditApplyeventId">
+            <summary>
+            Desc:
+            Default:0
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.Creditapplyeventnode.NodeId">
+            <summary>
+            Desc:
+            Default:0
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.Creditapplyeventnode.NodeName">
+            <summary>
+            Desc:
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.Creditapplyeventnode.Status">
+            <summary>
+            Desc:
+            Default:untreated
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.Creditapplyeventnode.AttachmentUrl">
+            <summary>
+            Desc:
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.Creditapplyeventnode.ApplyeventUser">
+            <summary>
+            Desc:
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.Creditapplyeventnode.ApplyeventDate">
+            <summary>
+            Desc:
+            Default:NULL
+            Nullable:True
+            </summary>           
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.Creditapplyeventnode.ApplyeventIdea">
+            <summary>
+            Desc:
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.Creditapplyeventnode.SuggestCreditLimit">
+            <summary>
+            Desc:
+            Default:0
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.Creditapplyeventnode.RejectUser">
+            <summary>
+            Desc:
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.Creditapplyeventnode.RejectDate">
+            <summary>
+            Desc:
+            Default:NULL
+            Nullable:True
+            </summary>           
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.Creditapplyeventnode.RejectReason">
+            <summary>
+            Desc:
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.Creditapplyeventnode.CreditApplyevent">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.Creditapplyeventnode.Creditapplyeventnodeflows">
+            <summary>
+            审批节点
+            </summary>
+        </member>
+        <member name="T:com.mymooo.credit.core.SqlSugarCore.Creditapplyeventnodeflow">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:com.mymooo.credit.core.SqlSugarCore.Creditapplyeventnodeflow.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.Creditapplyeventnodeflow.Id">
+            <summary>
+            Desc:
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.Creditapplyeventnodeflow.ApplyeventNodeId">
+            <summary>
+            Desc:
+            Default:0
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.Creditapplyeventnodeflow.Status">
+            <summary>
+            Desc:
+            Default:untreated
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.Creditapplyeventnodeflow.SuggestCreditLimit">
+            <summary>
+            Desc:
+            Default:0
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.Creditapplyeventnodeflow.ApplyeventUser">
+            <summary>
+            Desc:
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.Creditapplyeventnodeflow.ApplyeventDate">
+            <summary>
+            Desc:
+            Default:NULL
+            Nullable:True
+            </summary>           
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.Creditapplyeventnodeflow.ApplyeventIdea">
+            <summary>
+            Desc:
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.Creditapplyeventnodeflow.RejectUser">
+            <summary>
+            Desc:
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.Creditapplyeventnodeflow.RejectDate">
+            <summary>
+            Desc:
+            Default:NULL
+            Nullable:True
+            </summary>           
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.Creditapplyeventnodeflow.RejectReason">
+            <summary>
+            Desc:
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.Creditapplyeventnodeflow.ApplyeventNode">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:com.mymooo.credit.core.SqlSugarCore.Creditapplyeventrecord">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:com.mymooo.credit.core.SqlSugarCore.Creditapplyeventrecord.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.Creditapplyeventrecord.Id">
+            <summary>
+            Desc:
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.Creditapplyeventrecord.ApplyeventNo">
+            <summary>
+            Desc:
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.Creditapplyeventrecord.CompanyCode">
+            <summary>
+            Desc:
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.Creditapplyeventrecord.CompanyName">
+            <summary>
+            Desc:
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.Creditapplyeventrecord.ApplyeventUser">
+            <summary>
+            Desc:
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.Creditapplyeventrecord.ApplyeventDate">
+            <summary>
+            Desc:
+            Default:NULL
+            Nullable:True
+            </summary>           
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.Creditapplyeventrecord.ApplyeventReason">
+            <summary>
+            Desc:
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.Creditapplyeventrecord.Amount">
+            <summary>
+            Desc:
+            Default:0
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.Creditapplyeventrecord.SettlementType">
+            <summary>
+            Desc:
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.Creditapplyeventrecord.Type">
+            <summary>
+            Desc:申请类型
+            Default:Fixed
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.Creditapplyeventrecord.Validity">
+            <summary>
+            Desc:
+            Default:0
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.Creditapplyeventrecord.ApplyeventUserName">
+            <summary>
+            Desc:有效期(月)
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.Creditapplyeventrecord.SpStatus">
+            <summary>
+            Desc:审批状态 申请单状态：1-审批中；2-已通过；3-已驳回；4-已撤销；6-通过后撤销；7-已删除；10-已支付
+            Default:1
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.Creditapplyeventrecord.OperationTime">
+            <summary>
+            Desc:操作时间
+            Default:
+            Nullable:True
+            </summary>           
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.Creditapplyeventrecord.FromType">
+            <summary>
+            Desc:申请来源
+            Default:pt
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.Creditapplyeventrecord.SalesCode">
+            <summary>
+            Desc:业务员编码
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.Creditapplyeventrecord.SalesName">
+            <summary>
+            Desc:
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.Creditapplyeventrecord.MymoooCompany">
+            <summary>
+            Desc:业务员名称
+            Default:weixinwork
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.Creditapplyeventrecord.SalesId">
+            <summary>
+            Desc:
+            Default:0
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="T:com.mymooo.credit.core.SqlSugarCore.Creditlimit">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:com.mymooo.credit.core.SqlSugarCore.Creditlimit.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.Creditlimit.CompanyCode">
+            <summary>
+            Desc:
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.Creditlimit.Credit">
+            <summary>
+            信用额度写入缓存标识
+            </summary>
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.Creditlimit.Amount">
+            <summary>
+            Desc:
+            Default:0
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.Creditlimit.UseAmount">
+            <summary>
+            Desc:
+            Default:0
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.Creditlimit.AvailableAmount">
+            <summary>
+            Desc:
+            Default:0
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.Creditlimit.IsFreeze">
+            <summary>
+            Desc:
+            Default:0
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="T:com.mymooo.credit.core.SqlSugarCore.CreditLimitRecord">
+            <summary>
+             信用管理 信用记录
+            </summary>
+        </member>
+        <member name="M:com.mymooo.credit.core.SqlSugarCore.CreditLimitRecord.#ctor">
+            <summary>
+            信用管理 信用记录
+            </summary>
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.CreditLimitRecord.RecordId">
+            <summary>
+            Desc:
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.CreditLimitRecord.CompanyCode">
+            <summary>
+            Desc:
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.CreditLimitRecord.CompanyName">
+            <summary>
+            Desc:
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.CreditLimitRecord.ParentCompanyCode">
+            <summary>
+            Desc:
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.CreditLimitRecord.BillNo">
+            <summary>
+            Desc:
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.CreditLimitRecord.Date">
+            <summary>
+            Desc:
+            Default:
+            Nullable:True
+            </summary>           
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.CreditLimitRecord.OrganizationNumber">
+            <summary>
+            Desc:
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.CreditLimitRecord.OrganizationName">
+            <summary>
+            Desc:
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.CreditLimitRecord.SettleTypeNumber">
+            <summary>
+            Desc:
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.CreditLimitRecord.SettleTypeName">
+            <summary>
+            Desc:
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.CreditLimitRecord.SalesNumber">
+            <summary>
+            Desc:
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.CreditLimitRecord.SalesName">
+            <summary>
+            Desc:
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.CreditLimitRecord.UseAmount">
+            <summary>
+            Desc:使用金额
+            Default:0
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.CreditLimitRecord.ReceiveAmount">
+            <summary>
+            Desc:收款金额
+            Default:0
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="T:com.mymooo.credit.core.SqlSugarCore.Paymentsupervise">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:com.mymooo.credit.core.SqlSugarCore.Paymentsupervise.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.Paymentsupervise.BillNo">
+            <summary>
+            Desc:
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.Paymentsupervise.Date">
+            <summary>
+            Desc:
+            Default:NULL
+            Nullable:True
+            </summary>           
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.Paymentsupervise.Amount">
+            <summary>
+            Desc:
+            Default:0
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.Paymentsupervise.Urgency">
+            <summary>
+            Desc:
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.Paymentsupervise.Description">
+            <summary>
+            Desc:
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.Paymentsupervise.Status">
+            <summary>
+            Desc:
+            Default:1
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.Paymentsupervise.Attachment">
+            <summary>
+            Desc:
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.Paymentsupervise.SubmitDate">
+            <summary>
+            Desc:
+            Default:NULL
+            Nullable:True
+            </summary>           
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.Paymentsupervise.CompleteDate">
+            <summary>
+            Desc:
+            Default:NULL
+            Nullable:True
+            </summary>           
+        </member>
+        <member name="T:com.mymooo.credit.core.SqlSugarCore.TemporaryCreditlimit">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:com.mymooo.credit.core.SqlSugarCore.TemporaryCreditlimit.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.TemporaryCreditlimit.Id">
+            <summary>
+            Desc:
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.TemporaryCreditlimit.Credit">
+            <summary>
+            信用额度写入缓存标识
+            </summary>
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.TemporaryCreditlimit.CompanyCode">
+            <summary>
+            Desc:
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.TemporaryCreditlimit.Amount">
+            <summary>
+            Desc:
+            Default:0
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.TemporaryCreditlimit.IsInvalid">
+            <summary>
+            Desc:
+            Default:0
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.TemporaryCreditlimit.ValidityDate">
+            <summary>
+            Desc:
+            Default:
+            Nullable:True
+            </summary>           
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.TemporaryCreditlimit.ForbiddenUserCode">
+            <summary>
+            Desc:
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.TemporaryCreditlimit.ForbiddenUserName">
+            <summary>
+            Desc:
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.TemporaryCreditlimit.ForbiddenDate">
+            <summary>
+            Desc:
+            Default:
+            Nullable:True
+            </summary>           
+        </member>
+        <member name="T:com.mymooo.credit.core.SqlSugarCore.ThirdpartyApplicationConfig">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:com.mymooo.credit.core.SqlSugarCore.ThirdpartyApplicationConfig.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.ThirdpartyApplicationConfig.AppId">
+            <summary>
+            Desc:
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.ThirdpartyApplicationConfig.AppName">
+            <summary>
+            Desc:
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.ThirdpartyApplicationConfig.Url">
+            <summary>
+            Desc:
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.ThirdpartyApplicationConfig.CreateUser">
+            <summary>
+            Desc:
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.ThirdpartyApplicationConfig.CreateDate">
+            <summary>
+            Desc:
+            Default:
+            Nullable:True
+            </summary>           
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.ThirdpartyApplicationConfig.Token">
+            <summary>
+            Desc:
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.ThirdpartyApplicationConfig.Nonce">
+            <summary>
+            Desc:
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.ThirdpartyApplicationConfig.EncodingAESKey">
+            <summary>
+            Desc:
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.ThirdpartyApplicationConfig.Validity">
+            <summary>
+            Desc:
+            Default:100
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.ThirdpartyApplicationConfig.Isvalid">
+            <summary>
+            Desc:
+            Default:1
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.ThirdpartyApplicationConfig.ForbidUser">
+            <summary>
+            Desc:
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.ThirdpartyApplicationConfig.ForbidDate">
+            <summary>
+            Desc:
+            Default:
+            Nullable:True
+            </summary>           
+        </member>
+        <member name="P:com.mymooo.credit.core.SqlSugarCore.ThirdpartyApplicationConfig.Timestamp">
+            <summary>
+            Desc:
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="T:com.mymooo.credit.core.Utils.DateTimeUtility">
+            <summary>
+            时间戳和日期的转化
+            </summary>
+        </member>
+        <member name="M:com.mymooo.credit.core.Utils.DateTimeUtility.ConvertToTimeStamp(System.DateTime)">
+            <summary>
+            日期转换为时间戳（时间戳单位秒）
+            </summary>
+            <param name="time"></param>
+            <returns></returns>
+        </member>
+        <member name="M:com.mymooo.credit.core.Utils.DateTimeUtility.ConvertToDateTime(System.Int64)">
+            <summary>
+            时间戳转换为日期（时间戳单位秒）
+            </summary>
+            <param name="timeStamp"></param>
+            <returns></returns>
+        </member>
+        <member name="T:com.mymooo.credit.core.Utils.MessageHelper`1">
+            <summary>
+            接口返回消息
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="P:com.mymooo.credit.core.Utils.MessageHelper`1.IsSuccess">
+            <summary>
+            是否成功
+            </summary>
+        </member>
+        <member name="P:com.mymooo.credit.core.Utils.MessageHelper`1.Message">
+            <summary>
+            错误消息
+            </summary>
+        </member>
+        <member name="P:com.mymooo.credit.core.Utils.MessageHelper`1.Data">
+            <summary>
+            返回的数据
+            </summary>
+        </member>
+        <member name="P:com.mymooo.credit.core.Utils.MessageHelper`1.ReturnObject">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:com.mymooo.credit.core.WeiXinWork.Approver.CreditlimitRequest">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:com.mymooo.credit.core.WeiXinWork.Approver.CreditlimitRequest.CompanyCode">
+            <summary>
+            企业编码
+            </summary>
+        </member>
+        <member name="P:com.mymooo.credit.core.WeiXinWork.Approver.CreditlimitRequest.CompanyName">
+            <summary>
+            企业名称
+            </summary>
+        </member>
+        <member name="P:com.mymooo.credit.core.WeiXinWork.Approver.CreditlimitRequest.Amount">
+            <summary>
+            信用额
+            </summary>
+        </member>
+        <member name="P:com.mymooo.credit.core.WeiXinWork.Approver.CreditlimitRequest.SpNo">
+            <summary>
+            审批单号
+            </summary>
+        </member>
+        <member name="T:com.mymooo.Credit.CompanyCredit.TempCreditApprovalRequest">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:com.mymooo.Credit.CompanyCredit.TempCreditApprovalRequest.Validity">
+            <summary>
+            有效期(月)
+            </summary>
+        </member>
+    </members>
+</doc>

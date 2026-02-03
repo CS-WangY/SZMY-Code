@@ -1,0 +1,14 @@
+D:\k3cloudApi\src\mymooo.k3cloud\mymooo.k3cloud.core\obj\Debug\net8.0\mymooo.k3cloud.core.csproj.AssemblyReference.cache
+D:\k3cloudApi\src\mymooo.k3cloud\mymooo.k3cloud.core\obj\Debug\net8.0\mymooo.k3cloud.core.GeneratedMSBuildEditorConfig.editorconfig
+D:\k3cloudApi\src\mymooo.k3cloud\mymooo.k3cloud.core\obj\Debug\net8.0\mymooo.k3cloud.core.AssemblyInfoInputs.cache
+D:\k3cloudApi\src\mymooo.k3cloud\mymooo.k3cloud.core\obj\Debug\net8.0\mymooo.k3cloud.core.AssemblyInfo.cs
+D:\k3cloudApi\src\mymooo.k3cloud\mymooo.k3cloud.core\obj\Debug\net8.0\mymooo.k3cloud.core.csproj.CoreCompileInputs.cache
+D:\k3cloudApi\src\mymooo.k3cloud\mymooo.k3cloud.core\bin\Debug\net8.0\mymooo.k3cloud.core.deps.json
+D:\k3cloudApi\src\mymooo.k3cloud\mymooo.k3cloud.core\bin\Debug\net8.0\mymooo.k3cloud.core.dll
+D:\k3cloudApi\src\mymooo.k3cloud\mymooo.k3cloud.core\bin\Debug\net8.0\mymooo.k3cloud.core.pdb
+D:\k3cloudApi\src\mymooo.k3cloud\mymooo.k3cloud.core\bin\Debug\net8.0\mymooo.k3cloud.core.xml
+D:\k3cloudApi\src\mymooo.k3cloud\mymooo.k3cloud.core\obj\Debug\net8.0\mymooo.k3cloud.core.dll
+D:\k3cloudApi\src\mymooo.k3cloud\mymooo.k3cloud.core\obj\Debug\net8.0\refint\mymooo.k3cloud.core.dll
+D:\k3cloudApi\src\mymooo.k3cloud\mymooo.k3cloud.core\obj\Debug\net8.0\mymooo.k3cloud.core.xml
+D:\k3cloudApi\src\mymooo.k3cloud\mymooo.k3cloud.core\obj\Debug\net8.0\mymooo.k3cloud.core.pdb
+D:\k3cloudApi\src\mymooo.k3cloud\mymooo.k3cloud.core\obj\Debug\net8.0\ref\mymooo.k3cloud.core.dll

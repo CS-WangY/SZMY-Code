@@ -1,0 +1,7 @@
+D:\K3Cloud\WebSite\BIN\Kingdee.Mymooo.Report.Plugin.dll
+D:\K3Cloud\WebSite\BIN\Kingdee.Mymooo.Report.Plugin.pdb
+D:\K3Cloud\Code\Kingdee.Mymooo.Report.Plugin\obj\Debug\Kingdee.Mymooo.Report.Plugin.csproj.AssemblyReference.cache
+D:\K3Cloud\Code\Kingdee.Mymooo.Report.Plugin\obj\Debug\Kingdee.Mymooo.Report.Plugin.csproj.CoreCompileInputs.cache
+D:\K3Cloud\Code\Kingdee.Mymooo.Report.Plugin\obj\Debug\Kingdee..73FA34ED.Up2Date
+D:\K3Cloud\Code\Kingdee.Mymooo.Report.Plugin\obj\Debug\Kingdee.Mymooo.Report.Plugin.dll
+D:\K3Cloud\Code\Kingdee.Mymooo.Report.Plugin\obj\Debug\Kingdee.Mymooo.Report.Plugin.pdb

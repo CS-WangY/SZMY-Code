@@ -1,0 +1,3200 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>mymooo.weixinWork.SDK</name>
+    </assembly>
+    <members>
+        <member name="T:mymooo.weixinWork.SDK.AddressBook.AddressBookServiceClient">
+            <summary>
+            通讯录
+            </summary>
+        </member>
+        <member name="M:mymooo.weixinWork.SDK.AddressBook.AddressBookServiceClient.#ctor(mymooo.weixinWork.SDK.Utils.WeixinWorkHttpService,mymooo.core.Cache.RedisCache)">
+            <summary>
+            通讯录
+            </summary>
+        </member>
+        <member name="M:mymooo.weixinWork.SDK.AddressBook.AddressBookServiceClient.GetLevelParent(System.String,System.Int32)">
+            <summary>
+            获取第几级父级用户信息
+            </summary>
+            <param name="userCode"></param>
+            <param name="level"></param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.weixinWork.SDK.AddressBook.AddressBookServiceClient.GetParent(System.String)">
+            <summary>
+            获取第几级父级用户信息
+            </summary>
+            <param name="userCode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.weixinWork.SDK.AddressBook.AddressBookServiceClient.GetUserQrCode(System.String)">
+            <summary>
+            获取用户的二维码
+            </summary>
+            <param name="userCode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.weixinWork.SDK.AddressBook.AddressBookServiceClient.GetUserQrCodeAsync(System.String)">
+            <summary>
+            异步 获取用户的二维码
+            </summary>
+            <param name="userCode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.weixinWork.SDK.AddressBook.AddressBookServiceClient.GetUserInfo``2(``0,System.String)">
+            <summary>
+            获取访问用户身份
+            </summary>
+            <typeparam name="C">蚂蚁上下文</typeparam>
+            <typeparam name="U"></typeparam>
+            <param name="mymoooContext">蚂蚁上下文</param>
+            <param name="userid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.weixinWork.SDK.AddressBook.AddressBookServiceClient.GetDepartmentList``2(``0,System.Int64)">
+            <summary>
+            获取部门列表
+            </summary>
+            <typeparam name="C">蚂蚁上下文</typeparam>
+            <typeparam name="U"></typeparam>
+            <param name="mymoooContext">蚂蚁上下文</param>
+            <param name="departmentId">部门Id</param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.weixinWork.SDK.AddressBook.AddressBookServiceClient.GetDepartmentUsers``2(``0,System.Int64,System.Int32)">
+            <summary>
+            获取部门成员
+            </summary>
+            <typeparam name="C">蚂蚁上下文</typeparam>
+            <typeparam name="U"></typeparam>
+            <param name="mymoooContext">蚂蚁上下文</param>
+            <param name="departmentId">部门Id</param>
+            <param name="fetchChild">是否递归子部门</param>
+            <returns></returns>
+        </member>
+        <member name="T:mymooo.weixinWork.SDK.AddressBook.Model.DepartmentListResponse">
+            <summary>
+            部门详情
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.AddressBook.Model.DepartmentListResponse.Errcode">
+            <summary>
+            返回码
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.AddressBook.Model.DepartmentListResponse.ErrorMessage">
+            <summary>
+            对返回码的文本描述内容
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.AddressBook.Model.DepartmentListResponse.Department">
+            <summary>
+            部门列表数据。
+            </summary>
+        </member>
+        <member name="T:mymooo.weixinWork.SDK.AddressBook.Model.DepartmentListResponse.DepartmentInfo">
+            <summary>
+            部门列表数据。
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.AddressBook.Model.DepartmentListResponse.DepartmentInfo.Id">
+            <summary>
+            创建的部门id
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.AddressBook.Model.DepartmentListResponse.DepartmentInfo.Name">
+            <summary>
+            部门名称，此字段从2019年12月30日起，对新创建第三方应用不再返回，2020年6月30日起，对所有历史第三方应用不再返回，后续第三方仅通讯录应用可获取，第三方页面需要通过通讯录展示组件来展示部门名称
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.AddressBook.Model.DepartmentListResponse.DepartmentInfo.NameEn">
+            <summary>
+             	英文名称
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.AddressBook.Model.DepartmentListResponse.DepartmentInfo.ParentId">
+            <summary>
+            父部门id。根部门为1
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.AddressBook.Model.DepartmentListResponse.DepartmentInfo.Order">
+            <summary>
+            在父部门中的次序值。order值大的排序靠前。值范围是[0, 2^32)
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.AddressBook.Model.DepartmentListResponse.DepartmentInfo.AppId">
+            <summary>
+            系统号
+            </summary>
+        </member>
+        <member name="T:mymooo.weixinWork.SDK.AddressBook.Model.MymoooUser">
+            <summary>
+            蚂蚁用户表
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.AddressBook.Model.MymoooUser.Id">
+            <summary>
+            主键
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.AddressBook.Model.MymoooUser.AppId">
+            <summary>
+            appid
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.AddressBook.Model.MymoooUser.UserId">
+            <summary>
+            企业微信用户code
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.AddressBook.Model.MymoooUser.Name">
+            <summary>
+            企业微信名称
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.AddressBook.Model.MymoooUser.Position">
+            <summary>
+            职务信息；第三方仅通讯录应用可获取；对于非第三方创建的成员，第三方通讯录应用也不可获取
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.AddressBook.Model.MymoooUser.Mobile">
+            <summary>
+            邮箱，第三方仅通讯录应用可获取；对于非第三方创建的成员，第三方通讯录应用也不可获取
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.AddressBook.Model.MymoooUser.Gender">
+            <summary>
+            性别。0表示未定义，1表示男性，2表示女性
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.AddressBook.Model.MymoooUser.Email">
+            <summary>
+            邮箱，第三方仅通讯录应用可获取；对于非第三方创建的成员，第三方通讯录应用也不可获取
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.AddressBook.Model.MymoooUser.Biz_Email">
+            <summary>
+            企业邮箱
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.AddressBook.Model.MymoooUser.Telephone">
+            <summary>
+            座机。第三方仅通讯录应用可获取；对于非第三方创建的成员，第三方通讯录应用也不可获取
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.AddressBook.Model.MymoooUser.Alias">
+            <summary>
+            别名；第三方仅通讯录应用可获取；对于非第三方创建的成员，第三方通讯录应用也不可获取
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.AddressBook.Model.MymoooUser.Address">
+            <summary>
+            地址。第三方仅通讯录应用可获取；对于非第三方创建的成员，第三方通讯录应用也不可获取
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.AddressBook.Model.MymoooUser.OpenUserid">
+            <summary>
+            全局唯一。对于同一个服务商，不同应用获取到企业内同一个成员的open_userid是相同的，最多64个字节。仅第三方应用可获取
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.AddressBook.Model.MymoooUser.MainDepartmentId">
+            <summary>
+            主部门
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.AddressBook.Model.MymoooUser.Status">
+            <summary>
+            激活状态: 1=已激活，2=已禁用，4=未激活，5=退出企业。
+            已激活代表已激活企业微信或已关注微工作台（原企业号）。未激活代表既未激活企业微信又未关注微工作台（原企业号）。
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.AddressBook.Model.MymoooUser.QrCode">
+            <summary>
+            员工个人二维码，扫描可添加为外部联系人(注意返回的是一个url，可在浏览器上打开该url以展示二维码)；第三方仅通讯录应用可获取；对于非第三方创建的成员，第三方通讯录应用也不可获取
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.AddressBook.Model.MymoooUser.ExternalPosition">
+            <summary>
+            对外职务，如果设置了该值，则以此作为对外展示的职务，否则以position来展示。第三方仅通讯录应用可获取；对于非第三方创建的成员，第三方通讯录应用也不可获取
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.AddressBook.Model.MymoooUser.EntryDate">
+            <summary>
+            入职时间
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.AddressBook.Model.MymoooUser.DirectSupervisor">
+            <summary>
+            直属上级
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.AddressBook.Model.MymoooUser.Grade">
+            <summary>
+            职级 
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.AddressBook.Model.MymoooUser.Education">
+            <summary>
+            学历
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.AddressBook.Model.MymoooUser.Versions">
+            <summary>
+            版本
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.AddressBook.Model.MymoooUser.IsDelete">
+            <summary>
+            是否删除
+            </summary>
+        </member>
+        <member name="T:mymooo.weixinWork.SDK.AddressBook.Model.ParentUserInfo">
+            <summary>
+            父级用户信息
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.AddressBook.Model.ParentUserInfo.UserId">
+            <summary>
+            用户Id
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.AddressBook.Model.ParentUserInfo.UserCode">
+            <summary>
+            用户编码
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.AddressBook.Model.ParentUserInfo.UserName">
+            <summary>
+            用户名称
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.AddressBook.Model.ParentUserInfo.ParentUserId">
+            <summary>
+            父级用户Id
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.AddressBook.Model.ParentUserInfo.ParentUserCode">
+            <summary>
+            父级用户编码
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.AddressBook.Model.ParentUserInfo.RowIndex">
+            <summary>
+            第几级部门领导
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.AddressBook.Model.ParentUserInfo.ParentUserName">
+            <summary>
+            父级用户名称
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.AddressBook.Model.ParentUserInfo.DepartmentId">
+            <summary>
+            部门Id
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.AddressBook.Model.ParentUserInfo.DepartmentName">
+            <summary>
+            部门名称
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.AddressBook.Model.ParentUserInfo.ParentDepartmentId">
+            <summary>
+            父级部门Id
+            </summary>
+        </member>
+        <member name="T:mymooo.weixinWork.SDK.AddressBook.Model.SimpleDepartmentResponse">
+            <summary>
+            获取部门成员相应
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.AddressBook.Model.SimpleDepartmentResponse.Errcode">
+            <summary>
+            返回码
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.AddressBook.Model.SimpleDepartmentResponse.ErrorMessage">
+            <summary>
+            对返回码的文本描述内容
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.AddressBook.Model.SimpleDepartmentResponse.UserList">
+            <summary>
+             	成员列表
+            </summary>
+        </member>
+        <member name="T:mymooo.weixinWork.SDK.AddressBook.Model.SimpleDepartmentResponse.UserListInfo">
+            <summary>
+             	成员列表
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.AddressBook.Model.SimpleDepartmentResponse.UserListInfo.UserId">
+            <summary>
+            成员UserID。对应管理端的帐号
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.AddressBook.Model.SimpleDepartmentResponse.UserListInfo.Name">
+            <summary>
+            成员名称，此字段从2019年12月30日起，对新创建第三方应用不再返回，2020年6月30日起，对所有历史第三方应用不再返回，后续第三方仅通讯录应用可获取，第三方页面需要通过通讯录展示组件来展示名字
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.AddressBook.Model.SimpleDepartmentResponse.UserListInfo.Department">
+            <summary>
+            成员所属部门列表。列表项为部门ID，32位整型
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.AddressBook.Model.SimpleDepartmentResponse.UserListInfo.OpenUserId">
+            <summary>
+            全局唯一。对于同一个服务商，不同应用获取到企业内同一个成员的open_userid是相同的，最多64个字节。仅第三方应用可获取
+            </summary>
+        </member>
+        <member name="T:mymooo.weixinWork.SDK.Application.ApplicationServiceClient">
+            <summary>
+            审批应用
+            </summary>
+        </member>
+        <member name="M:mymooo.weixinWork.SDK.Application.ApplicationServiceClient.#ctor(mymooo.weixinWork.SDK.Utils.WeixinWorkHttpService,mymooo.core.Config.ApigatewayConfig,mymooo.weixinWork.SDK.Media.MediaServiceClient,mymooo.weixinWork.SDK.Config.WeiXinWorkConfig)">
+            <summary>
+            审批应用
+            </summary>
+        </member>
+        <member name="M:mymooo.weixinWork.SDK.Application.ApplicationServiceClient.CreateChat``2(``0,mymooo.weixinWork.SDK.Application.Model.CreateChatRequest)">
+            <summary>
+            创建群聊
+            </summary>
+            <param name="mymoooContext"></param>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.weixinWork.SDK.Application.ApplicationServiceClient.UpdateChat``2(``0,mymooo.weixinWork.SDK.Application.Model.UpdateChatRequest)">
+            <summary>
+            更新群聊
+            </summary>
+            <param name="mymoooContext"></param>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.weixinWork.SDK.Application.ApplicationServiceClient.GetChat``2(``0,System.String)">
+            <summary>
+            获取群聊
+            </summary>
+            <param name="mymoooContext">蚂蚁上下文</param>
+            <param name="chatId">群聊Id</param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.weixinWork.SDK.Application.ApplicationServiceClient.SendChatTextMessage``2(``0,mymooo.weixinWork.SDK.WeixinWorkMessage.Model.SendTextMessageRequest)">
+            <summary>
+            发送文本消息
+            </summary>
+            <param name="mymoooContext">蚂蚁上下文</param>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.weixinWork.SDK.Application.ApplicationServiceClient.SendChatMarkDownMessage``2(``0,mymooo.weixinWork.SDK.WeixinWorkMessage.Model.SendMarkdownMessageRequest)">
+            <summary>
+            发送 MarkDown 消息
+            </summary>
+            <param name="mymoooContext">蚂蚁上下文</param>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.weixinWork.SDK.Application.ApplicationServiceClient.SendChatTextcardMessage``2(``0,mymooo.weixinWork.SDK.WeixinWorkMessage.Model.SendTextCardMessageRequest)">
+            <summary>
+            发送卡片消息
+            </summary>
+            <param name="mymoooContext">蚂蚁上下文</param>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.weixinWork.SDK.Application.ApplicationServiceClient.SendChatFileMessageAsync``2(``0,mymooo.weixinWork.SDK.WeixinWorkMessage.Model.SendFileMessageRequest)">
+            <summary>
+            发送文件消息
+            </summary>
+            <param name="mymoooContext">蚂蚁上下文</param>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.weixinWork.SDK.Application.ApplicationServiceClient.GetUserId``2(``0,System.String)">
+            <summary>
+            获取访问用户身份
+            </summary>
+            <typeparam name="C">蚂蚁上下文</typeparam>
+            <typeparam name="U"></typeparam>
+            <param name="mymoooContext">蚂蚁上下文</param>
+            <param name="code"></param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.weixinWork.SDK.Application.ApplicationServiceClient.GetUserInfo``2(``0,System.String)">
+            <summary>
+            获取访问用户身份
+            </summary>
+            <typeparam name="C">蚂蚁上下文</typeparam>
+            <typeparam name="U"></typeparam>
+            <param name="mymoooContext">蚂蚁上下文</param>
+            <param name="userid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.weixinWork.SDK.Application.ApplicationServiceClient.OpenIdConvertUserId``2(``0,System.String)">
+            <summary>
+            openId 转 UserId
+            </summary>
+            <typeparam name="C">蚂蚁上下文</typeparam>
+            <typeparam name="U"></typeparam>
+            <param name="mymoooContext">蚂蚁上下文</param>
+            <param name="openid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.weixinWork.SDK.Application.ApplicationServiceClient.DownLoadMediaAsync``2(``0,System.String)">
+            <summary>
+            下载媒体
+            </summary>
+            <typeparam name="C">蚂蚁上下文</typeparam>
+            <typeparam name="U"></typeparam>
+            <param name="mymoooContext">蚂蚁上下文</param>
+            <param name="mediaId">媒体Id</param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.weixinWork.SDK.Application.ApplicationServiceClient.GetDepartmentList``2(``0,System.Int64)">
+            <summary>
+            获取部门列表
+            </summary>
+            <typeparam name="C">蚂蚁上下文</typeparam>
+            <typeparam name="U"></typeparam>
+            <param name="mymoooContext">蚂蚁上下文</param>
+            <param name="departmentId">部门Id</param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.weixinWork.SDK.Application.ApplicationServiceClient.GetSimpleDepartmentUsers``2(``0,System.Int64,System.Int32)">
+            <summary>
+            获取部门成员
+            </summary>
+            <typeparam name="C">蚂蚁上下文</typeparam>
+            <typeparam name="U"></typeparam>
+            <param name="mymoooContext">蚂蚁上下文</param>
+            <param name="departmentId">部门Id</param>
+            <param name="fetchChild">是否递归子部门</param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.weixinWork.SDK.Application.ApplicationServiceClient.GetDepartmentUsers``2(``0,System.Int64,System.Int32)">
+            <summary>
+            获取部门下全部的用户
+            </summary>
+            <typeparam name="C">蚂蚁上下文</typeparam>
+            <typeparam name="U"></typeparam>
+            <param name="mymoooContext">蚂蚁上下文</param>
+            <param name="departmentId">部门ID  1 默认全部</param>
+            <param name="fetchChild"></param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.weixinWork.SDK.Application.ApplicationServiceClient.GetClockInDatas``2(``0,mymooo.weixinWork.SDK.Application.Model.ClockIn.ClockInDataRequest)">
+            <summary>
+            获取打卡记录
+            </summary>
+            <param name="mymoooContext">蚂蚁上下文</param>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.weixinWork.SDK.Application.ApplicationServiceClient.AddCheckinRecord``2(``0,mymooo.weixinWork.SDK.Application.Model.ClockIn.AddCheckinRecordRequest)">
+            <summary>
+            可通过接口写入打卡记录，匹配打卡规则后可在企业微信打卡明细、统计中参与展示。
+            </summary>
+            <param name="mymoooContext">蚂蚁上下文</param>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.weixinWork.SDK.Application.ApplicationServiceClient.GetKfAccountList``2(``0,mymooo.weixinWork.SDK.Application.Model.KfAccount.KfAccountListRequest)">
+            <summary>
+            获取客服账号列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.weixinWork.SDK.Application.ApplicationServiceClient.GetExternalContactList``2(``0,mymooo.weixinWork.SDK.Application.Model.ExternalContact.ExternalContactListRequest)">
+            <summary>
+            获取企业已配置的「联系我」列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.weixinWork.SDK.Application.ApplicationServiceClient.GetExternalContactDetail``2(``0,mymooo.weixinWork.SDK.Application.Model.ExternalContact.ExternalContactListResponse.ExternalContactId)">
+            <summary>
+            获取企业已配置的「联系我」方式
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.weixinWork.SDK.Application.ApplicationServiceClient.UpdateExternalContactDetail``2(``0,mymooo.weixinWork.SDK.Application.Model.ExternalContact.ExternalContactDetailResponse.ExternalContactDetail)">
+            <summary>
+            更新企业已配置的「联系我」方式
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:mymooo.weixinWork.SDK.Application.Model.ApplicationResponse">
+            <summary>
+            微信应用响应
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.ApplicationResponse.ErrCode">
+            <summary>
+            0 为成功
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.ApplicationResponse.ErrorMessage">
+            <summary>
+            错误消息
+            </summary>
+        </member>
+        <member name="T:mymooo.weixinWork.SDK.Application.Model.ClockIn.AddCheckinRecordRequest">
+            <summary>
+            可通过接口写入打卡记录，匹配打卡规则后可在企业微信打卡明细、统计中参与展示。
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.ClockIn.AddCheckinRecordRequest.Records">
+            <summary>
+            打卡记录，一批最多200个
+            </summary>
+        </member>
+        <member name="T:mymooo.weixinWork.SDK.Application.Model.ClockIn.AddCheckinRecordRequest.AddCheckinRecord">
+            <summary>
+            打开记录
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.ClockIn.AddCheckinRecordRequest.AddCheckinRecord.UserId">
+            <summary>
+            用户id
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.ClockIn.AddCheckinRecordRequest.AddCheckinRecord.CheckInDate">
+            <summary>
+            打卡时间
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.ClockIn.AddCheckinRecordRequest.AddCheckinRecord.CheckinTimestamp">
+            <summary>
+            打卡时间。Unix时间戳
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.ClockIn.AddCheckinRecordRequest.AddCheckinRecord.CheckinAddress">
+            <summary>
+            打卡地点title，限制1024字符
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.ClockIn.AddCheckinRecordRequest.AddCheckinRecord.AddressDetail">
+            <summary>
+            打卡地点详情限制1024字符
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.ClockIn.AddCheckinRecordRequest.AddCheckinRecord.MediaIds">
+            <summary>
+            打卡的附件media_id，可使用media/upload上传附件。当前最多只允许传1个
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.ClockIn.AddCheckinRecordRequest.AddCheckinRecord.MediaInfo">
+            <summary>
+            上传打卡图片
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.ClockIn.AddCheckinRecordRequest.AddCheckinRecord.Notes">
+            <summary>
+            打卡备注限制1024字符
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.ClockIn.AddCheckinRecordRequest.AddCheckinRecord.DeviceType">
+            <summary>
+            打卡设备类型：1、门禁 2、考勤机（人脸识别、指纹识别） 3、其他；
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.ClockIn.AddCheckinRecordRequest.AddCheckinRecord.Lat">
+            <summary>
+            位置打卡地点纬度，是实际纬度的1000000倍，与腾讯地图一致采用GCJ-02坐标系统标准 范围 -90000000,90000000
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.ClockIn.AddCheckinRecordRequest.AddCheckinRecord.Lng">
+            <summary>
+            位置打卡地点经度，是实际经度的1000000倍，与腾讯地图一致采用GCJ-02坐标系统标准 范围-180000000,180000000
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.ClockIn.AddCheckinRecordRequest.AddCheckinRecord.DeviceDetail">
+            <summary>
+            打卡设备品牌：字符串写入（限制40个字符内）
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.ClockIn.AddCheckinRecordRequest.AddCheckinRecord.WifiName">
+            <summary>
+            	打卡wifi名称限制1024字符
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.ClockIn.AddCheckinRecordRequest.AddCheckinRecord.WifiMac">
+            <summary>
+            打卡的MAC地址/bssid 满足正则表达式^[A-Fa-f0-9]{2}:[A-Fa-f0-9]{2}:[A-Fa-f0-9]{2}:[A-Fa-f0-9]{2}:[A-Fa-f0-9]{2}:[A-Fa-f0-9]{2}$。传入wifiname时必填
+            </summary>
+        </member>
+        <member name="T:mymooo.weixinWork.SDK.Application.Model.ClockIn.ClockInDataRequest">
+            <summary> 
+            获取可见范围内员工指定时间段内的打卡记录数据  请求
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.ClockIn.ClockInDataRequest.CheckinType">
+            <summary>
+            打卡类型。1：上下班打卡；2：外出打卡；3：全部打卡
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.ClockIn.ClockInDataRequest.StartDate">
+            <summary>
+            开始时间
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.ClockIn.ClockInDataRequest.StartTimestamp">
+            <summary>
+            获取打卡记录的开始时间。Unix时间戳
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.ClockIn.ClockInDataRequest.EndDate">
+            <summary>
+            开始时间
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.ClockIn.ClockInDataRequest.EndTimestamp">
+            <summary>
+            获取打卡记录的结束时间。Unix时间戳
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.ClockIn.ClockInDataRequest.UserIdList">
+            <summary>
+            需要获取打卡记录的用户列表
+            </summary>
+        </member>
+        <member name="T:mymooo.weixinWork.SDK.Application.Model.ClockIn.ClockInDataResponse">
+            <summary>
+            获取可见范围内员工指定时间段内的打卡记录数据 响应
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.ClockIn.ClockInDataResponse.Errcode">
+            <summary>
+            返回码
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.ClockIn.ClockInDataResponse.ErrorMessage">
+            <summary>
+            对返回码的文本描述内容
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.ClockIn.ClockInDataResponse.ClockInDatas">
+            <summary>
+            打卡明细
+            </summary>
+        </member>
+        <member name="T:mymooo.weixinWork.SDK.Application.Model.ClockIn.ClockInDataResponse.ClockInDataDetail">
+            <summary>
+            打卡数据
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.ClockIn.ClockInDataResponse.ClockInDataDetail.UserId">
+            <summary>
+            用户id
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.ClockIn.ClockInDataResponse.ClockInDataDetail.GroupName">
+            <summary>
+            打卡规则名称
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.ClockIn.ClockInDataResponse.ClockInDataDetail.CheckinType">
+            <summary>
+            打卡类型。字符串，目前有：上班打卡，下班打卡，外出打卡
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.ClockIn.ClockInDataResponse.ClockInDataDetail.ExceptionType">
+            <summary>
+            异常类型，字符串，包括：时间异常，地点异常，未打卡，wifi异常，非常用设备。如果有多个异常，以分号间隔
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.ClockIn.ClockInDataResponse.ClockInDataDetail.CheckinTimestamp">
+            <summary>
+            打卡时间。Unix时间戳
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.ClockIn.ClockInDataResponse.ClockInDataDetail.CheckoutDate">
+            <summary>
+            打开时间
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.ClockIn.ClockInDataResponse.ClockInDataDetail.CheckinAddress">
+            <summary>
+            打卡地点title
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.ClockIn.ClockInDataResponse.ClockInDataDetail.AddressDetail">
+            <summary>
+            打卡地点详情
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.ClockIn.ClockInDataResponse.ClockInDataDetail.WiFiName">
+            <summary>
+            打卡wifi名称
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.ClockIn.ClockInDataResponse.ClockInDataDetail.DeviceId">
+            <summary>
+            打卡设备id
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.ClockIn.ClockInDataResponse.ClockInDataDetail.Notes">
+            <summary>
+            打卡备注
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.ClockIn.ClockInDataResponse.ClockInDataDetail.WifiMac">
+            <summary>
+            打卡的MAC地址/bssid
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.ClockIn.ClockInDataResponse.ClockInDataDetail.Mediaids">
+            <summary>
+            打卡的附件media_id，可使用media/get获取附件
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.ClockIn.ClockInDataResponse.ClockInDataDetail.StandardCheckinTimestamp">
+            <summary>
+            标准打卡时间，指此次打卡时间对应的标准上班时间或标准下班时间
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.ClockIn.ClockInDataResponse.ClockInDataDetail.StandardCheckoutDate">
+            <summary>
+            标准打卡时间
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.ClockIn.ClockInDataResponse.ClockInDataDetail.GroupId">
+            <summary>
+            规则id，表示打卡记录所属规则的id
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.ClockIn.ClockInDataResponse.ClockInDataDetail.ScheduleId">
+            <summary>
+            班次id，表示打卡记录所属规则中，所属班次的id
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.ClockIn.ClockInDataResponse.ClockInDataDetail.TimelineId">
+            <summary>
+            时段id，表示打卡记录所属规则中，某一班次中的某一时段的id，如上下班时间为9:00-12:00、13:00-18:00的班次中，9:00-12:00为其中一组时段
+            </summary>
+        </member>
+        <member name="T:mymooo.weixinWork.SDK.Application.Model.CreateChatRequest">
+            <summary>
+            创建群聊请求
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.CreateChatRequest.Name">
+            <summary>
+            群聊名称
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.CreateChatRequest.Owner">
+            <summary>
+            群主
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.CreateChatRequest.UserCodes">
+            <summary>
+            群成员
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.CreateChatRequest.ChatId">
+            <summary>
+            群聊Id
+            </summary>
+        </member>
+        <member name="T:mymooo.weixinWork.SDK.Application.Model.CreateChatResponse">
+            <summary>
+            创建群聊响应
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.CreateChatResponse.ErrCode">
+            <summary>
+            0 为成功
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.CreateChatResponse.ErrorMessage">
+            <summary>
+            错误消息
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.CreateChatResponse.ChatId">
+            <summary>
+            群聊Id
+            </summary>
+        </member>
+        <member name="T:mymooo.weixinWork.SDK.Application.Model.DepartmentUsersResponse">
+            <summary>
+            获取部门下用户 详细信息
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.DepartmentUsersResponse.Errcode">
+            <summary>
+            返回码
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.DepartmentUsersResponse.ErrorMessage">
+            <summary>
+            对返回码的文本描述内容
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.DepartmentUsersResponse.UserList">
+            <summary>
+             	成员列表
+            </summary>
+        </member>
+        <member name="T:mymooo.weixinWork.SDK.Application.Model.ExternalContact.ExternalContactDetailResponse">
+            <summary>
+            获取企业已配置的「联系我」方式
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.ExternalContact.ExternalContactDetailResponse.Errcode">
+            <summary>
+            出错返回码，为0表示成功，非0表示调用失败
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.ExternalContact.ExternalContactDetailResponse.ErrorMessage">
+            <summary>
+            返回码提示语
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.ExternalContact.ExternalContactDetailResponse.Detail">
+            <summary>
+            详情
+            </summary>
+        </member>
+        <member name="T:mymooo.weixinWork.SDK.Application.Model.ExternalContact.ExternalContactDetailResponse.ExternalContactDetail">
+            <summary>
+            详情
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.ExternalContact.ExternalContactDetailResponse.ExternalContactDetail.ConfigId">
+            <summary>
+            新增联系方式的配置id
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.ExternalContact.ExternalContactDetailResponse.ExternalContactDetail.Type">
+            <summary>
+            联系方式类型，1-单人，2-多人
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.ExternalContact.ExternalContactDetailResponse.ExternalContactDetail.Scene">
+            <summary>
+            场景，1-在小程序中联系，2-通过二维码联系
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.ExternalContact.ExternalContactDetailResponse.ExternalContactDetail.Style">
+            <summary>
+            小程序中联系按钮的样式，仅在scene为1时返回，详见附录
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.ExternalContact.ExternalContactDetailResponse.ExternalContactDetail.Remark">
+            <summary>
+            联系方式的备注信息，用于助记
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.ExternalContact.ExternalContactDetailResponse.ExternalContactDetail.SkipVerify">
+            <summary>
+            外部客户添加时是否无需验证
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.ExternalContact.ExternalContactDetailResponse.ExternalContactDetail.State">
+            <summary>
+            企业自定义的state参数，用于区分不同的添加渠道，在调用“获取客户详情”时会返回该参数值
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.ExternalContact.ExternalContactDetailResponse.ExternalContactDetail.QrCode">
+            <summary>
+            联系二维码的URL，仅在scene为2时返回
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.ExternalContact.ExternalContactDetailResponse.ExternalContactDetail.Users">
+            <summary>
+            使用该联系方式的用户userID列表
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.ExternalContact.ExternalContactDetailResponse.ExternalContactDetail.Partys">
+            <summary>
+            使用该联系方式的部门id列表
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.ExternalContact.ExternalContactDetailResponse.ExternalContactDetail.IsTemp">
+             <summary>
+            是否临时会话模式，默认为false，true表示使用临时会话模式
+             </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.ExternalContact.ExternalContactDetailResponse.ExternalContactDetail.ExpiresIn">
+            <summary>
+            临时会话二维码有效期，以秒为单位
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.ExternalContact.ExternalContactDetailResponse.ExternalContactDetail.ChatExpiresIn">
+            <summary>
+            临时会话有效期，以秒为单位
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.ExternalContact.ExternalContactDetailResponse.ExternalContactDetail.Unionid">
+            <summary>
+            可进行临时会话的客户unionid
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.ExternalContact.ExternalContactDetailResponse.ExternalContactDetail.Conclusions">
+            <summary>
+            结束语，可参考“结束语定义”
+            </summary>
+        </member>
+        <member name="T:mymooo.weixinWork.SDK.Application.Model.ExternalContact.ExternalContactListRequest">
+            <summary>
+            获取企业已配置的「联系我」列表
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.ExternalContact.ExternalContactListRequest.StartTime">
+            <summary>
+            「联系我」创建起始时间戳, 默认为90天前
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.ExternalContact.ExternalContactListRequest.StartDate">
+            <summary>
+            「联系我」创建起始时间戳, 默认为90天前
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.ExternalContact.ExternalContactListRequest.EndTime">
+            <summary>
+            「联系我」创建结束时间戳, 默认为当前时间
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.ExternalContact.ExternalContactListRequest.EndDate">
+            <summary>
+            「联系我」创建结束时间戳, 默认为当前时间
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.ExternalContact.ExternalContactListRequest.Cursor">
+            <summary>
+            分页查询使用的游标，为上次请求返回的 next_cursor
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.ExternalContact.ExternalContactListRequest.Limit">
+            <summary>
+            每次查询的分页大小，默认为100条，最多支持1000条
+            </summary>
+        </member>
+        <member name="T:mymooo.weixinWork.SDK.Application.Model.ExternalContact.ExternalContactListResponse">
+            <summary>
+            获取企业已配置的「联系我」列表
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.ExternalContact.ExternalContactListResponse.Errcode">
+            <summary>
+            出错返回码，为0表示成功，非0表示调用失败
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.ExternalContact.ExternalContactListResponse.ErrorMessage">
+            <summary>
+            返回码提示语
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.ExternalContact.ExternalContactListResponse.ContactWay">
+            <summary>
+            联系方式的配置id
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.ExternalContact.ExternalContactListResponse.NextCursor">
+            <summary>
+            分页参数，用于查询下一个分页的数据，为空时表示没有更多的分页
+            </summary>
+        </member>
+        <member name="T:mymooo.weixinWork.SDK.Application.Model.ExternalContact.ExternalContactListResponse.ExternalContactId">
+            <summary>
+            明细联系我ID
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.ExternalContact.ExternalContactListResponse.ExternalContactId.ConfigId">
+            <summary>
+            联系方式的配置id
+            </summary>
+        </member>
+        <member name="T:mymooo.weixinWork.SDK.Application.Model.GetChatResponse">
+            <summary>
+            获取群聊内容
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.GetChatResponse.ChatInfo">
+            <summary>
+            群聊信息
+            </summary>
+        </member>
+        <member name="T:mymooo.weixinWork.SDK.Application.Model.KfAccount.KfAccountListRequest">
+            <summary>
+            获取客服账号列表，包括客服账号的客服ID、名称和头像。
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.KfAccount.KfAccountListRequest.Offset">
+            <summary>
+            分页，偏移量, 默认为0
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.KfAccount.KfAccountListRequest.Limit">
+            <summary>
+            分页，预期请求的数据量，默认为100，取值范围 1 ~ 100
+            </summary>
+        </member>
+        <member name="T:mymooo.weixinWork.SDK.Application.Model.KfAccount.KfAccountListResponse">
+            <summary>
+            获取客服账号列表 响应消息
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.KfAccount.KfAccountListResponse.Errcode">
+            <summary>
+            出错返回码，为0表示成功，非0表示调用失败
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.KfAccount.KfAccountListResponse.ErrorMessage">
+            <summary>
+            返回码提示语
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.KfAccount.KfAccountListResponse.Details">
+            <summary>
+            客服账号明细
+            </summary>
+        </member>
+        <member name="T:mymooo.weixinWork.SDK.Application.Model.KfAccount.KfAccountListResponse.KfAccountListDetail">
+            <summary>
+            客服账号明细
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.KfAccount.KfAccountListResponse.KfAccountListDetail.KfId">
+            <summary>
+            客服账号ID
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.KfAccount.KfAccountListResponse.KfAccountListDetail.Name">
+            <summary>
+            客服名称
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.KfAccount.KfAccountListResponse.KfAccountListDetail.Avatar">
+            <summary>
+            客服头像URL
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.KfAccount.KfAccountListResponse.KfAccountListDetail.ManagePrivilege">
+            <summary>
+            当前调用接口的应用身份，是否有该客服账号的管理权限（编辑客服账号信息、分配会话和收发消息）。组件应用不返回此字段
+            </summary>
+        </member>
+        <member name="T:mymooo.weixinWork.SDK.Application.Model.UpdateChatRequest">
+            <summary>
+            修改群聊
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.UpdateChatRequest.Name">
+            <summary>
+            群聊名称
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.UpdateChatRequest.Owner">
+            <summary>
+            群主
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.UpdateChatRequest.AddUserCodes">
+            <summary>
+            添加群成员
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.UpdateChatRequest.DeleteUserCodes">
+            <summary>
+            删除群成员
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.UpdateChatRequest.ChatId">
+            <summary>
+            群聊Id
+            </summary>
+        </member>
+        <member name="T:mymooo.weixinWork.SDK.Application.Model.UserIdResponse">
+            <summary>
+            获取userid响应
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.UserIdResponse.Errcode">
+            <summary>
+            出错返回码，为0表示成功，非0表示调用失败
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.UserIdResponse.Errmsg">
+            <summary>
+            返回码提示语
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.UserIdResponse.UserId">
+            <summary>
+            成员UserID。若需要获得用户详情信息，可调用通讯录接口：读取成员
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.UserIdResponse.OpenId">
+            <summary>
+            非企业成员的标识，对当前企业唯一
+            </summary>
+        </member>
+        <member name="T:mymooo.weixinWork.SDK.Application.Model.UserInfoResponse">
+            <summary>
+            用户数据响应
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.UserInfoResponse.Id">
+            <summary>
+            userid唯一标识
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.UserInfoResponse.Errcode">
+            <summary>
+            返回码
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.UserInfoResponse.ErrorMessage">
+            <summary>
+            对返回码的文本描述内容
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.UserInfoResponse.UserId">
+            <summary>
+             	成员UserID。对应管理端的帐号，企业内必须唯一。不区分大小写，长度为1~64个字节
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.UserInfoResponse.Name">
+            <summary>
+            成员名称，此字段从2019年12月30日起，对新创建第三方应用不再返回真实name，使用userid代替name，2020年6月30日起，对所有历史第三方应用不再返回真实name，使用userid代替name，后续第三方仅通讯录应用可获取，第三方页面需要通过通讯录展示组件来展示名字
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.UserInfoResponse.Department">
+            <summary>
+            成员所属部门id列表，仅返回该应用有查看权限的部门id
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.UserInfoResponse.Order">
+            <summary>
+            部门内的排序值，默认为0。数量必须和department一致，数值越大排序越前面。值范围是[0, 2^32)
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.UserInfoResponse.Position">
+            <summary>
+            职务信息；第三方仅通讯录应用可获取
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.UserInfoResponse.Mobile">
+            <summary>
+            手机号码，第三方仅通讯录应用可获取
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.UserInfoResponse.Gender">
+            <summary>
+            性别。0表示未定义，1表示男性，2表示女性
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.UserInfoResponse.Email">
+            <summary>
+            邮箱，第三方仅通讯录应用可获取
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.UserInfoResponse.Biz_Email">
+            <summary>
+            企业邮箱
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.UserInfoResponse.IsLeaderInDepartment">
+            <summary>
+            表示在所在的部门内是否为上级。；第三方仅通讯录应用可获取
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.UserInfoResponse.Avatar">
+            <summary>
+            头像url。 第三方仅通讯录应用可获取
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.UserInfoResponse.ThumbAvatar">
+            <summary>
+            头像缩略图url。第三方仅通讯录应用可获取
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.UserInfoResponse.Telephone">
+            <summary>
+            座机。第三方仅通讯录应用可获取
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.UserInfoResponse.Alias">
+            <summary>
+            别名；第三方仅通讯录应用可获取
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.UserInfoResponse.Address">
+            <summary>
+            地址。第三方仅通讯录应用可获取
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.UserInfoResponse.OpenUserId">
+            <summary>
+            全局唯一。对于同一个服务商，不同应用获取到企业内同一个成员的open_userid是相同的，最多64个字节。仅第三方应用可获取
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.UserInfoResponse.Main_department">
+            <summary>
+            主部门
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.UserInfoResponse.Status">
+            <summary>
+            激活状态: 1=已激活，2=已禁用，4=未激活，5=退出企业。
+            已激活代表已激活企业微信或已关注微工作台（原企业号）。未激活代表既未激活企业微信又未关注微工作台（原企业号）。
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.UserInfoResponse.QrCode">
+            <summary>
+            员工个人二维码，扫描可添加为外部联系人(注意返回的是一个url，可在浏览器上打开该url以展示二维码)；第三方仅通讯录应用可获取
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.UserInfoResponse.ExternalPosition">
+            <summary>
+            对外职务，如果设置了该值，则以此作为对外展示的职务，否则以position来展示。第三方仅通讯录应用可获取
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.UserInfoResponse.DirectLeader">
+            <summary>
+            直属上级UserID，最多有五个直属上级；第三方仅通讯录应用可获取；对于非第三方创建的成员，第三方通讯录应用也不可获取；上游企业不可获取下游企业成员该字段
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.UserInfoResponse.Extattr">
+            <summary>
+            扩展属性，代开发自建应用需要管理员授权才返回；第三方仅通讯录应用可获取；对于非第三方创建的成员，第三方通讯录应用也不可获取；上游企业不可获取下游企业成员该字段
+            </summary>
+        </member>
+        <member name="T:mymooo.weixinWork.SDK.Application.Model.UserInfoResponse.WeiXinUserExtattr">
+            <summary>
+            用户扩展属性
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.UserInfoResponse.WeiXinUserExtattr.ExtattrDetails">
+            <summary>
+            扩展明细
+            </summary>
+        </member>
+        <member name="T:mymooo.weixinWork.SDK.Application.Model.UserInfoResponse.UserExtattrDetail">
+            <summary>
+            扩展明细
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.UserInfoResponse.UserExtattrDetail.Name">
+            <summary>
+            扩展属性名称
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.UserInfoResponse.UserExtattrDetail.Value">
+            <summary>
+            扩展属性值
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Application.Model.UserInfoResponse.UserExtattrDetail.Type">
+            <summary>
+            扩展属性类型
+            </summary>
+        </member>
+        <member name="T:mymooo.weixinWork.SDK.Approval.ApprovalServiceClient">
+            <summary>
+            审批应用
+            </summary>
+        </member>
+        <member name="M:mymooo.weixinWork.SDK.Approval.ApprovalServiceClient.#ctor(mymooo.weixinWork.SDK.Utils.WeixinWorkHttpService,mymooo.weixinWork.SDK.Approval.Attributes.ApprovalUtils,mymooo.weixinWork.SDK.Media.MediaServiceClient,mymooo.weixinWork.SDK.Config.WeiXinWorkConfig,mymooo.core.Cache.WorkbenchRedisCache)">
+            <summary>
+            审批应用
+            </summary>
+        </member>
+        <member name="M:mymooo.weixinWork.SDK.Approval.ApprovalServiceClient.GetApprovalDetail``2(``0,mymooo.weixinWork.SDK.Approval.Model.GetApprovalDetailRequest,System.Boolean)">
+            <summary>
+            获取审批详情
+            </summary>
+            <param name="mymoooContext"></param>
+            <param name="request"></param>
+            <param name="isAlongGet">始终从企业微信获取</param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.weixinWork.SDK.Approval.ApprovalServiceClient.Applyevent``3(``1,``0)">
+            <summary>
+            提交审批信息
+            </summary>
+            <param name="mymoooContext">蚂蚁上下文</param>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.weixinWork.SDK.Approval.ApprovalServiceClient.GetTemplateFields``2(``0,System.String)">
+            <summary>
+            获取审批应用模板
+            </summary>
+            <param name="mymoooContext">蚂蚁上下文</param>
+            <param name="templateId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.weixinWork.SDK.Approval.ApprovalServiceClient.GetApprovalInfo``2(``0,mymooo.weixinWork.SDK.Approval.Model.GetApprovalDetailRequest)">
+            <summary>
+            
+            </summary>
+            <typeparam name="C">蚂蚁上下文</typeparam>
+            <typeparam name="U">用户</typeparam>
+            <param name="mymoooContext">蚂蚁上下文</param>
+            <param name="request">请求数据</param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.weixinWork.SDK.Approval.ApprovalServiceClient.DownLoadMediaAsync``2(``0,System.String)">
+            <summary>
+            下载媒体
+            </summary>
+            <typeparam name="C">蚂蚁上下文</typeparam>
+            <typeparam name="U"></typeparam>
+            <param name="mymoooContext">蚂蚁上下文</param>
+            <param name="mediaId">媒体Id</param>
+            <returns></returns>
+        </member>
+        <member name="T:mymooo.weixinWork.SDK.Approval.Attributes.ApprovalTemplateAttribute">
+            <summary>
+            审批模板
+            </summary>
+            <param name="templateId">审批模板Id</param>
+        </member>
+        <member name="M:mymooo.weixinWork.SDK.Approval.Attributes.ApprovalTemplateAttribute.#ctor(System.String)">
+            <summary>
+            审批模板
+            </summary>
+            <param name="templateId">审批模板Id</param>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Approval.Attributes.ApprovalTemplateAttribute.TemplateId">
+            <summary>
+            审批模板Id
+            </summary>
+        </member>
+        <member name="T:mymooo.weixinWork.SDK.Approval.Attributes.ApprovalUtils">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:mymooo.weixinWork.SDK.Approval.Attributes.ApprovalUtils.#ctor(mymooo.core.Cache.WorkbenchRedisCache,mymooo.core.Utils.Script.PythonEngineService,mymooo.weixinWork.SDK.AddressBook.AddressBookServiceClient,mymooo.weixinWork.SDK.Media.MediaServiceClient)">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:mymooo.weixinWork.SDK.Approval.Attributes.ApprovalUtils.CreateApprovalRequest``3(``0,``2)">
+            <summary>
+            创建审批数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.weixinWork.SDK.Approval.Attributes.ApprovalUtils.GetApprovalTemplate``1">
+            <summary>
+            获取审批模板
+            </summary>
+            <typeparam name="Q"></typeparam>
+            <returns></returns>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+        <member name="M:mymooo.weixinWork.SDK.Approval.Attributes.ApprovalUtils.GetApprovalTemplateFields``1(mymooo.weixinWork.SDK.Approval.Attributes.ApprovalTemplateAttribute)">
+            <summary>
+            获取审批模板字段
+            </summary>
+            <typeparam name="Q"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.weixinWork.SDK.Approval.Attributes.ApprovalUtils.CreateTextValue(System.String,System.String,System.Object)">
+            <summary>
+            创建文件控件
+            </summary>
+            <param name="controlId">控件id</param>
+            <param name="controlName">控件名称</param>
+            <param name="value">控件值</param>
+            <returns>文件控件</returns>
+        </member>
+        <member name="M:mymooo.weixinWork.SDK.Approval.Attributes.ApprovalUtils.CreateDateValue(System.String,System.String,System.Object)">
+            <summary>
+            创建日期
+            </summary>
+            <param name="controlId">控件id</param>
+            <param name="controlName">控件名称</param>
+            <param name="value">控件值</param>
+            <returns>日期</returns>
+        </member>
+        <member name="M:mymooo.weixinWork.SDK.Approval.Attributes.ApprovalUtils.CreateSelectorValue(System.String,System.String,System.Object)">
+            <summary>
+            创建选择器控件
+            </summary>
+            <param name="controlId"></param>
+            <param name="controlName"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.weixinWork.SDK.Approval.Attributes.ApprovalUtils.CreateTextareaValue(System.String,System.String,System.Object)">
+            <summary>
+            创建多行文件控件
+            </summary>
+            <param name="controlId">控件id</param>
+            <param name="controlName">控件名称</param>
+            <param name="value">控件值</param>
+            <returns>文件控件</returns>
+        </member>
+        <member name="M:mymooo.weixinWork.SDK.Approval.Attributes.ApprovalUtils.CreateMoneyValue(System.String,System.String,System.Object)">
+            <summary>
+            创建金额控件
+            </summary>
+            <param name="controlId">控件id</param>
+            <param name="controlName">控件名称</param>
+            <param name="value">控件值</param>
+            <returns>金额控件</returns>
+        </member>
+        <member name="M:mymooo.weixinWork.SDK.Approval.Attributes.ApprovalUtils.CreateNumberValue(System.String,System.String,System.Object)">
+            <summary>
+            创建数字控件
+            </summary>
+            <param name="controlId">控件id</param>
+            <param name="controlName">控件名称</param>
+            <param name="value">控件值</param>
+            <returns>数字控件</returns>
+        </member>
+        <member name="M:mymooo.weixinWork.SDK.Approval.Attributes.ApprovalUtils.CreateFileValue(System.String,System.String,System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="controlId"></param>
+            <param name="controlName"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="T:mymooo.weixinWork.SDK.Approval.Model.ApplyeventResponse">
+            <summary>
+            发起审批响应结果
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Approval.Model.ApplyeventResponse.Errcode">
+            <summary>
+            出错返回码，为0表示成功，非0表示调用失败
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Approval.Model.ApplyeventResponse.ErrorMessage">
+            <summary>
+            返回码提示语
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Approval.Model.ApplyeventResponse.SpNo">
+            <summary>
+            审批单号
+            </summary>
+        </member>
+        <member name="T:mymooo.weixinWork.SDK.Approval.Model.ApprovalDetails">
+            <summary>
+            审批详情
+            </summary>
+        </member>
+        <member name="M:mymooo.weixinWork.SDK.Approval.Model.ApprovalDetails.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Approval.Model.ApprovalDetails.Contents">
+            <summary>
+            控件数据集合
+            </summary>
+        </member>
+        <member name="T:mymooo.weixinWork.SDK.Approval.Model.ApprovalMessageRequest">
+            <summary>
+            审批回调发送MQ
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Approval.Model.ApprovalMessageRequest.ApplyeventNo">
+            <summary>
+            审批单号
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Approval.Model.ApprovalMessageRequest.EnvCode">
+            <summary>
+            环境变量
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Approval.Model.ApprovalMessageRequest.SpStatus">
+            <summary>
+            审批状态
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Approval.Model.ApprovalMessageRequest.ApprovalDate">
+            <summary>
+            发起审批的请求数据
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Approval.Model.ApprovalMessageRequest.AduitUserName">
+            <summary>
+            审批用户
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Approval.Model.ApprovalMessageRequest.AduitUserCode">
+            <summary>
+            审批用户编码
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Approval.Model.ApprovalMessageRequest.Speech">
+            <summary>
+            最后一个人的审批意见
+            </summary>
+        </member>
+        <member name="T:mymooo.weixinWork.SDK.Approval.Model.ApprovalRequest">
+            <summary>
+            审批请求基类
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Approval.Model.ApprovalRequest.CreatorUserCode">
+            <summary>
+            发起人
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Approval.Model.ApprovalRequest.NotifyType">
+            <summary>
+            抄送方式：1-提单时抄送（默认值）； 2-单据通过后抄送；3-提单和单据通过后抄送
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Approval.Model.ApprovalRequest.Notifyer">
+            <summary>
+            抄送人节点userid列表，仅use_template_approver为0时生效。
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Approval.Model.ApprovalRequest.SummaryInfo">
+            <summary>
+            备注信息
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Approval.Model.ApprovalRequest.ApplyeventNo">
+            <summary>
+            审批单号
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Approval.Model.ApprovalRequest.SendRabbitCode">
+            <summary>
+            审批回调发送的mq code
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Approval.Model.ApprovalRequest.EnvCode">
+            <summary>
+            环境变量
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Approval.Model.ApprovalRequest.SpStatus">
+            <summary>
+            审批状态
+            </summary>
+        </member>
+        <member name="T:mymooo.weixinWork.SDK.Approval.Model.ApprovalStatus">
+            <summary>
+            审批状态
+            </summary>
+        </member>
+        <member name="F:mymooo.weixinWork.SDK.Approval.Model.ApprovalStatus.submit">
+            <summary>
+            审批中
+            </summary>
+        </member>
+        <member name="F:mymooo.weixinWork.SDK.Approval.Model.ApprovalStatus.approval">
+            <summary>
+            审批
+            </summary>
+        </member>
+        <member name="F:mymooo.weixinWork.SDK.Approval.Model.ApprovalStatus.reject">
+            <summary>
+            驳回
+            </summary>
+        </member>
+        <member name="F:mymooo.weixinWork.SDK.Approval.Model.ApprovalStatus.revocation">
+            <summary>
+            已撤销
+            </summary>
+        </member>
+        <member name="F:mymooo.weixinWork.SDK.Approval.Model.ApprovalStatus.approvalRevocation">
+            <summary>
+            通过后撤销
+            </summary>
+        </member>
+        <member name="F:mymooo.weixinWork.SDK.Approval.Model.ApprovalStatus.delete">
+            <summary>
+            已删除
+            </summary>
+        </member>
+        <member name="F:mymooo.weixinWork.SDK.Approval.Model.ApprovalStatus.pay">
+            <summary>
+            已支付
+            </summary>
+        </member>
+        <member name="T:mymooo.weixinWork.SDK.Approval.Model.ApproverCondition">
+            <summary>
+            审批节点条件
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Approval.Model.ApproverCondition.Value">
+            <summary>
+            值
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Approval.Model.ApproverCondition.Symbol">
+            <summary>
+            运算符
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Approval.Model.ApproverCondition.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="T:mymooo.weixinWork.SDK.Approval.Model.ApproverDetailsResponse">
+            <summary>
+            审批详情数据
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Approval.Model.ApproverDetailsResponse.Errcode">
+            <summary>
+            为0表示正确
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Approval.Model.ApproverDetailsResponse.ErrorMessage">
+            <summary>
+            错误消息
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Approval.Model.ApproverDetailsResponse.Info">
+            <summary>
+            审批信息
+            </summary>
+        </member>
+        <member name="T:mymooo.weixinWork.SDK.Approval.Model.ApproverDetailsResponse.ApproverInfo">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Approval.Model.ApproverDetailsResponse.ApproverInfo.SpNo">
+            <summary>
+            审批编号
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Approval.Model.ApproverDetailsResponse.ApproverInfo.RedisMain">
+            <summary>
+            redis 标识
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Approval.Model.ApproverDetailsResponse.ApproverInfo.SpName">
+            <summary>
+            审批申请类型名称（审批模板名称）
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Approval.Model.ApproverDetailsResponse.ApproverInfo.SpStatus">
+            <summary>
+             	申请单状态：1-审批中；2-已通过；3-已驳回；4-已撤销；6-通过后撤销；7-已删除；10-已支付
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Approval.Model.ApproverDetailsResponse.ApproverInfo.TemplateId">
+            <summary>
+            审批模板id。可在“获取审批申请详情”、“审批状态变化回调通知”中获得，也可在审批模板的模板编辑页面链接中获得。
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Approval.Model.ApproverDetailsResponse.ApproverInfo.ApplyTime">
+            <summary>
+            审批申请提交时间,Unix时间戳
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Approval.Model.ApproverDetailsResponse.ApproverInfo.Applyer">
+            <summary>
+            申请人信息
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Approval.Model.ApproverDetailsResponse.ApproverInfo.SpRecords">
+            <summary>
+             	审批流程信息，可能有多个审批节点。
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Approval.Model.ApproverDetailsResponse.ApproverInfo.Notifyer">
+            <summary>
+            抄送信息，可能有多个抄送节点
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Approval.Model.ApproverDetailsResponse.ApproverInfo.ApplyData">
+            <summary>
+            审批申请数据
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Approval.Model.ApproverDetailsResponse.ApproverInfo.Comments">
+            <summary>
+            审批申请备注信息，可能有多个备注节点
+            </summary>
+        </member>
+        <member name="T:mymooo.weixinWork.SDK.Approval.Model.ApproverDetailsResponse.Applyer">
+            <summary>
+            申请人信息
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Approval.Model.ApproverDetailsResponse.Applyer.UserId">
+            <summary>
+            申请人userid
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Approval.Model.ApproverDetailsResponse.Applyer.PartyId">
+            <summary>
+            申请人所在部门id
+            </summary>
+        </member>
+        <member name="T:mymooo.weixinWork.SDK.Approval.Model.ApproverDetailsResponse.Apply_Data">
+            <summary>
+            审批申请数据
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Approval.Model.ApproverDetailsResponse.Apply_Data.Contents">
+            <summary>
+            审批申请详情，由多个表单控件及其内容组成
+            </summary>
+        </member>
+        <member name="T:mymooo.weixinWork.SDK.Approval.Model.ApproverDetailsResponse.Content">
+            <summary>
+            审批申请详情，由多个表单控件及其内容组成
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Approval.Model.ApproverDetailsResponse.Content.Control">
+            <summary>
+            控件类型：Text-文本；Textarea-多行文本；Number-数字；Money-金额；Date-日期/日期+时间；
+            Selector-单选/多选；；Contact-成员/部门；Tips-说明文字；File-附件；Table-明细；Attendance-假勤；
+            Vacation-请假；PunchCorrection-补卡;DateRange-时长
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Approval.Model.ApproverDetailsResponse.Content.Id">
+            <summary>
+            控件id
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Approval.Model.ApproverDetailsResponse.Content.Title">
+            <summary>
+            控件名称 ，若配置了多语言则会包含中英文的控件名称
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Approval.Model.ApproverDetailsResponse.Content.Value">
+            <summary>
+            控件值 ，包含了申请人在各种类型控件中输入的值，不同控件有不同的值，具体说明详见附录
+            </summary>
+        </member>
+        <member name="T:mymooo.weixinWork.SDK.Approval.Model.ApproverDetailsResponse.ControlValue">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Approval.Model.ApproverDetailsResponse.ControlValue.Text">
+            <summary>
+            文本值
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Approval.Model.ApproverDetailsResponse.ControlValue.Number">
+            <summary>
+            整数
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Approval.Model.ApproverDetailsResponse.ControlValue.Money">
+            <summary>
+            金额
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Approval.Model.ApproverDetailsResponse.ControlValue.Date">
+            <summary>
+            日期值
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Approval.Model.ApproverDetailsResponse.ControlValue.Selector">
+            <summary>
+            下拉框选项值
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Approval.Model.ApproverDetailsResponse.ControlValue.Members">
+            <summary>
+            成员列表
+            </summary>
+        </member>
+        <member name="T:mymooo.weixinWork.SDK.Approval.Model.ApproverDetailsResponse.MemberControlValue">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Approval.Model.ApproverDetailsResponse.MemberControlValue.UserId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Approval.Model.ApproverDetailsResponse.MemberControlValue.Name">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:mymooo.weixinWork.SDK.Approval.Model.ApproverDetailsResponse.SelectorControlValue">
+            <summary>
+            下拉框选项值
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Approval.Model.ApproverDetailsResponse.SelectorControlValue.Type">
+            <summary>
+            控件类型
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Approval.Model.ApproverDetailsResponse.SelectorControlValue.Options">
+            <summary>
+            选项值
+            </summary>
+        </member>
+        <member name="T:mymooo.weixinWork.SDK.Approval.Model.ApproverDetailsResponse.SelectorControlValue.Option">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Approval.Model.ApproverDetailsResponse.SelectorControlValue.Option.Key">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Approval.Model.ApproverDetailsResponse.SelectorControlValue.Option.Value">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:mymooo.weixinWork.SDK.Approval.Model.ApproverDetailsResponse.SelectorControlValue.OptionValue">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Approval.Model.ApproverDetailsResponse.SelectorControlValue.OptionValue.Text">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Approval.Model.ApproverDetailsResponse.SelectorControlValue.OptionValue.Lang">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:mymooo.weixinWork.SDK.Approval.Model.ApproverDetailsResponse.DateControlValue">
+            <summary>
+            日期控件值
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Approval.Model.ApproverDetailsResponse.DateControlValue.Type">
+            <summary>
+            控件类型
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Approval.Model.ApproverDetailsResponse.DateControlValue.Timestamp">
+            <summary>
+            时间戳
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Approval.Model.ApproverDetailsResponse.DateControlValue.Timezone">
+            <summary>
+            时区
+            </summary>
+        </member>
+        <member name="T:mymooo.weixinWork.SDK.Approval.Model.ApproverDetailsResponse.DateControlValue.TimezoneInfo">
+            <summary>
+            时区
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Approval.Model.ApproverDetailsResponse.DateControlValue.TimezoneInfo.ZoneOffset">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Approval.Model.ApproverDetailsResponse.DateControlValue.TimezoneInfo.Description">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:mymooo.weixinWork.SDK.Approval.Model.ApproverDetailsResponse.Title">
+            <summary>
+            控件名称 ，若配置了多语言则会包含中英文的控件名称
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Approval.Model.ApproverDetailsResponse.Title.Text">
+            <summary>
+            控件名称
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Approval.Model.ApproverDetailsResponse.Title.Lang">
+            <summary>
+            语言
+            </summary>
+        </member>
+        <member name="T:mymooo.weixinWork.SDK.Approval.Model.ApproverDetailsResponse.SpRecord">
+            <summary>
+            审批流程信息，可能有多个审批节点。
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Approval.Model.ApproverDetailsResponse.SpRecord.SpStatus">
+            <summary>
+            审批节点状态：1-审批中；2-已同意；3-已驳回；4-已转审
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Approval.Model.ApproverDetailsResponse.SpRecord.Approverattr">
+            <summary>
+            节点审批方式：1-或签；2-会签
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Approval.Model.ApproverDetailsResponse.SpRecord.Details">
+            <summary>
+            审批节点详情,一个审批节点有多个审批人
+            </summary>
+        </member>
+        <member name="T:mymooo.weixinWork.SDK.Approval.Model.ApproverDetailsResponse.Detail">
+            <summary>
+            审批节点详情,一个审批节点有多个审批人
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Approval.Model.ApproverDetailsResponse.Detail.Approver">
+            <summary>
+            分支审批人
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Approval.Model.ApproverDetailsResponse.Detail.Speech">
+            <summary>
+            审批意见
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Approval.Model.ApproverDetailsResponse.Detail.SpStatus">
+            <summary>
+            分支审批人审批状态：1-审批中；2-已同意；3-已驳回；4-已转审
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Approval.Model.ApproverDetailsResponse.Detail.SpTime">
+            <summary>
+            节点分支审批人审批操作时间戳，0表示未操作
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Approval.Model.ApproverDetailsResponse.Detail.MediaId">
+            <summary>
+            节点分支审批人审批意见附件，media_id具体使用请参考：文档-获取临时素材
+            </summary>
+        </member>
+        <member name="T:mymooo.weixinWork.SDK.Approval.Model.ApproverDetailsResponse.Approver">
+            <summary>
+             	操作者
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Approval.Model.ApproverDetailsResponse.Approver.UserId">
+            <summary>
+            用户
+            </summary>
+        </member>
+        <member name="T:mymooo.weixinWork.SDK.Approval.Model.ApproverDetailsResponse.Notifyer">
+            <summary>
+            抄送信息，可能有多个抄送节点
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Approval.Model.ApproverDetailsResponse.Notifyer.UserId">
+            <summary>
+            节点抄送人userid
+            </summary>
+        </member>
+        <member name="T:mymooo.weixinWork.SDK.Approval.Model.ApproverDetailsResponse.Comment">
+            <summary>
+            审批申请备注信息，可能有多个备注节点
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Approval.Model.ApproverDetailsResponse.Comment.CommentUserInfo">
+            <summary>
+            备注人信息
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Approval.Model.ApproverDetailsResponse.Comment.CommentTime">
+            <summary>
+            备注提交时间戳，Unix时间戳
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Approval.Model.ApproverDetailsResponse.Comment.CommentContent">
+            <summary>
+            备注文本内容
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Approval.Model.ApproverDetailsResponse.Comment.CommentId">
+            <summary>
+            备注id
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Approval.Model.ApproverDetailsResponse.Comment.MediaId">
+            <summary>
+            备注附件id，可能有多个，media_id具体使用请参考：文档-获取临时素材
+            </summary>
+        </member>
+        <member name="T:mymooo.weixinWork.SDK.Approval.Model.ApproverDetailsResponse.Commentuserinfo">
+            <summary>
+            备注人信息
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Approval.Model.ApproverDetailsResponse.Commentuserinfo.UserId">
+            <summary>
+            备注人userid
+            </summary>
+        </member>
+        <member name="T:mymooo.weixinWork.SDK.Approval.Model.ApproverNode">
+            <summary>
+            审批节点
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Approval.Model.ApproverNode.Attr">
+            <summary>
+            节点审批方式：1-或签；2-会签，仅在节点为多人审批时有效
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Approval.Model.ApproverNode.Userid">
+            <summary>
+            审批节点审批人userid列表，若为多人会签、多人或签，需填写每个人的userid
+            </summary>
+        </member>
+        <member name="T:mymooo.weixinWork.SDK.Approval.Model.ApproverUserConfig">
+            <summary>
+            审批流用户配置
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Approval.Model.ApproverUserConfig.Id">
+            <summary>
+            Id
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Approval.Model.ApproverUserConfig.Iden">
+            <summary>
+            类型
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Approval.Model.ApproverUserConfig.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="T:mymooo.weixinWork.SDK.Approval.Model.ControlTitle">
+            <summary>
+            控件标题
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Approval.Model.ControlTitle.Text">
+            <summary>
+            标题
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Approval.Model.ControlTitle.Lang">
+            <summary>
+            控件语言
+            </summary>
+        </member>
+        <member name="T:mymooo.weixinWork.SDK.Approval.Model.Enum.ApproverFieldType">
+            <summary>
+            审批字段类型
+            </summary>
+        </member>
+        <member name="F:mymooo.weixinWork.SDK.Approval.Model.Enum.ApproverFieldType.Text">
+            <summary>
+            字符
+            </summary>
+        </member>
+        <member name="F:mymooo.weixinWork.SDK.Approval.Model.Enum.ApproverFieldType.Textarea">
+            <summary>
+            多行文本
+            </summary>
+        </member>
+        <member name="F:mymooo.weixinWork.SDK.Approval.Model.Enum.ApproverFieldType.Date">
+            <summary>
+            日期
+            </summary>
+        </member>
+        <member name="F:mymooo.weixinWork.SDK.Approval.Model.Enum.ApproverFieldType.Money">
+            <summary>
+            金额
+            </summary>
+        </member>
+        <member name="F:mymooo.weixinWork.SDK.Approval.Model.Enum.ApproverFieldType.Number">
+            <summary>
+            数字
+            </summary>
+        </member>
+        <member name="F:mymooo.weixinWork.SDK.Approval.Model.Enum.ApproverFieldType.File">
+            <summary>
+            附件
+            </summary>
+        </member>
+        <member name="F:mymooo.weixinWork.SDK.Approval.Model.Enum.ApproverFieldType.Selector">
+            <summary>
+            下拉列表
+            </summary>
+        </member>
+        <member name="F:mymooo.weixinWork.SDK.Approval.Model.Enum.ApproverFieldType.Contact">
+            <summary>
+            员工
+            </summary>
+        </member>
+        <member name="F:mymooo.weixinWork.SDK.Approval.Model.Enum.ApproverFieldType.RelatedApproval">
+            <summary>
+            关联申请单
+            </summary>
+            
+        </member>
+        <member name="T:mymooo.weixinWork.SDK.Approval.Model.Enum.ApproverNodeModel">
+            <summary>
+            审批流程信息，用于指定审批申请的审批流程，支持单人审批、多人会签、多人或签，可能有多个审批节点，仅use_template_approver为0时生效。
+            </summary>
+        </member>
+        <member name="F:mymooo.weixinWork.SDK.Approval.Model.Enum.ApproverNodeModel.Null">
+            <summary>
+            空
+            </summary>
+        </member>
+        <member name="F:mymooo.weixinWork.SDK.Approval.Model.Enum.ApproverNodeModel.Or">
+            <summary>
+            或签
+            </summary>
+        </member>
+        <member name="F:mymooo.weixinWork.SDK.Approval.Model.Enum.ApproverNodeModel.And">
+            <summary>
+            会签
+            </summary>
+        </member>
+        <member name="T:mymooo.weixinWork.SDK.Approval.Model.Enum.ApproverSpecificPrincipal">
+            <summary>
+            审批节点用户类型
+            </summary>
+        </member>
+        <member name="F:mymooo.weixinWork.SDK.Approval.Model.Enum.ApproverSpecificPrincipal.Departmenthead">
+            <summary>
+            指定部门
+            </summary>
+        </member>
+        <member name="F:mymooo.weixinWork.SDK.Approval.Model.Enum.ApproverSpecificPrincipal.Departmentheads">
+            <summary>
+            连续多部门负责人
+            </summary>
+        </member>
+        <member name="F:mymooo.weixinWork.SDK.Approval.Model.Enum.ApproverSpecificPrincipal.User">
+            <summary>
+            指定用户
+            </summary>
+        </member>
+        <member name="F:mymooo.weixinWork.SDK.Approval.Model.Enum.ApproverSpecificPrincipal.CreateUser">
+            <summary>
+            发起人
+            </summary>
+        </member>
+        <member name="T:mymooo.weixinWork.SDK.Approval.Model.Enum.AuditFlowDetailType">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:mymooo.weixinWork.SDK.Approval.Model.Enum.AuditFlowDetailType.Approve">
+            <summary>
+            审批
+            </summary>
+        </member>
+        <member name="F:mymooo.weixinWork.SDK.Approval.Model.Enum.AuditFlowDetailType.Copy">
+            <summary>
+            抄送
+            </summary>
+        </member>
+        <member name="F:mymooo.weixinWork.SDK.Approval.Model.Enum.AuditFlowDetailType.CreateUser">
+            <summary>
+            创建人
+            </summary>
+        </member>
+        <member name="F:mymooo.weixinWork.SDK.Approval.Model.Enum.AuditFlowDetailType.Condition">
+            <summary>
+            条件
+            </summary>
+        </member>
+        <member name="T:mymooo.weixinWork.SDK.Approval.Model.Enum.NotifyType">
+            <summary>
+            抄送方式 仅use_template_approver为0时生效
+            </summary>
+        </member>
+        <member name="F:mymooo.weixinWork.SDK.Approval.Model.Enum.NotifyType.submitNotify">
+            <summary>
+            提单时抄送（默认值）
+            </summary>
+        </member>
+        <member name="F:mymooo.weixinWork.SDK.Approval.Model.Enum.NotifyType.approvalNotify">
+            <summary>
+            单据通过后抄送
+            </summary>
+        </member>
+        <member name="F:mymooo.weixinWork.SDK.Approval.Model.Enum.NotifyType.approvalSubmitNotify">
+            <summary>
+            提单和单据通过后抄送
+            </summary>
+        </member>
+        <member name="T:mymooo.weixinWork.SDK.Approval.Model.Enum.TemplateApproverModel">
+            <summary>
+            审批人模式：0-通过接口指定审批人、抄送人（此时approver、notifyer等参数可用）; 1-使用此模板在管理后台设置的审批流程(需要保证审批流程中没有“申请人自选”节点)，支持条件审批。默认为0
+            </summary>
+        </member>
+        <member name="F:mymooo.weixinWork.SDK.Approval.Model.Enum.TemplateApproverModel.interfaceType">
+            <summary>
+            通过接口指定审批人、抄送人
+            </summary>
+        </member>
+        <member name="F:mymooo.weixinWork.SDK.Approval.Model.Enum.TemplateApproverModel.background">
+            <summary>
+            使用此模板在管理后台设置的审批流程
+            </summary>
+        </member>
+        <member name="T:mymooo.weixinWork.SDK.Approval.Model.GetApprovalDetailRequest">
+            <summary>
+            获取审批模板详情
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Approval.Model.GetApprovalDetailRequest.SpNo">
+            <summary>
+            审批单号
+            </summary>
+        </member>
+        <member name="T:mymooo.weixinWork.SDK.Approval.Model.SelectOption">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Approval.Model.SelectOption.Key">
+            <summary>
+            选项key
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Approval.Model.SelectOption.Value">
+            <summary>
+            选项值
+            </summary>
+        </member>
+        <member name="T:mymooo.weixinWork.SDK.Approval.Model.OptionValue">
+            <summary>
+            选项值
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Approval.Model.OptionValue.Text">
+            <summary>
+            选项值
+            </summary>
+        </member>
+        <member name="T:mymooo.weixinWork.SDK.Approval.Model.SummaryInfo">
+            <summary>
+            摘要行信息，用于定义某一行摘要显示的内容
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Approval.Model.SummaryInfo.SummaryInfos">
+            <summary>
+            摘要行显示文字，用于记录列表和消息通知的显示，不要超过20个字符
+            </summary>
+        </member>
+        <member name="T:mymooo.weixinWork.SDK.Approval.Model.UpLoadMediaResponese">
+            <summary>
+            上传素材响应
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Approval.Model.UpLoadMediaResponese.Type">
+            <summary>
+            媒体文件类型，分别有图片（image）、语音（voice）、视频（video），普通文件(file)
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Approval.Model.UpLoadMediaResponese.MediaId">
+            <summary>
+            媒体文件上传后获取的唯一标识，3天内有效
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Approval.Model.UpLoadMediaResponese.Created">
+            <summary>
+            媒体文件上传时间戳
+            </summary>
+        </member>
+        <member name="T:mymooo.weixinWork.SDK.Approval.Model.WechatApprovalRequest">
+            <summary>
+            提交到企业微信的审批请求信息
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Approval.Model.WechatApprovalRequest.TemplateId">
+            <summary>
+            模板id。可在“获取审批申请详情”、“审批状态变化回调通知”中获得，也可在审批模板的模板编辑页面链接中获得。暂不支持通过接口提交[打卡补卡][调班]模板审批单。
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Approval.Model.WechatApprovalRequest.UseTemplateApprover">
+            <summary>
+            审批人模式：0-通过接口指定审批人、抄送人（此时approver、notifyer等参数可用）; 1-使用此模板在管理后台设置的审批流程，支持条件审批。
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Approval.Model.WechatApprovalRequest.Approver">
+            <summary>
+            审批流程信息，用于指定审批申请的审批流程，支持单人审批、多人会签、多人或签，可能有多个审批节点，仅use_template_approver为0时生效。
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Approval.Model.WechatApprovalRequest.ApplyData">
+            <summary>
+            审批申请数据，可定义审批申请中各个控件的值，其中必填项必须有值，选填项可为空，数据结构同“获取审批申请详情”接口返回值中同名参数“apply_data”
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Approval.Model.WechatApprovalRequest.SummaryList">
+            <summary>
+            摘要信息，用于显示在审批通知卡片、审批列表的摘要信息，最多3行
+            </summary>
+        </member>
+        <member name="T:mymooo.weixinWork.SDK.Config.WeiXinWorkConfig">
+            <summary>
+            微信配置
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Config.WeiXinWorkConfig.ApplicationAgentId">
+            <summary>
+            应用 AgentId 
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Config.WeiXinWorkConfig.ApprovalAgentId">
+            <summary>
+            审批 AgentId 
+            </summary>
+        </member>
+        <member name="T:mymooo.weixinWork.SDK.Media.MediaServiceClient">
+            <summary>
+            企业微信媒体服务
+            </summary>
+            <param name="httpService"></param>
+            <param name="httpClientFactory"></param>
+        </member>
+        <member name="M:mymooo.weixinWork.SDK.Media.MediaServiceClient.#ctor(mymooo.weixinWork.SDK.Utils.WeixinWorkHttpService,System.Net.Http.IHttpClientFactory)">
+            <summary>
+            企业微信媒体服务
+            </summary>
+            <param name="httpService"></param>
+            <param name="httpClientFactory"></param>
+        </member>
+        <member name="M:mymooo.weixinWork.SDK.Media.MediaServiceClient.UpLoadMediaAsync``2(``0,mymooo.weixinWork.SDK.Media.Model.MediaInfo)">
+            <summary>
+            上传附件
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.weixinWork.SDK.Media.MediaServiceClient.DownLoadMediaAsync``2(``0,System.String,System.String,System.String)">
+            <summary>
+            下载媒体
+            </summary>
+            <typeparam name="C">蚂蚁上下文</typeparam>
+            <typeparam name="U"></typeparam>
+            <param name="mymoooContext">蚂蚁上下文</param>
+            <param name="systemCode">系统</param>
+            <param name="envCode">环境变量</param>
+            <param name="mediaId">媒体Id</param>
+            <returns></returns>
+        </member>
+        <member name="T:mymooo.weixinWork.SDK.Media.Model.MediaInfo">
+            <summary>
+            素材信息
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Media.Model.MediaInfo.SystemCode">
+            <summary>
+            系统编码
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Media.Model.MediaInfo.EnvCode">
+            <summary>
+            环境变量
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Media.Model.MediaInfo.FileName">
+            <summary>
+            文件名称
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Media.Model.MediaInfo.MediaType">
+            <summary>
+            媒体文件类型，分别有图片（image）、语音（voice）、视频（video），普通文件（file）
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Media.Model.MediaInfo.FileStream">
+            <summary>
+            下载地址
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Media.Model.MediaInfo.FileUrl">
+            <summary>
+            下载地址
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Media.Model.MediaInfo.MediaId">
+            <summary>
+            文件Id
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.Media.Model.MediaInfo.File">
+            <summary>
+            文件字节流
+            </summary>
+        </member>
+        <member name="T:mymooo.weixinWork.SDK.Media.Model.WeixinMediaType">
+            <summary>
+            文件类型
+            </summary>
+        </member>
+        <member name="F:mymooo.weixinWork.SDK.Media.Model.WeixinMediaType.image">
+            <summary>
+            图片
+            </summary>
+        </member>
+        <member name="F:mymooo.weixinWork.SDK.Media.Model.WeixinMediaType.voice">
+            <summary>
+            语言
+            </summary>
+        </member>
+        <member name="F:mymooo.weixinWork.SDK.Media.Model.WeixinMediaType.video">
+            <summary>
+            视频
+            </summary>
+        </member>
+        <member name="F:mymooo.weixinWork.SDK.Media.Model.WeixinMediaType.file">
+            <summary>
+            其他
+            </summary>
+        </member>
+        <member name="T:mymooo.weixinWork.SDK.Robot.RobotServiceClient">
+            <summary>
+            机器人
+            </summary>
+            <remarks>
+            企业微信媒体服务
+            </remarks>
+        </member>
+        <member name="M:mymooo.weixinWork.SDK.Robot.RobotServiceClient.#ctor(mymooo.weixinWork.SDK.Utils.WeixinWorkHttpService,System.Net.Http.IHttpClientFactory)">
+            <summary>
+            机器人
+            </summary>
+            <remarks>
+            企业微信媒体服务
+            </remarks>
+        </member>
+        <member name="M:mymooo.weixinWork.SDK.Robot.RobotServiceClient.SendTextMessage``2(``0,mymooo.weixinWork.SDK.WeixinWorkMessage.Model.SendTextMessageRequest,System.String)">
+            <summary>
+            发送文本消息
+            </summary>
+            <param name="mymoooContext">蚂蚁上下文</param>
+            <param name="request"></param>
+            <param name="robotKey">机器人key</param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.weixinWork.SDK.Robot.RobotServiceClient.SendMarkDownMessage``2(``0,mymooo.weixinWork.SDK.WeixinWorkMessage.Model.SendMarkdownMessageRequest,System.String)">
+            <summary>
+            发送 MarkDown 消息
+            </summary>
+            <param name="mymoooContext">蚂蚁上下文</param>
+            <param name="request"></param>
+            <param name="robotKey">机器人key</param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.weixinWork.SDK.Robot.RobotServiceClient.SendTextcardMessage``2(``0,mymooo.weixinWork.SDK.WeixinWorkMessage.Model.SendTextCardMessageRequest,System.String)">
+            <summary>
+            发送卡片消息
+            </summary>
+            <param name="mymoooContext">蚂蚁上下文</param>
+            <param name="request"></param>
+            <param name="robotKey">机器人key</param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.weixinWork.SDK.Robot.RobotServiceClient.SendFileMessageAsync``2(``0,mymooo.weixinWork.SDK.WeixinWorkMessage.Model.SendFileMessageRequest,System.String)">
+            <summary>
+            发送文件消息
+            </summary>
+            <param name="mymoooContext">蚂蚁上下文</param>
+            <param name="request"></param>
+            <param name="robotKey">机器人key</param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.weixinWork.SDK.Robot.RobotServiceClient.UpLoadMediaAsync``2(``0,mymooo.weixinWork.SDK.Media.Model.MediaInfo,System.String)">
+            <summary>
+            上传附件
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:mymooo.weixinWork.SDK.SqlSugarCore.ApprovalTemplate">
+            <summary>
+            审批模板
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.SqlSugarCore.ApprovalTemplate.TemplateId">
+            <summary>
+            Desc:
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.SqlSugarCore.ApprovalTemplate.TemplateName">
+            <summary>
+            Desc:
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.SqlSugarCore.ApprovalTemplate.CreateUser">
+            <summary>
+            Desc:
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.SqlSugarCore.ApprovalTemplate.CreateDate">
+            <summary>
+            Desc:
+            Default:
+            Nullable:True
+            </summary>           
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.SqlSugarCore.ApprovalTemplate.ApprovalTemplateFields">
+            <summary>
+            审批模板字段信息
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.SqlSugarCore.ApprovalTemplate.AuditFlowConfigs">
+            <summary>
+            审批流配置
+            </summary>
+        </member>
+        <member name="T:mymooo.weixinWork.SDK.SqlSugarCore.ApprovalTemplateField">
+            <summary>
+             审批模板字段
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.SqlSugarCore.ApprovalTemplateField.Id">
+            <summary>
+            Desc:
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.SqlSugarCore.ApprovalTemplateField.TemplateId">
+            <summary>
+            Desc:
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.SqlSugarCore.ApprovalTemplateField.FieldNumber">
+            <summary>
+            Desc:
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.SqlSugarCore.ApprovalTemplateField.FieldName">
+            <summary>
+            Desc:
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.SqlSugarCore.ApprovalTemplateField.FieldId">
+            <summary>
+            Desc:
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.SqlSugarCore.ApprovalTemplateField.FieldType">
+            <summary>
+            Desc:
+            Default:
+            Nullable:False
+            </summary>   
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.SqlSugarCore.ApprovalTemplateField.CreateUser">
+            <summary>
+            Desc:
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.SqlSugarCore.ApprovalTemplateField.CreateDate">
+            <summary>
+            Desc:
+            Default:
+            Nullable:True
+            </summary>           
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.SqlSugarCore.ApprovalTemplateField.SelectOptionJson">
+            <summary>
+            Desc:
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.SqlSugarCore.ApprovalTemplateField.ApprovalSeq">
+            <summary>
+            Desc:
+            Default:0
+            Nullable:True
+            </summary>           
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.SqlSugarCore.ApprovalTemplateField.ApprovalTemplate">
+            <summary>
+            审批流配置
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.SqlSugarCore.ApprovalTemplateField.PropertyInfo">
+            <summary>
+            属性
+            </summary>
+        </member>
+        <member name="T:mymooo.weixinWork.SDK.SqlSugarCore.AuditFlowConfig">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.SqlSugarCore.AuditFlowConfig.Id">
+            <summary>
+            Desc:
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.SqlSugarCore.AuditFlowConfig.EnvCode">
+            <summary>
+            Desc:
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.SqlSugarCore.AuditFlowConfig.TemplateId">
+            <summary>
+            Desc:
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.SqlSugarCore.AuditFlowConfig.ApprovalMode">
+            <summary>
+            Desc:
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.SqlSugarCore.AuditFlowConfig.NotifyType">
+            <summary>
+            Desc:
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.SqlSugarCore.AuditFlowConfig.CreateTime">
+            <summary>
+            Desc:
+            Default:
+            Nullable:True
+            </summary>           
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.SqlSugarCore.AuditFlowConfig.CreateUserCode">
+            <summary>
+            Desc:
+            Default:
+            Nullable:True
+            </summary>           
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.SqlSugarCore.AuditFlowConfig.ApprovalTemplate">
+            <summary>
+            审批流配置
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.SqlSugarCore.AuditFlowConfig.AuditFlowConfigDetails">
+            <summary>
+            审批流明细
+            </summary>
+        </member>
+        <member name="T:mymooo.weixinWork.SDK.SqlSugarCore.AuditFlowConfigDetail">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.SqlSugarCore.AuditFlowConfigDetail.Id">
+            <summary>
+            Desc:
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.SqlSugarCore.AuditFlowConfigDetail.AuditFlowConfigId">
+            <summary>
+            Desc:
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.SqlSugarCore.AuditFlowConfigDetail.Type">
+            <summary>
+            Desc:
+            Default:
+            Nullable:False
+            </summary>  
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.SqlSugarCore.AuditFlowConfigDetail.SPType">
+            <summary>
+            Desc:
+            Default:
+            Nullable:True
+            </summary>      
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.SqlSugarCore.AuditFlowConfigDetail.UserCode">
+            <summary>
+            Desc:
+            Default:
+            Nullable:True
+            </summary>           
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.SqlSugarCore.AuditFlowConfigDetail.CreateUserCode">
+            <summary>
+            Desc:
+            Default:
+            Nullable:True
+            </summary>           
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.SqlSugarCore.AuditFlowConfigDetail.CreateDateTime">
+            <summary>
+            Desc:
+            Default:
+            Nullable:True
+            </summary>           
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.SqlSugarCore.AuditFlowConfigDetail.ConditionName">
+            <summary>
+            Desc:
+            Default:
+            Nullable:True
+            </summary>           
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.SqlSugarCore.AuditFlowConfigDetail.Formal">
+            <summary>
+            Desc:
+            Default:
+            Nullable:True
+            </summary>           
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.SqlSugarCore.AuditFlowConfigDetail.ParentId">
+            <summary>
+            Desc:
+            Default:0
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.SqlSugarCore.AuditFlowConfigDetail.SonId">
+            <summary>
+            Desc:
+            Default:0
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.SqlSugarCore.AuditFlowConfigDetail.Seq">
+            <summary>
+            Desc:
+            Default:0
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.SqlSugarCore.AuditFlowConfigDetail.AuditFlowConfig">
+            <summary>
+            审批模板字段信息
+            </summary>
+        </member>
+        <member name="T:mymooo.weixinWork.SDK.Utils.WeixinWorkHttpService">
+            <summary>
+            微信请求
+            </summary>
+        </member>
+        <member name="M:mymooo.weixinWork.SDK.Utils.WeixinWorkHttpService.#ctor(mymooo.core.Utils.Service.SignatureAuthorizeService,mymooo.core.Config.ApigatewayConfig)">
+            <summary>
+            微信请求
+            </summary>
+        </member>
+        <member name="M:mymooo.weixinWork.SDK.Utils.WeixinWorkHttpService.GetWebResponse``1(System.Net.Http.HttpResponseMessage)">
+            <summary>
+            
+            </summary>
+            <typeparam name="R"></typeparam>
+            <param name="response"></param>
+            <returns></returns>
+        </member>
+        <member name="T:mymooo.weixinWork.SDK.WeiXinMessageResponse">
+            <summary>
+            企业微信响应消息
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.WeiXinMessageResponse.Errcode">
+            <summary>
+            出错返回码，为0表示成功，非0表示调用失败
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.WeiXinMessageResponse.ErrorMessage">
+            <summary>
+            返回码提示语
+            </summary>
+        </member>
+        <member name="T:mymooo.weixinWork.SDK.WeixinWorkMessage.Model.Enum.SendMessageType">
+            <summary>
+            企业微信发送消息类型
+            </summary>
+        </member>
+        <member name="F:mymooo.weixinWork.SDK.WeixinWorkMessage.Model.Enum.SendMessageType.text">
+            <summary>
+            文本
+            </summary>
+        </member>
+        <member name="F:mymooo.weixinWork.SDK.WeixinWorkMessage.Model.Enum.SendMessageType.textcard">
+            <summary>
+            卡片
+            </summary>
+        </member>
+        <member name="F:mymooo.weixinWork.SDK.WeixinWorkMessage.Model.Enum.SendMessageType.image">
+            <summary>
+            图片
+            </summary>
+        </member>
+        <member name="F:mymooo.weixinWork.SDK.WeixinWorkMessage.Model.Enum.SendMessageType.voice">
+            <summary>
+            语音
+            </summary>
+        </member>
+        <member name="F:mymooo.weixinWork.SDK.WeixinWorkMessage.Model.Enum.SendMessageType.video">
+            <summary>
+            视频
+            </summary>
+        </member>
+        <member name="F:mymooo.weixinWork.SDK.WeixinWorkMessage.Model.Enum.SendMessageType.file">
+            <summary>
+            文件
+            </summary>
+        </member>
+        <member name="F:mymooo.weixinWork.SDK.WeixinWorkMessage.Model.Enum.SendMessageType.news">
+            <summary>
+            图文
+            </summary>
+        </member>
+        <member name="F:mymooo.weixinWork.SDK.WeixinWorkMessage.Model.Enum.SendMessageType.mpnews">
+            <summary>
+            mpnews类型的图文消息，跟普通的图文消息一致，唯一的差异是图文内容存储在企业微信。
+            多次发送mpnews，会被认为是不同的图文，阅读、点赞的统计会被分开计算。
+            </summary>
+        </member>
+        <member name="F:mymooo.weixinWork.SDK.WeixinWorkMessage.Model.Enum.SendMessageType.markdown">
+            <summary>
+            markdown消息
+            标题 （支持1至6级标题，注意#与文字中间要有空格）
+            # 标题一
+            ## 标题二
+            ### 标题三
+            #### 标题四
+            ##### 标题五
+            ###### 标题六
+            
+            加粗	**bold**
+            链接	[这是一个链接](http://work.weixin.qq.com/api/doc)
+            行内代码段（暂不支持跨行）	`code`
+            引用	> 引用文字
+            字体颜色(只支持3种内置颜色)
+            	<font color="info">绿色</font>
+            	<font color="comment">灰色</font>
+            	<font color="warning">橙红色</font>
+            </summary>
+        </member>
+        <member name="T:mymooo.weixinWork.SDK.WeixinWorkMessage.Model.SendFileMessageRequest">
+            <summary>
+            发送文件消息
+            </summary>
+        </member>
+        <member name="M:mymooo.weixinWork.SDK.WeixinWorkMessage.Model.SendFileMessageRequest.#ctor">
+            <summary>
+            默认消息类型
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.WeixinWorkMessage.Model.SendFileMessageRequest.MediaFile">
+            <summary>
+            文件下载路径
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.WeixinWorkMessage.Model.SendFileMessageRequest.File">
+            <summary>
+            消息内容，最长不超过2048个字节，超过将截断（支持id转译）
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.WeixinWorkMessage.Model.SendFileMessageRequest.MediaType">
+            <summary>
+            文件类型
+            </summary>
+        </member>
+        <member name="T:mymooo.weixinWork.SDK.WeixinWorkMessage.Model.SendFileMessageRequest.FileMessage">
+            <summary>
+            消息内容，最长不超过2048个字节，超过将截断（支持id转译）
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.WeixinWorkMessage.Model.SendFileMessageRequest.FileMessage.MediaId">
+            <summary>
+            消息内容，最长不超过2048个字节，超过将截断（支持id转译）
+            </summary>
+        </member>
+        <member name="T:mymooo.weixinWork.SDK.WeixinWorkMessage.Model.SendMarkdownMessageRequest">
+            <summary>
+            发送MarkDown信息
+            </summary>
+        </member>
+        <member name="M:mymooo.weixinWork.SDK.WeixinWorkMessage.Model.SendMarkdownMessageRequest.#ctor">
+            <summary>
+            默认消息类型
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.WeixinWorkMessage.Model.SendMarkdownMessageRequest.MarkDown">
+            <summary>
+            消息内容，最长不超过2048个字节，超过将截断（支持id转译）
+            </summary>
+        </member>
+        <member name="T:mymooo.weixinWork.SDK.WeixinWorkMessage.Model.SendMarkdownMessageRequest.MarkDownMessage">
+            <summary>
+            消息内容，最长不超过2048个字节，超过将截断（支持id转译）
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.WeixinWorkMessage.Model.SendMarkdownMessageRequest.MarkDownMessage.Content">
+            <summary>
+            消息内容，最长不超过2048个字节，超过将截断（支持id转译）
+            </summary>
+        </member>
+        <member name="T:mymooo.weixinWork.SDK.WeixinWorkMessage.Model.SendMessageRequest">
+            <summary>
+            发送消息请求
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.WeixinWorkMessage.Model.SendMessageRequest.ToUser">
+            <summary>
+            指定接收消息的成员，成员ID列表（多个接收者用‘|’分隔，最多支持1000个）。
+            特殊情况：指定为”@all”，则向该企业应用的全部成员发送
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.WeixinWorkMessage.Model.SendMessageRequest.ChatId">
+            <summary>
+            群聊会话Id
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.WeixinWorkMessage.Model.SendMessageRequest.ToParty">
+            <summary>
+            指定接收消息的部门，部门ID列表，多个接收者用‘|’分隔，最多支持100个。
+            当touser为”@all”时忽略本参数
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.WeixinWorkMessage.Model.SendMessageRequest.ToTag">
+            <summary>
+            指定接收消息的标签，标签ID列表，多个接收者用‘|’分隔，最多支持100个。
+            当touser为”@all”时忽略本参数
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.WeixinWorkMessage.Model.SendMessageRequest.MessageType">
+            <summary>
+            消息类型
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.WeixinWorkMessage.Model.SendMessageRequest.AgentId">
+            <summary>
+             	企业应用的id，整型。企业内部开发，可在应用的设置页面查看；第三方服务商，可通过接口 获取企业授权信息 获取该参数值
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.WeixinWorkMessage.Model.SendMessageRequest.Safe">
+            <summary>
+            表示是否是保密消息，0表示否，1表示是，默认0
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.WeixinWorkMessage.Model.SendMessageRequest.EnableIdTrans">
+            <summary>
+            表示是否开启id转译，0表示否，1表示是，默认0
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.WeixinWorkMessage.Model.SendMessageRequest.EnableDuplicateCheck">
+            <summary>
+             	表示是否开启重复消息检查，0表示否，1表示是，默认0
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.WeixinWorkMessage.Model.SendMessageRequest.DuplicateCheckInterval">
+            <summary>
+            表示是否重复消息检查的时间间隔，默认1800s，最大不超过4小时
+            </summary>
+        </member>
+        <member name="T:mymooo.weixinWork.SDK.WeixinWorkMessage.Model.SendMessageResponse">
+            <summary>
+            发送消息响应
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.WeixinWorkMessage.Model.SendMessageResponse.ErrCode">
+            <summary>
+            0 为成功
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.WeixinWorkMessage.Model.SendMessageResponse.ErrorMessage">
+            <summary>
+            错误消息
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.WeixinWorkMessage.Model.SendMessageResponse.InvalidUser">
+            <summary>
+            无效用户
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.WeixinWorkMessage.Model.SendMessageResponse.InvalidParty">
+            <summary>
+            无效部门
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.WeixinWorkMessage.Model.SendMessageResponse.InvalidTag">
+            <summary>
+            无效标记
+            </summary>
+        </member>
+        <member name="T:mymooo.weixinWork.SDK.WeixinWorkMessage.Model.SendTextCardMessageRequest">
+            <summary>
+            发送卡片消息
+            </summary>
+        </member>
+        <member name="M:mymooo.weixinWork.SDK.WeixinWorkMessage.Model.SendTextCardMessageRequest.#ctor">
+            <summary>
+            默认消息类型
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.WeixinWorkMessage.Model.SendTextCardMessageRequest.TextCard">
+            <summary>
+            文本卡片
+            </summary>
+        </member>
+        <member name="T:mymooo.weixinWork.SDK.WeixinWorkMessage.Model.SendTextCardMessageRequest.TextCardMessage">
+            <summary>
+            文本卡片类
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.WeixinWorkMessage.Model.SendTextCardMessageRequest.TextCardMessage.Title">
+            <summary>
+            标题，不超过128个字节，超过会自动截断（支持id转译）
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.WeixinWorkMessage.Model.SendTextCardMessageRequest.TextCardMessage.Description">
+            <summary>
+            描述，不超过512个字节，超过会自动截断（支持id转译）
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.WeixinWorkMessage.Model.SendTextCardMessageRequest.TextCardMessage.Url">
+            <summary>
+            点击后跳转的链接。
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.WeixinWorkMessage.Model.SendTextCardMessageRequest.TextCardMessage.Btntxt">
+            <summary>
+            按钮文字。 默认为“详情”， 不超过4个文字，超过自动截断。
+            </summary>
+        </member>
+        <member name="T:mymooo.weixinWork.SDK.WeixinWorkMessage.Model.SendTextMessageRequest">
+            <summary>
+            发送文本消息
+            </summary>
+        </member>
+        <member name="M:mymooo.weixinWork.SDK.WeixinWorkMessage.Model.SendTextMessageRequest.#ctor">
+            <summary>
+            默认消息类型
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.WeixinWorkMessage.Model.SendTextMessageRequest.Text">
+            <summary>
+            消息内容，最长不超过2048个字节，超过将截断（支持id转译）
+            </summary>
+        </member>
+        <member name="T:mymooo.weixinWork.SDK.WeixinWorkMessage.Model.SendTextMessageRequest.TextMessage">
+            <summary>
+            消息内容，最长不超过2048个字节，超过将截断（支持id转译）
+            </summary>
+        </member>
+        <member name="P:mymooo.weixinWork.SDK.WeixinWorkMessage.Model.SendTextMessageRequest.TextMessage.Content">
+            <summary>
+            消息内容，最长不超过2048个字节，超过将截断（支持id转译）
+            </summary>
+        </member>
+        <member name="T:mymooo.weixinWork.SDK.WeixinWorkMessage.SendMessageService">
+            <summary>
+            发送消息服务
+            </summary>
+            <param name="httpService"></param>
+            <param name="mediaServiceClient"></param>
+            <param name="systemCode">系统编码</param>
+            <param name="envCode"></param>
+            <param name="agentId"></param>
+        </member>
+        <member name="M:mymooo.weixinWork.SDK.WeixinWorkMessage.SendMessageService.#ctor(mymooo.weixinWork.SDK.Utils.WeixinWorkHttpService,mymooo.weixinWork.SDK.Media.MediaServiceClient,System.String,System.String,System.Int64)">
+            <summary>
+            发送消息服务
+            </summary>
+            <param name="httpService"></param>
+            <param name="mediaServiceClient"></param>
+            <param name="systemCode">系统编码</param>
+            <param name="envCode"></param>
+            <param name="agentId"></param>
+        </member>
+        <member name="F:mymooo.weixinWork.SDK.WeixinWorkMessage.SendMessageService._httpService">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:mymooo.weixinWork.SDK.WeixinWorkMessage.SendMessageService._systemCode">
+            <summary>
+            系统编码
+            </summary>
+        </member>
+        <member name="F:mymooo.weixinWork.SDK.WeixinWorkMessage.SendMessageService._envCode">
+            <summary>
+            环境变量
+            </summary>
+        </member>
+        <member name="F:mymooo.weixinWork.SDK.WeixinWorkMessage.SendMessageService._agentId">
+            <summary>
+            应用Id
+            </summary>
+        </member>
+        <member name="F:mymooo.weixinWork.SDK.WeixinWorkMessage.SendMessageService._mediaServiceClient">
+            <summary>
+            企业微信媒体服务
+            </summary>
+        </member>
+        <member name="M:mymooo.weixinWork.SDK.WeixinWorkMessage.SendMessageService.SendTextMessage``2(``0,mymooo.weixinWork.SDK.WeixinWorkMessage.Model.SendTextMessageRequest)">
+            <summary>
+            发送文本消息
+            </summary>
+            <param name="mymoooContext">蚂蚁上下文</param>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.weixinWork.SDK.WeixinWorkMessage.SendMessageService.SendMarkDownMessage``2(``0,mymooo.weixinWork.SDK.WeixinWorkMessage.Model.SendMarkdownMessageRequest)">
+            <summary>
+            发送 MarkDown 消息
+            </summary>
+            <param name="mymoooContext">蚂蚁上下文</param>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.weixinWork.SDK.WeixinWorkMessage.SendMessageService.SendTextcardMessage``2(``0,mymooo.weixinWork.SDK.WeixinWorkMessage.Model.SendTextCardMessageRequest)">
+            <summary>
+            发送卡片消息
+            </summary>
+            <param name="mymoooContext">蚂蚁上下文</param>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.weixinWork.SDK.WeixinWorkMessage.SendMessageService.SendFileMessageAsync``2(``0,mymooo.weixinWork.SDK.WeixinWorkMessage.Model.SendFileMessageRequest)">
+            <summary>
+            发送文件消息
+            </summary>
+            <param name="mymoooContext">蚂蚁上下文</param>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.weixinWork.SDK.WeixinWorkMessage.SendMessageService.UpLoadMediaAsync``2(``0,mymooo.weixinWork.SDK.Media.Model.MediaInfo)">
+            <summary>
+            上传媒体文件
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:mymooo.weixinWork.SDK.WeixinWorkMessage.SendMessageService.UpLoadMediaAsync``2(``0,System.Collections.Generic.List{mymooo.weixinWork.SDK.Media.Model.MediaInfo})">
+            <summary>
+            上传媒体文件
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
