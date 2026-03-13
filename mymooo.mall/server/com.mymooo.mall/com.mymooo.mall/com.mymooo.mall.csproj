@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="mymooo.weixinWork.SDK" Version="1.0.1.35" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\com.mymooo.mall.business\com.mymooo.mall.business.csproj" />
+    <ProjectReference Include="..\com.mymooo.mall.core\com.mymooo.mall.core.csproj" />
+    <ProjectReference Include="..\com.mymooo.mall.wcf\com.mymooo.mall.wcf.csproj" />
+  </ItemGroup>
+
+</Project>

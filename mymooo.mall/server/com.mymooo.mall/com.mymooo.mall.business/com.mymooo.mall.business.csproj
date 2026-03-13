@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="mymooo.k3cloud.SDK" Version="1.4.1.6" />
+    <PackageReference Include="mymooo.weixinWork.SDK" Version="1.0.1.35" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\com.mymooo.mall.core\com.mymooo.mall.core.csproj" />
+    <ProjectReference Include="..\com.mymooo.mall.wcf\com.mymooo.mall.wcf.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Service\Model\" />
+  </ItemGroup>
+
+</Project>
