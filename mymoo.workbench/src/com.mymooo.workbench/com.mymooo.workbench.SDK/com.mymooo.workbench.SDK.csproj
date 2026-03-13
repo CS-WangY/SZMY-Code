@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<GenerateDocumentationFile>True</GenerateDocumentationFile>
+		<!--添加该配置，在编译时进行打包-->
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<Authors>莫毅锋</Authors>
+		<Description>深圳蚂蚁工场科技有限公司,mymooo.workbench SDK</Description>
+		<PackageReleaseNotes>深圳蚂蚁工场科技有限公司,mymooo.workbench SDK</PackageReleaseNotes>
+		<Title>mymooo.workbench SDK</Title>
+		<Copyright>版本归深圳蚂蚁工场科技有限公司所有</Copyright>
+		<Company>深圳蚂蚁工场科技有限公司</Company>
+		<PackageReadmeFile>readme.md</PackageReadmeFile>
+		<RepositoryType></RepositoryType>
+		<RepositoryUrl>http://gitlab.kyy6.com/mymooo/workbench.git</RepositoryUrl>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Include="docs\readme.md" Pack="true" PackagePath="\" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="mymooo.core" Version="1.4.1.97" />
+	</ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\com.mymooo.workbench.core\com.mymooo.workbench.core.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,1 @@
+update WeiXinMessage set CompleteDate = CreateDate where IsComplete =1 and CompleteDate is null;

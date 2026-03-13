@@ -1,0 +1,44 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Configurations>Debug;Release;Production</Configurations>
+	  <GenerateDocumentationFile>True</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="com.mymooo.api.gateway.SDK" Version="1.2.1.2" />
+    <PackageReference Include="Microsoft.CodeAnalysis.Common" Version="4.8.0" />
+    <PackageReference Include="Microsoft.CodeAnalysis.CSharp.Workspaces" Version="4.8.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.4">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="mymooo.core" Version="1.4.1.97" />
+    <PackageReference Include="mymooo.weixinWork.SDK" Version="1.4.1.26" />
+    <PackageReference Include="Stripe.net" Version="43.21.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\com.mymooo.workbench.business\com.mymooo.workbench.business.csproj" />
+    <ProjectReference Include="..\com.mymooo.workbench.cache\com.mymooo.workbench.cache.csproj" />
+    <ProjectReference Include="..\com.mymooo.workbench.core\com.mymooo.workbench.core.csproj" />
+    <ProjectReference Include="..\com.mymooo.workbench.ef\com.mymooo.workbench.ef.csproj" />
+    <ProjectReference Include="..\com.mymooo.workbench.qichacha\com.mymooo.workbench.qichacha.csproj" />
+    <ProjectReference Include="..\com.mymooo.workbench.weixin.work\com.mymooo.workbench.weixin.work.csproj" />
+  </ItemGroup>
+	<Target Name="BuildCopyXmlDocs" AfterTargets="AfterBuild">
+		<ItemGroup>
+			<XmlDocs Include="%(Reference.RelativeDir)*mymooo.*.xml" />
+		</ItemGroup>
+		<Message Text="Copying XML docs to $(OutDir)" Importance="High" />
+		<Copy SourceFiles="@(XmlDocs)" DestinationFolder="$(OutDir)" Condition="Exists(%(FullPath))" />
+	</Target>
+	<Target Name="PublishCopyXmlDocs" AfterTargets="Publish">
+		<ItemGroup>
+			<XmlDocs Include="%(Reference.RelativeDir)*mymooo.*.xml" />
+		</ItemGroup>
+		<Message Text="Copying XML docs to $(PublishDir)" Importance="High" />
+		<Copy SourceFiles="@(XmlDocs)" DestinationFolder="$(PublishDir)" Condition="Exists(%(FullPath))" />
+	</Target>
+</Project>

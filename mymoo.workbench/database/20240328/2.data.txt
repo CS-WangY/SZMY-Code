@@ -1,0 +1,5 @@
+
+insert into ThirdpartyApplicationConfig(AppId,AppName,Token,Nonce,DataCenterNumber,Username,Url,Validity,CreateUser,CreateDate)
+select SystemEnvCode,SystemEnvName, AppId, AppSecret,DataCenterNumber,Username,Url, 1000, 'moyifeng', getdate() 
+from mymooo_apigateway..SystemEnvironmentConfig
+ where SystemId = 1;

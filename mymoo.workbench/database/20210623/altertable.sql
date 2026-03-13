@@ -1,0 +1,3 @@
+--删除departmentuser表外键FK_DepartmentUser_DepartmentId，
+--departmentuser的departmentId字段对应Department表的DepartmentId而不是Id，否则会打乱层级关系
+ALTER TABLE DepartmentUser DROP CONSTRAINT FK_DepartmentUser_DepartmentId

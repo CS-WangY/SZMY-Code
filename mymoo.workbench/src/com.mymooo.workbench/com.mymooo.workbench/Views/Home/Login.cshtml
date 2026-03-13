@@ -1,0 +1,35 @@
+﻿@using mymooo.core.Model.Gateway
+@model SystemEnvironmentConfig;
+@{
+    ViewData["Title"] = "企业微信扫码登录";
+    Layout = "~/Views/Shared/_ScanLayout.cshtml";
+}
+
+<div class="scan">
+    <div id="tab" class="easyui-tabs" style="width:100%;height:100%;">
+        <div title="深圳蚂蚁工场" style="padding:20px;display:none;">
+            <div class="text-center" id="weixinwork" style="margin-left:100px">
+            </div>
+        </div>
+       @* <div title="东莞蚂蚁工场" style="padding:20px;display:none;">
+            <div class="text-center" id="DGweixinwork" style="margin-left:100px">
+            </div>
+        </div>*@
+    </div>
+</div>
+
+@section Scripts{
+    <script>
+        $(function () {
+            window.WwLogin({
+                "id": "weixinwork",
+                "appid": "@Model.SystemConfig.EnterpriseId",
+                "agentid": "@Model.Token",
+                "redirect_uri": "@ViewBag.weixinworkCallbakUrl",
+                "state": "@ViewBag.AppId",
+                "href": "",
+            });
+            
+        })
+    </script>
+}

@@ -1,0 +1,58 @@
+{
+  "profiles": {
+    "http": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "TOKEN": "XjjKM0FqcynB3tfaHd4u4al08JyzmOzZcdSsdhM6rmYw7GlJsvlUgz8QYtv//hRsU/4XfH6/Pw6eDhaz6rKhiyUoDMlNkLunEyyUXddtQZCYqk1YDCo8dbxB8nHLhxJgYUR/KIaVZSxEZdiqCT95xXr8cY0FWE9wNpVT96bEAdnY/W8QA9vIrz55UWhh1Ig5j5ASBPtl1xGSk5t1INOdNfKT1J4lwp0um8rZZtSF09YrE+HzMLfcm0lbXBkNcVmyLK0+GoyafmPsDi+dt0mhositNYviWM4R7qGvKLBnY+/jEV5+02yM5J/GHQTn8hhSsoO8rZRx6dhFLJ6o6GirJuy/UWPzbvzHZ3hNRCFUY586es5sEUqOH74lgQ6f6MxWJBZHRUgim2xHnbd4WvgStF2YS34UnI8Bl8/7sj07EDGO+6QuAn/5thRy/H4U4W35PXq/baSbHbmfQyVrPT+K8wCX5CInyeqccXKbdMNg0dp9EMv6giLlSZw9/juhcGxJKA7BcuEAdfRGuMlDY0BU15aNUED/KFUFfhMjSt+WHW0oCv8GxUHPnl9aW3Ob7+s/RLVUhimGaM9M0j1D1zflAgYZxd5TkdtNXsqpdBCXL1fGnaJyG39smlFElHisqddGS1fwpPHaBdbNDRTdhjPXPp7AgMKSqs7sLpaGdvwCsas="
+      },
+      "applicationUrl": "http://*:1205"
+    },
+    "http.Debug": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development.Debug",
+        "TOKEN": "XjjKM0FqcynB3tfaHd4u4al08JyzmOzZcdSsdhM6rmYw7GlJsvlUgz8QYtv//hRsU/4XfH6/Pw6eDhaz6rKhiyUoDMlNkLunEyyUXddtQZCYqk1YDCo8dbxB8nHLhxJgYUR/KIaVZSxEZdiqCT95xXr8cY0FWE9wNpVT96bEAdnY/W8QA9vIrz55UWhh1Ig5j5ASBPtl1xGSk5t1INOdNfKT1J4lwp0um8rZZtSF09YrE+HzMLfcm0lbXBkNcVmyLK0+GoyafmPsDi+dt0mhositNYviWM4R7qGvKLBnY+/jEV5+02yM5J/GHQTn8hhSsoO8rZRx6dhFLJ6o6GirJuy/UWPzbvzHZ3hNRCFUY586es5sEUqOH74lgQ6f6MxWJBZHRUgim2xHnbd4WvgStF2YS34UnI8Bl8/7sj07EDGO+6QuAn/5thRy/H4U4W35PXq/baSbHbmfQyVrPT+K8wCX5CInyeqccXKbdMNg0dp9EMv6giLlSZw9/juhcGxJKA7BcuEAdfRGuMlDY0BU15aNUED/KFUFfhMjSt+WHW0oCv8GxUHPnl9aW3Ob7+s/RLVUhimGaM9M0j1D1zflAgYZxd5TkdtNXsqpdBCXL1fGnaJyG39smlFElHisqddGS1fwpPHaBdbNDRTdhjPXPp7AgMKSqs7sLpaGdvwCsas="
+      },
+      "applicationUrl": "http://*:1205"
+    },
+    "http.Test": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Test",
+        "TOKEN": "XjjKM0FqcynB3tfaHd4u4al08JyzmOzZcdSsdhM6rmYw7GlJsvlUgz8QYtv//hRsU/4XfH6/Pw6eDhaz6rKhiyUoDMlNkLunEyyUXddtQZCYqk1YDCo8dbxB8nHLhxJgYUR/KIaVZSxEZdiqCT95xXr8cY0FWE9wNpVT96bEAdnY/W8QA9vIrz55UWhh1Ig5j5ASBPtl1xGSk5t1INOdNfKT1J4lwp0um8rZZtSF09YrE+HzMLfcm0lbXBkNcVmyLK0+GoyafmPsDi+dt0mhositNYviWM4R7qGvKLBnY+/jEV5+02yM5J/GHQTn8hhSsoO8rZRx6dhFLJ6o6GirJuy/UWPzbvzHZ3hNRCFUY586es5sEUqOH74lgQ6f6MxWJBZHRUgim2xHnbd4WvgStF2YS34UnI8Bl8/7sj07EDGO+6QuAn/5thRy/H4U4W35PXq/baSbHbmfQyVrPT+K8wCX5CInyeqccXKbdMNg0dp9EMv6giLlSZw9/juhcGxJKA7BcuEAdfRGuMlDY0BU15aNUED/KFUFfhMjSt+WHW0oCv8GxUHPnl9aW3Ob7+s/RLVUhimGaM9M0j1D1zflAgYZxd5TkdtNXsqpdBCXL1fGnaJyG39smlFElHisqddGS1fwpPHaBdbNDRTdhjPXPp7AgMKSqs7sLpaGdvwCsas="
+      },
+      "applicationUrl": "http://*:1205"
+    },
+    "http.Bug": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Bug",
+        "TOKEN": "XjjKM0FqcynB3tfaHd4u4al08JyzmOzZcdSsdhM6rmYw7GlJsvlUgz8QYtv//hRsU/4XfH6/Pw6eDhaz6rKhiyUoDMlNkLunEyyUXddtQZCYqk1YDCo8dbxB8nHLhxJgYUR/KIaVZSxEZdiqCT95xXr8cY0FWE9wNpVT96bEAdnY/W8QA9vIrz55UWhh1Ig5j5ASBPtl1xGSk5t1INOdNfKT1J4lwp0um8rZZtSF09YrE+HzMLfcm0lbXBkNcVmyLK0+GoyafmPsDi+dt0mhositNYviWM4R7qGvKLBnY+/jEV5+02yM5J/GHQTn8hhSsoO8rZRx6dhFLJ6o6GirJuy/UWPzbvzHZ3hNRCFUY586es5sEUqOH74lgQ6f6MxWJBZHRUgim2xHnbd4WvgStF2YS34UnI8Bl8/7sj07EDGO+6QuAn/5thRy/H4U4W35PXq/baSbHbmfQyVrPT+K8wCX5CInyeqccXKbdMNg0dp9EMv6giLlSZw9/juhcGxJKA7BcuEAdfRGuMlDY0BU15aNUED/KFUFfhMjSt+WHW0oCv8GxUHPnl9aW3Ob7+s/RLVUhimGaM9M0j1D1zflAgYZxd5TkdtNXsqpdBCXL1fGnaJyG39smlFElHisqddGS1fwpPHaBdbNDRTdhjPXPp7AgMKSqs7sLpaGdvwCsas="
+      },
+      "applicationUrl": "http://*:1205"
+    },
+    "http.Preview2": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Preview2",
+        "TOKEN": "XjjKM0FqcynB3tfaHd4u4al08JyzmOzZcdSsdhM6rmYw7GlJsvlUgz8QYtv//hRsU/4XfH6/Pw6eDhaz6rKhiyUoDMlNkLunEyyUXddtQZCYqk1YDCo8dbxB8nHLhxJgYUR/KIaVZSxEZdiqCT95xXr8cY0FWE9wNpVT96bEAdnY/W8QA9vIrz55UWhh1Ig5j5ASBPtl1xGSk5t1INOdNfKT1J4lwp0um8rZZtSF09YrE+HzMLfcm0lbXBkNcVmyLK0+GoyafmPsDi+dt0mhositNYviWM4R7qGvKLBnY+/jEV5+02yM5J/GHQTn8hhSsoO8rZRx6dhFLJ6o6GirJuy/UWPzbvzHZ3hNRCFUY586es5sEUqOH74lgQ6f6MxWJBZHRUgim2xHnbd4WvgStF2YS34UnI8Bl8/7sj07EDGO+6QuAn/5thRy/H4U4W35PXq/baSbHbmfQyVrPT+K8wCX5CInyeqccXKbdMNg0dp9EMv6giLlSZw9/juhcGxJKA7BcuEAdfRGuMlDY0BU15aNUED/KFUFfhMjSt+WHW0oCv8GxUHPnl9aW3Ob7+s/RLVUhimGaM9M0j1D1zflAgYZxd5TkdtNXsqpdBCXL1fGnaJyG39smlFElHisqddGS1fwpPHaBdbNDRTdhjPXPp7AgMKSqs7sLpaGdvwCsas="
+      },
+      "applicationUrl": "http://*:1205"
+    },
+    "http.Production": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Production",
+        "TOKEN": "XjjKM0FqcynB3tfaHd4u4al08JyzmOzZcdSsdhM6rmYw7GlJsvlUgz8QYtv//hRsU/4XfH6/Pw6eDhaz6rKhiyUoDMlNkLunEyyUXddtQZCYqk1YDCo8dbxB8nHLhxJgYUR/KIaVZSxEZdiqCT95xXr8cY0FWE9wNpVT96bEAdnY/W8QA9vIrz55UWhh1Ig5j5ASBPtl1xGSk5t1INOdNfKT1J4lwp0um8rZZtSF09YrE+HzMLfcm0lbXBkNcVmyLK0+GoyafmPsDi+dt0mhositNYviWM4R7qGvKLBnY+/jEV5+02yM5J/GHQTn8hhSsoO8rZRx6dhFLJ6o6GirJuy/UWPzbvzHZ3hNRCFUY586es5sEUqOH74lgQ6f6MxWJBZHRUgim2xHnbd4WvgStF2YS34UnI8Bl8/7sj07EDGO+6QuAn/5thRy/H4U4W35PXq/baSbHbmfQyVrPT+K8wCX5CInyeqccXKbdMNg0dp9EMv6giLlSZw9/juhcGxJKA7BcuEAdfRGuMlDY0BU15aNUED/KFUFfhMjSt+WHW0oCv8GxUHPnl9aW3Ob7+s/RLVUhimGaM9M0j1D1zflAgYZxd5TkdtNXsqpdBCXL1fGnaJyG39smlFElHisqddGS1fwpPHaBdbNDRTdhjPXPp7AgMKSqs7sLpaGdvwCsas="
+      },
+      "applicationUrl": "http://*:1205"
+    }
+  }
+}

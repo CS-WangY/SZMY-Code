@@ -1,0 +1,1 @@
+alter table AuditFlowConfigDetail alter column UserCode nvarchar(MAX)

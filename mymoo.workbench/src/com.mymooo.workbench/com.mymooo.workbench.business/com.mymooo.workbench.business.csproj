@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Configurations>Debug;Release;Production</Configurations>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="com.mymooo.api.gateway.SDK" Version="1.2.1.2" />
+    <PackageReference Include="Microsoft.CodeAnalysis.Common" Version="4.8.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.4" />
+    <PackageReference Include="mymooo.core" Version="1.4.1.97" />
+    <PackageReference Include="mymooo.weixinWork.SDK" Version="1.4.1.26" />
+    <PackageReference Include="Quartz" Version="3.8.1" />
+    <PackageReference Include="System.Collections.Concurrent" Version="4.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\com.mymooo.workbench.core\com.mymooo.workbench.core.csproj" />
+    <ProjectReference Include="..\com.mymooo.workbench.ef\com.mymooo.workbench.ef.csproj" />
+    <ProjectReference Include="..\com.mymooo.workbench.weixin.work\com.mymooo.workbench.weixin.work.csproj" />
+  </ItemGroup>
+
+</Project>

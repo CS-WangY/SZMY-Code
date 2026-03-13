@@ -1,0 +1,39 @@
+﻿@model List<com.mymooo.workbench.ef.ThirdpartyApplication.ThirdpartyApplicationConfig>
+<ul id="menu" class="easyui-tree">
+    @if (Model != null)
+    {
+        foreach (var menu in Model)
+        {
+            <li>
+                <span>@menu.AppName</span>
+                @if (menu.Menu.Count > 0)
+                {
+                    <ul>
+                        @foreach (var item in menu.Menu.Where(c => c.ParentId == 0))
+                        {
+                            <li>
+                                <span>@item.Title</span>
+                                @{
+                                    var ms = menu.Menu.Where(c => c.ParentId == item.Id).ToList();
+                                    if (ms.Count > 0)
+                                    {
+                                        <ul>
+                                            @foreach (var m in ms)
+                                            {
+                                                <li>
+                                                    <span>
+                                                        <a href="javascript:;" onclick="mymo.open('@m.Path', '@m.Title')">@m.Title</a>
+                                                    </span>
+                                                </li>
+                                            }
+                                        </ul>
+                                    }
+                                }
+                            </li>
+                        }
+                    </ul>
+                }
+            </li>
+        }
+    }
+</ul>

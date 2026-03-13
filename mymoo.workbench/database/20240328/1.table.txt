@@ -1,0 +1,6 @@
+
+alter table ThirdpartyApplicationConfig add DataCenterNumber varchar(100)	not null default '';
+alter table ThirdpartyApplicationConfig add Username varchar(100)	not null default '';
+
+
+
